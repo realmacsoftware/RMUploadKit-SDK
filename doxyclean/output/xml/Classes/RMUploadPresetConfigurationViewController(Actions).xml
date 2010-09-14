@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?><object kind="class">
+  <name>RMUploadPresetConfigurationViewController(Actions)</name>
+  <file>RMUploadPresetConfigurationViewController.h</file>
+  <sections>
+    <section>
+      <name>Other</name>
+      <member kind="instance-method">
+        <name>showHelp:</name>
+        <type>IBAction</type>
+        <prototype>- (IBAction)showHelp:(id)<parameter>sender</parameter> </prototype>
+        <file><ref id="../Classes/RMUploadPresetConfigurationViewController">RMUploadPresetConfigurationViewController</ref>.h</file>
+        <description>
+          <brief>
+<para>If implemented, a help button is shown in the configuration view. </para>        </brief>
+          <details>
+        </details>
+        </description>
+      </member>
+    </section>
+  </sections>
+</object>

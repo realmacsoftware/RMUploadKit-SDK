@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?><object kind="protocol">
+  <name>AFPropertyList</name>
+  <file>AFPropertyListProtocol.h</file>
+  <description>
+    <brief>
+<para>Defines an <code><ref id="http://developer.apple.com/mac/library/documentation/Cocoa/Reference/Foundation/Protocols/NSCoding_Protocol/index">NSCoding</ref></code> like method pair. It is designed to produce developer-readable archives. </para>    </brief>
+    <details>
+    </details>
+  </description>
+  <sections/>
+</object>

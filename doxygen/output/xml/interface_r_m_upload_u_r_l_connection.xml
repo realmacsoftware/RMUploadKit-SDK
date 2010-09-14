@@ -1,0 +1,172 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.5.9">
+  <compounddef id="interface_r_m_upload_u_r_l_connection" kind="class" prot="public">
+    <compoundname>RMUploadURLConnection</compoundname>
+    <includes refid="_r_m_upload_u_r_l_connection_8h" local="no">RMUploadURLConnection.h</includes>
+      <sectiondef kind="property">
+      <memberdef kind="property" id="interface_r_m_upload_u_r_l_connection_16a30b21015bdbcb4e24e1ef9057a5674" prot="public" static="no" readable="yes" writable="yes" gettable="no" settable="no">
+        <type>id</type>
+        <definition>id RMUploadURLConnection::delegate</definition>
+        <argsstring></argsstring>
+        <name>delegate</name>
+        <read></read>
+        <write></write>
+        <briefdescription>
+<para>The connection&apos;s delegate. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/keith/Projects/Source/RMUpload/documentation/RMUploadKit.sdk/Library/Frameworks/RMUploadKit.framework/Versions/A/Headers/RMUploadURLConnection.h" line="55" bodyfile="/Users/keith/Projects/Source/RMUpload/documentation/RMUploadKit.sdk/Library/Frameworks/RMUploadKit.framework/Versions/A/Headers/RMUploadURLConnection.h" bodystart="55" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="property" id="interface_r_m_upload_u_r_l_connection_1451c57277725c6b455e1c454b1892e10" prot="public" static="no" readable="yes" writable="yes" gettable="no" settable="no">
+        <type>RMUploadURLConnectionCompletionBlock</type>
+        <definition>RMUploadURLConnectionCompletionBlock RMUploadURLConnection::completionBlock</definition>
+        <argsstring></argsstring>
+        <name>completionBlock</name>
+        <read></read>
+        <write></write>
+        <briefdescription>
+<para>A block called when the connection completes, either successfully or unsuccessfully. </para>        </briefdescription>
+        <detaileddescription>
+<para>Both this block and the delegate method <computeroutput>-connection:didFailWithError:</computeroutput> or <computeroutput>-connection:didCompleteWithData:</computeroutput> are invoked on connection completion. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/keith/Projects/Source/RMUpload/documentation/RMUploadKit.sdk/Library/Frameworks/RMUploadKit.framework/Versions/A/Headers/RMUploadURLConnection.h" line="64" bodyfile="/Users/keith/Projects/Source/RMUpload/documentation/RMUploadKit.sdk/Library/Frameworks/RMUploadKit.framework/Versions/A/Headers/RMUploadURLConnection.h" bodystart="64" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="property" id="interface_r_m_upload_u_r_l_connection_143d7318ce1827b70964f16b329849fdb" prot="public" static="no" readable="yes" writable="no" gettable="no" settable="no">
+        <type>BOOL</type>
+        <definition>BOOL RMUploadURLConnection::completed</definition>
+        <argsstring></argsstring>
+        <name>completed</name>
+        <read></read>
+        <briefdescription>
+<para>Set to YES when the connection has finished or has received an error. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/keith/Projects/Source/RMUpload/documentation/RMUploadKit.sdk/Library/Frameworks/RMUploadKit.framework/Versions/A/Headers/RMUploadURLConnection.h" line="70" bodyfile="/Users/keith/Projects/Source/RMUpload/documentation/RMUploadKit.sdk/Library/Frameworks/RMUploadKit.framework/Versions/A/Headers/RMUploadURLConnection.h" bodystart="70" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="property" id="interface_r_m_upload_u_r_l_connection_1444f10586e5313597abdb952eca71624" prot="public" static="no" readable="yes" writable="yes" gettable="no" settable="no">
+        <type>id</type>
+        <definition>id RMUploadURLConnection::userInfo</definition>
+        <argsstring></argsstring>
+        <name>userInfo</name>
+        <read></read>
+        <write></write>
+        <briefdescription>
+<para>Convenience property to associate any userInfo, handy for delegate callbacks. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/keith/Projects/Source/RMUpload/documentation/RMUploadKit.sdk/Library/Frameworks/RMUploadKit.framework/Versions/A/Headers/RMUploadURLConnection.h" line="76" bodyfile="/Users/keith/Projects/Source/RMUpload/documentation/RMUploadKit.sdk/Library/Frameworks/RMUploadKit.framework/Versions/A/Headers/RMUploadURLConnection.h" bodystart="76" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-static-func">
+      <memberdef kind="function" id="interface_r_m_upload_u_r_l_connection_15f59884dfef608fc434e614be0438382" prot="public" static="yes" const="no" explicit="no" inline="no" virt="virtual">
+        <type><ref refid="interface_r_m_upload_u_r_l_connection" kindref="compound">RMUploadURLConnection</ref> *</type>
+        <definition>RMUploadURLConnection * RMUploadURLConnection::connectionWithRequest:delegate:</definition>
+        <argsstring>(NSURLRequest *request,[delegate] id&lt; RMUploadURLConnectionDelegate &gt; delegate)</argsstring>
+        <name>connectionWithRequest:delegate:</name>
+        <param>
+          <type>NSURLRequest *</type>
+          <declname>request</declname>
+        </param>
+        <param>
+          <attributes>[delegate]</attributes>
+          <type>id&lt; <ref refid="protocol_r_m_upload_u_r_l_connection_delegate-p" kindref="compound">RMUploadURLConnectionDelegate</ref> &gt;</type>
+          <declname>delegate</declname>
+        </param>
+        <briefdescription>
+<para>Convenience constructor. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/keith/Projects/Source/RMUpload/documentation/RMUploadKit.sdk/Library/Frameworks/RMUploadKit.framework/Versions/A/Headers/RMUploadURLConnection.h" line="43"/>
+      </memberdef>
+      <memberdef kind="function" id="interface_r_m_upload_u_r_l_connection_1c152243e77d8588d599567742fbac437" prot="public" static="yes" const="no" explicit="no" inline="no" virt="virtual">
+        <type><ref refid="interface_r_m_upload_u_r_l_connection" kindref="compound">RMUploadURLConnection</ref> *</type>
+        <definition>RMUploadURLConnection * RMUploadURLConnection::connectionWithRequest:completionBlock:</definition>
+        <argsstring>(NSURLRequest *request,[completionBlock] RMUploadURLConnectionCompletionBlock completionBlock)</argsstring>
+        <name>connectionWithRequest:completionBlock:</name>
+        <param>
+          <type>NSURLRequest *</type>
+          <declname>request</declname>
+        </param>
+        <param>
+          <attributes>[completionBlock]</attributes>
+          <type>RMUploadURLConnectionCompletionBlock</type>
+          <declname>completionBlock</declname>
+        </param>
+        <briefdescription>
+<para>Convenience constructor. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/keith/Projects/Source/RMUpload/documentation/RMUploadKit.sdk/Library/Frameworks/RMUploadKit.framework/Versions/A/Headers/RMUploadURLConnection.h" line="49"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="interface_r_m_upload_u_r_l_connection_1812bec6af16efd6d824662670227852a" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>void RMUploadURLConnection::sendURLRequest:</definition>
+        <argsstring>(NSURLRequest *request)</argsstring>
+        <name>sendURLRequest:</name>
+        <param>
+          <type>NSURLRequest *</type>
+          <declname>request</declname>
+        </param>
+        <briefdescription>
+<para>Sends the provided request, the delegate will begin to receive notifications. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>request</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>An <computeroutput>NSURLRequest</computeroutput> that you wish to send. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/keith/Projects/Source/RMUpload/documentation/RMUploadKit.sdk/Library/Frameworks/RMUploadKit.framework/Versions/A/Headers/RMUploadURLConnection.h" line="85"/>
+      </memberdef>
+      <memberdef kind="function" id="interface_r_m_upload_u_r_l_connection_1251014af81e1e787d6774e80a7fd4516" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>void RMUploadURLConnection::cancel</definition>
+        <argsstring>()</argsstring>
+        <name>cancel</name>
+        <briefdescription>
+<para>Cancels the connection. </para>        </briefdescription>
+        <detaileddescription>
+<para>The <computeroutput>delegate</computeroutput> will not receive any further callbacks. The <computeroutput>completionBlock</computeroutput> will not be invoked. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/keith/Projects/Source/RMUpload/documentation/RMUploadKit.sdk/Library/Frameworks/RMUploadKit.framework/Versions/A/Headers/RMUploadURLConnection.h" line="95"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>A replacement for <computeroutput>NSURLConnection</computeroutput>, wrapping it with a different API. </para>    </briefdescription>
+    <detaileddescription>
+<para>It uses a similar delegate system as NSURLConnection but provides different information as you go. </para>    </detaileddescription>
+    <location file="/Users/keith/Projects/Source/RMUpload/documentation/RMUploadKit.sdk/Library/Frameworks/RMUploadKit.framework/Versions/A/Headers/RMUploadURLConnection.h" line="38" bodyfile="/Users/keith/Projects/Source/RMUpload/documentation/RMUploadKit.sdk/Library/Frameworks/RMUploadKit.framework/Versions/A/Headers/RMUploadURLConnection.h" bodystart="37" bodyend="-1"/>
+    <listofallmembers>
+      <member refid="interface_r_m_upload_u_r_l_connection_1251014af81e1e787d6774e80a7fd4516" prot="public" virt="virtual"><scope>RMUploadURLConnection</scope><name>cancel</name></member>
+      <member refid="interface_r_m_upload_u_r_l_connection_143d7318ce1827b70964f16b329849fdb" prot="public" virt="non-virtual"><scope>RMUploadURLConnection</scope><name>completed</name></member>
+      <member refid="interface_r_m_upload_u_r_l_connection_1451c57277725c6b455e1c454b1892e10" prot="public" virt="non-virtual"><scope>RMUploadURLConnection</scope><name>completionBlock</name></member>
+      <member refid="interface_r_m_upload_u_r_l_connection_1c152243e77d8588d599567742fbac437" prot="public" virt="virtual"><scope>RMUploadURLConnection</scope><name>connectionWithRequest:completionBlock:</name></member>
+      <member refid="interface_r_m_upload_u_r_l_connection_15f59884dfef608fc434e614be0438382" prot="public" virt="virtual"><scope>RMUploadURLConnection</scope><name>connectionWithRequest:delegate:</name></member>
+      <member refid="interface_r_m_upload_u_r_l_connection_16a30b21015bdbcb4e24e1ef9057a5674" prot="public" virt="non-virtual"><scope>RMUploadURLConnection</scope><name>delegate</name></member>
+      <member refid="interface_r_m_upload_u_r_l_connection_07_r_m_upload_deprecated_08_1296924cb36d0177c4b63b92022685fbc" prot="public" virt="virtual"><scope>RMUploadURLConnection</scope><name>sendFilePostRequestWithParameters:toURL:</name></member>
+      <member refid="interface_r_m_upload_u_r_l_connection_07_r_m_upload_deprecated_08_1e61eba0809452a97a8437917490e7ed7" prot="public" virt="virtual"><scope>RMUploadURLConnection</scope><name>sendGetRequestWithParameters:toURL:</name></member>
+      <member refid="interface_r_m_upload_u_r_l_connection_07_r_m_upload_deprecated_08_16c112a6fab493d86077897bc48eeb9ef" prot="public" virt="virtual"><scope>RMUploadURLConnection</scope><name>sendPostRequestWithParameters:toURL:</name></member>
+      <member refid="interface_r_m_upload_u_r_l_connection_1812bec6af16efd6d824662670227852a" prot="public" virt="virtual"><scope>RMUploadURLConnection</scope><name>sendURLRequest:</name></member>
+      <member refid="interface_r_m_upload_u_r_l_connection_1444f10586e5313597abdb952eca71624" prot="public" virt="non-virtual"><scope>RMUploadURLConnection</scope><name>userInfo</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

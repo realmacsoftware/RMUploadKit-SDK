@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?><object kind="class">
+  <name>RMUploadURLConnection(RMUploadDeprecated)</name>
+  <file>RMUploadURLConnection.h</file>
+  <description>
+    <brief>
+<para>These methods are deprecated and should not be used. </para>    </brief>
+    <details>
+    </details>
+  </description>
+  <sections>
+    <section>
+      <name>Other</name>
+      <member kind="instance-method">
+        <name>sendGetRequestWithParameters:toURL:</name>
+        <type>void</type>
+        <prototype>- (void)sendGetRequestWithParameters:(<ref id="http://developer.apple.com/mac/library/documentation/Cocoa/Reference/Foundation/Classes/NSDictionary_Class/index">NSDictionary</ref> *)<parameter>params</parameter> toURL:(<ref id="http://developer.apple.com/mac/library/documentation/Cocoa/Reference/Foundation/Classes/NSURL_Class/index">NSURL</ref> *)<parameter>RMUPLOADKIT_DEPRECATED_ATTRIBUTE</parameter> </prototype>
+        <file><ref id="../Classes/RMUploadURLConnection">RMUploadURLConnection</ref>.h</file>
+        <description>
+          <brief>
+<para>This method is deprecated, use <code>+[<ref id="http://developer.apple.com/mac/library/documentation/Cocoa/Reference/Foundation/Classes/NSURLRequest_Class/index">NSURLRequest</ref> getRequestWithParameters:toURL:]</code> instead. </para>        </brief>
+          <details>
+        </details>
+        </description>
+      </member>
+      <member kind="instance-method">
+        <name>sendFilePostRequestWithParameters:toURL:</name>
+        <type>void</type>
+        <prototype>- (void)sendFilePostRequestWithParameters:(<ref id="http://developer.apple.com/mac/library/documentation/Cocoa/Reference/Foundation/Classes/NSArray_Class/index">NSArray</ref> *)<parameter>params</parameter> toURL:(<ref id="http://developer.apple.com/mac/library/documentation/Cocoa/Reference/Foundation/Classes/NSURL_Class/index">NSURL</ref> *)<parameter>RMUPLOADKIT_DEPRECATED_ATTRIBUTE</parameter> </prototype>
+        <file><ref id="../Classes/RMUploadURLConnection">RMUploadURLConnection</ref>.h</file>
+        <description>
+          <brief>
+<para>This method is deprecated, use <code>+[<ref id="http://developer.apple.com/mac/library/documentation/Cocoa/Reference/Foundation/Classes/NSURLRequest_Class/index">NSURLRequest</ref> filePostRequestWithParameters:toURL:]</code> instead. </para>        </brief>
+          <details>
+        </details>
+        </description>
+      </member>
+      <member kind="instance-method">
+        <name>sendPostRequestWithParameters:toURL:</name>
+        <type>void</type>
+        <prototype>- (void)sendPostRequestWithParameters:(<ref id="http://developer.apple.com/mac/library/documentation/Cocoa/Reference/Foundation/Classes/NSDictionary_Class/index">NSDictionary</ref> *)<parameter>params</parameter> toURL:(<ref id="http://developer.apple.com/mac/library/documentation/Cocoa/Reference/Foundation/Classes/NSURL_Class/index">NSURL</ref> *)<parameter>RMUPLOADKIT_DEPRECATED_ATTRIBUTE</parameter> </prototype>
+        <file><ref id="../Classes/RMUploadURLConnection">RMUploadURLConnection</ref>.h</file>
+        <description>
+          <brief>
+<para>This method is deprecated, use <code>+[<ref id="http://developer.apple.com/mac/library/documentation/Cocoa/Reference/Foundation/Classes/NSURLRequest_Class/index">NSURLRequest</ref> postRequestWithParameters:toURL:]</code> instead. </para>        </brief>
+          <details>
+        </details>
+        </description>
+      </member>
+    </section>
+  </sections>
+</object>

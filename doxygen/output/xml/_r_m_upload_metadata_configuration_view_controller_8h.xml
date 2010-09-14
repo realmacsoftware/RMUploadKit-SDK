@@ -1,0 +1,39 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.5.9">
+  <compounddef id="_r_m_upload_metadata_configuration_view_controller_8h" kind="file">
+    <compoundname>RMUploadMetadataConfigurationViewController.h</compoundname>
+    <includes local="no">Cocoa/Cocoa.h</includes>
+    <incdepgraph>
+      <node id="35">
+        <label>/Users/keith/Projects/Source/RMUpload/documentation/RMUploadKit.sdk/Library/Frameworks/RMUploadKit.framework/Versions/A/Headers/RMUploadMetadataConfigurationViewController.h</label>
+        <link refid="RMUploadMetadataConfigurationViewController.h"/>
+        <childnode refid="36" relation="include">
+        </childnode>
+      </node>
+      <node id="36">
+        <label>Cocoa/Cocoa.h</label>
+      </node>
+    </incdepgraph>
+    <innerclass refid="interface_r_m_upload_metadata_configuration_view_controller" prot="public">RMUploadMetadataConfigurationViewController</innerclass>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="comment">//</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight><highlight class="comment">//<sp/><sp/>RMUploadMetadataConfigurationViewController.h</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight><highlight class="comment">//<sp/><sp/>RMUploadKit</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight><highlight class="comment">//</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight><highlight class="comment">//<sp/><sp/>Created<sp/>by<sp/>Keith<sp/>Duncan<sp/>on<sp/>21/06/2010.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="6"><highlight class="normal"></highlight><highlight class="comment">//<sp/><sp/>Copyright<sp/>2010<sp/>Realmac<sp/>Software.<sp/>All<sp/>rights<sp/>reserved.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="7"><highlight class="normal"></highlight><highlight class="comment">//</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="8"><highlight class="normal"></highlight></codeline>
+<codeline lineno="9"><highlight class="normal"></highlight><highlight class="preprocessor">#import<sp/>&lt;Cocoa/Cocoa.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="10"><highlight class="normal"></highlight></codeline>
+<codeline lineno="18" refid="interface_r_m_upload_metadata_configuration_view_controller" refkind="compound"><highlight class="keyword">@interface<sp/></highlight><highlight class="normal"><ref refid="interface_r_m_upload_metadata_configuration_view_controller" kindref="compound" tooltip="This view controller is presented beside application metadata views.">RMUploadMetadataConfigurationViewController</ref><sp/>:<sp/>NSViewController</highlight></codeline>
+<codeline lineno="19"><highlight class="normal"></highlight></codeline>
+<codeline lineno="20"><highlight class="normal">@end</highlight></codeline>
+    </programlisting>
+    <location file="/Users/keith/Projects/Source/RMUpload/documentation/RMUploadKit.sdk/Library/Frameworks/RMUploadKit.framework/Versions/A/Headers/RMUploadMetadataConfigurationViewController.h"/>
+  </compounddef>
+</doxygen>

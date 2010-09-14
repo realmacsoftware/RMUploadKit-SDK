@@ -1,0 +1,122 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.5.9">
+  <compounddef id="_n_s_u_r_l_request_09_r_m_upload_additions_8h" kind="file">
+    <compoundname>NSURLRequest+RMUploadAdditions.h</compoundname>
+    <includes local="no">Cocoa/Cocoa.h</includes>
+    <incdepgraph>
+      <node id="4">
+        <label>Cocoa/Cocoa.h</label>
+      </node>
+      <node id="3">
+        <label>/Users/keith/Projects/Source/RMUpload/documentation/RMUploadKit.sdk/Library/Frameworks/RMUploadKit.framework/Versions/A/Headers/NSURLRequest+RMUploadAdditions.h</label>
+        <link refid="NSURLRequest+RMUploadAdditions.h"/>
+        <childnode refid="4" relation="include">
+        </childnode>
+      </node>
+    </incdepgraph>
+    <innerclass refid="interface_n_s_u_r_l_request_07_r_m_upload_additions_08" prot="public">NSURLRequest(RMUploadAdditions)</innerclass>
+      <sectiondef kind="var">
+      <memberdef kind="variable" id="_n_s_u_r_l_request_09_r_m_upload_additions_8h_14cd66766e4cf144745fd4d8f11bb0ecf" prot="public" static="no" mutable="no">
+        <type>NSString *const</type>
+        <definition>NSString* const RMPOSTFilenameKey</definition>
+        <argsstring></argsstring>
+        <name>RMPOSTFilenameKey</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/keith/Projects/Source/RMUpload/documentation/RMUploadKit.sdk/Library/Frameworks/RMUploadKit.framework/Versions/A/Headers/NSURLRequest+RMUploadAdditions.h" line="28"/>
+      </memberdef>
+      <memberdef kind="variable" id="_n_s_u_r_l_request_09_r_m_upload_additions_8h_1f8ed4b27e1cfe9be61ca7f7d1cb15431" prot="public" static="no" mutable="no">
+        <type>NSString *const</type>
+        <definition>NSString* const RMPOSTContentTypeKey</definition>
+        <argsstring></argsstring>
+        <name>RMPOSTContentTypeKey</name>
+        <briefdescription>
+<para>Used to specify a &quot;Content-Type&quot; in a POST request, for the parameter. This is only used for if the parameter dictionary also contains a value for <computeroutput>RMPOSTFilenameKey</computeroutput>, otherwise the MIME is implied &apos;text/plain&apos;. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/keith/Projects/Source/RMUpload/documentation/RMUploadKit.sdk/Library/Frameworks/RMUploadKit.framework/Versions/A/Headers/NSURLRequest+RMUploadAdditions.h" line="35"/>
+      </memberdef>
+      <memberdef kind="variable" id="_n_s_u_r_l_request_09_r_m_upload_additions_8h_1a33c35ee9a2eb8ebd1822fe6624c8e83" prot="public" static="no" mutable="no">
+        <type>NSString *const</type>
+        <definition>NSString* const RMPOSTDataKey</definition>
+        <argsstring></argsstring>
+        <name>RMPOSTDataKey</name>
+        <briefdescription>
+<para>Used in the parameter dictionaries of a POST request, for the data itself. This <bold>must not</bold> be omitted from the parameter dictionary. The value can be an <computeroutput>NSData</computeroutput>, <computeroutput>NSString</computeroutput>, <computeroutput>NSURL</computeroutput> or <computeroutput>NSNumber</computeroutput> object. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/keith/Projects/Source/RMUpload/documentation/RMUploadKit.sdk/Library/Frameworks/RMUploadKit.framework/Versions/A/Headers/NSURLRequest+RMUploadAdditions.h" line="43"/>
+      </memberdef>
+      <memberdef kind="variable" id="_n_s_u_r_l_request_09_r_m_upload_additions_8h_1023cad396b3cafb57b3ca085b59e1766" prot="public" static="no" mutable="no">
+        <type>NSString *const</type>
+        <definition>NSString* const RMPOSTFieldNameKey</definition>
+        <argsstring></argsstring>
+        <name>RMPOSTFieldNameKey</name>
+        <briefdescription>
+<para>Used in the parameter dictionaries of a POST request, for the fieldname. This <bold>must not</bold> be omitted from the parameter dictionary. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/keith/Projects/Source/RMUpload/documentation/RMUploadKit.sdk/Library/Frameworks/RMUploadKit.framework/Versions/A/Headers/NSURLRequest+RMUploadAdditions.h" line="50"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="comment">//***************************************************************************</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight><highlight class="comment">//<sp/>Copyright<sp/>(C)<sp/>2009<sp/>Realmac<sp/>Software<sp/>Ltd</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight><highlight class="comment">//</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight><highlight class="comment">//<sp/>These<sp/>coded<sp/>instructions,<sp/>statements,<sp/>and<sp/>computer<sp/>programs<sp/>contain</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="6"><highlight class="normal"></highlight><highlight class="comment">//<sp/>unpublished<sp/>proprietary<sp/>information<sp/>of<sp/>Realmac<sp/>Software<sp/>Ltd</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="7"><highlight class="normal"></highlight><highlight class="comment">//<sp/>and<sp/>are<sp/>protected<sp/>by<sp/>copyright<sp/>law.<sp/>They<sp/>may<sp/>not<sp/>be<sp/>disclosed</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="8"><highlight class="normal"></highlight><highlight class="comment">//<sp/>to<sp/>third<sp/>parties<sp/>or<sp/>copied<sp/>or<sp/>duplicated<sp/>in<sp/>any<sp/>form,<sp/>in<sp/>whole<sp/>or</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="9"><highlight class="normal"></highlight><highlight class="comment">//<sp/>in<sp/>part,<sp/>without<sp/>the<sp/>prior<sp/>written<sp/>consent<sp/>of<sp/>Realmac<sp/>Software<sp/>Ltd.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="10"><highlight class="normal"></highlight></codeline>
+<codeline lineno="11"><highlight class="normal"></highlight><highlight class="comment">//<sp/>Created<sp/>by<sp/>Danny<sp/>Greg<sp/>on<sp/>06/08/2010.<sp/></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="12"><highlight class="normal"></highlight></codeline>
+<codeline lineno="13"><highlight class="normal"></highlight><highlight class="comment">//***************************************************************************</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="14"><highlight class="normal"></highlight></codeline>
+<codeline lineno="15"><highlight class="normal"></highlight><highlight class="preprocessor">#import<sp/>&lt;Cocoa/Cocoa.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="16"><highlight class="normal"></highlight></codeline>
+<codeline lineno="17"><highlight class="normal"></highlight><highlight class="comment">//***************************************************************************</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="18"><highlight class="normal"></highlight></codeline>
+<codeline lineno="23"><highlight class="comment">/*</highlight></codeline>
+<codeline lineno="24"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>\brief</highlight></codeline>
+<codeline lineno="25"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>Used<sp/>in<sp/>the<sp/>parameter<sp/>dictionaries<sp/>of<sp/>a<sp/>POST<sp/>request,<sp/>for<sp/>the<sp/>filename.<sp/>(&lt;tt&gt;NSString&lt;/tt&gt;)</highlight></codeline>
+<codeline lineno="26"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>This<sp/>can<sp/>be<sp/>omitted<sp/>if<sp/>the<sp/>parameter<sp/>is<sp/>not<sp/>file<sp/>data.</highlight></codeline>
+<codeline lineno="27"><highlight class="comment"><sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="28"><highlight class="normal"></highlight><highlight class="keyword">extern</highlight><highlight class="normal"><sp/>NSString<sp/>*</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="_n_s_u_r_l_request_09_r_m_upload_additions_8h_14cd66766e4cf144745fd4d8f11bb0ecf" kindref="member">RMPOSTFilenameKey</ref>;</highlight></codeline>
+<codeline lineno="29"><highlight class="normal"></highlight></codeline>
+<codeline lineno="35"><highlight class="keyword">extern</highlight><highlight class="normal"><sp/>NSString<sp/>*</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="_n_s_u_r_l_request_09_r_m_upload_additions_8h_1f8ed4b27e1cfe9be61ca7f7d1cb15431" kindref="member" tooltip="Used to specify a &amp;quot;Content-Type&amp;quot; in a POST request, for the parameter....">RMPOSTContentTypeKey</ref>;</highlight></codeline>
+<codeline lineno="36"><highlight class="normal"></highlight></codeline>
+<codeline lineno="43"><highlight class="keyword">extern</highlight><highlight class="normal"><sp/>NSString<sp/>*</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="_n_s_u_r_l_request_09_r_m_upload_additions_8h_1a33c35ee9a2eb8ebd1822fe6624c8e83" kindref="member" tooltip="Used in the parameter dictionaries of a POST request, for the data itself. This must...">RMPOSTDataKey</ref>;</highlight></codeline>
+<codeline lineno="44"><highlight class="normal"></highlight></codeline>
+<codeline lineno="50"><highlight class="keyword">extern</highlight><highlight class="normal"><sp/>NSString<sp/>*</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="_n_s_u_r_l_request_09_r_m_upload_additions_8h_1023cad396b3cafb57b3ca085b59e1766" kindref="member" tooltip="Used in the parameter dictionaries of a POST request, for the fieldname. This must...">RMPOSTFieldNameKey</ref>;</highlight></codeline>
+<codeline lineno="51"><highlight class="normal"></highlight></codeline>
+<codeline lineno="52"><highlight class="normal"></highlight><highlight class="comment">//***************************************************************************</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="53"><highlight class="normal"></highlight></codeline>
+<codeline lineno="58" refid="interface_n_s_u_r_l_request_07_r_m_upload_additions_08" refkind="compound"><highlight class="keyword">@interface<sp/></highlight><highlight class="normal">NSURLRequest<sp/>(RMUploadAdditions)</highlight></codeline>
+<codeline lineno="59"><highlight class="normal"></highlight></codeline>
+<codeline lineno="73"><highlight class="normal">+<sp/>(NSURLRequest<sp/>*)getRequestWithParameters:(NSDictionary<sp/>*)parameters<sp/>toURL:(NSURL<sp/>*)URL;</highlight></codeline>
+<codeline lineno="74"><highlight class="normal"></highlight></codeline>
+<codeline lineno="90"><highlight class="normal">+<sp/>(NSURLRequest<sp/>*)postRequestWithParameters:(NSDictionary<sp/>*)parameters<sp/>toURL:(NSURL<sp/>*)URL;</highlight></codeline>
+<codeline lineno="91"><highlight class="normal"></highlight></codeline>
+<codeline lineno="106"><highlight class="normal">+<sp/>(NSURLRequest<sp/>*)filePostRequestWithParameters:(NSArray<sp/>*)parameters<sp/>toURL:(NSURL<sp/>*)URL;</highlight></codeline>
+<codeline lineno="107"><highlight class="normal"></highlight></codeline>
+<codeline lineno="108"><highlight class="normal"></highlight><highlight class="keyword">@end</highlight><highlight class="normal"></highlight></codeline>
+    </programlisting>
+    <location file="/Users/keith/Projects/Source/RMUpload/documentation/RMUploadKit.sdk/Library/Frameworks/RMUploadKit.framework/Versions/A/Headers/NSURLRequest+RMUploadAdditions.h"/>
+  </compounddef>
+</doxygen>

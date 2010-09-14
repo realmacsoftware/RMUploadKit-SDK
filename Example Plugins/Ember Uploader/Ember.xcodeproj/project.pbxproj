@@ -1,0 +1,414 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 45;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		30114E6510A0476D00AEFCCC /* MetadataView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 30114E6410A0476D00AEFCCC /* MetadataView.xib */; };
+		30292FE21021ED2000017FE3 /* RMEmberContext.m in Sources */ = {isa = PBXBuildFile; fileRef = 30292FE11021ED2000017FE3 /* RMEmberContext.m */; };
+		308C76131021B4B10018E7C7 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 308C76121021B4B10018E7C7 /* Localizable.strings */; };
+		30E886E6101DC660009A9A3D /* RMUploaderEmberCredentials.m in Sources */ = {isa = PBXBuildFile; fileRef = 30E886E5101DC660009A9A3D /* RMUploaderEmberCredentials.m */; };
+		30E88761101DDD67009A9A3D /* RMUploaderEmberTask.m in Sources */ = {isa = PBXBuildFile; fileRef = 30E88760101DDD67009A9A3D /* RMUploaderEmberTask.m */; };
+		30E88786101DE44C009A9A3D /* CredentialsConfigurationView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 30E88785101DE44C009A9A3D /* CredentialsConfigurationView.xib */; };
+		30F1FF70101DBED600D8A0D2 /* RMUploaderEmber.m in Sources */ = {isa = PBXBuildFile; fileRef = 30F1FF6F101DBED600D8A0D2 /* RMUploaderEmber.m */; };
+		30F97571102307920039B7C3 /* RMUploaderEmberPreset.m in Sources */ = {isa = PBXBuildFile; fileRef = 30F97570102307920039B7C3 /* RMUploaderEmberPreset.m */; };
+		30F97653102330470039B7C3 /* PresetConfigurationView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 30F97652102330470039B7C3 /* PresetConfigurationView.xib */; };
+		533BB963106A759A003B44AF /* RMUploaderEmberCredentialsConfigurationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 30E88780101DE404009A9A3D /* RMUploaderEmberCredentialsConfigurationViewController.m */; };
+		534311F01190527F007DF1BF /* RMUploaderEmberConstants.m in Sources */ = {isa = PBXBuildFile; fileRef = 534311EF1190527F007DF1BF /* RMUploaderEmberConstants.m */; };
+		534834FA11D4BDFC0019AA76 /* add.png in Resources */ = {isa = PBXBuildFile; fileRef = 534834F811D4BDFC0019AA76 /* add.png */; };
+		5364BD83123569E000933D4D /* ember_closed_1.png in Resources */ = {isa = PBXBuildFile; fileRef = 5364BD80123569E000933D4D /* ember_closed_1.png */; };
+		5364BD84123569E000933D4D /* ember_open_1.png in Resources */ = {isa = PBXBuildFile; fileRef = 5364BD81123569E000933D4D /* ember_open_1.png */; };
+		5364BD85123569E000933D4D /* ember_open_2.png in Resources */ = {isa = PBXBuildFile; fileRef = 5364BD82123569E000933D4D /* ember_open_2.png */; };
+		5364BDFA1235786200933D4D /* RMUploaderEmberFunctions.m in Sources */ = {isa = PBXBuildFile; fileRef = 5364BDF91235786200933D4D /* RMUploaderEmberFunctions.m */; };
+		5384D3801190D9FF00949DC2 /* RMUploaderEmberMetadataViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5384D37F1190D9FF00949DC2 /* RMUploaderEmberMetadataViewController.m */; };
+		53A02BBF119B009B00310D75 /* rating_active.png in Resources */ = {isa = PBXBuildFile; fileRef = 53A02BBD119B009B00310D75 /* rating_active.png */; };
+		53A02BC0119B009B00310D75 /* rating_inactive.png in Resources */ = {isa = PBXBuildFile; fileRef = 53A02BBE119B009B00310D75 /* rating_inactive.png */; };
+		53A405B6106917FC0029F619 /* RMUploaderEmberPresetConfigurationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 30F976551023308F0039B7C3 /* RMUploaderEmberPresetConfigurationViewController.m */; };
+		53C0877B11D8993900378F4D /* error.png in Resources */ = {isa = PBXBuildFile; fileRef = 53C0877A11D8993900378F4D /* error.png */; };
+		53CCBB8E121C41F300217561 /* ember.tif in Resources */ = {isa = PBXBuildFile; fileRef = 53CCBB8D121C41F300217561 /* ember.tif */; };
+		8D5B49B0048680CD000E48DA /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 089C167DFE841241C02AAC07 /* InfoPlist.strings */; };
+		8D5B49B4048680CD000E48DA /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1058C7ADFEA557BF11CA2CBB /* Cocoa.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		089C167EFE841241C02AAC07 /* English */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.strings; name = English; path = English.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		1058C7ADFEA557BF11CA2CBB /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = /System/Library/Frameworks/Cocoa.framework; sourceTree = "<absolute>"; };
+		30114E6210A0476900AEFCCC /* English */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = English; path = English.lproj/MetadataView.xib; sourceTree = "<group>"; };
+		30292FA11021EAD300017FE3 /* RMEmberContext.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RMEmberContext.h; sourceTree = "<group>"; };
+		30292FE11021ED2000017FE3 /* RMEmberContext.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RMEmberContext.m; sourceTree = "<group>"; };
+		30E86DB8101DF809006F9AD4 /* English */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.strings; name = English; path = English.lproj/Localizable.strings; sourceTree = "<group>"; };
+		30E886E4101DC660009A9A3D /* RMUploaderEmberCredentials.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RMUploaderEmberCredentials.h; sourceTree = "<group>"; };
+		30E886E5101DC660009A9A3D /* RMUploaderEmberCredentials.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RMUploaderEmberCredentials.m; sourceTree = "<group>"; };
+		30E8875F101DDD67009A9A3D /* RMUploaderEmberTask.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RMUploaderEmberTask.h; sourceTree = "<group>"; };
+		30E88760101DDD67009A9A3D /* RMUploaderEmberTask.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RMUploaderEmberTask.m; sourceTree = "<group>"; };
+		30E8877F101DE404009A9A3D /* RMUploaderEmberCredentialsConfigurationViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RMUploaderEmberCredentialsConfigurationViewController.h; sourceTree = "<group>"; };
+		30E88780101DE404009A9A3D /* RMUploaderEmberCredentialsConfigurationViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RMUploaderEmberCredentialsConfigurationViewController.m; sourceTree = "<group>"; };
+		30E88783101DE446009A9A3D /* English */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = English; path = English.lproj/CredentialsConfigurationView.xib; sourceTree = "<group>"; };
+		30F1FF6E101DBED600D8A0D2 /* RMUploaderEmber.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RMUploaderEmber.h; sourceTree = "<group>"; };
+		30F1FF6F101DBED600D8A0D2 /* RMUploaderEmber.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RMUploaderEmber.m; sourceTree = "<group>"; };
+		30F9756F102307920039B7C3 /* RMUploaderEmberPreset.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RMUploaderEmberPreset.h; sourceTree = "<group>"; };
+		30F97570102307920039B7C3 /* RMUploaderEmberPreset.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RMUploaderEmberPreset.m; sourceTree = "<group>"; };
+		30F976501023303E0039B7C3 /* English */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = English; path = English.lproj/PresetConfigurationView.xib; sourceTree = "<group>"; };
+		30F976541023308F0039B7C3 /* RMUploaderEmberPresetConfigurationViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RMUploaderEmberPresetConfigurationViewController.h; sourceTree = "<group>"; };
+		30F976551023308F0039B7C3 /* RMUploaderEmberPresetConfigurationViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RMUploaderEmberPresetConfigurationViewController.m; sourceTree = "<group>"; };
+		32DBCF630370AF2F00C91783 /* Ember_Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Ember_Prefix.pch; sourceTree = "<group>"; };
+		534311EE1190527F007DF1BF /* RMUploaderEmberConstants.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RMUploaderEmberConstants.h; sourceTree = "<group>"; };
+		534311EF1190527F007DF1BF /* RMUploaderEmberConstants.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RMUploaderEmberConstants.m; sourceTree = "<group>"; };
+		534834F811D4BDFC0019AA76 /* add.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = add.png; sourceTree = "<group>"; };
+		5364BD80123569E000933D4D /* ember_closed_1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ember_closed_1.png; sourceTree = "<group>"; };
+		5364BD81123569E000933D4D /* ember_open_1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ember_open_1.png; sourceTree = "<group>"; };
+		5364BD82123569E000933D4D /* ember_open_2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ember_open_2.png; sourceTree = "<group>"; };
+		5364BDF81235786200933D4D /* RMUploaderEmberFunctions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RMUploaderEmberFunctions.h; sourceTree = "<group>"; };
+		5364BDF91235786200933D4D /* RMUploaderEmberFunctions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RMUploaderEmberFunctions.m; sourceTree = "<group>"; };
+		5384D37E1190D9FF00949DC2 /* RMUploaderEmberMetadataViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RMUploaderEmberMetadataViewController.h; sourceTree = "<group>"; };
+		5384D37F1190D9FF00949DC2 /* RMUploaderEmberMetadataViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RMUploaderEmberMetadataViewController.m; sourceTree = "<group>"; };
+		53A02BBD119B009B00310D75 /* rating_active.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = rating_active.png; sourceTree = "<group>"; };
+		53A02BBE119B009B00310D75 /* rating_inactive.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = rating_inactive.png; sourceTree = "<group>"; };
+		53C0877A11D8993900378F4D /* error.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = error.png; sourceTree = "<group>"; };
+		53CCBB8D121C41F300217561 /* ember.tif */ = {isa = PBXFileReference; lastKnownFileType = image.tiff; path = ember.tif; sourceTree = "<group>"; };
+		8D5B49B6048680CD000E48DA /* Ember.uploader */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Ember.uploader; sourceTree = BUILT_PRODUCTS_DIR; };
+		8D5B49B7048680CD000E48DA /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		8D5B49B3048680CD000E48DA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8D5B49B4048680CD000E48DA /* Cocoa.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		089C166AFE841209C02AAC07 /* Ember */ = {
+			isa = PBXGroup;
+			children = (
+				53B7F25911930FCB005B9E2B /* Ember */,
+				08FB77AFFE84173DC02AAC07 /* Uploader */,
+				089C1671FE841209C02AAC07 /* Frameworks */,
+				19C28FB8FE9D52D311CA2CBB /* Products */,
+			);
+			name = Ember;
+			sourceTree = "<group>";
+		};
+		089C1671FE841209C02AAC07 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				1058C7ADFEA557BF11CA2CBB /* Cocoa.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		089C167CFE841241C02AAC07 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				53CCBB8D121C41F300217561 /* ember.tif */,
+				53A02BBD119B009B00310D75 /* rating_active.png */,
+				53A02BBE119B009B00310D75 /* rating_inactive.png */,
+				534834F811D4BDFC0019AA76 /* add.png */,
+				53C0877A11D8993900378F4D /* error.png */,
+				5364BD80123569E000933D4D /* ember_closed_1.png */,
+				5364BD81123569E000933D4D /* ember_open_1.png */,
+				5364BD82123569E000933D4D /* ember_open_2.png */,
+				8D5B49B7048680CD000E48DA /* Info.plist */,
+				089C167DFE841241C02AAC07 /* InfoPlist.strings */,
+				308C76121021B4B10018E7C7 /* Localizable.strings */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		08FB77AFFE84173DC02AAC07 /* Uploader */ = {
+			isa = PBXGroup;
+			children = (
+				30F1FF6E101DBED600D8A0D2 /* RMUploaderEmber.h */,
+				30F1FF6F101DBED600D8A0D2 /* RMUploaderEmber.m */,
+				30E8875F101DDD67009A9A3D /* RMUploaderEmberTask.h */,
+				30E88760101DDD67009A9A3D /* RMUploaderEmberTask.m */,
+				53B7F25A11930FD8005B9E2B /* Model */,
+				30E8877E101DE3A6009A9A3D /* View Controllers */,
+				32C88E010371C26100C91783 /* Other Sources */,
+				089C167CFE841241C02AAC07 /* Resources */,
+			);
+			name = Uploader;
+			sourceTree = "<group>";
+		};
+		19C28FB8FE9D52D311CA2CBB /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				8D5B49B6048680CD000E48DA /* Ember.uploader */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		30E8877E101DE3A6009A9A3D /* View Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				30E8877F101DE404009A9A3D /* RMUploaderEmberCredentialsConfigurationViewController.h */,
+				30E88780101DE404009A9A3D /* RMUploaderEmberCredentialsConfigurationViewController.m */,
+				30E88785101DE44C009A9A3D /* CredentialsConfigurationView.xib */,
+				30F976541023308F0039B7C3 /* RMUploaderEmberPresetConfigurationViewController.h */,
+				30F976551023308F0039B7C3 /* RMUploaderEmberPresetConfigurationViewController.m */,
+				30F97652102330470039B7C3 /* PresetConfigurationView.xib */,
+				5384D37E1190D9FF00949DC2 /* RMUploaderEmberMetadataViewController.h */,
+				5384D37F1190D9FF00949DC2 /* RMUploaderEmberMetadataViewController.m */,
+				30114E6410A0476D00AEFCCC /* MetadataView.xib */,
+			);
+			name = "View Controllers";
+			sourceTree = "<group>";
+		};
+		32C88E010371C26100C91783 /* Other Sources */ = {
+			isa = PBXGroup;
+			children = (
+				32DBCF630370AF2F00C91783 /* Ember_Prefix.pch */,
+				534311EE1190527F007DF1BF /* RMUploaderEmberConstants.h */,
+				534311EF1190527F007DF1BF /* RMUploaderEmberConstants.m */,
+				5364BDF81235786200933D4D /* RMUploaderEmberFunctions.h */,
+				5364BDF91235786200933D4D /* RMUploaderEmberFunctions.m */,
+			);
+			name = "Other Sources";
+			sourceTree = "<group>";
+		};
+		53B7F25911930FCB005B9E2B /* Ember */ = {
+			isa = PBXGroup;
+			children = (
+				30292FA11021EAD300017FE3 /* RMEmberContext.h */,
+				30292FE11021ED2000017FE3 /* RMEmberContext.m */,
+			);
+			name = Ember;
+			sourceTree = "<group>";
+		};
+		53B7F25A11930FD8005B9E2B /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				30E886E4101DC660009A9A3D /* RMUploaderEmberCredentials.h */,
+				30E886E5101DC660009A9A3D /* RMUploaderEmberCredentials.m */,
+				30F9756F102307920039B7C3 /* RMUploaderEmberPreset.h */,
+				30F97570102307920039B7C3 /* RMUploaderEmberPreset.m */,
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		8D5B49AC048680CD000E48DA /* Ember */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1DEB913A08733D840010E9CD /* Build configuration list for PBXNativeTarget "Ember" */;
+			buildPhases = (
+				8D5B49AF048680CD000E48DA /* Resources */,
+				8D5B49B1048680CD000E48DA /* Sources */,
+				8D5B49B3048680CD000E48DA /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Ember;
+			productInstallPath = "$(HOME)/Library/Bundles";
+			productName = Ember;
+			productReference = 8D5B49B6048680CD000E48DA /* Ember.uploader */;
+			productType = "com.apple.product-type.bundle";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		089C1669FE841209C02AAC07 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = YES;
+				ORGANIZATIONNAME = "Realmac Software";
+			};
+			buildConfigurationList = 1DEB913E08733D840010E9CD /* Build configuration list for PBXProject "Ember" */;
+			compatibilityVersion = "Xcode 3.1";
+			hasScannedForEncodings = 1;
+			mainGroup = 089C166AFE841209C02AAC07 /* Ember */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				8D5B49AC048680CD000E48DA /* Ember */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		8D5B49AF048680CD000E48DA /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8D5B49B0048680CD000E48DA /* InfoPlist.strings in Resources */,
+				30E88786101DE44C009A9A3D /* CredentialsConfigurationView.xib in Resources */,
+				308C76131021B4B10018E7C7 /* Localizable.strings in Resources */,
+				30F97653102330470039B7C3 /* PresetConfigurationView.xib in Resources */,
+				30114E6510A0476D00AEFCCC /* MetadataView.xib in Resources */,
+				53A02BBF119B009B00310D75 /* rating_active.png in Resources */,
+				53A02BC0119B009B00310D75 /* rating_inactive.png in Resources */,
+				534834FA11D4BDFC0019AA76 /* add.png in Resources */,
+				53C0877B11D8993900378F4D /* error.png in Resources */,
+				53CCBB8E121C41F300217561 /* ember.tif in Resources */,
+				5364BD83123569E000933D4D /* ember_closed_1.png in Resources */,
+				5364BD84123569E000933D4D /* ember_open_1.png in Resources */,
+				5364BD85123569E000933D4D /* ember_open_2.png in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		8D5B49B1048680CD000E48DA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				30F1FF70101DBED600D8A0D2 /* RMUploaderEmber.m in Sources */,
+				30E886E6101DC660009A9A3D /* RMUploaderEmberCredentials.m in Sources */,
+				30E88761101DDD67009A9A3D /* RMUploaderEmberTask.m in Sources */,
+				30292FE21021ED2000017FE3 /* RMEmberContext.m in Sources */,
+				30F97571102307920039B7C3 /* RMUploaderEmberPreset.m in Sources */,
+				53A405B6106917FC0029F619 /* RMUploaderEmberPresetConfigurationViewController.m in Sources */,
+				533BB963106A759A003B44AF /* RMUploaderEmberCredentialsConfigurationViewController.m in Sources */,
+				534311F01190527F007DF1BF /* RMUploaderEmberConstants.m in Sources */,
+				5384D3801190D9FF00949DC2 /* RMUploaderEmberMetadataViewController.m in Sources */,
+				5364BDFA1235786200933D4D /* RMUploaderEmberFunctions.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		089C167DFE841241C02AAC07 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				089C167EFE841241C02AAC07 /* English */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		30114E6410A0476D00AEFCCC /* MetadataView.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				30114E6210A0476900AEFCCC /* English */,
+			);
+			name = MetadataView.xib;
+			sourceTree = "<group>";
+		};
+		308C76121021B4B10018E7C7 /* Localizable.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				30E86DB8101DF809006F9AD4 /* English */,
+			);
+			name = Localizable.strings;
+			sourceTree = "<group>";
+		};
+		30E88785101DE44C009A9A3D /* CredentialsConfigurationView.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				30E88783101DE446009A9A3D /* English */,
+			);
+			name = CredentialsConfigurationView.xib;
+			sourceTree = "<group>";
+		};
+		30F97652102330470039B7C3 /* PresetConfigurationView.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				30F976501023303E0039B7C3 /* English */,
+			);
+			name = PresetConfigurationView.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		1DEB913B08733D840010E9CD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ADDITIONAL_SDKS = "\"$HOME/Library/Application Support/Developer/Shared/Xcode/SDKs/RMUploadKit.sdk";
+				COPY_PHASE_STRIP = NO;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_FIX_AND_CONTINUE = YES;
+				GCC_MODEL_TUNING = G5;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = Ember_Prefix.pch;
+				GCC_PREPROCESSOR_DEFINITIONS = "DEBUG=1";
+				INFOPLIST_FILE = Info.plist;
+				INSTALL_PATH = "$(HOME)/Library/Bundles";
+				PRODUCT_NAME = Ember;
+				WRAPPER_EXTENSION = uploader;
+			};
+			name = Debug;
+		};
+		1DEB913C08733D840010E9CD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "Realmac Software - Code Signing";
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				GCC_MODEL_TUNING = G5;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = Ember_Prefix.pch;
+				INFOPLIST_FILE = Info.plist;
+				INSTALL_PATH = "$(HOME)/Library/Bundles";
+				PRODUCT_NAME = Ember;
+				RUN_CLANG_STATIC_ANALYZER = NO;
+				WRAPPER_EXTENSION = uploader;
+			};
+			name = Release;
+		};
+		1DEB913F08733D840010E9CD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				GCC_C_LANGUAGE_STANDARD = c99;
+				GCC_ENABLE_OBJC_GC = required;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_VERSION = com.apple.compilers.llvmgcc42;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PREBINDING = NO;
+				SDKROOT = macosx10.6;
+			};
+			name = Debug;
+		};
+		1DEB914008733D840010E9CD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				GCC_C_LANGUAGE_STANDARD = c99;
+				GCC_ENABLE_OBJC_GC = required;
+				GCC_VERSION = com.apple.compilers.llvmgcc42;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				PREBINDING = NO;
+				SDKROOT = macosx10.6;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		1DEB913A08733D840010E9CD /* Build configuration list for PBXNativeTarget "Ember" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1DEB913B08733D840010E9CD /* Debug */,
+				1DEB913C08733D840010E9CD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		1DEB913E08733D840010E9CD /* Build configuration list for PBXProject "Ember" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1DEB913F08733D840010E9CD /* Debug */,
+				1DEB914008733D840010E9CD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 089C1669FE841209C02AAC07 /* Project object */;
+}

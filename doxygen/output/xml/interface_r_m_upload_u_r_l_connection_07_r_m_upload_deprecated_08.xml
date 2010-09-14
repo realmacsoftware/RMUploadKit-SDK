@@ -1,0 +1,85 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.5.9">
+  <compounddef id="interface_r_m_upload_u_r_l_connection_07_r_m_upload_deprecated_08" kind="class" prot="public">
+    <compoundname>RMUploadURLConnection(RMUploadDeprecated)</compoundname>
+    <includes refid="_r_m_upload_u_r_l_connection_8h" local="no">RMUploadURLConnection.h</includes>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="interface_r_m_upload_u_r_l_connection_07_r_m_upload_deprecated_08_1e61eba0809452a97a8437917490e7ed7" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>void RMUploadURLConnection(RMUploadDeprecated)::sendGetRequestWithParameters:toURL:</definition>
+        <argsstring>(NSDictionary *params,[toURL] NSURL *RMUPLOADKIT_DEPRECATED_ATTRIBUTE)</argsstring>
+        <name>sendGetRequestWithParameters:toURL:</name>
+        <param>
+          <type>NSDictionary *</type>
+          <declname>params</declname>
+        </param>
+        <param>
+          <attributes>[toURL]</attributes>
+          <type>NSURL *</type>
+          <declname>RMUPLOADKIT_DEPRECATED_ATTRIBUTE</declname>
+        </param>
+        <briefdescription>
+<para>This method is deprecated, use <computeroutput>+[NSURLRequest getRequestWithParameters:toURL:]</computeroutput> instead. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/keith/Projects/Source/RMUpload/documentation/RMUploadKit.sdk/Library/Frameworks/RMUploadKit.framework/Versions/A/Headers/RMUploadURLConnection.h" line="184"/>
+      </memberdef>
+      <memberdef kind="function" id="interface_r_m_upload_u_r_l_connection_07_r_m_upload_deprecated_08_1296924cb36d0177c4b63b92022685fbc" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>void RMUploadURLConnection(RMUploadDeprecated)::sendFilePostRequestWithParameters:toURL:</definition>
+        <argsstring>(NSArray *params,[toURL] NSURL *RMUPLOADKIT_DEPRECATED_ATTRIBUTE)</argsstring>
+        <name>sendFilePostRequestWithParameters:toURL:</name>
+        <param>
+          <type>NSArray *</type>
+          <declname>params</declname>
+        </param>
+        <param>
+          <attributes>[toURL]</attributes>
+          <type>NSURL *</type>
+          <declname>RMUPLOADKIT_DEPRECATED_ATTRIBUTE</declname>
+        </param>
+        <briefdescription>
+<para>This method is deprecated, use <computeroutput>+[NSURLRequest filePostRequestWithParameters:toURL:]</computeroutput> instead. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/keith/Projects/Source/RMUpload/documentation/RMUploadKit.sdk/Library/Frameworks/RMUploadKit.framework/Versions/A/Headers/RMUploadURLConnection.h" line="190"/>
+      </memberdef>
+      <memberdef kind="function" id="interface_r_m_upload_u_r_l_connection_07_r_m_upload_deprecated_08_16c112a6fab493d86077897bc48eeb9ef" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>void RMUploadURLConnection(RMUploadDeprecated)::sendPostRequestWithParameters:toURL:</definition>
+        <argsstring>(NSDictionary *params,[toURL] NSURL *RMUPLOADKIT_DEPRECATED_ATTRIBUTE)</argsstring>
+        <name>sendPostRequestWithParameters:toURL:</name>
+        <param>
+          <type>NSDictionary *</type>
+          <declname>params</declname>
+        </param>
+        <param>
+          <attributes>[toURL]</attributes>
+          <type>NSURL *</type>
+          <declname>RMUPLOADKIT_DEPRECATED_ATTRIBUTE</declname>
+        </param>
+        <briefdescription>
+<para>This method is deprecated, use <computeroutput>+[NSURLRequest postRequestWithParameters:toURL:]</computeroutput> instead. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/keith/Projects/Source/RMUpload/documentation/RMUploadKit.sdk/Library/Frameworks/RMUploadKit.framework/Versions/A/Headers/RMUploadURLConnection.h" line="196"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>These methods are deprecated and <bold>should not</bold> be used. </para>    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/Users/keith/Projects/Source/RMUpload/documentation/RMUploadKit.sdk/Library/Frameworks/RMUploadKit.framework/Versions/A/Headers/RMUploadURLConnection.h" line="178" bodyfile="/Users/keith/Projects/Source/RMUpload/documentation/RMUploadKit.sdk/Library/Frameworks/RMUploadKit.framework/Versions/A/Headers/RMUploadURLConnection.h" bodystart="178" bodyend="-1"/>
+    <listofallmembers>
+      <member refid="interface_r_m_upload_u_r_l_connection_07_r_m_upload_deprecated_08_1296924cb36d0177c4b63b92022685fbc" prot="public" virt="virtual"><scope>RMUploadURLConnection(RMUploadDeprecated)</scope><name>sendFilePostRequestWithParameters:toURL:</name></member>
+      <member refid="interface_r_m_upload_u_r_l_connection_07_r_m_upload_deprecated_08_1e61eba0809452a97a8437917490e7ed7" prot="public" virt="virtual"><scope>RMUploadURLConnection(RMUploadDeprecated)</scope><name>sendGetRequestWithParameters:toURL:</name></member>
+      <member refid="interface_r_m_upload_u_r_l_connection_07_r_m_upload_deprecated_08_16c112a6fab493d86077897bc48eeb9ef" prot="public" virt="virtual"><scope>RMUploadURLConnection(RMUploadDeprecated)</scope><name>sendPostRequestWithParameters:toURL:</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

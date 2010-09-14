@@ -1,0 +1,190 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.5.9">
+  <compounddef id="interface_r_m_upload_multipart_form_document" kind="class" prot="public">
+    <compoundname>RMUploadMultipartFormDocument</compoundname>
+    <basecompoundref refid="interface_r_m_upload_multipart_document" prot="public" virt="non-virtual">RMUploadMultipartDocument</basecompoundref>
+    <includes refid="_r_m_upload_multipart_documents_8h" local="no">RMUploadMultipartDocuments.h</includes>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="interface_r_m_upload_multipart_form_document_1b9041c7aed8dbb068155afa32820a879" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>NSString *</type>
+        <definition>NSString * RMUploadMultipartFormDocument::valueForField:</definition>
+        <argsstring>(NSString *fieldname)</argsstring>
+        <name>valueForField:</name>
+        <param>
+          <type>NSString *</type>
+          <declname>fieldname</declname>
+        </param>
+        <briefdescription>
+<para>Returns the value associated with a given fieldname. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/keith/Projects/Source/RMUpload/documentation/RMUploadKit.sdk/Library/Frameworks/RMUploadKit.framework/Versions/A/Headers/RMUploadMultipartDocuments.h" line="41"/>
+      </memberdef>
+      <memberdef kind="function" id="interface_r_m_upload_multipart_form_document_1376df8858465e9e3f427557867577e9c" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>void RMUploadMultipartFormDocument::setValue:forField:</definition>
+        <argsstring>(NSString *value,[forField] NSString *fieldname)</argsstring>
+        <name>setValue:forField:</name>
+        <param>
+          <type>NSString *</type>
+          <declname>value</declname>
+        </param>
+        <param>
+          <attributes>[forField]</attributes>
+          <type>NSString *</type>
+          <declname>fieldname</declname>
+        </param>
+        <briefdescription>
+<para>The fieldname should be unique per document, setting a value for an existing fieldname will overwrite the previous value. </para>        </briefdescription>
+        <detaileddescription>
+<para>This will clear any files added to the same fieldname.</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>value</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Can be nil, will remove existing value.</para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>fieldname</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Cannot be nil. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/keith/Projects/Source/RMUpload/documentation/RMUploadKit.sdk/Library/Frameworks/RMUploadKit.framework/Versions/A/Headers/RMUploadMultipartDocuments.h" line="56"/>
+      </memberdef>
+      <memberdef kind="function" id="interface_r_m_upload_multipart_form_document_142fe8cfdc1126675324ac59cd6c97b9f" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>NSSet *</type>
+        <definition>NSSet * RMUploadMultipartFormDocument::fileLocationsForField:</definition>
+        <argsstring>(NSString *fieldname)</argsstring>
+        <name>fileLocationsForField:</name>
+        <param>
+          <type>NSString *</type>
+          <declname>fieldname</declname>
+        </param>
+        <briefdescription>
+<para>Unordered collection of previously added URLs using <computeroutput>-addFileByReferencingURL:withFilename:toField:</computeroutput>. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/keith/Projects/Source/RMUpload/documentation/RMUploadKit.sdk/Library/Frameworks/RMUploadKit.framework/Versions/A/Headers/RMUploadMultipartDocuments.h" line="62"/>
+      </memberdef>
+      <memberdef kind="function" id="interface_r_m_upload_multipart_form_document_14e686fbe27e88f78ef3e844bbaffb6d8" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>void RMUploadMultipartFormDocument::addFileByReferencingURL:withFilename:toField:</definition>
+        <argsstring>(NSURL *location,[withFilename] NSString *filename,[toField] NSString *fieldname)</argsstring>
+        <name>addFileByReferencingURL:withFilename:toField:</name>
+        <param>
+          <type>NSURL *</type>
+          <declname>location</declname>
+        </param>
+        <param>
+          <attributes>[withFilename]</attributes>
+          <type>NSString *</type>
+          <declname>filename</declname>
+        </param>
+        <param>
+          <attributes>[toField]</attributes>
+          <type>NSString *</type>
+          <declname>fieldname</declname>
+        </param>
+        <briefdescription>
+<para>Form documents support multiple files per-fieldname. </para>        </briefdescription>
+        <detaileddescription>
+<para>Multiple files per fieldname are supported. This will clear any string values set for the same fieldname.</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>filename</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>This is optional, excluding it will use the last path component.</para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>fieldname</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>To leave the &apos;name&apos; value blank in the generated document, pass <computeroutput>+[NSNull null]</computeroutput> for the fieldname. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/keith/Projects/Source/RMUpload/documentation/RMUploadKit.sdk/Library/Frameworks/RMUploadKit.framework/Versions/A/Headers/RMUploadMultipartDocuments.h" line="78"/>
+      </memberdef>
+      <memberdef kind="function" id="interface_r_m_upload_multipart_form_document_19632cc5634a6b3d871dd5560a8df99e2" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>BOOL</type>
+        <definition>BOOL RMUploadMultipartFormDocument::getFormData:contentType:</definition>
+        <argsstring>(NSData **dataRef,[contentType] NSString **contentTypeRef)</argsstring>
+        <name>getFormData:contentType:</name>
+        <param>
+          <type>NSData **</type>
+          <declname>dataRef</declname>
+        </param>
+        <param>
+          <attributes>[contentType]</attributes>
+          <type>NSString **</type>
+          <declname>contentTypeRef</declname>
+        </param>
+        <briefdescription>
+<para>Serialise the field values into a data object. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>contentTypeRef</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>This is the MIME type of the output. It contains the generated multipart boundary.</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Returns NO if any of the file parts cannot be loaded. Returns YES on success. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/keith/Projects/Source/RMUpload/documentation/RMUploadKit.sdk/Library/Frameworks/RMUploadKit.framework/Versions/A/Headers/RMUploadMultipartDocuments.h" line="91"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>This format is described in RFC 2388 <ulink url="http://tools.ietf.org/html/rfc2388">http://tools.ietf.org/html/rfc2388</ulink>. </para>    </briefdescription>
+    <detaileddescription>
+<para>The order you add values in is unpreserved. </para>    </detaileddescription>
+    <inheritancegraph>
+      <node id="23">
+        <label>RMUploadMultipartDocument</label>
+        <link refid="interface_r_m_upload_multipart_document"/>
+      </node>
+      <node id="22">
+        <label>RMUploadMultipartFormDocument</label>
+        <link refid="interface_r_m_upload_multipart_form_document"/>
+        <childnode refid="23" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="25">
+        <label>RMUploadMultipartDocument</label>
+        <link refid="interface_r_m_upload_multipart_document"/>
+      </node>
+      <node id="24">
+        <label>RMUploadMultipartFormDocument</label>
+        <link refid="interface_r_m_upload_multipart_form_document"/>
+        <childnode refid="25" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="/Users/keith/Projects/Source/RMUpload/documentation/RMUploadKit.sdk/Library/Frameworks/RMUploadKit.framework/Versions/A/Headers/RMUploadMultipartDocuments.h" line="33" bodyfile="/Users/keith/Projects/Source/RMUpload/documentation/RMUploadKit.sdk/Library/Frameworks/RMUploadKit.framework/Versions/A/Headers/RMUploadMultipartDocuments.h" bodystart="30" bodyend="-1"/>
+    <listofallmembers>
+      <member refid="interface_r_m_upload_multipart_form_document_14e686fbe27e88f78ef3e844bbaffb6d8" prot="public" virt="virtual"><scope>RMUploadMultipartFormDocument</scope><name>addFileByReferencingURL:withFilename:toField:</name></member>
+      <member refid="interface_r_m_upload_multipart_form_document_142fe8cfdc1126675324ac59cd6c97b9f" prot="public" virt="virtual"><scope>RMUploadMultipartFormDocument</scope><name>fileLocationsForField:</name></member>
+      <member refid="interface_r_m_upload_multipart_form_document_19632cc5634a6b3d871dd5560a8df99e2" prot="public" virt="virtual"><scope>RMUploadMultipartFormDocument</scope><name>getFormData:contentType:</name></member>
+      <member refid="interface_r_m_upload_multipart_form_document_1376df8858465e9e3f427557867577e9c" prot="public" virt="virtual"><scope>RMUploadMultipartFormDocument</scope><name>setValue:forField:</name></member>
+      <member refid="interface_r_m_upload_multipart_form_document_1b9041c7aed8dbb068155afa32820a879" prot="public" virt="virtual"><scope>RMUploadMultipartFormDocument</scope><name>valueForField:</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

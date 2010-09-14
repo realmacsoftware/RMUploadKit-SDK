@@ -1,0 +1,87 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.5.9">
+  <compounddef id="interface_r_m_upload_preset_07_r_m_upload_metadata_08" kind="class" prot="public">
+    <compoundname>RMUploadPreset(RMUploadMetadata)</compoundname>
+    <includes refid="_r_m_upload_preset_8h" local="no">RMUploadPreset.h</includes>
+      <sectiondef kind="public-static-func">
+      <memberdef kind="function" id="interface_r_m_upload_preset_07_r_m_upload_metadata_08_13f600c8131a5994f8048acc47224eae3" prot="public" static="yes" const="no" explicit="no" inline="no" virt="virtual">
+        <type>Class</type>
+        <definition>Class RMUploadPreset(RMUploadMetadata)::credentialsClass</definition>
+        <argsstring>()</argsstring>
+        <name>credentialsClass</name>
+        <briefdescription>
+<para>Used to determine if your preset requires credentials, and which credentials it can share with other preconfigured presets. </para>        </briefdescription>
+        <detaileddescription>
+<para>The default implementation returns Nil, return an <ref refid="interface_r_m_upload_credentials" kindref="compound">RMUploadCredentials</ref> class if you support credentials. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/keith/Projects/Source/RMUpload/documentation/RMUploadKit.sdk/Library/Frameworks/RMUploadKit.framework/Versions/A/Headers/RMUploadPreset.h" line="164"/>
+      </memberdef>
+      <memberdef kind="function" id="interface_r_m_upload_preset_07_r_m_upload_metadata_08_1e93f0ea40c738c420f32487f0d26eb03" prot="public" static="yes" const="no" explicit="no" inline="no" virt="virtual">
+        <type>Class</type>
+        <definition>Class RMUploadPreset(RMUploadMetadata)::uploadTaskClass</definition>
+        <argsstring>()</argsstring>
+        <name>uploadTaskClass</name>
+        <briefdescription>
+<para>The <computeroutput><ref refid="interface_r_m_upload_task" kindref="compound">RMUploadTask</ref></computeroutput> class for this preset. </para>        </briefdescription>
+        <detaileddescription>
+<para>This method is <bold>required</bold>, if not implemented the framework throws an exception.</para><para><simplesect kind="return"><para>An <computeroutput><ref refid="interface_r_m_upload_task" kindref="compound">RMUploadTask</ref></computeroutput> subclass. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/keith/Projects/Source/RMUpload/documentation/RMUploadKit.sdk/Library/Frameworks/RMUploadKit.framework/Versions/A/Headers/RMUploadPreset.h" line="175"/>
+      </memberdef>
+      <memberdef kind="function" id="interface_r_m_upload_preset_07_r_m_upload_metadata_08_19de78a912accc35396d467b7b7ff54f0" prot="public" static="yes" const="no" explicit="no" inline="no" virt="virtual">
+        <type>NSString *</type>
+        <definition>NSString * RMUploadPreset(RMUploadMetadata)::localisedName</definition>
+        <argsstring>()</argsstring>
+        <name>localisedName</name>
+        <briefdescription>
+<para>The name for the preset type, preferably localised. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/keith/Projects/Source/RMUpload/documentation/RMUploadKit.sdk/Library/Frameworks/RMUploadKit.framework/Versions/A/Headers/RMUploadPreset.h" line="181"/>
+      </memberdef>
+      <memberdef kind="function" id="interface_r_m_upload_preset_07_r_m_upload_metadata_08_142429043a579f8d4e09bc4b37d69195d" prot="public" static="yes" const="no" explicit="no" inline="no" virt="virtual">
+        <type>NSImage *</type>
+        <definition>NSImage * RMUploadPreset(RMUploadMetadata)::icon</definition>
+        <argsstring>()</argsstring>
+        <name>icon</name>
+        <briefdescription>
+<para>The icon for the destination type. This image should be square and <emphasis>at least</emphasis> 100px in dimension. Any decoration added is application specific. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/keith/Projects/Source/RMUpload/documentation/RMUploadKit.sdk/Library/Frameworks/RMUploadKit.framework/Versions/A/Headers/RMUploadPreset.h" line="188"/>
+      </memberdef>
+      <memberdef kind="function" id="interface_r_m_upload_preset_07_r_m_upload_metadata_08_1c7d5340727ab98adf02a64ae9094c545" prot="public" static="yes" const="no" explicit="no" inline="no" virt="virtual">
+        <type>NSURL *</type>
+        <definition>NSURL * RMUploadPreset(RMUploadMetadata)::serviceURL</definition>
+        <argsstring>()</argsstring>
+        <name>serviceURL</name>
+        <briefdescription>
+<para>This method constructs the <computeroutput>NSURL</computeroutput> from your Info.plist. </para>        </briefdescription>
+        <detaileddescription>
+<para>If sent to a preset whose bundle <computeroutput>RMUploadPluginServiceHostKey</computeroutput> is nil, it will throw an exception.</para><para>This will only be useful for your own web services where you can use the Info.plist preprocessor to switch between development and deployment servers. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/keith/Projects/Source/RMUpload/documentation/RMUploadKit.sdk/Library/Frameworks/RMUploadKit.framework/Versions/A/Headers/RMUploadPreset.h" line="199"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>These methods are used for preset setup and presentation. </para>    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/Users/keith/Projects/Source/RMUpload/documentation/RMUploadKit.sdk/Library/Frameworks/RMUploadKit.framework/Versions/A/Headers/RMUploadPreset.h" line="155" bodyfile="/Users/keith/Projects/Source/RMUpload/documentation/RMUploadKit.sdk/Library/Frameworks/RMUploadKit.framework/Versions/A/Headers/RMUploadPreset.h" bodystart="155" bodyend="-1"/>
+    <listofallmembers>
+      <member refid="interface_r_m_upload_preset_07_r_m_upload_metadata_08_13f600c8131a5994f8048acc47224eae3" prot="public" virt="virtual"><scope>RMUploadPreset(RMUploadMetadata)</scope><name>credentialsClass</name></member>
+      <member refid="interface_r_m_upload_preset_07_r_m_upload_metadata_08_142429043a579f8d4e09bc4b37d69195d" prot="public" virt="virtual"><scope>RMUploadPreset(RMUploadMetadata)</scope><name>icon</name></member>
+      <member refid="interface_r_m_upload_preset_07_r_m_upload_metadata_08_19de78a912accc35396d467b7b7ff54f0" prot="public" virt="virtual"><scope>RMUploadPreset(RMUploadMetadata)</scope><name>localisedName</name></member>
+      <member refid="interface_r_m_upload_preset_07_r_m_upload_metadata_08_1c7d5340727ab98adf02a64ae9094c545" prot="public" virt="virtual"><scope>RMUploadPreset(RMUploadMetadata)</scope><name>serviceURL</name></member>
+      <member refid="interface_r_m_upload_preset_07_r_m_upload_metadata_08_1e93f0ea40c738c420f32487f0d26eb03" prot="public" virt="virtual"><scope>RMUploadPreset(RMUploadMetadata)</scope><name>uploadTaskClass</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

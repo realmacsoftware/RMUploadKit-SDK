@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>CanonicalName</key>
+	<string>rmuploadkitsdk</string>
+	<key>CustomProperties</key>
+	<dict/>
+	<key>DefaultProperties</key>
+	<dict/>
+	<key>DisplayName</key>
+	<string>RMUploadKit SDK 1.0</string>
+	<key>DocSetFeedName</key>
+	<string>Realmac Software RMUploadKit SDK 1.0</string>
+	<key>DocSetFeedURL</key>
+	<string>http://developer.realmacsoftware.com/rss/com.realmacsoftware.rmuploadsdk.documentation.atom</string>
+	<key>MaximumDeploymentTarget</key>
+	<string>10.6</string>
+	<key>MinimalDisplayName</key>
+	<string>10.6</string>
+	<key>MinimumSupportedToolsVersion</key>
+	<string>3.2</string>
+	<key>SupportedBuildToolComponents</key>
+	<array>
+		<string>com.apple.compilers.gcc.headers.4_2</string>
+	</array>
+	<key>Version</key>
+	<string>1.0</string>
+	<key>isBaseSDK</key>
+	<string>NO</string>
+</dict>
+</plist>

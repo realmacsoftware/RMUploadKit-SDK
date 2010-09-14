@@ -1,0 +1,140 @@
+<!DOCTYPE html><html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta charset="UTF-8">
+<title>RMUploadPresetConfigurationViewController Class Reference</title>
+<meta id="Generator" name="Generator" content="Doxyclean">
+<meta id="GeneratorVersion" name="GeneratorVersion" content="2.2">
+<link rel="stylesheet" type="text/css" href="../css/common.css">
+<link rel="stylesheet" type="text/css" media="screen" href="../css/screen.css">
+<link rel="stylesheet" type="text/css" media="print" href="../css/print.css">
+<script type="text/javascript">
+				function toggleTOC() {
+					var toc = document.getElementById('tableOfContents');
+					var tocButton = document.getElementById('toc_button');
+					var contents = document.getElementById('contents');
+					if (toc.style.display == 'block') {
+						toc.style.display = 'none';
+						contents.className = '';
+						tocButton.className = '';
+					} else {
+						toc.style.display = 'block';
+						contents.className = 'tableOfContentsOpen';
+						tocButton.className = 'open';
+					}
+				}
+				
+				function toggleTOCItem() {
+					var listItem = event.srcElement;
+					var sublist = listItem.getElementsByTagName('ul')[0];
+					if (sublist.style.display == 'block') {
+						sublist.style.display = 'none';
+						listItem.className = 'expandable';
+					} else {
+						sublist.style.display = 'block';
+						listItem.className = 'expandable expanded';
+					}
+				}
+				
+				function jumpTo() {
+					selectedItem = event.srcElement.options[event.srcElement.selectedIndex].value;
+					window.location = "#" + selectedItem;
+				}
+			</script>
+</head>
+<body>
+<header id="projectHeader"><h1><a href="../index.html">RMUploadKit SDK Reference Library</a></h1></header><header id="fileHeader"><h1><a href="#classTitle">RMUploadPresetConfigurationViewController Class Reference</a></h1></header><nav id="buttons"><ul>
+<li id="toc_button"><button id="table_of_contents" onclick="toggleTOC()">Table of Contents</button></li>
+<li id="jumpto_button"><select id="jumpto" onchange="jumpTo()"><option value="classTitle">Jump To...</option>
+<option value="overview">Overview</option>
+<option value="tasks">Tasks</option>
+<option value="properties">Properties</option>
+<option value="localisedAdvanceButtonTitle">    localisedAdvanceButtonTitle</option>
+<option value="instanceMethods">Instance Methods</option>
+<option value="nextStage:">    - nextStage:</option>
+<option value="highlightErrorInView:">    - highlightErrorInView:</option>
+<option value="hideErrorArrow">    - hideErrorArrow</option></select></li>
+</ul></nav><nav id="tableOfContents" style="display: none;"><ul>
+<li><a href="#overview">Overview</a></li>
+<li class="expandable" id="tocTasks" onclick="toggleTOCItem()">
+<a href="#tasks">Tasks</a><ul style="display: none;">
+<li><a href="#Other">Other</a></li>
+<li><a href="#Other">Other</a></li>
+</ul>
+</li>
+<li class="expandable" id="tocProperties" onclick="toggleTOCItem()">
+<a href="#properties">Properties</a><ul style="display: none;"><li><a href="#localisedAdvanceButtonTitle">localisedAdvanceButtonTitle</a></li></ul>
+</li>
+<li class="expandable" id="tocInstanceMethods" onclick="toggleTOCItem()">
+<a href="#instanceMethods">Instance Methods</a><ul style="display: none;">
+<li><a href="#nextStage:">nextStage:</a></li>
+<li><a href="#highlightErrorInView:">highlightErrorInView:</a></li>
+<li><a href="#hideErrorArrow">hideErrorArrow</a></li>
+</ul>
+</li>
+</ul></nav><div id="contents">
+<h1 id="classTitle">RMUploadPresetConfigurationViewController Class Reference</h1>
+<table id="metadata"><tr class="alt">
+<th>Declared in</th>
+<td>RMUploadPresetConfigurationViewController.h</td>
+</tr></table>
+<h2 id="overview">Overview</h2>
+<p>Base class for <code><code><a href="../Classes/RMUploadCredentials.html">RMUploadCredentials</a></code></code> and <code><code><a href="../Classes/RMUploadPreset.html">RMUploadPreset</a></code></code> configuration view controllers. </p>
+<p>You view must be 287pt in width, there is no height restriction (within reason). Your subviews should have an appropriate autoresizing mask for the superview to be a different (larger) width. </p>
+<h2 id="tasks">Tasks</h2>
+<ul id="tasksList">
+<li id="Other">
+<h3>Other</h3>
+<ul class="methods"><li>
+<span class="tooltipRegion"><code><a href="#localisedAdvanceButtonTitle">localisedAdvanceButtonTitle</a></code> <span class="specialType">property</span></span><span class="tooltip">Observed and set as the 'next' button title. </span>
+</li></ul>
+</li>
+<li id="Other">
+<h3>Other</h3>
+<ul class="methods">
+<li>
+<span class="tooltipRegion"><code><a href="#nextStage:">- nextStage:</a></code></span><span class="tooltip">Override this action message to perform any validation before proceeding. You must validate your credential/preset object here. </span>
+</li>
+<li>
+<span class="tooltipRegion"><code><a href="#highlightErrorInView:">- highlightErrorInView:</a></code></span><span class="tooltip">Highlights an error in, for example, a text field. </span>
+</li>
+<li>
+<span class="tooltipRegion"><code><a href="#hideErrorArrow">- hideErrorArrow</a></code></span><span class="tooltip">Hides a previously present error arrow using -highlightErrorInView:. </span>
+</li>
+</ul>
+</li>
+</ul>
+<section id="properties"><h2>Properties</h2>
+<section class="definition" id="localisedAdvanceButtonTitle"><h3>localisedAdvanceButtonTitle</h3>
+<p>Observed and set as the 'next' button title. </p>
+<code class="methodDeclaration">@property <a href="http://developer.apple.com/mac/library/documentation/Cocoa/Reference/Foundation/Classes/NSString_Class/index.html">NSString</a> *localisedAdvanceButtonTitle</code><h5>Discussion</h5>
+<p>Intended for OAuth based credential view controllers so that they can title the button 'Authenticate' and change it to 'Confirm' after redirecting the user to the verification page in their browser. </p>
+<h5>Declared In</h5>
+<code><code>RMUploadPresetConfigurationViewController</code>.h</code></section></section><section id="instanceMethods"><h2>Instance Methods</h2>
+<section class="definition" id="nextStage:"><h3>nextStage:</h3>
+<p>Override this action message to perform any validation before proceeding. You must validate your credential/preset object here. </p>
+<code class="methodDeclaration">- (IBAction)nextStage:(id)<span class="parameter">sender</span> </code><h5>Discussion</h5>
+<p>Once you have completed your validation, post the <code>RMUploadDestinationConfigurationViewControllerStageDidCompleteNotificationName</code> notification to the <code>+[<code><a href="http://developer.apple.com/mac/library/documentation/Cocoa/Reference/Foundation/Classes/NSNotificationCenter_Class/index.html">NSNotificationCenter</a></code> defaultCenter]</code> on the main thread with self as the object.</p>
+<p>The default implementation simply posts the notification.</p>
+<p>If your validation returns an error include it in the notification dictionary. You can include a recovery attempter under the <code>NSRecoveryAttempterErrorKey</code> key.<ul>
+<li><p>If you include a recovery attempter, and recover from the error, configuration will continue as if no error had been returned in the first place.</p></li>
+<li><p>If you include a recovery attempter, and don't recover from the error, configuration doesn't continue and the user is returned to the current configuration view controller. </p></li>
+</ul></p>
+<h5>Declared In</h5>
+<code><code>RMUploadPresetConfigurationViewController</code>.h</code></section><section class="definition" id="highlightErrorInView:"><h3>highlightErrorInView:</h3>
+<p>Highlights an error in, for example, a text field. </p>
+<code class="methodDeclaration">- (void)highlightErrorInView:(<a href="http://developer.apple.com/mac/library/documentation/Cocoa/Reference/ApplicationKit/Classes/NSView_Class/index.html">NSView</a> *)<span class="parameter">errorView</span> </code><h5>Discussion</h5>
+<p>The error will fade out after a short delay. </p>
+<h5>Declared In</h5>
+<code><code>RMUploadPresetConfigurationViewController</code>.h</code></section><section class="definition" id="hideErrorArrow"><h3>hideErrorArrow</h3>
+<p>Hides a previously present error arrow using <code>-highlightErrorInView:</code>. </p>
+<code class="methodDeclaration">- (void)hideErrorArrow</code><h5>Declared In</h5>
+<code><code>RMUploadPresetConfigurationViewController</code>.h</code></section></section><hr>
+<p id="lastUpdated">Last updated: 2010-9-9</p>
+</div>
+<footer id="breadcrumbs"><ul>
+<li><a href="../index.html">RMUploadKit SDK</a></li>
+<li><a href="#classTitle">RMUploadPresetConfigurationViewController Class Reference</a></li>
+</ul></footer>
+</body>
+</html>

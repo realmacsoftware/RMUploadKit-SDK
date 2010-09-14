@@ -1,0 +1,169 @@
+<!DOCTYPE html><html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta charset="UTF-8">
+<title>RMUploadTask Class Reference</title>
+<meta id="Generator" name="Generator" content="Doxyclean">
+<meta id="GeneratorVersion" name="GeneratorVersion" content="2.2">
+<link rel="stylesheet" type="text/css" href="../css/common.css">
+<link rel="stylesheet" type="text/css" media="screen" href="../css/screen.css">
+<link rel="stylesheet" type="text/css" media="print" href="../css/print.css">
+<script type="text/javascript">
+				function toggleTOC() {
+					var toc = document.getElementById('tableOfContents');
+					var tocButton = document.getElementById('toc_button');
+					var contents = document.getElementById('contents');
+					if (toc.style.display == 'block') {
+						toc.style.display = 'none';
+						contents.className = '';
+						tocButton.className = '';
+					} else {
+						toc.style.display = 'block';
+						contents.className = 'tableOfContentsOpen';
+						tocButton.className = 'open';
+					}
+				}
+				
+				function toggleTOCItem() {
+					var listItem = event.srcElement;
+					var sublist = listItem.getElementsByTagName('ul')[0];
+					if (sublist.style.display == 'block') {
+						sublist.style.display = 'none';
+						listItem.className = 'expandable';
+					} else {
+						sublist.style.display = 'block';
+						listItem.className = 'expandable expanded';
+					}
+				}
+				
+				function jumpTo() {
+					selectedItem = event.srcElement.options[event.srcElement.selectedIndex].value;
+					window.location = "#" + selectedItem;
+				}
+			</script>
+</head>
+<body>
+<header id="projectHeader"><h1><a href="../index.html">RMUploadKit SDK Reference Library</a></h1></header><header id="fileHeader"><h1><a href="#classTitle">RMUploadTask Class Reference</a></h1></header><nav id="buttons"><ul>
+<li id="toc_button"><button id="table_of_contents" onclick="toggleTOC()">Table of Contents</button></li>
+<li id="jumpto_button"><select id="jumpto" onchange="jumpTo()"><option value="classTitle">Jump To...</option>
+<option value="overview">Overview</option>
+<option value="tasks">Tasks</option>
+<option value="properties">Properties</option>
+<option value="destination">    destination</option>
+<option value="uploadInfo">    uploadInfo</option>
+<option value="cancelled">    cancelled</option>
+<option value="instanceMethods">Instance Methods</option>
+<option value="initWithPreset:uploadInfo:">    - initWithPreset:uploadInfo:</option>
+<option value="upload">    - upload</option>
+<option value="cancel">    - cancel</option></select></li>
+</ul></nav><nav id="tableOfContents" style="display: none;"><ul>
+<li><a href="#overview">Overview</a></li>
+<li class="expandable" id="tocTasks" onclick="toggleTOCItem()">
+<a href="#tasks">Tasks</a><ul style="display: none;">
+<li><a href="#Other">Other</a></li>
+<li><a href="#Other">Other</a></li>
+</ul>
+</li>
+<li class="expandable" id="tocProperties" onclick="toggleTOCItem()">
+<a href="#properties">Properties</a><ul style="display: none;">
+<li><a href="#destination">destination</a></li>
+<li><a href="#uploadInfo">uploadInfo</a></li>
+<li><a href="#cancelled">cancelled</a></li>
+</ul>
+</li>
+<li class="expandable" id="tocInstanceMethods" onclick="toggleTOCItem()">
+<a href="#instanceMethods">Instance Methods</a><ul style="display: none;">
+<li><a href="#initWithPreset:uploadInfo:">initWithPreset:uploadInfo:</a></li>
+<li><a href="#upload">upload</a></li>
+<li><a href="#cancel">cancel</a></li>
+</ul>
+</li>
+</ul></nav><div id="contents">
+<h1 id="classTitle">RMUploadTask Class Reference</h1>
+<table id="metadata"><tr class="alt">
+<th>Declared in</th>
+<td>RMUploadTask.h</td>
+</tr></table>
+<h2 id="overview">Overview</h2>
+<p>An upload task encapsulates an upload transaction with the target destination. This includes not only the upload of the file itself, but also any additional transactions with the destination to set any relevant metadata. </p>
+<p>All upload tasks must implement the <code>upload</code> method. It is called by the when it is this task's turn to upload.</p>
+<p>The object is expected to notify the framework with <code><code>RMUploadTask</code>DidReceiveProgressNotificationName</code>, <code><code>RMUploadTask</code>FinishedUploadingNotificationName</code> and <code><code>RMUploadTask</code>DidCompleteNotificationName</code> notifications. </p>
+<h2 id="tasks">Tasks</h2>
+<ul id="tasksList">
+<li id="Other">
+<h3>Other</h3>
+<ul class="methods">
+<li>
+<span class="tooltipRegion"><code><a href="#destination">destination</a></code> <span class="specialType">property</span></span><span class="tooltip">The destination passed to the initialiser. </span>
+</li>
+<li>
+<span class="tooltipRegion"><code><a href="#uploadInfo">uploadInfo</a></code> <span class="specialType">property</span></span><span class="tooltip">The uploadInfo passed to the initialiser. Values should be obtained using -[NSObject valueForKey:]. </span>
+</li>
+<li>
+<span class="tooltipRegion"><code><a href="#cancelled">cancelled</a></code> <span class="specialType">property</span></span><span class="tooltip">Set when the -cancel message is received. </span>
+</li>
+</ul>
+</li>
+<li id="Other">
+<h3>Other</h3>
+<ul class="methods">
+<li>
+<span class="tooltipRegion"><code><a href="#initWithPreset:uploadInfo:">- initWithPreset:uploadInfo:</a></code></span><span class="tooltip">Designated Initialiser. </span>
+</li>
+<li>
+<span class="tooltipRegion"><code><a href="#upload">- upload</a></code></span><span class="tooltip">The central method to the class. </span>
+</li>
+<li>
+<span class="tooltipRegion"><code><a href="#cancel">- cancel</a></code></span><span class="tooltip">This should immediately cease any uploading that the task is performing. You are strongly encouraged to override this method and teardown your connections. </span>
+</li>
+</ul>
+</li>
+</ul>
+<section id="properties"><h2>Properties</h2>
+<section class="definition" id="destination"><h3>destination</h3>
+<p>The <code>destination</code> passed to the initialiser. </p>
+<code class="methodDeclaration">@property <a href="../Classes/RMUploadPreset.html">RMUploadPreset</a> *destination</code><h5>Declared In</h5>
+<code><code>RMUploadTask</code>.h</code></section><section class="definition" id="uploadInfo"><h3>uploadInfo</h3>
+<p>The <code>uploadInfo</code> passed to the initialiser. Values should be obtained using <code>-[<code><a href="http://developer.apple.com/mac/library/documentation/Cocoa/Reference/Foundation/Classes/NSObject_Class/index.html">NSObject</a></code> valueForKey:]</code>. </p>
+<code class="methodDeclaration">@property id uploadInfo</code><h5>Declared In</h5>
+<code><code>RMUploadTask</code>.h</code></section><section class="definition" id="cancelled"><h3>cancelled</h3>
+<p>Set when the <code>-cancel</code> message is received. </p>
+<code class="methodDeclaration">@property BOOL cancelled</code><h5>Declared In</h5>
+<code><code>RMUploadTask</code>.h</code></section></section><section id="instanceMethods"><h2>Instance Methods</h2>
+<section class="definition" id="initWithPreset:uploadInfo:"><h3>initWithPreset:uploadInfo:</h3>
+<p>Designated Initialiser. </p>
+<code class="methodDeclaration">- (id)initWithPreset:(<a href="../Classes/RMUploadPreset.html">RMUploadPreset</a> *)<span class="parameter">destination</span> uploadInfo:(id)<span class="parameter">uploadInfo</span> </code><h5>Parameters</h5>
+<dl class="parameterList">
+<dt>destination</dt>
+<dd><p>The <code><code><a href="../Classes/RMUploadPreset.html">RMUploadPreset</a></code></code> which should be used for configuration and <code><code><a href="../Classes/RMUploadCredentials.html">RMUploadCredentials</a></code></code> should they be needed.</p></dd>
+<dt>uploadInfo</dt>
+<dd><p>The data and metadata to upload. It is the plugin's responsibiltiy to check for nil values and what keys the object contains. It contains any keys set in your metadata view and any of the following default keys:</p></dd>
+</dl>
+<h5>Discussion</h5>
+<p><code>RMUploadFileURLKey</code> : The location of the file to be uploaded on disk. This comes in the form of a URL. (<code><code><a href="http://developer.apple.com/mac/library/documentation/Cocoa/Reference/Foundation/Classes/NSURL_Class/index.html">NSURL</a></code></code>) </p>
+<p><code>RMUploadTitleKey</code> : The title of the file to be uploaded. (<code><code><a href="http://developer.apple.com/mac/library/documentation/Cocoa/Reference/Foundation/Classes/NSString_Class/index.html">NSString</a></code></code>) </p>
+<p><code>RMUploadOriginalDateKey</code> : This is the date when the image was taken/snapped/modified. For example, in Flickr's "date taken" field you would pass this value. For any APIs requiring the current date of the upload the plugin is required to pass it on however it feels is appropriate. (<code><code><a href="http://developer.apple.com/mac/library/documentation/Cocoa/Reference/Foundation/Classes/NSDate_Class/index.html">NSDate</a></code></code>) </p>
+<p><code>RMUploadOriginalURLKey</code> : If the file is a websnap, this will be passed as the URL of where the websnap was taken. (<code><code><a href="http://developer.apple.com/mac/library/documentation/Cocoa/Reference/Foundation/Classes/NSURL_Class/index.html">NSURL</a></code></code>) </p>
+<p><code>RMUploadDescriptionKey</code> : Any additional comments provided by the user. Such as the "description" field in LittleSnapper. (<code><code><a href="http://developer.apple.com/mac/library/documentation/Cocoa/Reference/Foundation/Classes/NSString_Class/index.html">NSString</a></code></code>) </p>
+<p><code>RMUploadTagsKey</code> : An <code><code><a href="http://developer.apple.com/mac/library/documentation/Cocoa/Reference/Foundation/Classes/NSArray_Class/index.html">NSArray</a></code></code> of <code><code><a href="http://developer.apple.com/mac/library/documentation/Cocoa/Reference/Foundation/Classes/NSString_Class/index.html">NSString</a></code></code> objects associated with the file. (<code><code><a href="http://developer.apple.com/mac/library/documentation/Cocoa/Reference/Foundation/Classes/NSArray_Class/index.html">NSArray</a></code></code> of <code><code><a href="http://developer.apple.com/mac/library/documentation/Cocoa/Reference/Foundation/Classes/NSString_Class/index.html">NSString</a></code></code> objects.) </p>
+<h5>Declared In</h5>
+<code><code>RMUploadTask</code>.h</code></section><section class="definition" id="upload"><h3>upload</h3>
+<p>The central method to the class. </p>
+<code class="methodDeclaration">- (void)upload</code><h5>Discussion</h5>
+<p>Ensure, that you are posting the correct notifications.</p>
+<p>A thread local run loop will be available when this method is called, you should use <code>+[<code><a href="http://developer.apple.com/mac/library/documentation/Cocoa/Reference/Foundation/Classes/NSRunLoop_Class/index.html">NSRunLoop</a></code> currentRunLoop]</code> and are highly discouraged from scheduling on the main run loop or creating your own background thread. Avoid libraries that create background threads or perform synchronous networking. You must not recursively service the run loop. </p>
+<h5>Declared In</h5>
+<code><code>RMUploadTask</code>.h</code></section><section class="definition" id="cancel"><h3>cancel</h3>
+<p>This should immediately cease any uploading that the task is performing. You are strongly encouraged to override this method and teardown your connections. </p>
+<code class="methodDeclaration">- (void)cancel</code><h5>Discussion</h5>
+<p>If overridden, ensure you call <code>super</code>, and then post the <code><code>RMUploadTask</code>DidCompleteNotificationName</code> notification once you have completed your teardown. </p>
+<h5>Declared In</h5>
+<code><code>RMUploadTask</code>.h</code></section></section><hr>
+<p id="lastUpdated">Last updated: 2010-9-9</p>
+</div>
+<footer id="breadcrumbs"><ul>
+<li><a href="../index.html">RMUploadKit SDK</a></li>
+<li><a href="#classTitle">RMUploadTask Class Reference</a></li>
+</ul></footer>
+</body>
+</html>

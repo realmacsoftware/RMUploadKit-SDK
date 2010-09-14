@@ -1,0 +1,196 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.5.9">
+  <compounddef id="interface_r_m_upload_multipart_related_document" kind="class" prot="public">
+    <compoundname>RMUploadMultipartRelatedDocument</compoundname>
+    <basecompoundref refid="interface_r_m_upload_multipart_document" prot="public" virt="non-virtual">RMUploadMultipartDocument</basecompoundref>
+    <includes refid="_r_m_upload_multipart_documents_8h" local="no">RMUploadMultipartDocuments.h</includes>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="interface_r_m_upload_multipart_related_document_18fc1f24110492b11af94b53399bac768" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>id</type>
+        <definition>id RMUploadMultipartRelatedDocument::init</definition>
+        <argsstring>()</argsstring>
+        <name>init</name>
+        <briefdescription>
+<para>Designated Initialiser. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/keith/Projects/Source/RMUpload/documentation/RMUploadKit.sdk/Library/Frameworks/RMUploadKit.framework/Versions/A/Headers/RMUploadMultipartDocuments.h" line="110"/>
+      </memberdef>
+      <memberdef kind="function" id="interface_r_m_upload_multipart_related_document_1474685048e66dd46b9a5ed7290cd6456" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>id</type>
+        <definition>id RMUploadMultipartRelatedDocument::initWithStartContentIdentifier:</definition>
+        <argsstring>(NSString *startContentIdentifier)</argsstring>
+        <name>initWithStartContentIdentifier:</name>
+        <param>
+          <type>NSString *</type>
+          <declname>startContentIdentifier</declname>
+        </param>
+        <briefdescription>
+<para>If your document is referrential, use this initialiser to specify the index content identifier. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/keith/Projects/Source/RMUpload/documentation/RMUploadKit.sdk/Library/Frameworks/RMUploadKit.framework/Versions/A/Headers/RMUploadMultipartDocuments.h" line="116"/>
+      </memberdef>
+      <memberdef kind="function" id="interface_r_m_upload_multipart_related_document_1d06b7ed6c6f54d708f0cbd7e6f46a5bc" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>void RMUploadMultipartRelatedDocument::addPartWithData:withContentType:forContentIdentifier:</definition>
+        <argsstring>(NSData *data,[withContentType] NSString *contentType,[forContentIdentifier] NSString *contentIdentifier)</argsstring>
+        <name>addPartWithData:withContentType:forContentIdentifier:</name>
+        <param>
+          <type>NSData *</type>
+          <declname>data</declname>
+        </param>
+        <param>
+          <attributes>[withContentType]</attributes>
+          <type>NSString *</type>
+          <declname>contentType</declname>
+        </param>
+        <param>
+          <attributes>[forContentIdentifier]</attributes>
+          <type>NSString *</type>
+          <declname>contentIdentifier</declname>
+        </param>
+        <briefdescription>
+<para>The data will appear in the serialised document. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>contentType</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Defaults to &apos;application/octet-stream&apos; if nil.</para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>contentIdentifier</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Pass nil to omit the &apos;Content-ID&apos; header. A contentIdentifier must be unique per document, adding another part with the same content identifer will throw an exception. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/keith/Projects/Source/RMUpload/documentation/RMUploadKit.sdk/Library/Frameworks/RMUploadKit.framework/Versions/A/Headers/RMUploadMultipartDocuments.h" line="129"/>
+      </memberdef>
+      <memberdef kind="function" id="interface_r_m_upload_multipart_related_document_16cab98bf8eb5ccef1ef8f20cdbaf3d44" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>void RMUploadMultipartRelatedDocument::addPartByReferencingContentsOfURL:forContentIdentifier:</definition>
+        <argsstring>(NSURL *location,[forContentIdentifier] NSString *contentIdentifier)</argsstring>
+        <name>addPartByReferencingContentsOfURL:forContentIdentifier:</name>
+        <param>
+          <type>NSURL *</type>
+          <declname>location</declname>
+        </param>
+        <param>
+          <attributes>[forContentIdentifier]</attributes>
+          <type>NSString *</type>
+          <declname>contentIdentifier</declname>
+        </param>
+        <briefdescription>
+<para>The content type is inferred. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>contentIdentifier</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Pass nil to omit the &apos;Content-ID&apos; header. A contentIdentifier must be unique per document, adding another part with the same content identifer will throw an exception. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/keith/Projects/Source/RMUpload/documentation/RMUploadKit.sdk/Library/Frameworks/RMUploadKit.framework/Versions/A/Headers/RMUploadMultipartDocuments.h" line="139"/>
+      </memberdef>
+      <memberdef kind="function" id="interface_r_m_upload_multipart_related_document_1cf91e7b16f6b74eae641035e5e46a5b3" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>void RMUploadMultipartRelatedDocument::removePartForContentIdentifier:</definition>
+        <argsstring>(NSString *contentIdentifier)</argsstring>
+        <name>removePartForContentIdentifier:</name>
+        <param>
+          <type>NSString *</type>
+          <declname>contentIdentifier</declname>
+        </param>
+        <briefdescription>
+<para>Removes a previously added part for the content identifier. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/keith/Projects/Source/RMUpload/documentation/RMUploadKit.sdk/Library/Frameworks/RMUploadKit.framework/Versions/A/Headers/RMUploadMultipartDocuments.h" line="145"/>
+      </memberdef>
+      <memberdef kind="function" id="interface_r_m_upload_multipart_related_document_11e30c9a598be6b6eb89127d572edd5df" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>BOOL</type>
+        <definition>BOOL RMUploadMultipartRelatedDocument::getData:contentType:</definition>
+        <argsstring>(NSData **dataRef,[contentType] NSString **contentTypeRef)</argsstring>
+        <name>getData:contentType:</name>
+        <param>
+          <type>NSData **</type>
+          <declname>dataRef</declname>
+        </param>
+        <param>
+          <attributes>[contentType]</attributes>
+          <type>NSString **</type>
+          <declname>contentTypeRef</declname>
+        </param>
+        <briefdescription>
+<para>Serialise the document into a data object. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>contentTypeRef</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>This is the MIME tpye of the output./ It contains the generated multipart boundary. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/keith/Projects/Source/RMUpload/documentation/RMUploadKit.sdk/Library/Frameworks/RMUploadKit.framework/Versions/A/Headers/RMUploadMultipartDocuments.h" line="154"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>This format is described in RFC 2387 <ulink url="http://tools.ietf.org/html/rfc2387">http://tools.ietf.org/html/rfc2387</ulink>. Though it ommits support for the &apos;start&apos; and &apos;type&apos; parameters of the &apos;Content-Type&apos; header. </para>    </briefdescription>
+    <detaileddescription>
+<para>The order you add data in is unpreserved. </para>    </detaileddescription>
+    <inheritancegraph>
+      <node id="26">
+        <label>RMUploadMultipartRelatedDocument</label>
+        <link refid="interface_r_m_upload_multipart_related_document"/>
+        <childnode refid="27" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="27">
+        <label>RMUploadMultipartDocument</label>
+        <link refid="interface_r_m_upload_multipart_document"/>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="28">
+        <label>RMUploadMultipartRelatedDocument</label>
+        <link refid="interface_r_m_upload_multipart_related_document"/>
+        <childnode refid="29" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="29">
+        <label>RMUploadMultipartDocument</label>
+        <link refid="interface_r_m_upload_multipart_document"/>
+      </node>
+    </collaborationgraph>
+    <location file="/Users/keith/Projects/Source/RMUpload/documentation/RMUploadKit.sdk/Library/Frameworks/RMUploadKit.framework/Versions/A/Headers/RMUploadMultipartDocuments.h" line="105" bodyfile="/Users/keith/Projects/Source/RMUpload/documentation/RMUploadKit.sdk/Library/Frameworks/RMUploadKit.framework/Versions/A/Headers/RMUploadMultipartDocuments.h" bodystart="104" bodyend="-1"/>
+    <listofallmembers>
+      <member refid="interface_r_m_upload_multipart_related_document_16cab98bf8eb5ccef1ef8f20cdbaf3d44" prot="public" virt="virtual"><scope>RMUploadMultipartRelatedDocument</scope><name>addPartByReferencingContentsOfURL:forContentIdentifier:</name></member>
+      <member refid="interface_r_m_upload_multipart_related_document_1d06b7ed6c6f54d708f0cbd7e6f46a5bc" prot="public" virt="virtual"><scope>RMUploadMultipartRelatedDocument</scope><name>addPartWithData:withContentType:forContentIdentifier:</name></member>
+      <member refid="interface_r_m_upload_multipart_related_document_11e30c9a598be6b6eb89127d572edd5df" prot="public" virt="virtual"><scope>RMUploadMultipartRelatedDocument</scope><name>getData:contentType:</name></member>
+      <member refid="interface_r_m_upload_multipart_related_document_18fc1f24110492b11af94b53399bac768" prot="public" virt="virtual"><scope>RMUploadMultipartRelatedDocument</scope><name>init</name></member>
+      <member refid="interface_r_m_upload_multipart_related_document_1474685048e66dd46b9a5ed7290cd6456" prot="public" virt="virtual"><scope>RMUploadMultipartRelatedDocument</scope><name>initWithStartContentIdentifier:</name></member>
+      <member refid="interface_r_m_upload_multipart_related_document_1cf91e7b16f6b74eae641035e5e46a5b3" prot="public" virt="virtual"><scope>RMUploadMultipartRelatedDocument</scope><name>removePartForContentIdentifier:</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

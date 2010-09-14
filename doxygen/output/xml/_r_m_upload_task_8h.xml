@@ -1,0 +1,297 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.5.9">
+  <compounddef id="_r_m_upload_task_8h" kind="file">
+    <compoundname>RMUploadTask.h</compoundname>
+    <includes local="no">Cocoa/Cocoa.h</includes>
+    <incdepgraph>
+      <node id="53">
+        <label>Cocoa/Cocoa.h</label>
+      </node>
+      <node id="52">
+        <label>/Users/keith/Projects/Source/RMUpload/documentation/RMUploadKit.sdk/Library/Frameworks/RMUploadKit.framework/Versions/A/Headers/RMUploadTask.h</label>
+        <link refid="RMUploadTask.h"/>
+        <childnode refid="53" relation="include">
+        </childnode>
+      </node>
+    </incdepgraph>
+    <innerclass refid="interface_r_m_upload_task" prot="public">RMUploadTask</innerclass>
+      <sectiondef kind="var">
+      <memberdef kind="variable" id="_r_m_upload_task_8h_1c500b851370462f3eb4ad15846838577" prot="public" static="no" mutable="no">
+        <type>NSString *const</type>
+        <definition>NSString* const RMUploadTaskUpdateStatusTextNotificationName</definition>
+        <argsstring></argsstring>
+        <name>RMUploadTaskUpdateStatusTextNotificationName</name>
+        <briefdescription>
+<para>Allows you to update the status text outside of the established notification pattern. </para>        </briefdescription>
+        <detaileddescription>
+<para>The <computeroutput>userInfo</computeroutput> dictionary should contain the <computeroutput>RMUploadTaskStatusInfoKey</computeroutput>. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/keith/Projects/Source/RMUpload/documentation/RMUploadKit.sdk/Library/Frameworks/RMUploadKit.framework/Versions/A/Headers/RMUploadTask.h" line="34"/>
+      </memberdef>
+      <memberdef kind="variable" id="_r_m_upload_task_8h_13cba9c86be56389200b4887781b2d7a4" prot="public" static="no" mutable="no">
+        <type>NSString *const</type>
+        <definition>NSString* const RMUploadTaskDidReceiveProgressNotificationName</definition>
+        <argsstring></argsstring>
+        <name>RMUploadTaskDidReceiveProgressNotificationName</name>
+        <briefdescription>
+<para>An upload task should post this notification whenever it receives a progress update. If this is never posted, the framework will assume an indeterminate upload is taking place. This notification <bold>must</bold> be posted using the <computeroutput>+[NSNotificationCenter defaultCenter]</computeroutput> object. The object for the notification is the <computeroutput><ref refid="interface_r_m_upload_task" kindref="compound">RMUploadTask</ref></computeroutput> posting the notification. The object for the notification should be the <computeroutput><ref refid="interface_r_m_upload_task" kindref="compound">RMUploadTask</ref></computeroutput> posting the notification. The userinfo dictionary should also contain the following keys and values:. </para>        </briefdescription>
+        <detaileddescription>
+<para><computeroutput>RMUploadTaskProgressTotalKey</computeroutput> : This should remain the same throughout the upload. (<computeroutput>+[NSNumber numberWithDouble:]</computeroutput>) <computeroutput>RMUploadTaskProgressCurrentKey</computeroutput> : The amount of progress that has already happened, this can be measured by any unit you like but should be the same as the one used for <computeroutput>RMUploadTaskProgressTotalKey</computeroutput>. (<computeroutput>+[NSNumber numberWithDouble:]</computeroutput>) </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/keith/Projects/Source/RMUpload/documentation/RMUploadKit.sdk/Library/Frameworks/RMUploadKit.framework/Versions/A/Headers/RMUploadTask.h" line="46"/>
+      </memberdef>
+      <memberdef kind="variable" id="_r_m_upload_task_8h_156f3734e70c98e425f4f40a6faa2318d" prot="public" static="no" mutable="no">
+        <type>NSString *const</type>
+        <definition>NSString* const RMUploadTaskProgressTotalKey</definition>
+        <argsstring></argsstring>
+        <name>RMUploadTaskProgressTotalKey</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/keith/Projects/Source/RMUpload/documentation/RMUploadKit.sdk/Library/Frameworks/RMUploadKit.framework/Versions/A/Headers/RMUploadTask.h" line="48"/>
+      </memberdef>
+      <memberdef kind="variable" id="_r_m_upload_task_8h_11acf2be5008126013c99f598fed16863" prot="public" static="no" mutable="no">
+        <type>NSString *const</type>
+        <definition>NSString* const RMUploadTaskProgressCurrentKey</definition>
+        <argsstring></argsstring>
+        <name>RMUploadTaskProgressCurrentKey</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/keith/Projects/Source/RMUpload/documentation/RMUploadKit.sdk/Library/Frameworks/RMUploadKit.framework/Versions/A/Headers/RMUploadTask.h" line="49"/>
+      </memberdef>
+      <memberdef kind="variable" id="_r_m_upload_task_8h_148819b459e9566e944e8e650a2d7badd" prot="public" static="no" mutable="no">
+        <type>NSString *const</type>
+        <definition>NSString* const RMUploadTaskDidFinishTransactionNotificationName</definition>
+        <argsstring></argsstring>
+        <name>RMUploadTaskDidFinishTransactionNotificationName</name>
+        <briefdescription>
+<para>An upload task should post this whenever it has finished uploading each object to the target. <bold>Not</bold> when it has completed. This notification <bold>must</bold> be posted using the <computeroutput>+[NSNotificationCenter defaultCenter]</computeroutput> object. The object for the notification is the <computeroutput><ref refid="interface_r_m_upload_task" kindref="compound">RMUploadTask</ref></computeroutput> posting the notification. </para>        </briefdescription>
+        <detaileddescription>
+<para>The <computeroutput>userInfo</computeroutput> dictionary should also contain the following keys: <computeroutput>RMUploadTaskResourceLocationKey</computeroutput> : where the data was uploaded to. (<computeroutput>NSURL</computeroutput>) <computeroutput>RMUploadTaskErrorKey</computeroutput> : an <computeroutput>NSError</computeroutput> object, indicating what when wrong with the upload. (<computeroutput>NSError</computeroutput>)</para><para>A single task might initiate more than one transaction, a task may post several of these. You may post this notification to indicate additional errors, such as failure to add a photo to a group or photoset. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/keith/Projects/Source/RMUpload/documentation/RMUploadKit.sdk/Library/Frameworks/RMUploadKit.framework/Versions/A/Headers/RMUploadTask.h" line="63"/>
+      </memberdef>
+      <memberdef kind="variable" id="_r_m_upload_task_8h_1949b6c09d4b0a6dbb8fea07321b3c168" prot="public" static="no" mutable="no">
+        <type>NSString *const</type>
+        <definition>NSString* const RMUploadTaskResourceLocationKey</definition>
+        <argsstring></argsstring>
+        <name>RMUploadTaskResourceLocationKey</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/keith/Projects/Source/RMUpload/documentation/RMUploadKit.sdk/Library/Frameworks/RMUploadKit.framework/Versions/A/Headers/RMUploadTask.h" line="65"/>
+      </memberdef>
+      <memberdef kind="variable" id="_r_m_upload_task_8h_177609ca172a2147c6f9fcb2104f1e688" prot="public" static="no" mutable="no">
+        <type>NSString *const</type>
+        <definition>NSString* const RMUploadTaskErrorKey</definition>
+        <argsstring></argsstring>
+        <name>RMUploadTaskErrorKey</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/keith/Projects/Source/RMUpload/documentation/RMUploadKit.sdk/Library/Frameworks/RMUploadKit.framework/Versions/A/Headers/RMUploadTask.h" line="66"/>
+      </memberdef>
+      <memberdef kind="variable" id="_r_m_upload_task_8h_180adae54fc541b18d4df70cf36f5f436" prot="public" static="no" mutable="no">
+        <type>NSString *const</type>
+        <definition>NSString* const RMUploadTaskDidCompleteNotificationName</definition>
+        <argsstring></argsstring>
+        <name>RMUploadTaskDidCompleteNotificationName</name>
+        <briefdescription>
+<para>The upload task should post this once it has at least attempted to perform it&apos;s transactions. This will vary from task to task, for instance an example Flickr task will first first attempt to upload the image, if that fails it will post the completion notification including the error. If the upload completed it may then attempt to add the image to a group or photoset, these may fail; but don&apos;t indicate that the upload failed completely. </para>        </briefdescription>
+        <detaileddescription>
+<para>This notification <bold>must</bold> be posted using the <computeroutput>+[NSNotificationCenter defaultCenter]</computeroutput> object. The object for the notification is the <computeroutput><ref refid="interface_r_m_upload_task" kindref="compound">RMUploadTask</ref></computeroutput> posting the notification. This notification doesn&apos;t indicate that the task <emphasis>succeeded</emphasis> just that it completed.</para><para>This notification <bold>must</bold> also be posted once you have cancelled. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/keith/Projects/Source/RMUpload/documentation/RMUploadKit.sdk/Library/Frameworks/RMUploadKit.framework/Versions/A/Headers/RMUploadTask.h" line="79"/>
+      </memberdef>
+      <memberdef kind="variable" id="_r_m_upload_task_8h_11dd59ea5be30948abec2bb1e6697f4bd" prot="public" static="no" mutable="no">
+        <type>NSString *const</type>
+        <definition>NSString* const RMUploadTaskStatusInfoKey</definition>
+        <argsstring></argsstring>
+        <name>RMUploadTaskStatusInfoKey</name>
+        <briefdescription>
+<para>An <computeroutput>NSString</computeroutput>, it can be passed in the <computeroutput>userInfo</computeroutput> dictionary of any task notification. This may be displayed in the interface to let the user know what&apos;s happening. Pass <computeroutput>+[NSNull null]</computeroutput> to clear the previous message. The value should be localised. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/keith/Projects/Source/RMUpload/documentation/RMUploadKit.sdk/Library/Frameworks/RMUploadKit.framework/Versions/A/Headers/RMUploadTask.h" line="88"/>
+      </memberdef>
+      <memberdef kind="variable" id="_r_m_upload_task_8h_15663fcfdad3a049882f103b51d9134ff" prot="public" static="no" mutable="no">
+        <type>NSString *const</type>
+        <definition>NSString* const RMUploadFileURLKey</definition>
+        <argsstring></argsstring>
+        <name>RMUploadFileURLKey</name>
+        <briefdescription>
+<para>The URL of the file to be uploaded. (<computeroutput>NSURL</computeroutput>). </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/keith/Projects/Source/RMUpload/documentation/RMUploadKit.sdk/Library/Frameworks/RMUploadKit.framework/Versions/A/Headers/RMUploadTask.h" line="98"/>
+      </memberdef>
+      <memberdef kind="variable" id="_r_m_upload_task_8h_12919246f601665936fe06cbe5f4051fe" prot="public" static="no" mutable="no">
+        <type>NSString *const</type>
+        <definition>NSString* const RMUploadFileTitleKey</definition>
+        <argsstring></argsstring>
+        <name>RMUploadFileTitleKey</name>
+        <briefdescription>
+<para>The title of the file to be uploaded. (<computeroutput>NSString</computeroutput>). </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/keith/Projects/Source/RMUpload/documentation/RMUploadKit.sdk/Library/Frameworks/RMUploadKit.framework/Versions/A/Headers/RMUploadTask.h" line="104"/>
+      </memberdef>
+      <memberdef kind="variable" id="_r_m_upload_task_8h_185bf8137a3bedfba08aa71e5c04c67a3" prot="public" static="no" mutable="no">
+        <type>NSString *const</type>
+        <definition>NSString* const RMUploadFileOriginalDateKey</definition>
+        <argsstring></argsstring>
+        <name>RMUploadFileOriginalDateKey</name>
+        <briefdescription>
+<para>The date that the file to be uploaded was originally created. (<computeroutput>NSDate</computeroutput>). </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/keith/Projects/Source/RMUpload/documentation/RMUploadKit.sdk/Library/Frameworks/RMUploadKit.framework/Versions/A/Headers/RMUploadTask.h" line="110"/>
+      </memberdef>
+      <memberdef kind="variable" id="_r_m_upload_task_8h_12c1f2fbc835ae27864e4cc078f11c64a" prot="public" static="no" mutable="no">
+        <type>NSString *const</type>
+        <definition>NSString* const RMUploadFileOriginalURLKey</definition>
+        <argsstring></argsstring>
+        <name>RMUploadFileOriginalURLKey</name>
+        <briefdescription>
+<para>If the file represents a web site in some form, this key is that URL. (<computeroutput>NSURL</computeroutput>). </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/keith/Projects/Source/RMUpload/documentation/RMUploadKit.sdk/Library/Frameworks/RMUploadKit.framework/Versions/A/Headers/RMUploadTask.h" line="116"/>
+      </memberdef>
+      <memberdef kind="variable" id="_r_m_upload_task_8h_13464f875be186f256795bb5b5528d897" prot="public" static="no" mutable="no">
+        <type>NSString *const</type>
+        <definition>NSString* const RMUploadFileDescriptionKey</definition>
+        <argsstring></argsstring>
+        <name>RMUploadFileDescriptionKey</name>
+        <briefdescription>
+<para>The user&apos;s description of the file. (<computeroutput>NSString</computeroutput>). </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/keith/Projects/Source/RMUpload/documentation/RMUploadKit.sdk/Library/Frameworks/RMUploadKit.framework/Versions/A/Headers/RMUploadTask.h" line="122"/>
+      </memberdef>
+      <memberdef kind="variable" id="_r_m_upload_task_8h_1d944ad3357ac0110cd5b0637e083973f" prot="public" static="no" mutable="no">
+        <type>NSString *const</type>
+        <definition>NSString* const RMUploadFileTagsKey</definition>
+        <argsstring></argsstring>
+        <name>RMUploadFileTagsKey</name>
+        <briefdescription>
+<para>Tags associated with the file. (<computeroutput>NSArray</computeroutput> of <computeroutput>NSString</computeroutput> objects). </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/keith/Projects/Source/RMUpload/documentation/RMUploadKit.sdk/Library/Frameworks/RMUploadKit.framework/Versions/A/Headers/RMUploadTask.h" line="128"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="comment">//***************************************************************************</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight><highlight class="comment">//<sp/>Copyright<sp/>(C)<sp/>2009<sp/>Realmac<sp/>Software<sp/>Ltd</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight><highlight class="comment">//</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight><highlight class="comment">//<sp/>These<sp/>coded<sp/>instructions,<sp/>statements,<sp/>and<sp/>computer<sp/>programs<sp/>contain</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="6"><highlight class="normal"></highlight><highlight class="comment">//<sp/>unpublished<sp/>proprietary<sp/>information<sp/>of<sp/>Realmac<sp/>Software<sp/>Ltd</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="7"><highlight class="normal"></highlight><highlight class="comment">//<sp/>and<sp/>are<sp/>protected<sp/>by<sp/>copyright<sp/>law.<sp/>They<sp/>may<sp/>not<sp/>be<sp/>disclosed</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="8"><highlight class="normal"></highlight><highlight class="comment">//<sp/>to<sp/>third<sp/>parties<sp/>or<sp/>copied<sp/>or<sp/>duplicated<sp/>in<sp/>any<sp/>form,<sp/>in<sp/>whole<sp/>or</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="9"><highlight class="normal"></highlight><highlight class="comment">//<sp/>in<sp/>part,<sp/>without<sp/>the<sp/>prior<sp/>written<sp/>consent<sp/>of<sp/>Realmac<sp/>Software<sp/>Ltd.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="10"><highlight class="normal"></highlight></codeline>
+<codeline lineno="11"><highlight class="normal"></highlight><highlight class="comment">//<sp/>Created<sp/>by<sp/>Danny<sp/>Greg<sp/>on<sp/>25/3/2009<sp/></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="12"><highlight class="normal"></highlight></codeline>
+<codeline lineno="13"><highlight class="normal"></highlight><highlight class="comment">//***************************************************************************</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="14"><highlight class="normal"></highlight></codeline>
+<codeline lineno="15"><highlight class="normal"></highlight><highlight class="preprocessor">#import<sp/>&lt;Cocoa/Cocoa.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="16"><highlight class="normal"></highlight></codeline>
+<codeline lineno="17"><highlight class="normal"></highlight><highlight class="keyword">@class</highlight><highlight class="normal"><sp/><ref refid="interface_r_m_upload_preset" kindref="compound" tooltip="A representation of configurable options for a service.">RMUploadPreset</ref>;</highlight></codeline>
+<codeline lineno="18"><highlight class="normal"></highlight><highlight class="keyword">@class</highlight><highlight class="normal"><sp/><ref refid="interface_r_m_upload_credentials" kindref="compound" tooltip="Represents a set of user credentials, most commonly for an account on a web service...">RMUploadCredentials</ref>;</highlight></codeline>
+<codeline lineno="19"><highlight class="normal"></highlight></codeline>
+<codeline lineno="24"><highlight class="comment">/*</highlight></codeline>
+<codeline lineno="25"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>Notifications</highlight></codeline>
+<codeline lineno="26"><highlight class="comment"><sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="27"><highlight class="normal"></highlight></codeline>
+<codeline lineno="34"><highlight class="keyword">extern</highlight><highlight class="normal"><sp/>NSString<sp/>*</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="_r_m_upload_task_8h_1c500b851370462f3eb4ad15846838577" kindref="member" tooltip="Allows you to update the status text outside of the established notification pattern...">RMUploadTaskUpdateStatusTextNotificationName</ref>;</highlight></codeline>
+<codeline lineno="35"><highlight class="normal"></highlight></codeline>
+<codeline lineno="46"><highlight class="keyword">extern</highlight><highlight class="normal"><sp/>NSString<sp/>*</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="_r_m_upload_task_8h_13cba9c86be56389200b4887781b2d7a4" kindref="member" tooltip="An upload task should post this notification whenever it receives a progress update...">RMUploadTaskDidReceiveProgressNotificationName</ref>;</highlight></codeline>
+<codeline lineno="47"><highlight class="normal"></highlight></codeline>
+<codeline lineno="48"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">extern</highlight><highlight class="normal"><sp/>NSString<sp/>*</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="_r_m_upload_task_8h_156f3734e70c98e425f4f40a6faa2318d" kindref="member">RMUploadTaskProgressTotalKey</ref>;</highlight></codeline>
+<codeline lineno="49"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">extern</highlight><highlight class="normal"><sp/>NSString<sp/>*</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="_r_m_upload_task_8h_11acf2be5008126013c99f598fed16863" kindref="member">RMUploadTaskProgressCurrentKey</ref>;</highlight></codeline>
+<codeline lineno="50"><highlight class="normal"></highlight></codeline>
+<codeline lineno="63"><highlight class="keyword">extern</highlight><highlight class="normal"><sp/>NSString<sp/>*</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="_r_m_upload_task_8h_148819b459e9566e944e8e650a2d7badd" kindref="member" tooltip="An upload task should post this whenever it has finished uploading each object to...">RMUploadTaskDidFinishTransactionNotificationName</ref>;</highlight></codeline>
+<codeline lineno="64"><highlight class="normal"></highlight></codeline>
+<codeline lineno="65"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">extern</highlight><highlight class="normal"><sp/>NSString<sp/>*</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="_r_m_upload_task_8h_1949b6c09d4b0a6dbb8fea07321b3c168" kindref="member">RMUploadTaskResourceLocationKey</ref>;</highlight></codeline>
+<codeline lineno="66"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">extern</highlight><highlight class="normal"><sp/>NSString<sp/>*</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="_r_m_upload_task_8h_177609ca172a2147c6f9fcb2104f1e688" kindref="member">RMUploadTaskErrorKey</ref>;</highlight></codeline>
+<codeline lineno="67"><highlight class="normal"></highlight></codeline>
+<codeline lineno="79"><highlight class="keyword">extern</highlight><highlight class="normal"><sp/>NSString<sp/>*</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="_r_m_upload_task_8h_180adae54fc541b18d4df70cf36f5f436" kindref="member" tooltip="The upload task should post this once it has at least attempted to perform it&amp;#39;s...">RMUploadTaskDidCompleteNotificationName</ref>;</highlight></codeline>
+<codeline lineno="80"><highlight class="normal"></highlight></codeline>
+<codeline lineno="88"><highlight class="keyword">extern</highlight><highlight class="normal"><sp/>NSString<sp/>*</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="_r_m_upload_task_8h_11dd59ea5be30948abec2bb1e6697f4bd" kindref="member" tooltip="An NSString, it can be passed in the userInfo dictionary of any task notification...">RMUploadTaskStatusInfoKey</ref>;</highlight></codeline>
+<codeline lineno="89"><highlight class="normal"></highlight></codeline>
+<codeline lineno="90"><highlight class="normal"></highlight><highlight class="comment">/*</highlight></codeline>
+<codeline lineno="91"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>File<sp/>Constants</highlight></codeline>
+<codeline lineno="92"><highlight class="comment"><sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="93"><highlight class="normal"></highlight></codeline>
+<codeline lineno="98"><highlight class="keyword">extern</highlight><highlight class="normal"><sp/>NSString<sp/>*</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="_r_m_upload_task_8h_15663fcfdad3a049882f103b51d9134ff" kindref="member" tooltip="The URL of the file to be uploaded. (NSURL).">RMUploadFileURLKey</ref>;</highlight></codeline>
+<codeline lineno="99"><highlight class="normal"></highlight></codeline>
+<codeline lineno="104"><highlight class="keyword">extern</highlight><highlight class="normal"><sp/>NSString<sp/>*</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="_r_m_upload_task_8h_12919246f601665936fe06cbe5f4051fe" kindref="member" tooltip="The title of the file to be uploaded. (NSString).">RMUploadFileTitleKey</ref>;</highlight></codeline>
+<codeline lineno="105"><highlight class="normal"></highlight></codeline>
+<codeline lineno="110"><highlight class="keyword">extern</highlight><highlight class="normal"><sp/>NSString<sp/>*</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="_r_m_upload_task_8h_185bf8137a3bedfba08aa71e5c04c67a3" kindref="member" tooltip="The date that the file to be uploaded was originally created. (NSDate).">RMUploadFileOriginalDateKey</ref>;</highlight></codeline>
+<codeline lineno="111"><highlight class="normal"></highlight></codeline>
+<codeline lineno="116"><highlight class="keyword">extern</highlight><highlight class="normal"><sp/>NSString<sp/>*</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="_r_m_upload_task_8h_12c1f2fbc835ae27864e4cc078f11c64a" kindref="member" tooltip="If the file represents a web site in some form, this key is that URL. (NSURL).">RMUploadFileOriginalURLKey</ref>;</highlight></codeline>
+<codeline lineno="117"><highlight class="normal"></highlight></codeline>
+<codeline lineno="122"><highlight class="keyword">extern</highlight><highlight class="normal"><sp/>NSString<sp/>*</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="_r_m_upload_task_8h_13464f875be186f256795bb5b5528d897" kindref="member" tooltip="The user&amp;#39;s description of the file. (NSString).">RMUploadFileDescriptionKey</ref>;</highlight></codeline>
+<codeline lineno="123"><highlight class="normal"></highlight></codeline>
+<codeline lineno="128"><highlight class="keyword">extern</highlight><highlight class="normal"><sp/>NSString<sp/>*</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="_r_m_upload_task_8h_1d944ad3357ac0110cd5b0637e083973f" kindref="member" tooltip="Tags associated with the file. (NSArray of NSString objects).">RMUploadFileTagsKey</ref>;</highlight></codeline>
+<codeline lineno="129"><highlight class="normal"></highlight></codeline>
+<codeline lineno="130"><highlight class="normal"></highlight><highlight class="comment">/*</highlight></codeline>
+<codeline lineno="131"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>Task<sp/>Object</highlight></codeline>
+<codeline lineno="132"><highlight class="comment"><sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="133"><highlight class="normal"></highlight></codeline>
+<codeline lineno="142" refid="interface_r_m_upload_task" refkind="compound"><highlight class="keyword">@interface<sp/></highlight><highlight class="normal"><ref refid="interface_r_m_upload_task" kindref="compound" tooltip="An upload task encapsulates an upload transaction with the target destination. This...">RMUploadTask</ref><sp/>:<sp/>NSObject</highlight></codeline>
+<codeline lineno="143"><highlight class="normal"></highlight></codeline>
+<codeline lineno="161"><highlight class="normal">-<sp/>(id)initWithPreset:(<ref refid="interface_r_m_upload_preset" kindref="compound" tooltip="A representation of configurable options for a service.">RMUploadPreset</ref><sp/>*)destination<sp/>uploadInfo:(</highlight><highlight class="keywordtype">id</highlight><highlight class="normal">)uploadInfo;</highlight></codeline>
+<codeline lineno="162"><highlight class="normal"></highlight></codeline>
+<codeline lineno="167" refid="interface_r_m_upload_task_1695821df9851265fb9dbf10ca9fba964" refkind="member"><highlight class="normal">@property<sp/>(readonly)<sp/><ref refid="interface_r_m_upload_preset" kindref="compound" tooltip="A representation of configurable options for a service.">RMUploadPreset</ref><sp/>*destination;</highlight></codeline>
+<codeline lineno="168"><highlight class="normal"></highlight></codeline>
+<codeline lineno="174" refid="interface_r_m_upload_task_1531e838c2b03947a54cff27e41348322" refkind="member"><highlight class="normal">@property<sp/>(readonly)<sp/></highlight><highlight class="keywordtype">id</highlight><highlight class="normal"><sp/><ref refid="interface_r_m_upload_task_1531e838c2b03947a54cff27e41348322" kindref="member" tooltip="The uploadInfo passed to the initialiser. Values should be obtained using -[NSObject...">uploadInfo</ref>;</highlight></codeline>
+<codeline lineno="175"><highlight class="normal"></highlight></codeline>
+<codeline lineno="186"><highlight class="normal">-<sp/>(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">)<ref refid="interface_r_m_upload_task_1b1dd00e0d49bcb3768052f62d9a2193c" kindref="member" tooltip="The central method to the class.">upload</ref>;</highlight></codeline>
+<codeline lineno="187"><highlight class="normal"></highlight></codeline>
+<codeline lineno="195"><highlight class="normal">-<sp/>(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">)<ref refid="interface_r_m_upload_task_1928a45ed4c774269b21890509cea0d4c" kindref="member" tooltip="This should immediately cease any uploading that the task is performing. You are...">cancel</ref>;</highlight></codeline>
+<codeline lineno="196"><highlight class="normal"></highlight></codeline>
+<codeline lineno="201" refid="interface_r_m_upload_task_10f34b8332b7814e5c2c5fe3a7b9eb2b6" refkind="member"><highlight class="normal">@property<sp/>(readonly,<sp/>getter=isCancelled)<sp/>BOOL<sp/><ref refid="interface_r_m_upload_task_10f34b8332b7814e5c2c5fe3a7b9eb2b6" kindref="member" tooltip="Set when the -cancel message is received.">cancelled</ref>;</highlight></codeline>
+<codeline lineno="202"><highlight class="normal"></highlight></codeline>
+<codeline lineno="203"><highlight class="normal">@end</highlight></codeline>
+    </programlisting>
+    <location file="/Users/keith/Projects/Source/RMUpload/documentation/RMUploadKit.sdk/Library/Frameworks/RMUploadKit.framework/Versions/A/Headers/RMUploadTask.h"/>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,183 @@
+<?xml version="1.0" encoding="UTF-8"?><object kind="class">
+  <name>RMUploadPreset</name>
+  <file>RMUploadPreset.h</file>
+  <superclass/>
+  <conformsTo>
+    <protocol>
+      <name> <ref id="../Protocols/AFPropertyList">AFPropertyList</ref> </name>
+      <conformsTo/>
+    </protocol>
+  </conformsTo>
+  <description>
+    <brief>
+<para>A representation of configurable options for a service. </para>    </brief>
+    <details>
+    </details>
+  </description>
+  <sections>
+    <section>
+      <name>Other</name>
+      <member kind="property">
+        <name>authentication</name>
+        <type><ref id="../Classes/RMUploadCredentials">RMUploadCredentials</ref> *</type>
+        <prototype>@property <ref id="../Classes/RMUploadCredentials">RMUploadCredentials</ref> *authentication</prototype>
+        <file><ref id="../Classes/RMUploadPreset">RMUploadPreset</ref>.h</file>
+        <description>
+          <brief>
+<para>The credentials the preset should use. This is a to-one relationship. </para>        </brief>
+          <details>
+        </details>
+        </description>
+      </member>
+      <member kind="property">
+        <name>plugin</name>
+        <type><ref id="../Classes/RMUploadPlugin">RMUploadPlugin</ref> *</type>
+        <prototype>@property <ref id="../Classes/RMUploadPlugin">RMUploadPlugin</ref> *plugin</prototype>
+        <file><ref id="../Classes/RMUploadPreset">RMUploadPreset</ref>.h</file>
+        <description>
+          <brief>
+<para>The plugin that owns the preset. </para>        </brief>
+          <details>
+        </details>
+        </description>
+      </member>
+      <member kind="property">
+        <name>name</name>
+        <type><ref id="http://developer.apple.com/mac/library/documentation/Cocoa/Reference/Foundation/Classes/NSString_Class/index">NSString</ref> *</type>
+        <prototype>@property <ref id="http://developer.apple.com/mac/library/documentation/Cocoa/Reference/Foundation/Classes/NSString_Class/index">NSString</ref> *name</prototype>
+        <file><ref id="../Classes/RMUploadPreset">RMUploadPreset</ref>.h</file>
+        <description>
+          <brief>
+<para>This is the user provided name for the preset. </para>        </brief>
+          <details>
+        </details>
+        </description>
+      </member>
+      <member kind="property">
+        <name>dirty</name>
+        <type>BOOL</type>
+        <prototype>@property BOOL dirty</prototype>
+        <file><ref id="../Classes/RMUploadPreset">RMUploadPreset</ref>.h</file>
+        <description>
+          <brief>
+<para>Set this key to <code>YES</code> to cause the preset to be persisted to disk. </para>        </brief>
+          <details>
+<para>This method is observed using key-value observing, when triggered your account will be saved.</para><para>If you want to trigger a save automatically, you can return dependent keys in <code>+keyPathsForValuesAffectingValueForKey:</code> ensuring that you include the results from super. </para>        </details>
+        </description>
+      </member>
+      <member kind="property">
+        <name>acceptedTypes</name>
+        <type><ref id="http://developer.apple.com/mac/library/documentation/Cocoa/Reference/Foundation/Classes/NSSet_Class/index">NSSet</ref> *</type>
+        <prototype>@property <ref id="http://developer.apple.com/mac/library/documentation/Cocoa/Reference/Foundation/Classes/NSSet_Class/index">NSSet</ref> *acceptedTypes</prototype>
+        <file><ref id="../Classes/RMUploadPreset">RMUploadPreset</ref>.h</file>
+        <description>
+          <brief>
+<para>The UTIs that the account supports. </para>        </brief>
+          <details>
+<para>This method is required.</para><para>The default implementation returns an empty set.</para><para>
+</para>        </details>
+        </description>
+        <return>
+          <para>A set of UTI strings which the preset supports. </para>
+        </return>
+      </member>
+      <member kind="property">
+        <name>serviceURL</name>
+        <type><ref id="http://developer.apple.com/mac/library/documentation/Cocoa/Reference/Foundation/Classes/NSURL_Class/index">NSURL</ref> *</type>
+        <prototype>@property <ref id="http://developer.apple.com/mac/library/documentation/Cocoa/Reference/Foundation/Classes/NSURL_Class/index">NSURL</ref> *serviceURL</prototype>
+        <file><ref id="../Classes/RMUploadPreset">RMUploadPreset</ref>.h</file>
+        <description>
+          <brief>
+<para>This method must return a valid, non-nil <code><ref id="http://developer.apple.com/mac/library/documentation/Cocoa/Reference/Foundation/Classes/NSURL_Class/index">NSURL</ref></code>. </para>        </brief>
+          <details>
+<para>Overriding this method is optional if the class method of the same signature returns a valid value.</para><para>This is used to graph and determine the geographical destination of the files. </para>        </details>
+        </description>
+      </member>
+    </section>
+    <section>
+      <name>Other</name>
+      <member kind="instance-method">
+        <name>init</name>
+        <type>id</type>
+        <prototype>- (id)init</prototype>
+        <file><ref id="../Classes/RMUploadPreset">RMUploadPreset</ref>.h</file>
+        <description>
+          <brief>
+<para>The designated initialiser. </para>        </brief>
+          <details>
+<para>Called when the framework wishes to create a new preset instead of loading one from disk. </para>        </details>
+        </description>
+      </member>
+      <member kind="instance-method">
+        <name>initWithPropertyListRepresentation:</name>
+        <type>id</type>
+        <prototype>- (id)initWithPropertyListRepresentation:(id)<parameter>values</parameter> </prototype>
+        <file><ref id="../Classes/RMUploadPreset">RMUploadPreset</ref>.h</file>
+        <description>
+          <brief>
+<para>Initialise a preset from a serialised representation. </para>        </brief>
+          <details>
+<para>We provide you with the representation that you return in <code>propertyListRepresentation</code> to hand off to the framework for saving.</para><para>If you follow the <code>-propertyListRepresentation</code> example implementation, be sure to pass only the superclass representation to the superclass inititializer.</para><para>An example implementation would be: <codeblock>- (id)initWithPropertyListRepresentation:(id)values {
+
+        id superRepresentation = [values objectForKey:@&quot;super&quot;];
+
+
+
+        self = [super initWithPropertyListRepresentation:superRepresentation];
+
+        if (self == nil) return nil;
+
+        
+
+        [self setProperty:[values objectForKey:@&quot;myKey&quot;]];
+
+        
+
+        return self;
+
+}
+
+</codeblock></para><para>
+</para>        </details>
+        </description>
+        <parameters><param><name>
+values
+</name><description>
+<para>The property list representation that was returned from <code>propertyListRepresentation</code>. </para></description></param>
+</parameters>
+      </member>
+      <member kind="instance-method">
+        <name>propertyListRepresentation</name>
+        <type>id</type>
+        <prototype>- (id)propertyListRepresentation</prototype>
+        <file><ref id="../Classes/RMUploadPreset">RMUploadPreset</ref>.h</file>
+        <description>
+          <brief>
+<para>A representation of the instance that can be saved to a plist. </para>        </brief>
+          <details>
+<para>In order to save presets they will be turned into a plist, therefore here you need to return a representation of your object that can be saved safely into one. You must also call the super's implementation at the top of the method.</para><para>It is essential that you include, and namespace the representation of the superclass. You must not assume the class of the superclass' representation, simply that it is suitable for inclusion in a property list written to disk.</para><para>An example implementation would be: <codeblock>- (id)propertyListRepresentation {
+
+        id superRepresentation = [super propertyListRepresentation];
+
+
+
+        NSMutableDictionary *propertyListRepresentation = [<ref id="http://developer.apple.com/mac/library/documentation/Cocoa/Reference/Foundation/Classes/NSMutableDictionary_Class/index">NSMutableDictionary</ref> dictionary];
+
+        [propertyListRepresentation setObject:superRepresentation forKey:@&quot;super&quot;];
+
+
+
+        [propertyListRepresentation setValue:[self property] forKey:@&quot;myKey&quot;];
+
+
+
+        return propertyListRepresentation;
+
+}
+
+</codeblock> </para>        </details>
+        </description>
+      </member>
+    </section>
+  </sections>
+</object>

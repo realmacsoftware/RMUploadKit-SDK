@@ -1,0 +1,148 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.5.9">
+  <compounddef id="interface_r_m_upload_plugin" kind="class" prot="public">
+    <compoundname>RMUploadPlugin</compoundname>
+    <includes refid="_r_m_upload_plugin_8h" local="no">RMUploadPlugin.h</includes>
+      <sectiondef kind="property">
+      <memberdef kind="property" id="interface_r_m_upload_plugin_1d103b89875a1ff99b2f2966de6f846fa" prot="public" static="no" readable="yes" writable="no" gettable="no" settable="no">
+        <type>NSBundle *</type>
+        <definition>NSBundle* RMUploadPlugin::bundle</definition>
+        <argsstring></argsstring>
+        <name>bundle</name>
+        <read></read>
+        <briefdescription>
+<para>The bundle the plugin was initialised with. </para>        </briefdescription>
+        <detaileddescription>
+<para>If your plugin requires access to any resources, this method is a helper to get access to the <computeroutput>NSBundle</computeroutput> instance for your plugin. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/keith/Projects/Source/RMUpload/documentation/RMUploadKit.sdk/Library/Frameworks/RMUploadKit.framework/Versions/A/Headers/RMUploadPlugin.h" line="108" bodyfile="/Users/keith/Projects/Source/RMUpload/documentation/RMUploadKit.sdk/Library/Frameworks/RMUploadKit.framework/Versions/A/Headers/RMUploadPlugin.h" bodystart="108" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="property" id="interface_r_m_upload_plugin_11b162344607929c8d5898a73c1553155" prot="public" static="no" readable="yes" writable="no" gettable="no" settable="no">
+        <type>NSSet *</type>
+        <definition>NSSet* RMUploadPlugin::credentials</definition>
+        <argsstring></argsstring>
+        <name>credentials</name>
+        <read></read>
+        <briefdescription>
+<para><computeroutput><ref refid="interface_r_m_upload_credentials" kindref="compound">RMUploadCredentials</ref></computeroutput> objects. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/keith/Projects/Source/RMUpload/documentation/RMUploadKit.sdk/Library/Frameworks/RMUploadKit.framework/Versions/A/Headers/RMUploadPlugin.h" line="114" bodyfile="/Users/keith/Projects/Source/RMUpload/documentation/RMUploadKit.sdk/Library/Frameworks/RMUploadKit.framework/Versions/A/Headers/RMUploadPlugin.h" bodystart="114" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="property" id="interface_r_m_upload_plugin_1b7beebf8b6dd7d3d5651d0c92847e7ab" prot="public" static="no" readable="yes" writable="no" gettable="no" settable="no">
+        <type>NSSet *</type>
+        <definition>NSSet* RMUploadPlugin::presets</definition>
+        <argsstring></argsstring>
+        <name>presets</name>
+        <read></read>
+        <briefdescription>
+<para><computeroutput><ref refid="interface_r_m_upload_preset" kindref="compound">RMUploadPreset</ref></computeroutput> objects. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/keith/Projects/Source/RMUpload/documentation/RMUploadKit.sdk/Library/Frameworks/RMUploadKit.framework/Versions/A/Headers/RMUploadPlugin.h" line="120" bodyfile="/Users/keith/Projects/Source/RMUpload/documentation/RMUploadKit.sdk/Library/Frameworks/RMUploadKit.framework/Versions/A/Headers/RMUploadPlugin.h" bodystart="120" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="interface_r_m_upload_plugin_1fc37fb9b978431881060697814b7edf2" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>id</type>
+        <definition>id RMUploadPlugin::initWithBundle:</definition>
+        <argsstring>(NSBundle *bundle)</argsstring>
+        <name>initWithBundle:</name>
+        <param>
+          <type>NSBundle *</type>
+          <declname>bundle</declname>
+        </param>
+        <briefdescription>
+<para>Designated initialiser. </para>        </briefdescription>
+        <detaileddescription>
+<para>Plugins may be initialised concurrently, no guarantees are made about their initialisation environment.</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>bundle</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The instance of NSBundle representing the plugin wrapper. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/keith/Projects/Source/RMUpload/documentation/RMUploadKit.sdk/Library/Frameworks/RMUploadKit.framework/Versions/A/Headers/RMUploadPlugin.h" line="100"/>
+      </memberdef>
+      <memberdef kind="function" id="interface_r_m_upload_plugin_15252f6138b3ba63aefa0ba877ebe5619" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type><ref refid="interface_r_m_upload_preset_configuration_view_controller" kindref="compound">RMUploadPresetConfigurationViewController</ref> *</type>
+        <definition>RMUploadPresetConfigurationViewController * RMUploadPlugin::credentialsConfigurationViewControllerForCredentials:</definition>
+        <argsstring>(RMUploadCredentials *credentials)</argsstring>
+        <name>credentialsConfigurationViewControllerForCredentials:</name>
+        <param>
+          <type><ref refid="interface_r_m_upload_credentials" kindref="compound">RMUploadCredentials</ref> *</type>
+          <declname>credentials</declname>
+        </param>
+        <briefdescription>
+<para>This method is <bold>required</bold> if your preset returns a class from <computeroutput>+[<ref refid="interface_r_m_upload_preset" kindref="compound">RMUploadPreset</ref> credentialsClass]</computeroutput>. </para>        </briefdescription>
+        <detaileddescription>
+<para>Used to return an <computeroutput>NSViewController</computeroutput> whose view allows the user to configure the credentials, such as the username/password and or a token.</para><para>You <bold>must not</bold> configure the <computeroutput>plugin&lt;-&gt;&gt;credentials</computeroutput> relationship in this method, this will be done for you if required.</para><para>The <computeroutput><ref refid="interface_r_m_upload_credentials" kindref="compound">RMUploadCredentials</ref></computeroutput> object to configure is set as the <computeroutput>representedObject</computeroutput> property. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/keith/Projects/Source/RMUpload/documentation/RMUploadKit.sdk/Library/Frameworks/RMUploadKit.framework/Versions/A/Headers/RMUploadPlugin.h" line="133"/>
+      </memberdef>
+      <memberdef kind="function" id="interface_r_m_upload_plugin_1014d3a9b81bb1246f332074931726e2f" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type><ref refid="interface_r_m_upload_preset_configuration_view_controller" kindref="compound">RMUploadPresetConfigurationViewController</ref> *</type>
+        <definition>RMUploadPresetConfigurationViewController * RMUploadPlugin::presetConfigurationViewControllerForPreset:</definition>
+        <argsstring>(RMUploadPreset *preset)</argsstring>
+        <name>presetConfigurationViewControllerForPreset:</name>
+        <param>
+          <type><ref refid="interface_r_m_upload_preset" kindref="compound">RMUploadPreset</ref> *</type>
+          <declname>preset</declname>
+        </param>
+        <briefdescription>
+<para>This method is <bold>required</bold>. Unless, your preset has configured an <computeroutput><ref refid="interface_r_m_upload_credentials" kindref="compound">RMUploadCredentials</ref></computeroutput> object, and you have no preset configuration options, in which case this method is <bold>optional</bold>. </para>        </briefdescription>
+        <detaileddescription>
+<para>The <computeroutput><ref refid="interface_r_m_upload_preset" kindref="compound">RMUploadPreset</ref></computeroutput> object to configure is set as the <computeroutput>representedObject</computeroutput> property. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/keith/Projects/Source/RMUpload/documentation/RMUploadKit.sdk/Library/Frameworks/RMUploadKit.framework/Versions/A/Headers/RMUploadPlugin.h" line="143"/>
+      </memberdef>
+      <memberdef kind="function" id="interface_r_m_upload_plugin_1149abe241c62810777723093eedaf1c1" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type><ref refid="interface_r_m_upload_metadata_configuration_view_controller" kindref="compound">RMUploadMetadataConfigurationViewController</ref> *</type>
+        <definition>RMUploadMetadataConfigurationViewController * RMUploadPlugin::additionalMetadataViewControllerForPresetClass:</definition>
+        <argsstring>(Class presetClass)</argsstring>
+        <name>additionalMetadataViewControllerForPresetClass:</name>
+        <param>
+          <type>Class</type>
+          <declname>presetClass</declname>
+        </param>
+        <briefdescription>
+<para>This method is <bold>optional</bold>. </para>        </briefdescription>
+        <detaileddescription>
+<para>If your plugin supports additional file metadata, this view will be placed in your plugin&apos;s section of the metadata view. The <computeroutput>representedObject</computeroutput> will be a KVC container, the contents of which will be passed in the <computeroutput>uploadInfo</computeroutput> to upload tasks. There is no guarantee that the object you &apos;configure&apos;, and the object passed to your <computeroutput><ref refid="interface_r_m_upload_task" kindref="compound">RMUploadTask</ref></computeroutput> will be the same, just that they will have the same values you set.</para><para>If you do add keys to this container they <bold>must</bold> be namespaced to your plugin. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/keith/Projects/Source/RMUpload/documentation/RMUploadKit.sdk/Library/Frameworks/RMUploadKit.framework/Versions/A/Headers/RMUploadPlugin.h" line="156"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>You uploader bundle principal class. </para>    </briefdescription>
+    <detaileddescription>
+<para>This class is the go-between for your presets, credentials and configuration view controllers respectively.</para><para>The methods which return an <computeroutput>NSViewController</computeroutput> have assertions performed on the return value, if any of these assertions fail, unless otherwise documented, an exception will be thrown:<itemizedlist>
+<listitem><para>the view controller&apos;s view <bold>must not</bold> have a superview.</para></listitem></itemizedlist>
+</para><para>When returning a view controller, make no assumptions about how the view will be used. It may be in a sheet in one version, and a view hierarchy the next. You <bold>must not</bold> call any methods to deal with closing windows etc. always post the relevant notifications.</para><para>A plugin is structured like this:</para><para><programlisting><codeline><highlight class="normal"><ref refid="interface_r_m_upload_plugin" kindref="compound" tooltip="You uploader bundle principal class.">RMUploadPlugin</ref><sp/><sp/>&lt;-&gt;&gt;<sp/><sp/><sp/><sp/><ref refid="interface_r_m_upload_preset" kindref="compound" tooltip="A representation of configurable options for a service.">RMUploadPreset</ref></highlight></codeline>
+<codeline><highlight class="normal">(<ref refid="interface_r_m_upload_plugin" kindref="compound" tooltip="You uploader bundle principal class.">RMUploadPlugin	&lt;-&gt;</ref>&gt;<sp/><sp/><sp/><sp/><ref refid="interface_r_m_upload_credentials" kindref="compound" tooltip="Represents a set of user credentials, most commonly for an account on a web service...">RMUploadCredentials</ref>)</highlight></codeline>
+<codeline><highlight class="normal">(<ref refid="interface_r_m_upload_preset" kindref="compound" tooltip="A representation of configurable options for a service.">RMUploadPreset</ref><sp/>&lt;&lt;-&gt;<sp/><sp/><sp/><sp/><ref refid="interface_r_m_upload_credentials" kindref="compound" tooltip="Represents a set of user credentials, most commonly for an account on a web service...">RMUploadCredentials</ref>)</highlight></codeline>
+</programlisting></para><para>A plugin owns many presets, and optionally, many credentials. A preset optionally, has credentials. </para>    </detaileddescription>
+    <location file="/Users/keith/Projects/Source/RMUpload/documentation/RMUploadKit.sdk/Library/Frameworks/RMUploadKit.framework/Versions/A/Headers/RMUploadPlugin.h" line="89" bodyfile="/Users/keith/Projects/Source/RMUpload/documentation/RMUploadKit.sdk/Library/Frameworks/RMUploadKit.framework/Versions/A/Headers/RMUploadPlugin.h" bodystart="88" bodyend="-1"/>
+    <listofallmembers>
+      <member refid="interface_r_m_upload_plugin_1149abe241c62810777723093eedaf1c1" prot="public" virt="virtual"><scope>RMUploadPlugin</scope><name>additionalMetadataViewControllerForPresetClass:</name></member>
+      <member refid="interface_r_m_upload_plugin_1d103b89875a1ff99b2f2966de6f846fa" prot="public" virt="non-virtual"><scope>RMUploadPlugin</scope><name>bundle</name></member>
+      <member refid="interface_r_m_upload_plugin_11b162344607929c8d5898a73c1553155" prot="public" virt="non-virtual"><scope>RMUploadPlugin</scope><name>credentials</name></member>
+      <member refid="interface_r_m_upload_plugin_15252f6138b3ba63aefa0ba877ebe5619" prot="public" virt="virtual"><scope>RMUploadPlugin</scope><name>credentialsConfigurationViewControllerForCredentials:</name></member>
+      <member refid="interface_r_m_upload_plugin_1fc37fb9b978431881060697814b7edf2" prot="public" virt="virtual"><scope>RMUploadPlugin</scope><name>initWithBundle:</name></member>
+      <member refid="interface_r_m_upload_plugin_1014d3a9b81bb1246f332074931726e2f" prot="public" virt="virtual"><scope>RMUploadPlugin</scope><name>presetConfigurationViewControllerForPreset:</name></member>
+      <member refid="interface_r_m_upload_plugin_1b7beebf8b6dd7d3d5651d0c92847e7ab" prot="public" virt="non-virtual"><scope>RMUploadPlugin</scope><name>presets</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,72 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.5.9">
+  <compounddef id="protocol_a_f_property_list-p" kind="protocol" prot="public">
+    <compoundname>AFPropertyList-p</compoundname>
+    <derivedcompoundref refid="interface_r_m_upload_credentials" prot="public" virt="non-virtual">RMUploadCredentials</derivedcompoundref>
+    <derivedcompoundref refid="interface_r_m_upload_preset" prot="public" virt="non-virtual">RMUploadPreset</derivedcompoundref>
+    <includes refid="_a_f_property_list_protocol_8h" local="no">AFPropertyListProtocol.h</includes>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="protocol_a_f_property_list-p_136c2b4fa811c3c608d65fe0af5942071" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>id</type>
+        <definition>id AFPropertyList-p::initWithPropertyListRepresentation:</definition>
+        <argsstring>(id propertyListRepresentation)</argsstring>
+        <name>initWithPropertyListRepresentation:</name>
+        <reimplementedby refid="interface_r_m_upload_preset_1bf0f3cfb3e7cebffc930c0770963b338">initWithPropertyListRepresentation:</reimplementedby>
+        <reimplementedby refid="interface_r_m_upload_credentials_1fa79b6c207caeb4cdf9c34ca4eceeca2">initWithPropertyListRepresentation:</reimplementedby>
+        <param>
+          <type>id</type>
+          <declname>propertyListRepresentation</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/keith/Projects/Source/RMUpload/documentation/RMUploadKit.sdk/Library/Frameworks/RMUploadKit.framework/Versions/A/Headers/AFPropertyListProtocol.h" line="29"/>
+      </memberdef>
+      <memberdef kind="function" id="protocol_a_f_property_list-p_1cc5f874c0ad88367a1b7aa064315a95f" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>id</type>
+        <definition>id AFPropertyList-p::propertyListRepresentation</definition>
+        <argsstring>()</argsstring>
+        <name>propertyListRepresentation</name>
+        <reimplementedby refid="interface_r_m_upload_preset_18e9885377d62cd9a6d8e3e0253cc4edf">propertyListRepresentation</reimplementedby>
+        <reimplementedby refid="interface_r_m_upload_credentials_102783b07eea101540429e098228a9baa">propertyListRepresentation</reimplementedby>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/keith/Projects/Source/RMUpload/documentation/RMUploadKit.sdk/Library/Frameworks/RMUploadKit.framework/Versions/A/Headers/AFPropertyListProtocol.h" line="30"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Defines an <computeroutput>NSCoding</computeroutput> like method pair. It is designed to produce developer-readable archives. </para>    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="2">
+        <label>RMUploadPreset</label>
+        <link refid="interface_r_m_upload_preset"/>
+        <childnode refid="0" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="1">
+        <label>RMUploadCredentials</label>
+        <link refid="interface_r_m_upload_credentials"/>
+        <childnode refid="0" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="0">
+        <label>&lt; AFPropertyList &gt;</label>
+        <link refid="protocol_a_f_property_list-p"/>
+      </node>
+    </inheritancegraph>
+    <location file="/Users/keith/Projects/Source/RMUpload/documentation/RMUploadKit.sdk/Library/Frameworks/RMUploadKit.framework/Versions/A/Headers/AFPropertyListProtocol.h" line="28" bodyfile="/Users/keith/Projects/Source/RMUpload/documentation/RMUploadKit.sdk/Library/Frameworks/RMUploadKit.framework/Versions/A/Headers/AFPropertyListProtocol.h" bodystart="28" bodyend="-1"/>
+    <listofallmembers>
+      <member refid="protocol_a_f_property_list-p_136c2b4fa811c3c608d65fe0af5942071" prot="public" virt="virtual"><scope>AFPropertyList-p</scope><name>initWithPropertyListRepresentation:</name></member>
+      <member refid="protocol_a_f_property_list-p_1cc5f874c0ad88367a1b7aa064315a95f" prot="public" virt="virtual"><scope>AFPropertyList-p</scope><name>propertyListRepresentation</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

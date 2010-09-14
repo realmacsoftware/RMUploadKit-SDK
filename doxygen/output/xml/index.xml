@@ -1,0 +1,221 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygenindex xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="index.xsd" version="1.5.9">
+  <compound refid="protocol_a_f_property_list-p" kind="protocol"><name>AFPropertyList-p</name>
+    <member refid="protocol_a_f_property_list-p_136c2b4fa811c3c608d65fe0af5942071" kind="function"><name>initWithPropertyListRepresentation:</name></member>
+    <member refid="protocol_a_f_property_list-p_1cc5f874c0ad88367a1b7aa064315a95f" kind="function"><name>propertyListRepresentation</name></member>
+  </compound>
+  <compound refid="interface_n_s_array_07_a_f_property_list_08" kind="class"><name>NSArray(AFPropertyList)</name>
+  </compound>
+  <compound refid="interface_n_s_dictionary_07_a_f_property_list_08" kind="class"><name>NSDictionary(AFPropertyList)</name>
+  </compound>
+  <compound refid="interface_n_s_u_r_l_07_a_f_property_list_08" kind="class"><name>NSURL(AFPropertyList)</name>
+  </compound>
+  <compound refid="interface_n_s_u_r_l_request_07_r_m_upload_additions_08" kind="class"><name>NSURLRequest(RMUploadAdditions)</name>
+    <member refid="interface_n_s_u_r_l_request_07_r_m_upload_additions_08_1c048cea6f45b3fbbc3ace7689fed707a" kind="function"><name>getRequestWithParameters:toURL:</name></member>
+    <member refid="interface_n_s_u_r_l_request_07_r_m_upload_additions_08_1c2357baf5933f3e2573882a7f95581cb" kind="function"><name>postRequestWithParameters:toURL:</name></member>
+    <member refid="interface_n_s_u_r_l_request_07_r_m_upload_additions_08_148de422f5c54461bd500d0467b45cd71" kind="function"><name>filePostRequestWithParameters:toURL:</name></member>
+  </compound>
+  <compound refid="interface_r_m_upload_credentials" kind="class"><name>RMUploadCredentials</name>
+    <member refid="interface_r_m_upload_credentials_1b0e0c11efa2b37bd334a6437894f90ab" kind="property"><name>plugin</name></member>
+    <member refid="interface_r_m_upload_credentials_1d0dbe046722a49fa5ad0c81e7493d21d" kind="property"><name>userIdentifier</name></member>
+    <member refid="interface_r_m_upload_credentials_1fa79b6c207caeb4cdf9c34ca4eceeca2" kind="function"><name>initWithPropertyListRepresentation:</name></member>
+    <member refid="interface_r_m_upload_credentials_102783b07eea101540429e098228a9baa" kind="function"><name>propertyListRepresentation</name></member>
+  </compound>
+  <compound refid="interface_r_m_upload_metadata_configuration_view_controller" kind="class"><name>RMUploadMetadataConfigurationViewController</name>
+  </compound>
+  <compound refid="interface_r_m_upload_multipart_document" kind="class"><name>RMUploadMultipartDocument</name>
+  </compound>
+  <compound refid="interface_r_m_upload_multipart_form_document" kind="class"><name>RMUploadMultipartFormDocument</name>
+    <member refid="interface_r_m_upload_multipart_form_document_1b9041c7aed8dbb068155afa32820a879" kind="function"><name>valueForField:</name></member>
+    <member refid="interface_r_m_upload_multipart_form_document_1376df8858465e9e3f427557867577e9c" kind="function"><name>setValue:forField:</name></member>
+    <member refid="interface_r_m_upload_multipart_form_document_142fe8cfdc1126675324ac59cd6c97b9f" kind="function"><name>fileLocationsForField:</name></member>
+    <member refid="interface_r_m_upload_multipart_form_document_14e686fbe27e88f78ef3e844bbaffb6d8" kind="function"><name>addFileByReferencingURL:withFilename:toField:</name></member>
+    <member refid="interface_r_m_upload_multipart_form_document_19632cc5634a6b3d871dd5560a8df99e2" kind="function"><name>getFormData:contentType:</name></member>
+  </compound>
+  <compound refid="interface_r_m_upload_multipart_related_document" kind="class"><name>RMUploadMultipartRelatedDocument</name>
+    <member refid="interface_r_m_upload_multipart_related_document_18fc1f24110492b11af94b53399bac768" kind="function"><name>init</name></member>
+    <member refid="interface_r_m_upload_multipart_related_document_1474685048e66dd46b9a5ed7290cd6456" kind="function"><name>initWithStartContentIdentifier:</name></member>
+    <member refid="interface_r_m_upload_multipart_related_document_1d06b7ed6c6f54d708f0cbd7e6f46a5bc" kind="function"><name>addPartWithData:withContentType:forContentIdentifier:</name></member>
+    <member refid="interface_r_m_upload_multipart_related_document_16cab98bf8eb5ccef1ef8f20cdbaf3d44" kind="function"><name>addPartByReferencingContentsOfURL:forContentIdentifier:</name></member>
+    <member refid="interface_r_m_upload_multipart_related_document_1cf91e7b16f6b74eae641035e5e46a5b3" kind="function"><name>removePartForContentIdentifier:</name></member>
+    <member refid="interface_r_m_upload_multipart_related_document_11e30c9a598be6b6eb89127d572edd5df" kind="function"><name>getData:contentType:</name></member>
+  </compound>
+  <compound refid="interface_r_m_upload_plugin" kind="class"><name>RMUploadPlugin</name>
+    <member refid="interface_r_m_upload_plugin_1d103b89875a1ff99b2f2966de6f846fa" kind="property"><name>bundle</name></member>
+    <member refid="interface_r_m_upload_plugin_11b162344607929c8d5898a73c1553155" kind="property"><name>credentials</name></member>
+    <member refid="interface_r_m_upload_plugin_1b7beebf8b6dd7d3d5651d0c92847e7ab" kind="property"><name>presets</name></member>
+    <member refid="interface_r_m_upload_plugin_1fc37fb9b978431881060697814b7edf2" kind="function"><name>initWithBundle:</name></member>
+    <member refid="interface_r_m_upload_plugin_15252f6138b3ba63aefa0ba877ebe5619" kind="function"><name>credentialsConfigurationViewControllerForCredentials:</name></member>
+    <member refid="interface_r_m_upload_plugin_1014d3a9b81bb1246f332074931726e2f" kind="function"><name>presetConfigurationViewControllerForPreset:</name></member>
+    <member refid="interface_r_m_upload_plugin_1149abe241c62810777723093eedaf1c1" kind="function"><name>additionalMetadataViewControllerForPresetClass:</name></member>
+  </compound>
+  <compound refid="interface_r_m_upload_preset" kind="class"><name>RMUploadPreset</name>
+    <member refid="interface_r_m_upload_preset_138ca2fac0d134a1e430b5ea1b98cbd2e" kind="property"><name>authentication</name></member>
+    <member refid="interface_r_m_upload_preset_1177c1aec6a30ddc83ff5fabbc180f1de" kind="property"><name>plugin</name></member>
+    <member refid="interface_r_m_upload_preset_119adab410d0290c2c64a67d4dd31fb96" kind="property"><name>name</name></member>
+    <member refid="interface_r_m_upload_preset_144c604923147565a8e4e18a34e6f6c7b" kind="property"><name>dirty</name></member>
+    <member refid="interface_r_m_upload_preset_1763db69b69c9b6abc3232de297f5c861" kind="property"><name>acceptedTypes</name></member>
+    <member refid="interface_r_m_upload_preset_1096aeae270efb06b9581d2e1c64e36c2" kind="property"><name>serviceURL</name></member>
+    <member refid="interface_r_m_upload_preset_17635aab90213ff9622050587b2ee425d" kind="function"><name>init</name></member>
+    <member refid="interface_r_m_upload_preset_1bf0f3cfb3e7cebffc930c0770963b338" kind="function"><name>initWithPropertyListRepresentation:</name></member>
+    <member refid="interface_r_m_upload_preset_18e9885377d62cd9a6d8e3e0253cc4edf" kind="function"><name>propertyListRepresentation</name></member>
+  </compound>
+  <compound refid="interface_r_m_upload_preset_07_r_m_upload_courier_integration_08" kind="class"><name>RMUploadPreset(RMUploadCourierIntegration)</name>
+    <member refid="interface_r_m_upload_preset_07_r_m_upload_courier_integration_08_138668466e371605504c99f74affcfa18" kind="function"><name>autoselectTrayImageKey</name></member>
+  </compound>
+  <compound refid="interface_r_m_upload_preset_07_r_m_upload_metadata_08" kind="class"><name>RMUploadPreset(RMUploadMetadata)</name>
+    <member refid="interface_r_m_upload_preset_07_r_m_upload_metadata_08_13f600c8131a5994f8048acc47224eae3" kind="function"><name>credentialsClass</name></member>
+    <member refid="interface_r_m_upload_preset_07_r_m_upload_metadata_08_1e93f0ea40c738c420f32487f0d26eb03" kind="function"><name>uploadTaskClass</name></member>
+    <member refid="interface_r_m_upload_preset_07_r_m_upload_metadata_08_19de78a912accc35396d467b7b7ff54f0" kind="function"><name>localisedName</name></member>
+    <member refid="interface_r_m_upload_preset_07_r_m_upload_metadata_08_142429043a579f8d4e09bc4b37d69195d" kind="function"><name>icon</name></member>
+    <member refid="interface_r_m_upload_preset_07_r_m_upload_metadata_08_1c7d5340727ab98adf02a64ae9094c545" kind="function"><name>serviceURL</name></member>
+  </compound>
+  <compound refid="interface_r_m_upload_preset_configuration_view_controller" kind="class"><name>RMUploadPresetConfigurationViewController</name>
+    <member refid="interface_r_m_upload_preset_configuration_view_controller_1fe393b0e4c002b045d76439d17912351" kind="property"><name>localisedAdvanceButtonTitle</name></member>
+    <member refid="interface_r_m_upload_preset_configuration_view_controller_18eb9d8ae4122d524f281c1bf9741dc22" kind="function"><name>nextStage:</name></member>
+    <member refid="interface_r_m_upload_preset_configuration_view_controller_158e6d9c2644ca1475225929fe7a17250" kind="function"><name>viewWillDisappear:</name></member>
+    <member refid="interface_r_m_upload_preset_configuration_view_controller_127401c6838674e82da4e41ce869319cf" kind="function"><name>viewDidAppear:</name></member>
+    <member refid="interface_r_m_upload_preset_configuration_view_controller_16f5cc84e99f2d49b20db1abebc02348a" kind="function"><name>highlightErrorInView:</name></member>
+    <member refid="interface_r_m_upload_preset_configuration_view_controller_16d80f585229c84800eb3ecd5618dc9b9" kind="function"><name>hideErrorArrow</name></member>
+  </compound>
+  <compound refid="interface_r_m_upload_preset_configuration_view_controller_07_actions_08" kind="class"><name>RMUploadPresetConfigurationViewController(Actions)</name>
+    <member refid="interface_r_m_upload_preset_configuration_view_controller_07_actions_08_1c33b81e9fd8cc4be402b9b2a3226ef52" kind="function"><name>showHelp:</name></member>
+  </compound>
+  <compound refid="interface_r_m_upload_task" kind="class"><name>RMUploadTask</name>
+    <member refid="interface_r_m_upload_task_1695821df9851265fb9dbf10ca9fba964" kind="property"><name>destination</name></member>
+    <member refid="interface_r_m_upload_task_1531e838c2b03947a54cff27e41348322" kind="property"><name>uploadInfo</name></member>
+    <member refid="interface_r_m_upload_task_10f34b8332b7814e5c2c5fe3a7b9eb2b6" kind="property"><name>cancelled</name></member>
+    <member refid="interface_r_m_upload_task_10a7625e72f7d4bf6091e5b13c0c1a7df" kind="function"><name>initWithPreset:uploadInfo:</name></member>
+    <member refid="interface_r_m_upload_task_1b1dd00e0d49bcb3768052f62d9a2193c" kind="function"><name>upload</name></member>
+    <member refid="interface_r_m_upload_task_1928a45ed4c774269b21890509cea0d4c" kind="function"><name>cancel</name></member>
+  </compound>
+  <compound refid="interface_r_m_upload_u_r_l_connection" kind="class"><name>RMUploadURLConnection</name>
+    <member refid="interface_r_m_upload_u_r_l_connection_16a30b21015bdbcb4e24e1ef9057a5674" kind="property"><name>delegate</name></member>
+    <member refid="interface_r_m_upload_u_r_l_connection_1451c57277725c6b455e1c454b1892e10" kind="property"><name>completionBlock</name></member>
+    <member refid="interface_r_m_upload_u_r_l_connection_143d7318ce1827b70964f16b329849fdb" kind="property"><name>completed</name></member>
+    <member refid="interface_r_m_upload_u_r_l_connection_1444f10586e5313597abdb952eca71624" kind="property"><name>userInfo</name></member>
+    <member refid="interface_r_m_upload_u_r_l_connection_15f59884dfef608fc434e614be0438382" kind="function"><name>connectionWithRequest:delegate:</name></member>
+    <member refid="interface_r_m_upload_u_r_l_connection_1c152243e77d8588d599567742fbac437" kind="function"><name>connectionWithRequest:completionBlock:</name></member>
+    <member refid="interface_r_m_upload_u_r_l_connection_1812bec6af16efd6d824662670227852a" kind="function"><name>sendURLRequest:</name></member>
+    <member refid="interface_r_m_upload_u_r_l_connection_1251014af81e1e787d6774e80a7fd4516" kind="function"><name>cancel</name></member>
+  </compound>
+  <compound refid="interface_r_m_upload_u_r_l_connection_07_r_m_upload_deprecated_08" kind="class"><name>RMUploadURLConnection(RMUploadDeprecated)</name>
+    <member refid="interface_r_m_upload_u_r_l_connection_07_r_m_upload_deprecated_08_1e61eba0809452a97a8437917490e7ed7" kind="function"><name>sendGetRequestWithParameters:toURL:</name></member>
+    <member refid="interface_r_m_upload_u_r_l_connection_07_r_m_upload_deprecated_08_1296924cb36d0177c4b63b92022685fbc" kind="function"><name>sendFilePostRequestWithParameters:toURL:</name></member>
+    <member refid="interface_r_m_upload_u_r_l_connection_07_r_m_upload_deprecated_08_16c112a6fab493d86077897bc48eeb9ef" kind="function"><name>sendPostRequestWithParameters:toURL:</name></member>
+  </compound>
+  <compound refid="protocol_r_m_upload_u_r_l_connection_delegate-p" kind="protocol"><name>RMUploadURLConnectionDelegate-p</name>
+    <member refid="protocol_r_m_upload_u_r_l_connection_delegate-p_113dec0ea87e78b8ae339f03b0495fce9" kind="function"><name>connection:downloadProgressed:</name></member>
+    <member refid="protocol_r_m_upload_u_r_l_connection_delegate-p_11c0c9a542dd270cb0c3fc8b5811227cc" kind="function"><name>connection:uploadProgressed:</name></member>
+    <member refid="protocol_r_m_upload_u_r_l_connection_delegate-p_1bdd2069a9623b4bcb1c3a6937a7f3295" kind="function"><name>connection:didFailWithError:</name></member>
+    <member refid="protocol_r_m_upload_u_r_l_connection_delegate-p_17fdcd1c7461a19b2c64934a741a29c0b" kind="function"><name>connection:didCompleteWithData:</name></member>
+    <member refid="protocol_r_m_upload_u_r_l_connection_delegate-p_18ef568305731a0843d656c2ddd46bd40" kind="function"><name>connection:didReceiveAuthenticationChallenge:</name></member>
+    <member refid="protocol_r_m_upload_u_r_l_connection_delegate-p_193d49c5129aba2b2bd5f19aa4335cdc7" kind="function"><name>connection:didCancelAuthenticationChallenge:</name></member>
+  </compound>
+  <compound refid="_a_f_property_list_protocol_8h" kind="file"><name>AFPropertyListProtocol.h</name>
+    <member refid="_a_f_property_list_protocol_8h_174efaf473378661877a4deb21e6634e8" kind="function"><name>AFIsPlistObject</name></member>
+    <member refid="_a_f_property_list_protocol_8h_1ec3331b2057533f3509127ed7ad7d54b" kind="function"><name>AFPropertyListRepresentationArchive</name></member>
+    <member refid="_a_f_property_list_protocol_8h_16ffa4003b57ec0276d1bea3be76925e3" kind="function"><name>AFPropertyListRepresentationUnarchive</name></member>
+  </compound>
+  <compound refid="_n_s_u_r_l_request_09_r_m_upload_additions_8h" kind="file"><name>NSURLRequest+RMUploadAdditions.h</name>
+    <member refid="_n_s_u_r_l_request_09_r_m_upload_additions_8h_14cd66766e4cf144745fd4d8f11bb0ecf" kind="variable"><name>RMPOSTFilenameKey</name></member>
+    <member refid="_n_s_u_r_l_request_09_r_m_upload_additions_8h_1f8ed4b27e1cfe9be61ca7f7d1cb15431" kind="variable"><name>RMPOSTContentTypeKey</name></member>
+    <member refid="_n_s_u_r_l_request_09_r_m_upload_additions_8h_1a33c35ee9a2eb8ebd1822fe6624c8e83" kind="variable"><name>RMPOSTDataKey</name></member>
+    <member refid="_n_s_u_r_l_request_09_r_m_upload_additions_8h_1023cad396b3cafb57b3ca085b59e1766" kind="variable"><name>RMPOSTFieldNameKey</name></member>
+  </compound>
+  <compound refid="_r_m_upload_availability_8h" kind="file"><name>RMUploadAvailability.h</name>
+    <member refid="_r_m_upload_availability_8h_16a1c6e282e372fbe9d3172507ff7e34c" kind="define"><name>RMUPLOADKIT_DEPRECATED_ATTRIBUTE</name></member>
+    <member refid="_r_m_upload_availability_8h_11f9abab0173c9135cc1240d3a5ea1570" kind="define"><name>RMUPLOADKIT_UNAVAILABLE_ATTRIBUTE</name></member>
+    <member refid="_r_m_upload_availability_8h_1b75c3f483cef6ad944611d087e0c3597" kind="define"><name>RMUPLOADKIT_WEAK_IMPORT_ATTRIBUTE</name></member>
+    <member refid="_r_m_upload_availability_8h_1ea5d12a8298162b057431e1c717377f1" kind="define"><name>RMUPLOADKIT_FRAMEWORK_VERSION_1</name></member>
+    <member refid="_r_m_upload_availability_8h_1b8d06af0a80b9b5af13f24654feddf6c" kind="define"><name>RMUPLOADKIT_FRAMEWORK_VERSION_2</name></member>
+    <member refid="_r_m_upload_availability_8h_1bdb6a1606fc6f10c32a5022795665120" kind="define"><name>RMUPLOADKIT_FRAMEWORK_VERSION_3</name></member>
+    <member refid="_r_m_upload_availability_8h_14e026af30889a34c327683466bbc3fc1" kind="define"><name>RMUPLOADKIT_FRAMEWORK_VERSION_MIN_REQUIRED</name></member>
+    <member refid="_r_m_upload_availability_8h_11ba1ac22b3486bfd2b1b5c2a1974721e" kind="define"><name>RMUPLOADKIT_FRAMEWORK_VERSION_MAX_ALLOWED</name></member>
+    <member refid="_r_m_upload_availability_8h_1e31a551c01ff670f8f43cd784cad54cf" kind="define"><name>AVAILABLE_RMUPLOADKIT_VERSION_3_AND_LATER</name></member>
+  </compound>
+  <compound refid="_r_m_upload_constants_8h" kind="file"><name>RMUploadConstants.h</name>
+    <member refid="_r_m_upload_constants_8h_1d4c46608f6ad69881f9a15a36c3a5f40" kind="variable"><name>RMUploadKitBundleIdentifier</name></member>
+    <member refid="_r_m_upload_constants_8h_17d1221a77a899f4a6876bbdec2e23193" kind="variable"><name>RMUploadKitURIScheme</name></member>
+    <member refid="_r_m_upload_constants_8h_115ad0ecb382d36f0481d132e6f2ca799" kind="variable"><name>RMUploadPluginBundleExtension</name></member>
+  </compound>
+  <compound refid="_r_m_upload_credentials_8h" kind="file"><name>RMUploadCredentials.h</name>
+    <member refid="_r_m_upload_credentials_8h_14410631acf2da6144598aae1b7e31df3" kind="variable"><name>RMUploadCredentialsDirtyKey</name></member>
+    <member refid="_r_m_upload_credentials_8h_16f06b98f64937a7a9a156cf16f640a3b" kind="variable"><name>RMUploadCredentialsUserIdentifierKey</name></member>
+  </compound>
+  <compound refid="_r_m_upload_errors_8h" kind="file"><name>RMUploadErrors.h</name>
+    <member refid="_r_m_upload_errors_8h_106fc87d81c62e9abb8790b6e5713c55b" kind="enum"><name>@0</name></member>
+    <member refid="_r_m_upload_errors_8h_106fc87d81c62e9abb8790b6e5713c55b8b54e312ec04035ec8a19f4cd08119f3" kind="enumvalue"><name>RMUploadErrorUnknown</name></member>
+    <member refid="_r_m_upload_errors_8h_106fc87d81c62e9abb8790b6e5713c55bb420f1d8ae837d947773a1e391235e3c" kind="enumvalue"><name>RMUploadPresetConfigurationViewControllerErrorValidation</name></member>
+    <member refid="_r_m_upload_errors_8h_1488480dd678c72f0cf74e87fc18488f6" kind="typedef"><name>RMUploadKitErrorCode</name></member>
+  </compound>
+  <compound refid="_r_m_upload_kit_8h" kind="file"><name>RMUploadKit.h</name>
+  </compound>
+  <compound refid="_r_m_upload_metadata_configuration_view_controller_8h" kind="file"><name>RMUploadMetadataConfigurationViewController.h</name>
+  </compound>
+  <compound refid="_r_m_upload_multipart_documents_8h" kind="file"><name>RMUploadMultipartDocuments.h</name>
+  </compound>
+  <compound refid="_r_m_upload_plugin_8h" kind="file"><name>RMUploadPlugin.h</name>
+    <member refid="_r_m_upload_plugin_8h_15f5e95c7c016989d0c1c2a0906fd24a5" kind="variable"><name>RMUploadPluginBundleMinimumFrameworkBundleVersionKey</name></member>
+    <member refid="_r_m_upload_plugin_8h_1efcbbc524f6d3ce231888161d41a2716" kind="variable"><name>RMUploadPluginDestinationTypesKey</name></member>
+    <member refid="_r_m_upload_plugin_8h_1b83c184c7f5d25861fdbe4f0fa927610" kind="variable"><name>RMUploadPluginServiceHostKey</name></member>
+    <member refid="_r_m_upload_plugin_8h_1e019fd03e895836b19ae8c968609847c" kind="variable"><name>RMUploadPluginServiceUseSSLKey</name></member>
+    <member refid="_r_m_upload_plugin_8h_1170b84a4aff69f8881d61bc351652308" kind="variable"><name>RMUploadPluginCredentialsKey</name></member>
+    <member refid="_r_m_upload_plugin_8h_11ddb5fc0e18f8cf75e1b2639c446ceaa" kind="variable"><name>RMUploadPluginPresetsKey</name></member>
+  </compound>
+  <compound refid="_r_m_upload_preset_8h" kind="file"><name>RMUploadPreset.h</name>
+    <member refid="_r_m_upload_preset_8h_1911e523c1c73f384b74ba8ca8b003ca1" kind="variable"><name>RMUploadPresetNameKey</name></member>
+    <member refid="_r_m_upload_preset_8h_1d297e9b8e0f76b4b8d907eab2fa20a6b" kind="variable"><name>RMUploadPresetDirtyKey</name></member>
+    <member refid="_r_m_upload_preset_8h_164bda6a8703b018995f2da7e4a70e67a" kind="variable"><name>RMUploadPresetAcceptedTypesKey</name></member>
+  </compound>
+  <compound refid="_r_m_upload_preset_configuration_view_controller_8h" kind="file"><name>RMUploadPresetConfigurationViewController.h</name>
+    <member refid="_r_m_upload_preset_configuration_view_controller_8h_1578d81a6d3c7b7ce355f00a0c931577a" kind="variable"><name>RMUploadPresetConfigurationViewControllerDidCompleteNotificationName</name></member>
+    <member refid="_r_m_upload_preset_configuration_view_controller_8h_1af76f0dd956afa038d3e83976024f8a2" kind="variable"><name>RMUploadPresetConfigurationViewControllerDidCompleteErrorKey</name></member>
+    <member refid="_r_m_upload_preset_configuration_view_controller_8h_1463767b3e312f7af4f4d19b07800f56f" kind="variable"><name>RMUploadPresetConfigurationViewControllerLocalisedAdvanceButtonTitleKey</name></member>
+  </compound>
+  <compound refid="_r_m_upload_task_8h" kind="file"><name>RMUploadTask.h</name>
+    <member refid="_r_m_upload_task_8h_1c500b851370462f3eb4ad15846838577" kind="variable"><name>RMUploadTaskUpdateStatusTextNotificationName</name></member>
+    <member refid="_r_m_upload_task_8h_13cba9c86be56389200b4887781b2d7a4" kind="variable"><name>RMUploadTaskDidReceiveProgressNotificationName</name></member>
+    <member refid="_r_m_upload_task_8h_156f3734e70c98e425f4f40a6faa2318d" kind="variable"><name>RMUploadTaskProgressTotalKey</name></member>
+    <member refid="_r_m_upload_task_8h_11acf2be5008126013c99f598fed16863" kind="variable"><name>RMUploadTaskProgressCurrentKey</name></member>
+    <member refid="_r_m_upload_task_8h_148819b459e9566e944e8e650a2d7badd" kind="variable"><name>RMUploadTaskDidFinishTransactionNotificationName</name></member>
+    <member refid="_r_m_upload_task_8h_1949b6c09d4b0a6dbb8fea07321b3c168" kind="variable"><name>RMUploadTaskResourceLocationKey</name></member>
+    <member refid="_r_m_upload_task_8h_177609ca172a2147c6f9fcb2104f1e688" kind="variable"><name>RMUploadTaskErrorKey</name></member>
+    <member refid="_r_m_upload_task_8h_180adae54fc541b18d4df70cf36f5f436" kind="variable"><name>RMUploadTaskDidCompleteNotificationName</name></member>
+    <member refid="_r_m_upload_task_8h_11dd59ea5be30948abec2bb1e6697f4bd" kind="variable"><name>RMUploadTaskStatusInfoKey</name></member>
+    <member refid="_r_m_upload_task_8h_15663fcfdad3a049882f103b51d9134ff" kind="variable"><name>RMUploadFileURLKey</name></member>
+    <member refid="_r_m_upload_task_8h_12919246f601665936fe06cbe5f4051fe" kind="variable"><name>RMUploadFileTitleKey</name></member>
+    <member refid="_r_m_upload_task_8h_185bf8137a3bedfba08aa71e5c04c67a3" kind="variable"><name>RMUploadFileOriginalDateKey</name></member>
+    <member refid="_r_m_upload_task_8h_12c1f2fbc835ae27864e4cc078f11c64a" kind="variable"><name>RMUploadFileOriginalURLKey</name></member>
+    <member refid="_r_m_upload_task_8h_13464f875be186f256795bb5b5528d897" kind="variable"><name>RMUploadFileDescriptionKey</name></member>
+    <member refid="_r_m_upload_task_8h_1d944ad3357ac0110cd5b0637e083973f" kind="variable"><name>RMUploadFileTagsKey</name></member>
+  </compound>
+  <compound refid="_r_m_upload_u_r_l_connection_8h" kind="file"><name>RMUploadURLConnection.h</name>
+    <member refid="_r_m_upload_u_r_l_connection_8h_19729d1cfc04cbf0bd97158d6b612e5c2" kind="typedef"><name>responseError</name></member>
+    <member refid="_r_m_upload_u_r_l_connection_8h_1fa6b635dacd7a5df623256c763afab5e" kind="function"><name>void</name></member>
+  </compound>
+  <compound refid="dir_cf52511228cad7dc708c4103d9bb57e6" kind="dir"><name>/Users/keith/Projects/Source/RMUpload/documentation/RMUploadKit.sdk/Library/Frameworks/RMUploadKit.framework/Versions/A/</name>
+  </compound>
+  <compound refid="dir_3ed2fa5009a7230f191e5dd9eb6bf827" kind="dir"><name>/Users/keith/Projects/Source/RMUpload/documentation/</name>
+  </compound>
+  <compound refid="dir_218a9439857e10c3ba98098bc68866a4" kind="dir"><name>/Users/keith/Projects/Source/RMUpload/documentation/RMUploadKit.sdk/Library/Frameworks/</name>
+  </compound>
+  <compound refid="dir_91a19cf6edfac0404c705485afee9609" kind="dir"><name>/Users/keith/Projects/Source/RMUpload/documentation/RMUploadKit.sdk/Library/Frameworks/RMUploadKit.framework/Versions/A/Headers/</name>
+  </compound>
+  <compound refid="dir_88b01fc6e02cfb49cfa4c3910da2ec12" kind="dir"><name>/Users/keith/</name>
+  </compound>
+  <compound refid="dir_f9fe4eab118d21b9c6b2d8264e8be3d8" kind="dir"><name>/Users/keith/Projects/Source/RMUpload/documentation/RMUploadKit.sdk/Library/</name>
+  </compound>
+  <compound refid="dir_060fffbae4770fd4e46870cbd3b0dc95" kind="dir"><name>/Users/keith/Projects/</name>
+  </compound>
+  <compound refid="dir_a223300e878de5c8569b4662371bffe8" kind="dir"><name>/Users/keith/Projects/Source/RMUpload/</name>
+  </compound>
+  <compound refid="dir_cf67b188d77b2f5b9ae83c7091a6563f" kind="dir"><name>/Users/keith/Projects/Source/RMUpload/documentation/RMUploadKit.sdk/Library/Frameworks/RMUploadKit.framework/</name>
+  </compound>
+  <compound refid="dir_e276bba908cf343e1f4f5c175308a7d6" kind="dir"><name>/Users/keith/Projects/Source/RMUpload/documentation/RMUploadKit.sdk/</name>
+  </compound>
+  <compound refid="dir_121488fcea61c669c5036071cddb8f43" kind="dir"><name>/Users/keith/Projects/Source/</name>
+  </compound>
+  <compound refid="dir_ed54f06b6481195d07963b2cbf730f78" kind="dir"><name>/Users/keith/Projects/Source/RMUpload/documentation/RMUploadKit.sdk/Library/Frameworks/RMUploadKit.framework/Versions/</name>
+  </compound>
+</doxygenindex>

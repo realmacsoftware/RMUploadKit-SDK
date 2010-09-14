@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?><object kind="class">
+  <name>RMUploadPresetConfigurationViewController</name>
+  <file>RMUploadPresetConfigurationViewController.h</file>
+  <description>
+    <brief>
+<para>Base class for <code><ref id="../Classes/RMUploadCredentials">RMUploadCredentials</ref></code> and <code><ref id="../Classes/RMUploadPreset">RMUploadPreset</ref></code> configuration view controllers. </para>    </brief>
+    <details>
+<para>You view must be 287pt in width, there is no height restriction (within reason). Your subviews should have an appropriate autoresizing mask for the superview to be a different (larger) width. </para>    </details>
+  </description>
+  <sections>
+    <section>
+      <name>Other</name>
+      <member kind="property">
+        <name>localisedAdvanceButtonTitle</name>
+        <type><ref id="http://developer.apple.com/mac/library/documentation/Cocoa/Reference/Foundation/Classes/NSString_Class/index">NSString</ref> *</type>
+        <prototype>@property <ref id="http://developer.apple.com/mac/library/documentation/Cocoa/Reference/Foundation/Classes/NSString_Class/index">NSString</ref> *localisedAdvanceButtonTitle</prototype>
+        <file><ref id="../Classes/RMUploadPresetConfigurationViewController">RMUploadPresetConfigurationViewController</ref>.h</file>
+        <description>
+          <brief>
+<para>Observed and set as the 'next' button title. </para>        </brief>
+          <details>
+<para>Intended for OAuth based credential view controllers so that they can title the button 'Authenticate' and change it to 'Confirm' after redirecting the user to the verification page in their browser. </para>        </details>
+        </description>
+      </member>
+    </section>
+    <section>
+      <name>Other</name>
+      <member kind="instance-method">
+        <name>nextStage:</name>
+        <type>IBAction</type>
+        <prototype>- (IBAction)nextStage:(id)<parameter>sender</parameter> </prototype>
+        <file><ref id="../Classes/RMUploadPresetConfigurationViewController">RMUploadPresetConfigurationViewController</ref>.h</file>
+        <description>
+          <brief>
+<para>Override this action message to perform any validation before proceeding. You must validate your credential/preset object here. </para>        </brief>
+          <details>
+<para>Once you have completed your validation, post the <code>RMUploadDestinationConfigurationViewControllerStageDidCompleteNotificationName</code> notification to the <code>+[<ref id="http://developer.apple.com/mac/library/documentation/Cocoa/Reference/Foundation/Classes/NSNotificationCenter_Class/index">NSNotificationCenter</ref> defaultCenter]</code> on the main thread with self as the object.</para><para>The default implementation simply posts the notification.</para><para>If your validation returns an error include it in the notification dictionary. You can include a recovery attempter under the <code>NSRecoveryAttempterErrorKey</code> key.<list>
+<item><para>If you include a recovery attempter, and recover from the error, configuration will continue as if no error had been returned in the first place.</para></item><item><para>If you include a recovery attempter, and don't recover from the error, configuration doesn't continue and the user is returned to the current configuration view controller. </para></item></list>
+</para>        </details>
+        </description>
+      </member>
+      <member kind="instance-method">
+        <name>highlightErrorInView:</name>
+        <type>void</type>
+        <prototype>- (void)highlightErrorInView:(<ref id="http://developer.apple.com/mac/library/documentation/Cocoa/Reference/ApplicationKit/Classes/NSView_Class/index">NSView</ref> *)<parameter>errorView</parameter> </prototype>
+        <file><ref id="../Classes/RMUploadPresetConfigurationViewController">RMUploadPresetConfigurationViewController</ref>.h</file>
+        <description>
+          <brief>
+<para>Highlights an error in, for example, a text field. </para>        </brief>
+          <details>
+<para>The error will fade out after a short delay. </para>        </details>
+        </description>
+      </member>
+      <member kind="instance-method">
+        <name>hideErrorArrow</name>
+        <type>void</type>
+        <prototype>- (void)hideErrorArrow</prototype>
+        <file><ref id="../Classes/RMUploadPresetConfigurationViewController">RMUploadPresetConfigurationViewController</ref>.h</file>
+        <description>
+          <brief>
+<para>Hides a previously present error arrow using <code>-highlightErrorInView:</code>. </para>        </brief>
+          <details>
+        </details>
+        </description>
+      </member>
+    </section>
+  </sections>
+</object>

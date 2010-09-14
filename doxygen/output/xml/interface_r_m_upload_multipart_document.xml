@@ -1,0 +1,34 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.5.9">
+  <compounddef id="interface_r_m_upload_multipart_document" kind="class" prot="public">
+    <compoundname>RMUploadMultipartDocument</compoundname>
+    <derivedcompoundref refid="interface_r_m_upload_multipart_form_document" prot="public" virt="non-virtual">RMUploadMultipartFormDocument</derivedcompoundref>
+    <derivedcompoundref refid="interface_r_m_upload_multipart_related_document" prot="public" virt="non-virtual">RMUploadMultipartRelatedDocument</derivedcompoundref>
+    <includes refid="_r_m_upload_multipart_documents_8h" local="no">RMUploadMultipartDocuments.h</includes>
+    <briefdescription>
+<para>Base class for multipart documents. </para>    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="20">
+        <label>RMUploadMultipartRelatedDocument</label>
+        <link refid="interface_r_m_upload_multipart_related_document"/>
+        <childnode refid="18" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="18">
+        <label>RMUploadMultipartDocument</label>
+        <link refid="interface_r_m_upload_multipart_document"/>
+      </node>
+      <node id="19">
+        <label>RMUploadMultipartFormDocument</label>
+        <link refid="interface_r_m_upload_multipart_form_document"/>
+        <childnode refid="18" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <location file="/Users/keith/Projects/Source/RMUpload/documentation/RMUploadKit.sdk/Library/Frameworks/RMUploadKit.framework/Versions/A/Headers/RMUploadMultipartDocuments.h" line="19" bodyfile="/Users/keith/Projects/Source/RMUpload/documentation/RMUploadKit.sdk/Library/Frameworks/RMUploadKit.framework/Versions/A/Headers/RMUploadMultipartDocuments.h" bodystart="18" bodyend="-1"/>
+    <listofallmembers>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,115 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.5.9">
+  <compounddef id="_r_m_upload_preset_configuration_view_controller_8h" kind="file">
+    <compoundname>RMUploadPresetConfigurationViewController.h</compoundname>
+    <includes local="no">Cocoa/Cocoa.h</includes>
+    <incdepgraph>
+      <node id="50">
+        <label>Cocoa/Cocoa.h</label>
+      </node>
+      <node id="49">
+        <label>/Users/keith/Projects/Source/RMUpload/documentation/RMUploadKit.sdk/Library/Frameworks/RMUploadKit.framework/Versions/A/Headers/RMUploadPresetConfigurationViewController.h</label>
+        <link refid="RMUploadPresetConfigurationViewController.h"/>
+        <childnode refid="50" relation="include">
+        </childnode>
+      </node>
+    </incdepgraph>
+    <innerclass refid="interface_r_m_upload_preset_configuration_view_controller" prot="public">RMUploadPresetConfigurationViewController</innerclass>
+    <innerclass refid="interface_r_m_upload_preset_configuration_view_controller_07_actions_08" prot="public">RMUploadPresetConfigurationViewController(Actions)</innerclass>
+      <sectiondef kind="var">
+      <memberdef kind="variable" id="_r_m_upload_preset_configuration_view_controller_8h_1578d81a6d3c7b7ce355f00a0c931577a" prot="public" static="no" mutable="no">
+        <type>NSString *const</type>
+        <definition>NSString* const RMUploadPresetConfigurationViewControllerDidCompleteNotificationName</definition>
+        <argsstring></argsstring>
+        <name>RMUploadPresetConfigurationViewControllerDidCompleteNotificationName</name>
+        <briefdescription>
+<para>Post this once you have completed your work in <computeroutput>-nextStage:</computeroutput> to signal a change in the advancement status. </para>        </briefdescription>
+        <detaileddescription>
+<para>If your validation succeeded, post it with an empty userInfo. If an error occurs, return it under the error <computeroutput>RMUploadDestinationConfigurationViewControllerCompletionErrorKey</computeroutput> to signal that the view cannot advance.</para><para>If your error has domain RMUploadKitBundleIdentifier and code RMUploadPresetConfigurationViewControllerErrorValidation, the error isn&apos;t presented, the view doesn&apos;t advance and the &apos;next&apos; button is re-enabled. Use this for a validation error. This error should be used in conjunction with <computeroutput>-[<ref refid="interface_r_m_upload_preset_configuration_view_controller" kindref="compound">RMUploadPresetConfigurationViewController</ref> highlightErrorInView:]</computeroutput>. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/keith/Projects/Source/RMUpload/documentation/RMUploadKit.sdk/Library/Frameworks/RMUploadKit.framework/Versions/A/Headers/RMUploadPresetConfigurationViewController.h" line="25"/>
+      </memberdef>
+      <memberdef kind="variable" id="_r_m_upload_preset_configuration_view_controller_8h_1af76f0dd956afa038d3e83976024f8a2" prot="public" static="no" mutable="no">
+        <type>NSString *const</type>
+        <definition>NSString* const RMUploadPresetConfigurationViewControllerDidCompleteErrorKey</definition>
+        <argsstring></argsstring>
+        <name>RMUploadPresetConfigurationViewControllerDidCompleteErrorKey</name>
+        <briefdescription>
+<para>An <computeroutput>NSError</computeroutput> object, included in the <computeroutput>RMUploadPresetConfigurationViewControllerDidCompleteNotificationName</computeroutput> <computeroutput>userInfo</computeroutput> dictionary. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/keith/Projects/Source/RMUpload/documentation/RMUploadKit.sdk/Library/Frameworks/RMUploadKit.framework/Versions/A/Headers/RMUploadPresetConfigurationViewController.h" line="30"/>
+      </memberdef>
+      <memberdef kind="variable" id="_r_m_upload_preset_configuration_view_controller_8h_1463767b3e312f7af4f4d19b07800f56f" prot="public" static="no" mutable="no">
+        <type>NSString *const</type>
+        <definition>NSString* const RMUploadPresetConfigurationViewControllerLocalisedAdvanceButtonTitleKey</definition>
+        <argsstring></argsstring>
+        <name>RMUploadPresetConfigurationViewControllerLocalisedAdvanceButtonTitleKey</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/keith/Projects/Source/RMUpload/documentation/RMUploadKit.sdk/Library/Frameworks/RMUploadKit.framework/Versions/A/Headers/RMUploadPresetConfigurationViewController.h" line="36"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="comment">//</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight><highlight class="comment">//<sp/><sp/>RMUploadDestinationViewController.h</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight><highlight class="comment">//<sp/><sp/>RMUploadKit</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight><highlight class="comment">//</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight><highlight class="comment">//<sp/><sp/>Created<sp/>by<sp/>Keith<sp/>Duncan<sp/>on<sp/>24/09/2009.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="6"><highlight class="normal"></highlight><highlight class="comment">//<sp/><sp/>Copyright<sp/>2009<sp/>Realmac<sp/>Software.<sp/>All<sp/>rights<sp/>reserved.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="7"><highlight class="normal"></highlight><highlight class="comment">//</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="8"><highlight class="normal"></highlight></codeline>
+<codeline lineno="9"><highlight class="normal"></highlight><highlight class="preprocessor">#import<sp/>&lt;Cocoa/Cocoa.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="10"><highlight class="normal"></highlight></codeline>
+<codeline lineno="25"><highlight class="keyword">extern</highlight><highlight class="normal"><sp/>NSString<sp/>*</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="_r_m_upload_preset_configuration_view_controller_8h_1578d81a6d3c7b7ce355f00a0c931577a" kindref="member" tooltip="Post this once you have completed your work in -nextStage: to signal a change in...">RMUploadPresetConfigurationViewControllerDidCompleteNotificationName</ref>;</highlight></codeline>
+<codeline lineno="30"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">extern</highlight><highlight class="normal"><sp/>NSString<sp/>*</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="_r_m_upload_preset_configuration_view_controller_8h_1af76f0dd956afa038d3e83976024f8a2" kindref="member" tooltip="An NSError object, included in the RMUploadPresetConfigurationViewControllerDidCompleteNotificationN...">RMUploadPresetConfigurationViewControllerDidCompleteErrorKey</ref>;</highlight></codeline>
+<codeline lineno="31"><highlight class="normal"></highlight></codeline>
+<codeline lineno="32"><highlight class="normal"></highlight><highlight class="comment">/*</highlight></codeline>
+<codeline lineno="33"><highlight class="comment"><sp/>*<sp/><sp/><sp/><sp/><sp/><sp/>Keys</highlight></codeline>
+<codeline lineno="34"><highlight class="comment"><sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="35"><highlight class="normal"></highlight></codeline>
+<codeline lineno="36"><highlight class="normal"></highlight><highlight class="keyword">extern</highlight><highlight class="normal"><sp/>NSString<sp/>*</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="_r_m_upload_preset_configuration_view_controller_8h_1463767b3e312f7af4f4d19b07800f56f" kindref="member">RMUploadPresetConfigurationViewControllerLocalisedAdvanceButtonTitleKey</ref>;</highlight></codeline>
+<codeline lineno="37"><highlight class="normal"></highlight></codeline>
+<codeline lineno="46" refid="interface_r_m_upload_preset_configuration_view_controller" refkind="compound"><highlight class="keyword">@interface<sp/></highlight><highlight class="normal"><ref refid="interface_r_m_upload_preset_configuration_view_controller" kindref="compound" tooltip="Base class for RMUploadCredentials and RMUploadPreset configuration view controllers...">RMUploadPresetConfigurationViewController</ref><sp/>:<sp/>NSViewController</highlight></codeline>
+<codeline lineno="47"><highlight class="normal"></highlight></codeline>
+<codeline lineno="55" refid="interface_r_m_upload_preset_configuration_view_controller_1fe393b0e4c002b045d76439d17912351" refkind="member"><highlight class="normal">@property<sp/>(readonly)<sp/>NSString<sp/>*<ref refid="interface_r_m_upload_preset_configuration_view_controller_1fe393b0e4c002b045d76439d17912351" kindref="member" tooltip="Observed and set as the &amp;#39;next&amp;#39; button title.">localisedAdvanceButtonTitle</ref>;</highlight></codeline>
+<codeline lineno="56"><highlight class="normal"></highlight></codeline>
+<codeline lineno="70"><highlight class="normal">-<sp/>(IBAction)nextStage:(</highlight><highlight class="keywordtype">id</highlight><highlight class="normal">)sender;</highlight></codeline>
+<codeline lineno="71"><highlight class="normal"></highlight></codeline>
+<codeline lineno="72"><highlight class="normal"></highlight><highlight class="comment">/*</highlight></codeline>
+<codeline lineno="73"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>View<sp/>Controller<sp/>Conveniences</highlight></codeline>
+<codeline lineno="74"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="75"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>These<sp/>will<sp/>be<sp/>called<sp/>for<sp/>you.</highlight></codeline>
+<codeline lineno="76"><highlight class="comment"><sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="77"><highlight class="normal"></highlight></codeline>
+<codeline lineno="78"><highlight class="normal">-<sp/>(<ref refid="_r_m_upload_u_r_l_connection_8h_1fa6b635dacd7a5df623256c763afab5e" kindref="member">void</ref>)viewWillDisappear:(BOOL)animated;</highlight></codeline>
+<codeline lineno="79"><highlight class="normal"></highlight></codeline>
+<codeline lineno="80"><highlight class="normal">-<sp/>(<ref refid="_r_m_upload_u_r_l_connection_8h_1fa6b635dacd7a5df623256c763afab5e" kindref="member">void</ref>)viewDidAppear:(BOOL)animated;</highlight></codeline>
+<codeline lineno="81"><highlight class="normal"></highlight></codeline>
+<codeline lineno="89"><highlight class="normal">-<sp/>(<ref refid="_r_m_upload_u_r_l_connection_8h_1fa6b635dacd7a5df623256c763afab5e" kindref="member">void</ref>)highlightErrorInView:(NSView<sp/>*)errorView;</highlight></codeline>
+<codeline lineno="90"><highlight class="normal"></highlight></codeline>
+<codeline lineno="95"><highlight class="normal">-<sp/>(<ref refid="_r_m_upload_u_r_l_connection_8h_1fa6b635dacd7a5df623256c763afab5e" kindref="member">void</ref>)<ref refid="interface_r_m_upload_preset_configuration_view_controller_16d80f585229c84800eb3ecd5618dc9b9" kindref="member" tooltip="Hides a previously present error arrow using -highlightErrorInView:.">hideErrorArrow</ref>;</highlight></codeline>
+<codeline lineno="96"><highlight class="normal"></highlight></codeline>
+<codeline lineno="97"><highlight class="normal"></highlight><highlight class="keyword">@end</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="98"><highlight class="normal"></highlight></codeline>
+<codeline lineno="99"><highlight class="normal"></highlight></codeline>
+<codeline lineno="100" refid="interface_r_m_upload_preset_configuration_view_controller_07_actions_08" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">@interface<sp/></highlight><highlight class="normal"><ref refid="interface_r_m_upload_preset_configuration_view_controller" kindref="compound" tooltip="Base class for RMUploadCredentials and RMUploadPreset configuration view controllers...">RMUploadPresetConfigurationViewController</ref><sp/>(Actions)</highlight></codeline>
+<codeline lineno="101"><highlight class="normal"></highlight></codeline>
+<codeline lineno="106"><highlight class="normal">-<sp/>(IBAction)showHelp:(</highlight><highlight class="keywordtype">id</highlight><highlight class="normal">)sender;</highlight></codeline>
+<codeline lineno="107"><highlight class="normal"></highlight></codeline>
+<codeline lineno="108"><highlight class="normal"></highlight><highlight class="keyword">@end</highlight><highlight class="normal"></highlight></codeline>
+    </programlisting>
+    <location file="/Users/keith/Projects/Source/RMUpload/documentation/RMUploadKit.sdk/Library/Frameworks/RMUploadKit.framework/Versions/A/Headers/RMUploadPresetConfigurationViewController.h"/>
+  </compounddef>
+</doxygen>

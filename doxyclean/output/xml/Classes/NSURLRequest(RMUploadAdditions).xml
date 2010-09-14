@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?><object kind="class">
+  <name>NSURLRequest(RMUploadAdditions)</name>
+  <file>NSURLRequest+RMUploadAdditions.h</file>
+  <description>
+    <brief>
+<para>Provides convenience methods for generating <code><ref id="http://developer.apple.com/mac/library/documentation/Cocoa/Reference/Foundation/Classes/NSURLRequest_Class/index">NSURLRequest</ref></code> objects, for common web service. </para>    </brief>
+    <details>
+    </details>
+  </description>
+  <sections>
+    <section>
+      <name>Other</name>
+      <member kind="class-method">
+        <name>getRequestWithParameters:toURL:</name>
+        <type><ref id="http://developer.apple.com/mac/library/documentation/Cocoa/Reference/Foundation/Classes/NSURLRequest_Class/index">NSURLRequest</ref> *</type>
+        <prototype>+ (NSURLRequest *)getRequestWithParameters:(<ref id="http://developer.apple.com/mac/library/documentation/Cocoa/Reference/Foundation/Classes/NSDictionary_Class/index">NSDictionary</ref> *)<parameter>parameters</parameter> toURL:(<ref id="http://developer.apple.com/mac/library/documentation/Cocoa/Reference/Foundation/Classes/NSURL_Class/index">NSURL</ref> *)<parameter>URL</parameter> </prototype>
+        <file><ref id="http://developer.apple.com/mac/library/documentation/Cocoa/Reference/Foundation/Classes/NSURLRequest_Class/index">NSURLRequest</ref>+RMUploadAdditions.h</file>
+        <description>
+          <brief>
+<para>Builds a GET request from the URL and parameters provided. </para>        </brief>
+          <details>
+<para>The parameters are appended to the end of the URL as a query string.</para><para>
+</para>        </details>
+        </description>
+        <parameters><param><name>
+parameters
+</name><description>
+<para><code><ref id="http://developer.apple.com/mac/library/documentation/Cocoa/Reference/Foundation/Classes/NSDictionary_Class/index">NSDictionary</ref></code> expecting key/value pairs of strings, where each key/value pair is for a key in the web service that you are sending to. You can pass <code>+[<ref id="http://developer.apple.com/mac/library/documentation/Cocoa/Reference/Foundation/Classes/NSNull_Class/index">NSNull</ref> null]</code> for the value if it has none.</para></description></param>
+<param><name>
+URL
+</name><description>
+<para>The base URL for the request. </para></description></param>
+</parameters>
+      </member>
+      <member kind="class-method">
+        <name>postRequestWithParameters:toURL:</name>
+        <type><ref id="http://developer.apple.com/mac/library/documentation/Cocoa/Reference/Foundation/Classes/NSURLRequest_Class/index">NSURLRequest</ref> *</type>
+        <prototype>+ (NSURLRequest *)postRequestWithParameters:(<ref id="http://developer.apple.com/mac/library/documentation/Cocoa/Reference/Foundation/Classes/NSDictionary_Class/index">NSDictionary</ref> *)<parameter>parameters</parameter> toURL:(<ref id="http://developer.apple.com/mac/library/documentation/Cocoa/Reference/Foundation/Classes/NSURL_Class/index">NSURL</ref> *)<parameter>URL</parameter> </prototype>
+        <file><ref id="http://developer.apple.com/mac/library/documentation/Cocoa/Reference/Foundation/Classes/NSURLRequest_Class/index">NSURLRequest</ref>+RMUploadAdditions.h</file>
+        <description>
+          <brief>
+<para>Builds a POST request from the URL and parameters provided. </para>        </brief>
+          <details>
+<para>Useful for simple POST requests that do not require files.</para><para>This encodes the parameters, sets the body of the request and sets the 'Content-Type' header.</para><para>
+</para>        </details>
+        </description>
+        <parameters><param><name>
+parameters
+</name><description>
+<para><code><ref id="http://developer.apple.com/mac/library/documentation/Cocoa/Reference/Foundation/Classes/NSDictionary_Class/index">NSDictionary</ref></code> of key/value pairs. Unlike <code>+getRequestWithParameters:</code> the value does not have to be an <code><ref id="http://developer.apple.com/mac/library/documentation/Cocoa/Reference/Foundation/Classes/NSString_Class/index">NSString</ref></code>, it can be any class of object supported by <code>RMPOSTDataKey</code>.</para></description></param>
+<param><name>
+URL
+</name><description>
+<para>The base URL for the request. </para></description></param>
+</parameters>
+      </member>
+      <member kind="class-method">
+        <name>filePostRequestWithParameters:toURL:</name>
+        <type><ref id="http://developer.apple.com/mac/library/documentation/Cocoa/Reference/Foundation/Classes/NSURLRequest_Class/index">NSURLRequest</ref> *</type>
+        <prototype>+ (NSURLRequest *)filePostRequestWithParameters:(<ref id="http://developer.apple.com/mac/library/documentation/Cocoa/Reference/Foundation/Classes/NSArray_Class/index">NSArray</ref> *)<parameter>parameters</parameter> toURL:(<ref id="http://developer.apple.com/mac/library/documentation/Cocoa/Reference/Foundation/Classes/NSURL_Class/index">NSURL</ref> *)<parameter>URL</parameter> </prototype>
+        <file><ref id="http://developer.apple.com/mac/library/documentation/Cocoa/Reference/Foundation/Classes/NSURLRequest_Class/index">NSURLRequest</ref>+RMUploadAdditions.h</file>
+        <description>
+          <brief>
+<para>Build a POST request for uploading a file. You build up an <code><ref id="http://developer.apple.com/mac/library/documentation/Cocoa/Reference/Foundation/Classes/NSArray_Class/index">NSArray</ref></code> of parameter <code><ref id="http://developer.apple.com/mac/library/documentation/Cocoa/Reference/Foundation/Classes/NSDictionary_Class/index">NSDictionary</ref></code> objects containing the keys described below to describe the data sent for each field in the request. </para>        </brief>
+          <details>
+<para>
+</para>        </details>
+        </description>
+        <parameters><param><name>
+parameters
+</name><description>
+<para><code><ref id="http://developer.apple.com/mac/library/documentation/Cocoa/Reference/Foundation/Classes/NSArray_Class/index">NSArray</ref></code> of <code><ref id="http://developer.apple.com/mac/library/documentation/Cocoa/Reference/Foundation/Classes/NSDictionary_Class/index">NSDictionary</ref></code> objects containing: <code>RMPOSTFilenameKey</code> <code>RMPOSTDataKey</code> <code>RMPOSTFieldNameKey</code></para></description></param>
+<param><name>
+URL
+</name><description>
+<para>The base URL for the request. </para></description></param>
+</parameters>
+      </member>
+    </section>
+  </sections>
+</object>

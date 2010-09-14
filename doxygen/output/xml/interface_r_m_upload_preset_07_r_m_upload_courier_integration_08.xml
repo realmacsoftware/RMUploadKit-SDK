@@ -1,0 +1,31 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.5.9">
+  <compounddef id="interface_r_m_upload_preset_07_r_m_upload_courier_integration_08" kind="class" prot="public">
+    <compoundname>RMUploadPreset(RMUploadCourierIntegration)</compoundname>
+    <includes refid="_r_m_upload_preset_8h" local="no">RMUploadPreset.h</includes>
+      <sectiondef kind="public-static-func">
+      <memberdef kind="function" id="interface_r_m_upload_preset_07_r_m_upload_courier_integration_08_138668466e371605504c99f74affcfa18" prot="public" static="yes" const="no" explicit="no" inline="no" virt="virtual">
+        <type>NSString *</type>
+        <definition>NSString * RMUploadPreset(RMUploadCourierIntegration)::autoselectTrayImageKey</definition>
+        <argsstring>()</argsstring>
+        <name>autoselectTrayImageKey</name>
+        <briefdescription>
+<para>If you include envelope images in your uploader, you can override this method to return the key from the <computeroutput>DSTrayBundleImages</computeroutput> element that should be autoselected for your preset. </para>        </briefdescription>
+        <detaileddescription>
+<para>Envelope images included in the uploader plugins aren&apos;t presented for selection in the interface, they are only available for autoselection.</para><para><simplesect kind="return"><para>Returns nil by default. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/keith/Projects/Source/RMUpload/documentation/RMUploadKit.sdk/Library/Frameworks/RMUploadKit.framework/Versions/A/Headers/RMUploadPreset.h" line="220"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>These are Courier only APIs, they have no effect on the functionality of your plugin. </para>    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/Users/keith/Projects/Source/RMUpload/documentation/RMUploadKit.sdk/Library/Frameworks/RMUploadKit.framework/Versions/A/Headers/RMUploadPreset.h" line="208" bodyfile="/Users/keith/Projects/Source/RMUpload/documentation/RMUploadKit.sdk/Library/Frameworks/RMUploadKit.framework/Versions/A/Headers/RMUploadPreset.h" bodystart="208" bodyend="-1"/>
+    <listofallmembers>
+      <member refid="interface_r_m_upload_preset_07_r_m_upload_courier_integration_08_138668466e371605504c99f74affcfa18" prot="public" virt="virtual"><scope>RMUploadPreset(RMUploadCourierIntegration)</scope><name>autoselectTrayImageKey</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

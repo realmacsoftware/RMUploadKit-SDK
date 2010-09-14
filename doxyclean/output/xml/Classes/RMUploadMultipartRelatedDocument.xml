@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="UTF-8"?><object kind="class">
+  <name>RMUploadMultipartRelatedDocument</name>
+  <file>RMUploadMultipartDocuments.h</file>
+  <superclass>
+    <name><ref id="../Classes/RMUploadMultipartDocument">RMUploadMultipartDocument</ref></name>
+    <superclass/>
+    <conformsTo/>
+  </superclass>
+  <conformsTo/>
+  <description>
+    <brief>
+<para>This format is described in RFC 2387 http://tools.ietf.org/html/rfc2387. Though it ommits support for the 'start' and 'type' parameters of the 'Content-Type' header. </para>    </brief>
+    <details>
+<para>The order you add data in is unpreserved. </para>    </details>
+  </description>
+  <sections>
+    <section>
+      <name>Other</name>
+      <member kind="instance-method">
+        <name>init</name>
+        <type>id</type>
+        <prototype>- (id)init</prototype>
+        <file><ref id="../Classes/RMUploadMultipartDocument">RMUploadMultipartDocument</ref>s.h</file>
+        <description>
+          <brief>
+<para>Designated Initialiser. </para>        </brief>
+          <details>
+        </details>
+        </description>
+      </member>
+      <member kind="instance-method">
+        <name>initWithStartContentIdentifier:</name>
+        <type>id</type>
+        <prototype>- (id)initWithStartContentIdentifier:(<ref id="http://developer.apple.com/mac/library/documentation/Cocoa/Reference/Foundation/Classes/NSString_Class/index">NSString</ref> *)<parameter>startContentIdentifier</parameter> </prototype>
+        <file><ref id="../Classes/RMUploadMultipartDocument">RMUploadMultipartDocument</ref>s.h</file>
+        <description>
+          <brief>
+<para>If your document is referrential, use this initialiser to specify the index content identifier. </para>        </brief>
+          <details>
+        </details>
+        </description>
+      </member>
+      <member kind="instance-method">
+        <name>addPartWithData:withContentType:forContentIdentifier:</name>
+        <type>void</type>
+        <prototype>- (void)addPartWithData:(<ref id="http://developer.apple.com/mac/library/documentation/Cocoa/Reference/Foundation/Classes/NSData_Class/index">NSData</ref> *)<parameter>data</parameter> withContentType:(<ref id="http://developer.apple.com/mac/library/documentation/Cocoa/Reference/Foundation/Classes/NSString_Class/index">NSString</ref> *)<parameter>contentType</parameter> forContentIdentifier:(<ref id="http://developer.apple.com/mac/library/documentation/Cocoa/Reference/Foundation/Classes/NSString_Class/index">NSString</ref> *)<parameter>contentIdentifier</parameter> </prototype>
+        <file><ref id="../Classes/RMUploadMultipartDocument">RMUploadMultipartDocument</ref>s.h</file>
+        <description>
+          <brief>
+<para>The data will appear in the serialised document. </para>        </brief>
+          <details>
+<para>
+</para>        </details>
+        </description>
+        <parameters><param><name>
+contentType
+</name><description>
+<para>Defaults to 'application/octet-stream' if nil.</para></description></param>
+<param><name>
+contentIdentifier
+</name><description>
+<para>Pass nil to omit the 'Content-ID' header. A contentIdentifier must be unique per document, adding another part with the same content identifer will throw an exception. </para></description></param>
+</parameters>
+      </member>
+      <member kind="instance-method">
+        <name>addPartByReferencingContentsOfURL:forContentIdentifier:</name>
+        <type>void</type>
+        <prototype>- (void)addPartByReferencingContentsOfURL:(<ref id="http://developer.apple.com/mac/library/documentation/Cocoa/Reference/Foundation/Classes/NSURL_Class/index">NSURL</ref> *)<parameter>location</parameter> forContentIdentifier:(<ref id="http://developer.apple.com/mac/library/documentation/Cocoa/Reference/Foundation/Classes/NSString_Class/index">NSString</ref> *)<parameter>contentIdentifier</parameter> </prototype>
+        <file><ref id="../Classes/RMUploadMultipartDocument">RMUploadMultipartDocument</ref>s.h</file>
+        <description>
+          <brief>
+<para>The content type is inferred. </para>        </brief>
+          <details>
+<para>
+</para>        </details>
+        </description>
+        <parameters><param><name>
+contentIdentifier
+</name><description>
+<para>Pass nil to omit the 'Content-ID' header. A contentIdentifier must be unique per document, adding another part with the same content identifer will throw an exception. </para></description></param>
+</parameters>
+      </member>
+      <member kind="instance-method">
+        <name>removePartForContentIdentifier:</name>
+        <type>void</type>
+        <prototype>- (void)removePartForContentIdentifier:(<ref id="http://developer.apple.com/mac/library/documentation/Cocoa/Reference/Foundation/Classes/NSString_Class/index">NSString</ref> *)<parameter>contentIdentifier</parameter> </prototype>
+        <file><ref id="../Classes/RMUploadMultipartDocument">RMUploadMultipartDocument</ref>s.h</file>
+        <description>
+          <brief>
+<para>Removes a previously added part for the content identifier. </para>        </brief>
+          <details>
+        </details>
+        </description>
+      </member>
+      <member kind="instance-method">
+        <name>getData:contentType:</name>
+        <type>BOOL</type>
+        <prototype>- (BOOL)getData:(<ref id="http://developer.apple.com/mac/library/documentation/Cocoa/Reference/Foundation/Classes/NSData_Class/index">NSData</ref> **)<parameter>dataRef</parameter> contentType:(<ref id="http://developer.apple.com/mac/library/documentation/Cocoa/Reference/Foundation/Classes/NSString_Class/index">NSString</ref> **)<parameter>contentTypeRef</parameter> </prototype>
+        <file><ref id="../Classes/RMUploadMultipartDocument">RMUploadMultipartDocument</ref>s.h</file>
+        <description>
+          <brief>
+<para>Serialise the document into a data object. </para>        </brief>
+          <details>
+<para>
+</para>        </details>
+        </description>
+        <parameters><param><name>
+contentTypeRef
+</name><description>
+<para>This is the MIME tpye of the output./ It contains the generated multipart boundary. </para></description></param>
+</parameters>
+      </member>
+    </section>
+  </sections>
+</object>

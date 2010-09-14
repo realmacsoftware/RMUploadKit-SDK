@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?><object kind="class">
+  <name>RMUploadPreset(RMUploadCourierIntegration)</name>
+  <file>RMUploadPreset.h</file>
+  <description>
+    <brief>
+<para>These are Courier only APIs, they have no effect on the functionality of your plugin. </para>    </brief>
+    <details>
+    </details>
+  </description>
+  <sections>
+    <section>
+      <name>Other</name>
+      <member kind="class-method">
+        <name>autoselectTrayImageKey</name>
+        <type><ref id="http://developer.apple.com/mac/library/documentation/Cocoa/Reference/Foundation/Classes/NSString_Class/index">NSString</ref> *</type>
+        <prototype>+ (<ref id="http://developer.apple.com/mac/library/documentation/Cocoa/Reference/Foundation/Classes/NSString_Class/index">NSString</ref> *)autoselectTrayImageKey</prototype>
+        <file><ref id="../Classes/RMUploadPreset">RMUploadPreset</ref>.h</file>
+        <description>
+          <brief>
+<para>If you include envelope images in your uploader, you can override this method to return the key from the <code>DSTrayBundleImages</code> element that should be autoselected for your preset. </para>        </brief>
+          <details>
+<para>Envelope images included in the uploader plugins aren't presented for selection in the interface, they are only available for autoselection.</para><para>
+</para>        </details>
+        </description>
+        <return>
+          <para>Returns nil by default. </para>
+        </return>
+      </member>
+    </section>
+  </sections>
+</object>

@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="UTF-8"?><object kind="class">
+  <name>RMUploadPlugin</name>
+  <file>RMUploadPlugin.h</file>
+  <description>
+    <brief>
+<para>You uploader bundle principal class. </para>    </brief>
+    <details>
+<para>This class is the go-between for your presets, credentials and configuration view controllers respectively.</para><para>The methods which return an <code><ref id="http://developer.apple.com/mac/library/documentation/Cocoa/Reference/ApplicationKit/Classes/NSViewController_Class/index">NSViewController</ref></code> have assertions performed on the return value, if any of these assertions fail, unless otherwise documented, an exception will be thrown:<list>
+<item><para>the view controller's view must not have a superview.</para></item></list>
+</para><para>When returning a view controller, make no assumptions about how the view will be used. It may be in a sheet in one version, and a view hierarchy the next. You must not call any methods to deal with closing windows etc. always post the relevant notifications.</para><para>A plugin is structured like this:</para><para><codeblock>RMUploadPlugin  &lt;-&gt;&gt;    RMUploadPreset
+
+(RMUploadPlugin	&lt;-&gt;&gt;    RMUploadCredentials)
+
+(RMUploadPreset &lt;&lt;-&gt;    <ref id="../Classes/RMUploadCredentials">RMUploadCredentials</ref>)
+
+</codeblock></para><para>A plugin owns many presets, and optionally, many credentials. A preset optionally, has credentials. </para>    </details>
+  </description>
+  <sections>
+    <section>
+      <name>Other</name>
+      <member kind="property">
+        <name>bundle</name>
+        <type><ref id="http://developer.apple.com/mac/library/documentation/Cocoa/Reference/Foundation/Classes/NSBundle_Class/index">NSBundle</ref> *</type>
+        <prototype>@property <ref id="http://developer.apple.com/mac/library/documentation/Cocoa/Reference/Foundation/Classes/NSBundle_Class/index">NSBundle</ref> *bundle</prototype>
+        <file><ref id="../Classes/RMUploadPlugin">RMUploadPlugin</ref>.h</file>
+        <description>
+          <brief>
+<para>The bundle the plugin was initialised with. </para>        </brief>
+          <details>
+<para>If your plugin requires access to any resources, this method is a helper to get access to the <code><ref id="http://developer.apple.com/mac/library/documentation/Cocoa/Reference/Foundation/Classes/NSBundle_Class/index">NSBundle</ref></code> instance for your plugin. </para>        </details>
+        </description>
+      </member>
+      <member kind="property">
+        <name>credentials</name>
+        <type><ref id="http://developer.apple.com/mac/library/documentation/Cocoa/Reference/Foundation/Classes/NSSet_Class/index">NSSet</ref> *</type>
+        <prototype>@property <ref id="http://developer.apple.com/mac/library/documentation/Cocoa/Reference/Foundation/Classes/NSSet_Class/index">NSSet</ref> *credentials</prototype>
+        <file><ref id="../Classes/RMUploadPlugin">RMUploadPlugin</ref>.h</file>
+        <description>
+          <brief>
+<para><code><ref id="../Classes/RMUploadCredentials">RMUploadCredentials</ref></code> objects. </para>        </brief>
+          <details>
+        </details>
+        </description>
+      </member>
+      <member kind="property">
+        <name>presets</name>
+        <type><ref id="http://developer.apple.com/mac/library/documentation/Cocoa/Reference/Foundation/Classes/NSSet_Class/index">NSSet</ref> *</type>
+        <prototype>@property <ref id="http://developer.apple.com/mac/library/documentation/Cocoa/Reference/Foundation/Classes/NSSet_Class/index">NSSet</ref> *presets</prototype>
+        <file><ref id="../Classes/RMUploadPlugin">RMUploadPlugin</ref>.h</file>
+        <description>
+          <brief>
+<para><code><ref id="../Classes/RMUploadPreset">RMUploadPreset</ref></code> objects. </para>        </brief>
+          <details>
+        </details>
+        </description>
+      </member>
+    </section>
+    <section>
+      <name>Other</name>
+      <member kind="instance-method">
+        <name>initWithBundle:</name>
+        <type>id</type>
+        <prototype>- (id)initWithBundle:(<ref id="http://developer.apple.com/mac/library/documentation/Cocoa/Reference/Foundation/Classes/NSBundle_Class/index">NSBundle</ref> *)<parameter>bundle</parameter> </prototype>
+        <file><ref id="../Classes/RMUploadPlugin">RMUploadPlugin</ref>.h</file>
+        <description>
+          <brief>
+<para>Designated initialiser. </para>        </brief>
+          <details>
+<para>Plugins may be initialised concurrently, no guarantees are made about their initialisation environment.</para><para>
+</para>        </details>
+        </description>
+        <parameters><param><name>
+bundle
+</name><description>
+<para>The instance of <ref id="http://developer.apple.com/mac/library/documentation/Cocoa/Reference/Foundation/Classes/NSBundle_Class/index">NSBundle</ref> representing the plugin wrapper. </para></description></param>
+</parameters>
+      </member>
+      <member kind="instance-method">
+        <name>credentialsConfigurationViewControllerForCredentials:</name>
+        <type><ref id="../Classes/RMUploadPresetConfigurationViewController">RMUploadPresetConfigurationViewController</ref> *</type>
+        <prototype>- (RMUploadPresetConfigurationViewController *)credentialsConfigurationViewControllerForCredentials:(<ref id="../Classes/RMUploadCredentials">RMUploadCredentials</ref> *)<parameter>credentials</parameter> </prototype>
+        <file><ref id="../Classes/RMUploadPlugin">RMUploadPlugin</ref>.h</file>
+        <description>
+          <brief>
+<para>This method is required if your preset returns a class from <code>+[<ref id="../Classes/RMUploadPreset">RMUploadPreset</ref> credentialsClass]</code>. </para>        </brief>
+          <details>
+<para>Used to return an <code><ref id="http://developer.apple.com/mac/library/documentation/Cocoa/Reference/ApplicationKit/Classes/NSViewController_Class/index">NSViewController</ref></code> whose view allows the user to configure the credentials, such as the username/password and or a token.</para><para>You must not configure the <code>plugin&lt;-&gt;&gt;credentials</code> relationship in this method, this will be done for you if required.</para><para>The <code><ref id="../Classes/RMUploadCredentials">RMUploadCredentials</ref></code> object to configure is set as the <code>representedObject</code> property. </para>        </details>
+        </description>
+      </member>
+      <member kind="instance-method">
+        <name>presetConfigurationViewControllerForPreset:</name>
+        <type><ref id="../Classes/RMUploadPresetConfigurationViewController">RMUploadPresetConfigurationViewController</ref> *</type>
+        <prototype>- (RMUploadPresetConfigurationViewController *)presetConfigurationViewControllerForPreset:(<ref id="../Classes/RMUploadPreset">RMUploadPreset</ref> *)<parameter>preset</parameter> </prototype>
+        <file><ref id="../Classes/RMUploadPlugin">RMUploadPlugin</ref>.h</file>
+        <description>
+          <brief>
+<para>This method is required. Unless, your preset has configured an <code><ref id="../Classes/RMUploadCredentials">RMUploadCredentials</ref></code> object, and you have no preset configuration options, in which case this method is optional. </para>        </brief>
+          <details>
+<para>The <code><ref id="../Classes/RMUploadPreset">RMUploadPreset</ref></code> object to configure is set as the <code>representedObject</code> property. </para>        </details>
+        </description>
+      </member>
+      <member kind="instance-method">
+        <name>additionalMetadataViewControllerForPresetClass:</name>
+        <type><ref id="../Classes/RMUploadMetadataConfigurationViewController">RMUploadMetadataConfigurationViewController</ref> *</type>
+        <prototype>- (<ref id="../Classes/RMUploadMetadataConfigurationViewController">RMUploadMetadataConfigurationViewController</ref> *)additionalMetadataViewControllerForPresetClass:(Class)<parameter>presetClass</parameter> </prototype>
+        <file><ref id="../Classes/RMUploadPlugin">RMUploadPlugin</ref>.h</file>
+        <description>
+          <brief>
+<para>This method is optional. </para>        </brief>
+          <details>
+<para>If your plugin supports additional file metadata, this view will be placed in your plugin's section of the metadata view. The <code>representedObject</code> will be a KVC container, the contents of which will be passed in the <code>uploadInfo</code> to upload tasks. There is no guarantee that the object you 'configure', and the object passed to your <code><ref id="../Classes/RMUploadTask">RMUploadTask</ref></code> will be the same, just that they will have the same values you set.</para><para>If you do add keys to this container they must be namespaced to your plugin. </para>        </details>
+        </description>
+      </member>
+    </section>
+  </sections>
+</object>

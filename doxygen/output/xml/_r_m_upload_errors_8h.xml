@@ -1,0 +1,87 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.5.9">
+  <compounddef id="_r_m_upload_errors_8h" kind="file">
+    <compoundname>RMUploadErrors.h</compoundname>
+    <includes local="no">Cocoa/Cocoa.h</includes>
+    <incdepgraph>
+      <node id="17">
+        <label>Cocoa/Cocoa.h</label>
+      </node>
+      <node id="16">
+        <label>/Users/keith/Projects/Source/RMUpload/documentation/RMUploadKit.sdk/Library/Frameworks/RMUploadKit.framework/Versions/A/Headers/RMUploadErrors.h</label>
+        <link refid="RMUploadErrors.h"/>
+        <childnode refid="17" relation="include">
+        </childnode>
+      </node>
+    </incdepgraph>
+      <sectiondef kind="enum">
+      <memberdef kind="enum" id="_r_m_upload_errors_8h_106fc87d81c62e9abb8790b6e5713c55b" prot="public" static="no">
+        <name>@0</name>
+        <enumvalue id="_r_m_upload_errors_8h_106fc87d81c62e9abb8790b6e5713c55b8b54e312ec04035ec8a19f4cd08119f3" prot="public">
+          <name>RMUploadErrorUnknown</name>
+          <initializer> 0</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="_r_m_upload_errors_8h_106fc87d81c62e9abb8790b6e5713c55bb420f1d8ae837d947773a1e391235e3c" prot="public">
+          <name>RMUploadPresetConfigurationViewControllerErrorValidation</name>
+          <initializer> -100</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+<para>These correspond to the <computeroutput>RMUploadKitBundleIdentifier</computeroutput> domain. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/keith/Projects/Source/RMUpload/documentation/RMUploadKit.sdk/Library/Frameworks/RMUploadKit.framework/Versions/A/Headers/RMUploadErrors.h" line="15" bodyfile="/Users/keith/Projects/Source/RMUpload/documentation/RMUploadKit.sdk/Library/Frameworks/RMUploadKit.framework/Versions/A/Headers/RMUploadErrors.h" bodystart="15" bodyend="22"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="typedef">
+      <memberdef kind="typedef" id="_r_m_upload_errors_8h_1488480dd678c72f0cf74e87fc18488f6" prot="public" static="no">
+        <type>NSInteger</type>
+        <definition>typedef NSInteger RMUploadKitErrorCode</definition>
+        <argsstring></argsstring>
+        <name>RMUploadKitErrorCode</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/keith/Projects/Source/RMUpload/documentation/RMUploadKit.sdk/Library/Frameworks/RMUploadKit.framework/Versions/A/Headers/RMUploadErrors.h" line="23" bodyfile="/Users/keith/Projects/Source/RMUpload/documentation/RMUploadKit.sdk/Library/Frameworks/RMUploadKit.framework/Versions/A/Headers/RMUploadErrors.h" bodystart="23" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="comment">//</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight><highlight class="comment">//<sp/><sp/>RMUploadErrors.h</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight><highlight class="comment">//<sp/><sp/>RMUploadKit</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight><highlight class="comment">//</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight><highlight class="comment">//<sp/><sp/>Created<sp/>by<sp/>Keith<sp/>Duncan<sp/>on<sp/>05/08/2010.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="6"><highlight class="normal"></highlight><highlight class="comment">//<sp/><sp/>Copyright<sp/>2010<sp/>Realmac<sp/>Software.<sp/>All<sp/>rights<sp/>reserved.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="7"><highlight class="normal"></highlight><highlight class="comment">//</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="8"><highlight class="normal"></highlight></codeline>
+<codeline lineno="9"><highlight class="normal"></highlight><highlight class="preprocessor">#import<sp/>&lt;Cocoa/Cocoa.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="10"><highlight class="normal"></highlight></codeline>
+<codeline lineno="15"><highlight class="keyword">enum</highlight><highlight class="normal"><sp/>{</highlight></codeline>
+<codeline lineno="16"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="17" refid="_r_m_upload_errors_8h_106fc87d81c62e9abb8790b6e5713c55b8b54e312ec04035ec8a19f4cd08119f3" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="_r_m_upload_errors_8h_106fc87d81c62e9abb8790b6e5713c55b8b54e312ec04035ec8a19f4cd08119f3" kindref="member">RMUploadErrorUnknown</ref><sp/>=<sp/>0,</highlight></codeline>
+<codeline lineno="18"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="19"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/>[-100,<sp/>-199]<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="20"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Note:<sp/>re-enable<sp/>configuration<sp/>view<sp/>buttons<sp/>after<sp/>validation<sp/>failed,<sp/>this<sp/>error<sp/>isn&apos;t<sp/>presented</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="21" refid="_r_m_upload_errors_8h_106fc87d81c62e9abb8790b6e5713c55bb420f1d8ae837d947773a1e391235e3c" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="_r_m_upload_errors_8h_106fc87d81c62e9abb8790b6e5713c55bb420f1d8ae837d947773a1e391235e3c" kindref="member">RMUploadPresetConfigurationViewControllerErrorValidation</ref><sp/>=<sp/>-100,</highlight></codeline>
+<codeline lineno="22"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="23" refid="_r_m_upload_errors_8h_1488480dd678c72f0cf74e87fc18488f6" refkind="member"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/>NSInteger<sp/><ref refid="_r_m_upload_errors_8h_1488480dd678c72f0cf74e87fc18488f6" kindref="member">RMUploadKitErrorCode</ref>;</highlight></codeline>
+    </programlisting>
+    <location file="/Users/keith/Projects/Source/RMUpload/documentation/RMUploadKit.sdk/Library/Frameworks/RMUploadKit.framework/Versions/A/Headers/RMUploadErrors.h"/>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,217 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.5.9">
+  <compounddef id="interface_r_m_upload_preset" kind="class" prot="public">
+    <compoundname>RMUploadPreset</compoundname>
+    <basecompoundref refid="protocol_a_f_property_list-p" prot="public" virt="non-virtual">&lt; AFPropertyList &gt;</basecompoundref>
+    <includes refid="_r_m_upload_preset_8h" local="no">RMUploadPreset.h</includes>
+      <sectiondef kind="property">
+      <memberdef kind="property" id="interface_r_m_upload_preset_138ca2fac0d134a1e430b5ea1b98cbd2e" prot="public" static="no" readable="yes" writable="no" gettable="no" settable="no">
+        <type><ref refid="interface_r_m_upload_credentials" kindref="compound">RMUploadCredentials</ref> *</type>
+        <definition>RMUploadCredentials* RMUploadPreset::authentication</definition>
+        <argsstring></argsstring>
+        <name>authentication</name>
+        <read></read>
+        <briefdescription>
+<para>The credentials the preset should use. This is a to-one relationship. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/keith/Projects/Source/RMUpload/documentation/RMUploadKit.sdk/Library/Frameworks/RMUploadKit.framework/Versions/A/Headers/RMUploadPreset.h" line="100" bodyfile="/Users/keith/Projects/Source/RMUpload/documentation/RMUploadKit.sdk/Library/Frameworks/RMUploadKit.framework/Versions/A/Headers/RMUploadPreset.h" bodystart="100" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="property" id="interface_r_m_upload_preset_1177c1aec6a30ddc83ff5fabbc180f1de" prot="public" static="no" readable="yes" writable="no" gettable="no" settable="no">
+        <type><ref refid="interface_r_m_upload_plugin" kindref="compound">RMUploadPlugin</ref> *</type>
+        <definition>RMUploadPlugin* RMUploadPreset::plugin</definition>
+        <argsstring></argsstring>
+        <name>plugin</name>
+        <read></read>
+        <briefdescription>
+<para>The plugin that owns the preset. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/keith/Projects/Source/RMUpload/documentation/RMUploadKit.sdk/Library/Frameworks/RMUploadKit.framework/Versions/A/Headers/RMUploadPreset.h" line="106" bodyfile="/Users/keith/Projects/Source/RMUpload/documentation/RMUploadKit.sdk/Library/Frameworks/RMUploadKit.framework/Versions/A/Headers/RMUploadPreset.h" bodystart="106" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="property" id="interface_r_m_upload_preset_119adab410d0290c2c64a67d4dd31fb96" prot="public" static="no" readable="yes" writable="yes" gettable="no" settable="no">
+        <type>NSString *</type>
+        <definition>NSString* RMUploadPreset::name</definition>
+        <argsstring></argsstring>
+        <name>name</name>
+        <read></read>
+        <write></write>
+        <briefdescription>
+<para>This is the user provided name for the preset. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/keith/Projects/Source/RMUpload/documentation/RMUploadKit.sdk/Library/Frameworks/RMUploadKit.framework/Versions/A/Headers/RMUploadPreset.h" line="112" bodyfile="/Users/keith/Projects/Source/RMUpload/documentation/RMUploadKit.sdk/Library/Frameworks/RMUploadKit.framework/Versions/A/Headers/RMUploadPreset.h" bodystart="112" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="property" id="interface_r_m_upload_preset_144c604923147565a8e4e18a34e6f6c7b" prot="public" static="no" readable="yes" writable="yes" gettable="no" settable="no">
+        <type>BOOL</type>
+        <definition>BOOL RMUploadPreset::dirty</definition>
+        <argsstring></argsstring>
+        <name>dirty</name>
+        <read>isDirty</read>
+        <write></write>
+        <briefdescription>
+<para>Set this key to <computeroutput>YES</computeroutput> to cause the preset to be persisted to disk. </para>        </briefdescription>
+        <detaileddescription>
+<para>This method is observed using key-value observing, when triggered your account will be saved.</para><para>If you want to trigger a save automatically, you can return dependent keys in <computeroutput>+keyPathsForValuesAffectingValueForKey:</computeroutput> ensuring that you include the results from super. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/keith/Projects/Source/RMUpload/documentation/RMUploadKit.sdk/Library/Frameworks/RMUploadKit.framework/Versions/A/Headers/RMUploadPreset.h" line="123" bodyfile="/Users/keith/Projects/Source/RMUpload/documentation/RMUploadKit.sdk/Library/Frameworks/RMUploadKit.framework/Versions/A/Headers/RMUploadPreset.h" bodystart="123" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="property" id="interface_r_m_upload_preset_1763db69b69c9b6abc3232de297f5c861" prot="public" static="no" readable="yes" writable="no" gettable="no" settable="no">
+        <type>NSSet *</type>
+        <definition>NSSet* RMUploadPreset::acceptedTypes</definition>
+        <argsstring></argsstring>
+        <name>acceptedTypes</name>
+        <read></read>
+        <briefdescription>
+<para>The UTIs that the account supports. </para>        </briefdescription>
+        <detaileddescription>
+<para>This method is <bold>required</bold>.</para><para>The default implementation returns an empty set.</para><para><simplesect kind="return"><para>A set of UTI strings which the preset supports. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/keith/Projects/Source/RMUpload/documentation/RMUploadKit.sdk/Library/Frameworks/RMUploadKit.framework/Versions/A/Headers/RMUploadPreset.h" line="136" bodyfile="/Users/keith/Projects/Source/RMUpload/documentation/RMUploadKit.sdk/Library/Frameworks/RMUploadKit.framework/Versions/A/Headers/RMUploadPreset.h" bodystart="136" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="property" id="interface_r_m_upload_preset_1096aeae270efb06b9581d2e1c64e36c2" prot="public" static="no" readable="yes" writable="no" gettable="no" settable="no">
+        <type>NSURL *</type>
+        <definition>NSURL* RMUploadPreset::serviceURL</definition>
+        <argsstring></argsstring>
+        <name>serviceURL</name>
+        <read></read>
+        <briefdescription>
+<para>This method <bold>must</bold> return a valid, non-nil <computeroutput>NSURL</computeroutput>. </para>        </briefdescription>
+        <detaileddescription>
+<para>Overriding this method is optional <emphasis>if</emphasis> the class method of the same signature returns a valid value.</para><para>This is used to graph and determine the geographical destination of the files. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/keith/Projects/Source/RMUpload/documentation/RMUploadKit.sdk/Library/Frameworks/RMUploadKit.framework/Versions/A/Headers/RMUploadPreset.h" line="146" bodyfile="/Users/keith/Projects/Source/RMUpload/documentation/RMUploadKit.sdk/Library/Frameworks/RMUploadKit.framework/Versions/A/Headers/RMUploadPreset.h" bodystart="146" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="interface_r_m_upload_preset_17635aab90213ff9622050587b2ee425d" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>id</type>
+        <definition>id RMUploadPreset::init</definition>
+        <argsstring>()</argsstring>
+        <name>init</name>
+        <briefdescription>
+<para>The designated initialiser. </para>        </briefdescription>
+        <detaileddescription>
+<para>Called when the framework wishes to create a new preset instead of loading one from disk. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/keith/Projects/Source/RMUpload/documentation/RMUploadKit.sdk/Library/Frameworks/RMUploadKit.framework/Versions/A/Headers/RMUploadPreset.h" line="43"/>
+      </memberdef>
+      <memberdef kind="function" id="interface_r_m_upload_preset_1bf0f3cfb3e7cebffc930c0770963b338" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>id</type>
+        <definition>id RMUploadPreset::initWithPropertyListRepresentation:</definition>
+        <argsstring>(id values)</argsstring>
+        <name>initWithPropertyListRepresentation:</name>
+        <reimplements refid="protocol_a_f_property_list-p_136c2b4fa811c3c608d65fe0af5942071">initWithPropertyListRepresentation:</reimplements>
+        <param>
+          <type>id</type>
+          <declname>values</declname>
+        </param>
+        <briefdescription>
+<para>Initialise a preset from a serialised representation. </para>        </briefdescription>
+        <detaileddescription>
+<para>We provide you with the representation that you return in <computeroutput>propertyListRepresentation</computeroutput> to hand off to the framework for saving.</para><para>If you follow the <computeroutput>-propertyListRepresentation</computeroutput> example implementation, be sure to pass only the superclass representation to the superclass inititializer.</para><para>An example implementation would be: <programlisting><codeline><highlight class="normal">-<sp/>(id)initWithPropertyListRepresentation:(</highlight><highlight class="keywordtype">id</highlight><highlight class="normal">)values<sp/>{</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">id</highlight><highlight class="normal"><sp/>superRepresentation<sp/>=<sp/>[values<sp/>objectForKey:@&quot;super&quot;];</highlight></codeline>
+<codeline><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">self</highlight><highlight class="normal"><sp/>=<sp/>[</highlight><highlight class="keyword">super</highlight><highlight class="normal"><sp/>initWithPropertyListRepresentation:superRepresentation];</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(</highlight><highlight class="keyword">self</highlight><highlight class="normal"><sp/>==<sp/>nil)<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>nil;</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>[</highlight><highlight class="keyword">self</highlight><highlight class="normal"><sp/>setProperty:[values<sp/>objectForKey:@&quot;myKey&quot;]];</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">self</highlight><highlight class="normal">;</highlight></codeline>
+<codeline><highlight class="normal">}</highlight></codeline>
+</programlisting></para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>values</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The property list representation that was returned from <computeroutput>propertyListRepresentation</computeroutput>. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/keith/Projects/Source/RMUpload/documentation/RMUploadKit.sdk/Library/Frameworks/RMUploadKit.framework/Versions/A/Headers/RMUploadPreset.h" line="70"/>
+      </memberdef>
+      <memberdef kind="function" id="interface_r_m_upload_preset_18e9885377d62cd9a6d8e3e0253cc4edf" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>id</type>
+        <definition>id RMUploadPreset::propertyListRepresentation</definition>
+        <argsstring>()</argsstring>
+        <name>propertyListRepresentation</name>
+        <reimplements refid="protocol_a_f_property_list-p_1cc5f874c0ad88367a1b7aa064315a95f">propertyListRepresentation</reimplements>
+        <briefdescription>
+<para>A representation of the instance that can be saved to a plist. </para>        </briefdescription>
+        <detaileddescription>
+<para>In order to save presets they will be turned into a plist, therefore here you need to return a representation of your object that can be saved safely into one. You must also call the super&apos;s implementation at the top of the method.</para><para>It is essential that you include, and namespace the representation of the superclass. You <bold>must not</bold> assume the class of the superclass&apos; representation, simply that it is suitable for inclusion in a property list written to disk.</para><para>An example implementation would be: <programlisting><codeline><highlight class="normal">-<sp/>(id)<ref refid="interface_r_m_upload_preset_18e9885377d62cd9a6d8e3e0253cc4edf" kindref="member" tooltip="A representation of the instance that can be saved to a plist.">propertyListRepresentation</ref><sp/>{</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">id</highlight><highlight class="normal"><sp/>superRepresentation<sp/>=<sp/>[</highlight><highlight class="keyword">super</highlight><highlight class="normal"><sp/>propertyListRepresentation];</highlight></codeline>
+<codeline><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>NSMutableDictionary<sp/>*<ref refid="interface_r_m_upload_preset_18e9885377d62cd9a6d8e3e0253cc4edf" kindref="member" tooltip="A representation of the instance that can be saved to a plist.">propertyListRepresentation</ref><sp/>=<sp/>[NSMutableDictionary<sp/>dictionary];</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>[propertyListRepresentation<sp/>setObject:superRepresentation<sp/>forKey:@&quot;super&quot;];</highlight></codeline>
+<codeline><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>[propertyListRepresentation<sp/>setValue:[</highlight><highlight class="keyword">self</highlight><highlight class="normal"><sp/>property]<sp/>forKey:@&quot;myKey&quot;];</highlight></codeline>
+<codeline><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="interface_r_m_upload_preset_18e9885377d62cd9a6d8e3e0253cc4edf" kindref="member" tooltip="A representation of the instance that can be saved to a plist.">propertyListRepresentation</ref>;</highlight></codeline>
+<codeline><highlight class="normal">}</highlight></codeline>
+</programlisting> </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/keith/Projects/Source/RMUpload/documentation/RMUploadKit.sdk/Library/Frameworks/RMUploadKit.framework/Versions/A/Headers/RMUploadPreset.h" line="94"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>A representation of configurable options for a service. </para>    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="32">
+        <label>RMUploadPreset</label>
+        <link refid="interface_r_m_upload_preset"/>
+        <childnode refid="33" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="33">
+        <label>&lt; AFPropertyList &gt;</label>
+        <link refid="protocol_a_f_property_list-p"/>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="34">
+        <label>RMUploadPreset</label>
+        <link refid="interface_r_m_upload_preset"/>
+        <childnode refid="35" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="35">
+        <label>&lt; AFPropertyList &gt;</label>
+        <link refid="protocol_a_f_property_list-p"/>
+      </node>
+    </collaborationgraph>
+    <location file="/Users/keith/Projects/Source/RMUpload/documentation/RMUploadKit.sdk/Library/Frameworks/RMUploadKit.framework/Versions/A/Headers/RMUploadPreset.h" line="36" bodyfile="/Users/keith/Projects/Source/RMUpload/documentation/RMUploadKit.sdk/Library/Frameworks/RMUploadKit.framework/Versions/A/Headers/RMUploadPreset.h" bodystart="36" bodyend="-1"/>
+    <listofallmembers>
+      <member refid="interface_r_m_upload_preset_1763db69b69c9b6abc3232de297f5c861" prot="public" virt="non-virtual"><scope>RMUploadPreset</scope><name>acceptedTypes</name></member>
+      <member refid="interface_r_m_upload_preset_138ca2fac0d134a1e430b5ea1b98cbd2e" prot="public" virt="non-virtual"><scope>RMUploadPreset</scope><name>authentication</name></member>
+      <member refid="interface_r_m_upload_preset_07_r_m_upload_courier_integration_08_138668466e371605504c99f74affcfa18" prot="public" virt="virtual"><scope>RMUploadPreset</scope><name>autoselectTrayImageKey</name></member>
+      <member refid="interface_r_m_upload_preset_07_r_m_upload_metadata_08_13f600c8131a5994f8048acc47224eae3" prot="public" virt="virtual"><scope>RMUploadPreset</scope><name>credentialsClass</name></member>
+      <member refid="interface_r_m_upload_preset_144c604923147565a8e4e18a34e6f6c7b" prot="public" virt="non-virtual"><scope>RMUploadPreset</scope><name>dirty</name></member>
+      <member refid="interface_r_m_upload_preset_07_r_m_upload_metadata_08_142429043a579f8d4e09bc4b37d69195d" prot="public" virt="virtual"><scope>RMUploadPreset</scope><name>icon</name></member>
+      <member refid="interface_r_m_upload_preset_17635aab90213ff9622050587b2ee425d" prot="public" virt="virtual"><scope>RMUploadPreset</scope><name>init</name></member>
+      <member refid="interface_r_m_upload_preset_1bf0f3cfb3e7cebffc930c0770963b338" prot="public" virt="virtual"><scope>RMUploadPreset</scope><name>initWithPropertyListRepresentation:</name></member>
+      <member refid="interface_r_m_upload_preset_07_r_m_upload_metadata_08_19de78a912accc35396d467b7b7ff54f0" prot="public" virt="virtual"><scope>RMUploadPreset</scope><name>localisedName</name></member>
+      <member refid="interface_r_m_upload_preset_119adab410d0290c2c64a67d4dd31fb96" prot="public" virt="non-virtual"><scope>RMUploadPreset</scope><name>name</name></member>
+      <member refid="interface_r_m_upload_preset_1177c1aec6a30ddc83ff5fabbc180f1de" prot="public" virt="non-virtual"><scope>RMUploadPreset</scope><name>plugin</name></member>
+      <member refid="interface_r_m_upload_preset_18e9885377d62cd9a6d8e3e0253cc4edf" prot="public" virt="virtual"><scope>RMUploadPreset</scope><name>propertyListRepresentation</name></member>
+      <member refid="interface_r_m_upload_preset_1096aeae270efb06b9581d2e1c64e36c2" prot="public" virt="non-virtual"><scope>RMUploadPreset</scope><name>serviceURL</name></member>
+      <member refid="interface_r_m_upload_preset_07_r_m_upload_metadata_08_1e93f0ea40c738c420f32487f0d26eb03" prot="public" virt="virtual"><scope>RMUploadPreset</scope><name>uploadTaskClass</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

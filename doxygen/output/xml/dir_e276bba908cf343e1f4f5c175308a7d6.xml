@@ -1,0 +1,12 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.5.9">
+  <compounddef id="dir_e276bba908cf343e1f4f5c175308a7d6" kind="dir">
+    <compoundname>/Users/keith/Projects/Source/RMUpload/documentation/RMUploadKit.sdk/</compoundname>
+    <innerdir refid="dir_f9fe4eab118d21b9c6b2d8264e8be3d8">/Users/keith/Projects/Source/RMUpload/documentation/RMUploadKit.sdk/Library/</innerdir>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/Users/keith/Projects/Source/RMUpload/documentation/RMUploadKit.sdk/"/>
+  </compounddef>
+</doxygen>

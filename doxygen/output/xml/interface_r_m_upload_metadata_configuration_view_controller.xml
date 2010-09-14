@@ -1,0 +1,14 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.5.9">
+  <compounddef id="interface_r_m_upload_metadata_configuration_view_controller" kind="class" prot="public">
+    <compoundname>RMUploadMetadataConfigurationViewController</compoundname>
+    <includes refid="_r_m_upload_metadata_configuration_view_controller_8h" local="no">RMUploadMetadataConfigurationViewController.h</includes>
+    <briefdescription>
+<para>This view controller is presented beside application metadata views. </para>    </briefdescription>
+    <detaileddescription>
+<para>You view <bold>must</bold> be 310pt wide, there is no height restriction (within reason). </para>    </detaileddescription>
+    <location file="/Users/keith/Projects/Source/RMUpload/documentation/RMUploadKit.sdk/Library/Frameworks/RMUploadKit.framework/Versions/A/Headers/RMUploadMetadataConfigurationViewController.h" line="19" bodyfile="/Users/keith/Projects/Source/RMUpload/documentation/RMUploadKit.sdk/Library/Frameworks/RMUploadKit.framework/Versions/A/Headers/RMUploadMetadataConfigurationViewController.h" bodystart="18" bodyend="-1"/>
+    <listofallmembers>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

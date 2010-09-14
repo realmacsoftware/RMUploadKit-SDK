@@ -1,0 +1,25 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.5.9">
+  <compounddef id="dir_91a19cf6edfac0404c705485afee9609" kind="dir">
+    <compoundname>/Users/keith/Projects/Source/RMUpload/documentation/RMUploadKit.sdk/Library/Frameworks/RMUploadKit.framework/Versions/A/Headers/</compoundname>
+    <innerfile refid="_a_f_property_list_protocol_8h">AFPropertyListProtocol.h</innerfile>
+    <innerfile refid="_n_s_u_r_l_request_09_r_m_upload_additions_8h">NSURLRequest+RMUploadAdditions.h</innerfile>
+    <innerfile refid="_r_m_upload_availability_8h">RMUploadAvailability.h</innerfile>
+    <innerfile refid="_r_m_upload_constants_8h">RMUploadConstants.h</innerfile>
+    <innerfile refid="_r_m_upload_credentials_8h">RMUploadCredentials.h</innerfile>
+    <innerfile refid="_r_m_upload_errors_8h">RMUploadErrors.h</innerfile>
+    <innerfile refid="_r_m_upload_kit_8h">RMUploadKit.h</innerfile>
+    <innerfile refid="_r_m_upload_metadata_configuration_view_controller_8h">RMUploadMetadataConfigurationViewController.h</innerfile>
+    <innerfile refid="_r_m_upload_multipart_documents_8h">RMUploadMultipartDocuments.h</innerfile>
+    <innerfile refid="_r_m_upload_plugin_8h">RMUploadPlugin.h</innerfile>
+    <innerfile refid="_r_m_upload_preset_8h">RMUploadPreset.h</innerfile>
+    <innerfile refid="_r_m_upload_preset_configuration_view_controller_8h">RMUploadPresetConfigurationViewController.h</innerfile>
+    <innerfile refid="_r_m_upload_task_8h">RMUploadTask.h</innerfile>
+    <innerfile refid="_r_m_upload_u_r_l_connection_8h">RMUploadURLConnection.h</innerfile>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/Users/keith/Projects/Source/RMUpload/documentation/RMUploadKit.sdk/Library/Frameworks/RMUploadKit.framework/Versions/A/Headers/"/>
+  </compounddef>
+</doxygen>

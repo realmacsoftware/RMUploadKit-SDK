@@ -1,0 +1,122 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.5.9">
+  <compounddef id="interface_r_m_upload_preset_configuration_view_controller" kind="class" prot="public">
+    <compoundname>RMUploadPresetConfigurationViewController</compoundname>
+    <includes refid="_r_m_upload_preset_configuration_view_controller_8h" local="no">RMUploadPresetConfigurationViewController.h</includes>
+      <sectiondef kind="property">
+      <memberdef kind="property" id="interface_r_m_upload_preset_configuration_view_controller_1fe393b0e4c002b045d76439d17912351" prot="public" static="no" readable="yes" writable="no" gettable="no" settable="no">
+        <type>NSString *</type>
+        <definition>NSString* RMUploadPresetConfigurationViewController::localisedAdvanceButtonTitle</definition>
+        <argsstring></argsstring>
+        <name>localisedAdvanceButtonTitle</name>
+        <read></read>
+        <briefdescription>
+<para>Observed and set as the &apos;next&apos; button title. </para>        </briefdescription>
+        <detaileddescription>
+<para>Intended for OAuth based credential view controllers so that they can title the button &apos;Authenticate&apos; and change it to &apos;Confirm&apos; after redirecting the user to the verification page in their browser. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/keith/Projects/Source/RMUpload/documentation/RMUploadKit.sdk/Library/Frameworks/RMUploadKit.framework/Versions/A/Headers/RMUploadPresetConfigurationViewController.h" line="55" bodyfile="/Users/keith/Projects/Source/RMUpload/documentation/RMUploadKit.sdk/Library/Frameworks/RMUploadKit.framework/Versions/A/Headers/RMUploadPresetConfigurationViewController.h" bodystart="55" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="interface_r_m_upload_preset_configuration_view_controller_18eb9d8ae4122d524f281c1bf9741dc22" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>IBAction</type>
+        <definition>IBAction RMUploadPresetConfigurationViewController::nextStage:</definition>
+        <argsstring>(id sender)</argsstring>
+        <name>nextStage:</name>
+        <param>
+          <type>id</type>
+          <declname>sender</declname>
+        </param>
+        <briefdescription>
+<para>Override this action message to perform any validation before proceeding. You <bold>must</bold> validate your credential/preset object here. </para>        </briefdescription>
+        <detaileddescription>
+<para>Once you have completed your validation, post the <computeroutput>RMUploadDestinationConfigurationViewControllerStageDidCompleteNotificationName</computeroutput> notification to the <computeroutput>+[NSNotificationCenter defaultCenter]</computeroutput> on the main thread with self as the object.</para><para>The default implementation simply posts the notification.</para><para>If your validation returns an error include it in the notification dictionary. You can include a recovery attempter under the <computeroutput>NSRecoveryAttempterErrorKey</computeroutput> key.<itemizedlist>
+<listitem><para>If you include a recovery attempter, and recover from the error, configuration will continue as if no error had been returned in the first place.</para></listitem><listitem><para>If you include a recovery attempter, and don&apos;t recover from the error, configuration doesn&apos;t continue and the user is returned to the current configuration view controller. </para></listitem></itemizedlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/keith/Projects/Source/RMUpload/documentation/RMUploadKit.sdk/Library/Frameworks/RMUploadKit.framework/Versions/A/Headers/RMUploadPresetConfigurationViewController.h" line="70"/>
+      </memberdef>
+      <memberdef kind="function" id="interface_r_m_upload_preset_configuration_view_controller_158e6d9c2644ca1475225929fe7a17250" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>void RMUploadPresetConfigurationViewController::viewWillDisappear:</definition>
+        <argsstring>(BOOL animated)</argsstring>
+        <name>viewWillDisappear:</name>
+        <param>
+          <type>BOOL</type>
+          <declname>animated</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/keith/Projects/Source/RMUpload/documentation/RMUploadKit.sdk/Library/Frameworks/RMUploadKit.framework/Versions/A/Headers/RMUploadPresetConfigurationViewController.h" line="78"/>
+      </memberdef>
+      <memberdef kind="function" id="interface_r_m_upload_preset_configuration_view_controller_127401c6838674e82da4e41ce869319cf" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>void RMUploadPresetConfigurationViewController::viewDidAppear:</definition>
+        <argsstring>(BOOL animated)</argsstring>
+        <name>viewDidAppear:</name>
+        <param>
+          <type>BOOL</type>
+          <declname>animated</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/keith/Projects/Source/RMUpload/documentation/RMUploadKit.sdk/Library/Frameworks/RMUploadKit.framework/Versions/A/Headers/RMUploadPresetConfigurationViewController.h" line="80"/>
+      </memberdef>
+      <memberdef kind="function" id="interface_r_m_upload_preset_configuration_view_controller_16f5cc84e99f2d49b20db1abebc02348a" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>void RMUploadPresetConfigurationViewController::highlightErrorInView:</definition>
+        <argsstring>(NSView *errorView)</argsstring>
+        <name>highlightErrorInView:</name>
+        <param>
+          <type>NSView *</type>
+          <declname>errorView</declname>
+        </param>
+        <briefdescription>
+<para>Highlights an error in, for example, a text field. </para>        </briefdescription>
+        <detaileddescription>
+<para>The error will fade out after a short delay. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/keith/Projects/Source/RMUpload/documentation/RMUploadKit.sdk/Library/Frameworks/RMUploadKit.framework/Versions/A/Headers/RMUploadPresetConfigurationViewController.h" line="89"/>
+      </memberdef>
+      <memberdef kind="function" id="interface_r_m_upload_preset_configuration_view_controller_16d80f585229c84800eb3ecd5618dc9b9" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>void RMUploadPresetConfigurationViewController::hideErrorArrow</definition>
+        <argsstring>()</argsstring>
+        <name>hideErrorArrow</name>
+        <briefdescription>
+<para>Hides a previously present error arrow using <computeroutput>-highlightErrorInView:</computeroutput>. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/keith/Projects/Source/RMUpload/documentation/RMUploadKit.sdk/Library/Frameworks/RMUploadKit.framework/Versions/A/Headers/RMUploadPresetConfigurationViewController.h" line="95"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Base class for <computeroutput><ref refid="interface_r_m_upload_credentials" kindref="compound">RMUploadCredentials</ref></computeroutput> and <computeroutput><ref refid="interface_r_m_upload_preset" kindref="compound">RMUploadPreset</ref></computeroutput> configuration view controllers. </para>    </briefdescription>
+    <detaileddescription>
+<para>You view <bold>must</bold> be 287pt in width, there is no height restriction (within reason). Your subviews <bold>should</bold> have an appropriate autoresizing mask for the superview to be a different (larger) width. </para>    </detaileddescription>
+    <location file="/Users/keith/Projects/Source/RMUpload/documentation/RMUploadKit.sdk/Library/Frameworks/RMUploadKit.framework/Versions/A/Headers/RMUploadPresetConfigurationViewController.h" line="47" bodyfile="/Users/keith/Projects/Source/RMUpload/documentation/RMUploadKit.sdk/Library/Frameworks/RMUploadKit.framework/Versions/A/Headers/RMUploadPresetConfigurationViewController.h" bodystart="46" bodyend="-1"/>
+    <listofallmembers>
+      <member refid="interface_r_m_upload_preset_configuration_view_controller_16d80f585229c84800eb3ecd5618dc9b9" prot="public" virt="virtual"><scope>RMUploadPresetConfigurationViewController</scope><name>hideErrorArrow</name></member>
+      <member refid="interface_r_m_upload_preset_configuration_view_controller_16f5cc84e99f2d49b20db1abebc02348a" prot="public" virt="virtual"><scope>RMUploadPresetConfigurationViewController</scope><name>highlightErrorInView:</name></member>
+      <member refid="interface_r_m_upload_preset_configuration_view_controller_1fe393b0e4c002b045d76439d17912351" prot="public" virt="non-virtual"><scope>RMUploadPresetConfigurationViewController</scope><name>localisedAdvanceButtonTitle</name></member>
+      <member refid="interface_r_m_upload_preset_configuration_view_controller_18eb9d8ae4122d524f281c1bf9741dc22" prot="public" virt="virtual"><scope>RMUploadPresetConfigurationViewController</scope><name>nextStage:</name></member>
+      <member refid="interface_r_m_upload_preset_configuration_view_controller_07_actions_08_1c33b81e9fd8cc4be402b9b2a3226ef52" prot="public" virt="virtual"><scope>RMUploadPresetConfigurationViewController</scope><name>showHelp:</name></member>
+      <member refid="interface_r_m_upload_preset_configuration_view_controller_127401c6838674e82da4e41ce869319cf" prot="public" virt="virtual"><scope>RMUploadPresetConfigurationViewController</scope><name>viewDidAppear:</name></member>
+      <member refid="interface_r_m_upload_preset_configuration_view_controller_158e6d9c2644ca1475225929fe7a17250" prot="public" virt="virtual"><scope>RMUploadPresetConfigurationViewController</scope><name>viewWillDisappear:</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

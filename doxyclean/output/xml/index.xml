@@ -1,0 +1,105 @@
+<?xml version="1.0" ?>
+<project name="RMUploadKit">
+	<object kind="class">
+		<name>
+			
+			
+			
+			
+			
+			
+			NSURLRequest(RMUploadAdditions)
+		
+		
+		
+		
+		
+		
+		</name>
+	</object>
+	<object kind="class">
+		<name>
+			NSURLRequest(RMUploadAdditions)
+		</name>
+	</object>
+	<object kind="class">
+		<name>
+			RMUploadCredentials
+		</name>
+	</object>
+	<object kind="class">
+		<name>
+			RMUploadMetadataConfigurationViewController
+		</name>
+	</object>
+	<object kind="class">
+		<name>
+			RMUploadMultipartDocument
+		</name>
+	</object>
+	<object kind="class">
+		<name>
+			RMUploadMultipartFormDocument
+		</name>
+	</object>
+	<object kind="class">
+		<name>
+			RMUploadMultipartRelatedDocument
+		</name>
+	</object>
+	<object kind="class">
+		<name>
+			RMUploadPlugin
+		</name>
+	</object>
+	<object kind="class">
+		<name>
+			RMUploadPreset(RMUploadCourierIntegration)
+		</name>
+	</object>
+	<object kind="class">
+		<name>
+			RMUploadPreset(RMUploadMetadata)
+		</name>
+	</object>
+	<object kind="class">
+		<name>
+			RMUploadPreset
+		</name>
+	</object>
+	<object kind="class">
+		<name>
+			RMUploadPresetConfigurationViewController(Actions)
+		</name>
+	</object>
+	<object kind="class">
+		<name>
+			RMUploadPresetConfigurationViewController
+		</name>
+	</object>
+	<object kind="class">
+		<name>
+			RMUploadTask
+		</name>
+	</object>
+	<object kind="class">
+		<name>
+			RMUploadURLConnection(RMUploadDeprecated)
+		</name>
+	</object>
+	<object kind="class">
+		<name>
+			RMUploadURLConnection
+		</name>
+	</object>
+	<object kind="protocol">
+		<name>
+			AFPropertyList
+		</name>
+	</object>
+	<object kind="protocol">
+		<name>
+			RMUploadURLConnectionDelegate
+		</name>
+	</object>
+</project>

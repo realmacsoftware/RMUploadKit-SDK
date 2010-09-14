@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?><object kind="class">
+  <name>RMUploadMultipartDocument</name>
+  <file>RMUploadMultipartDocuments.h</file>
+  <superclass/>
+  <conformsTo/>
+  <description>
+    <brief>
+<para>Base class for multipart documents. </para>    </brief>
+    <details>
+    </details>
+  </description>
+  <sections/>
+</object>

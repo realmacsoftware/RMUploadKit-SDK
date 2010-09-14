@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="UTF-8"?><object kind="class">
+  <name>RMUploadTask</name>
+  <file>RMUploadTask.h</file>
+  <description>
+    <brief>
+<para>An upload task encapsulates an upload transaction with the target destination. This includes not only the upload of the file itself, but also any additional transactions with the destination to set any relevant metadata. </para>    </brief>
+    <details>
+<para>All upload tasks must implement the <code>upload</code> method. It is called by the when it is this task's turn to upload.</para><para>The object is expected to notify the framework with <code><ref id="../Classes/RMUploadTask">RMUploadTask</ref>DidReceiveProgressNotificationName</code>, <code><ref id="../Classes/RMUploadTask">RMUploadTask</ref>FinishedUploadingNotificationName</code> and <code><ref id="../Classes/RMUploadTask">RMUploadTask</ref>DidCompleteNotificationName</code> notifications. </para>    </details>
+  </description>
+  <sections>
+    <section>
+      <name>Other</name>
+      <member kind="property">
+        <name>destination</name>
+        <type><ref id="../Classes/RMUploadPreset">RMUploadPreset</ref> *</type>
+        <prototype>@property <ref id="../Classes/RMUploadPreset">RMUploadPreset</ref> *destination</prototype>
+        <file><ref id="../Classes/RMUploadTask">RMUploadTask</ref>.h</file>
+        <description>
+          <brief>
+<para>The <code>destination</code> passed to the initialiser. </para>        </brief>
+          <details>
+        </details>
+        </description>
+      </member>
+      <member kind="property">
+        <name>uploadInfo</name>
+        <type>id</type>
+        <prototype>@property id uploadInfo</prototype>
+        <file><ref id="../Classes/RMUploadTask">RMUploadTask</ref>.h</file>
+        <description>
+          <brief>
+<para>The <code>uploadInfo</code> passed to the initialiser. Values should be obtained using <code>-[<ref id="http://developer.apple.com/mac/library/documentation/Cocoa/Reference/Foundation/Classes/NSObject_Class/index">NSObject</ref> valueForKey:]</code>. </para>        </brief>
+          <details>
+        </details>
+        </description>
+      </member>
+      <member kind="property">
+        <name>cancelled</name>
+        <type>BOOL</type>
+        <prototype>@property BOOL cancelled</prototype>
+        <file><ref id="../Classes/RMUploadTask">RMUploadTask</ref>.h</file>
+        <description>
+          <brief>
+<para>Set when the <code>-cancel</code> message is received. </para>        </brief>
+          <details>
+        </details>
+        </description>
+      </member>
+    </section>
+    <section>
+      <name>Other</name>
+      <member kind="instance-method">
+        <name>initWithPreset:uploadInfo:</name>
+        <type>id</type>
+        <prototype>- (id)initWithPreset:(<ref id="../Classes/RMUploadPreset">RMUploadPreset</ref> *)<parameter>destination</parameter> uploadInfo:(id)<parameter>uploadInfo</parameter> </prototype>
+        <file><ref id="../Classes/RMUploadTask">RMUploadTask</ref>.h</file>
+        <description>
+          <brief>
+<para>Designated Initialiser. </para>        </brief>
+          <details>
+<para>
+<list>
+<item><para><code>RMUploadFileURLKey</code> : The location of the file to be uploaded on disk. (<code><ref id="http://developer.apple.com/mac/library/documentation/Cocoa/Reference/Foundation/Classes/NSURL_Class/index">NSURL</ref></code>)</para></item><item><para><code>RMUploadTitleKey</code> : The title of the file to be uploaded. (<code><ref id="http://developer.apple.com/mac/library/documentation/Cocoa/Reference/Foundation/Classes/NSString_Class/index">NSString</ref></code>)</para></item><item><para><code>RMUploadOriginalDateKey</code> : This is the date when the image was taken/snapped/modified. For example, in Flickr's &quot;date taken&quot; field you would pass this value. (<code><ref id="http://developer.apple.com/mac/library/documentation/Cocoa/Reference/Foundation/Classes/NSDate_Class/index">NSDate</ref></code>)</para></item><item><para><code>RMUploadOriginalURLKey</code> : If the file is a websnap, this will be passed as the URL of where the websnap was taken. (<code><ref id="http://developer.apple.com/mac/library/documentation/Cocoa/Reference/Foundation/Classes/NSURL_Class/index">NSURL</ref></code>)</para></item><item><para><code>RMUploadDescriptionKey</code> : Any additional comments provided by the user. Such as the &quot;description&quot; field in LittleSnapper. (<code><ref id="http://developer.apple.com/mac/library/documentation/Cocoa/Reference/Foundation/Classes/NSString_Class/index">NSString</ref></code>)</para></item><item><para><code>RMUploadTagsKey</code> : Tags associated with the file. (<code><ref id="http://developer.apple.com/mac/library/documentation/Cocoa/Reference/Foundation/Classes/NSArray_Class/index">NSArray</ref></code> of <code><ref id="http://developer.apple.com/mac/library/documentation/Cocoa/Reference/Foundation/Classes/NSString_Class/index">NSString</ref></code> objects.) </para></item></list>
+</para>        </details>
+        </description>
+        <parameters><param><name>
+destination
+</name><description>
+<para>The <code><ref id="../Classes/RMUploadPreset">RMUploadPreset</ref></code> which should be used for configuration and <code><ref id="../Classes/RMUploadCredentials">RMUploadCredentials</ref></code> should they be needed.</para></description></param>
+<param><name>
+uploadInfo
+</name><description>
+<para>The data and metadata to upload. It is the plugin's responsibiltiy to check for nil values and what keys the object contains. It contains any keys set in your metadata view and any of the following default keys:</para></description></param>
+</parameters>
+      </member>
+      <member kind="instance-method">
+        <name>upload</name>
+        <type>void</type>
+        <prototype>- (void)upload</prototype>
+        <file><ref id="../Classes/RMUploadTask">RMUploadTask</ref>.h</file>
+        <description>
+          <brief>
+<para>The central method to the class. </para>        </brief>
+          <details>
+<para>Ensure, that you are posting the correct notifications.</para><para>A thread local run loop will be available when this method is called, you should use <code>+[<ref id="http://developer.apple.com/mac/library/documentation/Cocoa/Reference/Foundation/Classes/NSRunLoop_Class/index">NSRunLoop</ref> currentRunLoop]</code> and are highly discouraged from scheduling on the main run loop or creating your own background thread. Avoid libraries that create background threads or perform synchronous networking. You must not recursively service the run loop. </para>        </details>
+        </description>
+      </member>
+      <member kind="instance-method">
+        <name>cancel</name>
+        <type>void</type>
+        <prototype>- (void)cancel</prototype>
+        <file><ref id="../Classes/RMUploadTask">RMUploadTask</ref>.h</file>
+        <description>
+          <brief>
+<para>This should immediately cease any uploading that the task is performing. You are strongly encouraged to override this method and teardown your connections. </para>        </brief>
+          <details>
+<para>If overridden, ensure you call <code>super</code>, and then post the <code><ref id="../Classes/RMUploadTask">RMUploadTask</ref>DidCompleteNotificationName</code> notification once you have completed your teardown. </para>        </details>
+        </description>
+      </member>
+    </section>
+  </sections>
+</object>

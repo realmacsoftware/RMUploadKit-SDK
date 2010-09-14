@@ -1,0 +1,130 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.5.9">
+  <compounddef id="interface_n_s_u_r_l_request_07_r_m_upload_additions_08" kind="class" prot="public">
+    <compoundname>NSURLRequest(RMUploadAdditions)</compoundname>
+    <includes refid="_n_s_u_r_l_request_09_r_m_upload_additions_8h" local="no">NSURLRequest+RMUploadAdditions.h</includes>
+      <sectiondef kind="public-static-func">
+      <memberdef kind="function" id="interface_n_s_u_r_l_request_07_r_m_upload_additions_08_1c048cea6f45b3fbbc3ace7689fed707a" prot="public" static="yes" const="no" explicit="no" inline="no" virt="virtual">
+        <type>NSURLRequest *</type>
+        <definition>NSURLRequest * NSURLRequest(RMUploadAdditions)::getRequestWithParameters:toURL:</definition>
+        <argsstring>(NSDictionary *parameters,[toURL] NSURL *URL)</argsstring>
+        <name>getRequestWithParameters:toURL:</name>
+        <param>
+          <type>NSDictionary *</type>
+          <declname>parameters</declname>
+        </param>
+        <param>
+          <attributes>[toURL]</attributes>
+          <type>NSURL *</type>
+          <declname>URL</declname>
+        </param>
+        <briefdescription>
+<para>Builds a GET request from the URL and parameters provided. </para>        </briefdescription>
+        <detaileddescription>
+<para>The parameters are appended to the end of the URL as a query string.</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>parameters</parametername>
+</parameternamelist>
+<parameterdescription>
+<para><computeroutput>NSDictionary</computeroutput> expecting key/value pairs of strings, where each key/value pair is for a key in the web service that you are sending to. You can pass <computeroutput>+[NSNull null]</computeroutput> for the value if it has none.</para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>URL</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The base URL for the request. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/keith/Projects/Source/RMUpload/documentation/RMUploadKit.sdk/Library/Frameworks/RMUploadKit.framework/Versions/A/Headers/NSURLRequest+RMUploadAdditions.h" line="73"/>
+      </memberdef>
+      <memberdef kind="function" id="interface_n_s_u_r_l_request_07_r_m_upload_additions_08_1c2357baf5933f3e2573882a7f95581cb" prot="public" static="yes" const="no" explicit="no" inline="no" virt="virtual">
+        <type>NSURLRequest *</type>
+        <definition>NSURLRequest * NSURLRequest(RMUploadAdditions)::postRequestWithParameters:toURL:</definition>
+        <argsstring>(NSDictionary *parameters,[toURL] NSURL *URL)</argsstring>
+        <name>postRequestWithParameters:toURL:</name>
+        <param>
+          <type>NSDictionary *</type>
+          <declname>parameters</declname>
+        </param>
+        <param>
+          <attributes>[toURL]</attributes>
+          <type>NSURL *</type>
+          <declname>URL</declname>
+        </param>
+        <briefdescription>
+<para>Builds a POST request from the URL and parameters provided. </para>        </briefdescription>
+        <detaileddescription>
+<para>Useful for simple POST requests that do not require files.</para><para>This encodes the parameters, sets the body of the request and sets the &apos;Content-Type&apos; header.</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>parameters</parametername>
+</parameternamelist>
+<parameterdescription>
+<para><computeroutput>NSDictionary</computeroutput> of key/value pairs. Unlike <computeroutput>+getRequestWithParameters:</computeroutput> the value does not have to be an <computeroutput>NSString</computeroutput>, it can be any class of object supported by <computeroutput>RMPOSTDataKey</computeroutput>.</para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>URL</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The base URL for the request. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/keith/Projects/Source/RMUpload/documentation/RMUploadKit.sdk/Library/Frameworks/RMUploadKit.framework/Versions/A/Headers/NSURLRequest+RMUploadAdditions.h" line="90"/>
+      </memberdef>
+      <memberdef kind="function" id="interface_n_s_u_r_l_request_07_r_m_upload_additions_08_148de422f5c54461bd500d0467b45cd71" prot="public" static="yes" const="no" explicit="no" inline="no" virt="virtual">
+        <type>NSURLRequest *</type>
+        <definition>NSURLRequest * NSURLRequest(RMUploadAdditions)::filePostRequestWithParameters:toURL:</definition>
+        <argsstring>(NSArray *parameters,[toURL] NSURL *URL)</argsstring>
+        <name>filePostRequestWithParameters:toURL:</name>
+        <param>
+          <type>NSArray *</type>
+          <declname>parameters</declname>
+        </param>
+        <param>
+          <attributes>[toURL]</attributes>
+          <type>NSURL *</type>
+          <declname>URL</declname>
+        </param>
+        <briefdescription>
+<para>Build a POST request for uploading a file. You build up an <computeroutput>NSArray</computeroutput> of parameter <computeroutput>NSDictionary</computeroutput> objects containing the keys described below to describe the data sent for each field in the request. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>parameters</parametername>
+</parameternamelist>
+<parameterdescription>
+<para><computeroutput>NSArray</computeroutput> of <computeroutput>NSDictionary</computeroutput> objects containing: <computeroutput>RMPOSTFilenameKey</computeroutput> <computeroutput>RMPOSTDataKey</computeroutput> <computeroutput>RMPOSTFieldNameKey</computeroutput></para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>URL</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The base URL for the request. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/keith/Projects/Source/RMUpload/documentation/RMUploadKit.sdk/Library/Frameworks/RMUploadKit.framework/Versions/A/Headers/NSURLRequest+RMUploadAdditions.h" line="106"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Provides convenience methods for generating <computeroutput>NSURLRequest</computeroutput> objects, for common web service. </para>    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/Users/keith/Projects/Source/RMUpload/documentation/RMUploadKit.sdk/Library/Frameworks/RMUploadKit.framework/Versions/A/Headers/NSURLRequest+RMUploadAdditions.h" line="58" bodyfile="/Users/keith/Projects/Source/RMUpload/documentation/RMUploadKit.sdk/Library/Frameworks/RMUploadKit.framework/Versions/A/Headers/NSURLRequest+RMUploadAdditions.h" bodystart="58" bodyend="-1"/>
+    <listofallmembers>
+      <member refid="interface_n_s_u_r_l_request_07_r_m_upload_additions_08_148de422f5c54461bd500d0467b45cd71" prot="public" virt="virtual"><scope>NSURLRequest(RMUploadAdditions)</scope><name>filePostRequestWithParameters:toURL:</name></member>
+      <member refid="interface_n_s_u_r_l_request_07_r_m_upload_additions_08_1c048cea6f45b3fbbc3ace7689fed707a" prot="public" virt="virtual"><scope>NSURLRequest(RMUploadAdditions)</scope><name>getRequestWithParameters:toURL:</name></member>
+      <member refid="interface_n_s_u_r_l_request_07_r_m_upload_additions_08_1c2357baf5933f3e2573882a7f95581cb" prot="public" virt="virtual"><scope>NSURLRequest(RMUploadAdditions)</scope><name>postRequestWithParameters:toURL:</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

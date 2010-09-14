@@ -1,0 +1,146 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.5.9">
+  <compounddef id="_r_m_upload_u_r_l_connection_8h" kind="file">
+    <compoundname>RMUploadURLConnection.h</compoundname>
+    <includes local="no">Cocoa/Cocoa.h</includes>
+    <includes local="yes">RMUploadKit/RMUploadAvailability.h</includes>
+    <incdepgraph>
+      <node id="56">
+        <label>Cocoa/Cocoa.h</label>
+      </node>
+      <node id="55">
+        <label>/Users/keith/Projects/Source/RMUpload/documentation/RMUploadKit.sdk/Library/Frameworks/RMUploadKit.framework/Versions/A/Headers/RMUploadURLConnection.h</label>
+        <link refid="RMUploadURLConnection.h"/>
+        <childnode refid="56" relation="include">
+        </childnode>
+        <childnode refid="57" relation="include">
+        </childnode>
+      </node>
+      <node id="57">
+        <label>RMUploadKit/RMUploadAvailability.h</label>
+      </node>
+    </incdepgraph>
+    <innerclass refid="interface_r_m_upload_u_r_l_connection" prot="public">RMUploadURLConnection</innerclass>
+    <innerclass refid="protocol_r_m_upload_u_r_l_connection_delegate-p" prot="public">RMUploadURLConnectionDelegate-p</innerclass>
+    <innerclass refid="interface_r_m_upload_u_r_l_connection_07_r_m_upload_deprecated_08" prot="public">RMUploadURLConnection(RMUploadDeprecated)</innerclass>
+      <sectiondef kind="typedef">
+      <memberdef kind="typedef" id="_r_m_upload_u_r_l_connection_8h_19729d1cfc04cbf0bd97158d6b612e5c2" prot="public" static="no">
+        <type>NSError *</type>
+        <definition>typedef NSError* responseError</definition>
+        <argsstring></argsstring>
+        <name>responseError</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/keith/Projects/Source/RMUpload/documentation/RMUploadKit.sdk/Library/Frameworks/RMUploadKit.framework/Versions/A/Headers/RMUploadURLConnection.h" line="25" bodyfile="/Users/keith/Projects/Source/RMUpload/documentation/RMUploadKit.sdk/Library/Frameworks/RMUploadKit.framework/Versions/A/Headers/RMUploadURLConnection.h" bodystart="25" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="_r_m_upload_u_r_l_connection_8h_1fa6b635dacd7a5df623256c763afab5e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>typedef</type>
+        <definition>typedef void</definition>
+        <argsstring>(^RMUploadURLConnectionCompletionBlock)(NSData *responseData</argsstring>
+        <name>void</name>
+        <param>
+          <type>^</type>
+          <declname>RMUploadURLConnectionCompletionBlock</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/keith/Projects/Source/RMUpload/documentation/RMUploadKit.sdk/Library/Frameworks/RMUploadKit.framework/Versions/A/Headers/RMUploadURLConnection.h" line="25"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="comment">//***************************************************************************</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight><highlight class="comment">//<sp/>Copyright<sp/>(C)<sp/>2009<sp/>Realmac<sp/>Software<sp/>Ltd</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight><highlight class="comment">//</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight><highlight class="comment">//<sp/>These<sp/>coded<sp/>instructions,<sp/>statements,<sp/>and<sp/>computer<sp/>programs<sp/>contain</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="6"><highlight class="normal"></highlight><highlight class="comment">//<sp/>unpublished<sp/>proprietary<sp/>information<sp/>of<sp/>Realmac<sp/>Software<sp/>Ltd</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="7"><highlight class="normal"></highlight><highlight class="comment">//<sp/>and<sp/>are<sp/>protected<sp/>by<sp/>copyright<sp/>law.<sp/>They<sp/>may<sp/>not<sp/>be<sp/>disclosed</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="8"><highlight class="normal"></highlight><highlight class="comment">//<sp/>to<sp/>third<sp/>parties<sp/>or<sp/>copied<sp/>or<sp/>duplicated<sp/>in<sp/>any<sp/>form,<sp/>in<sp/>whole<sp/>or</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="9"><highlight class="normal"></highlight><highlight class="comment">//<sp/>in<sp/>part,<sp/>without<sp/>the<sp/>prior<sp/>written<sp/>consent<sp/>of<sp/>Realmac<sp/>Software<sp/>Ltd.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="10"><highlight class="normal"></highlight></codeline>
+<codeline lineno="11"><highlight class="normal"></highlight><highlight class="comment">//<sp/>Created<sp/>by<sp/>Danny<sp/>Greg<sp/>on<sp/>24/7/2009<sp/></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="12"><highlight class="normal"></highlight></codeline>
+<codeline lineno="13"><highlight class="normal"></highlight><highlight class="comment">//***************************************************************************</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="14"><highlight class="normal"></highlight></codeline>
+<codeline lineno="15"><highlight class="normal"></highlight><highlight class="preprocessor">#import<sp/>&lt;Cocoa/Cocoa.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="16"><highlight class="normal"></highlight></codeline>
+<codeline lineno="17"><highlight class="normal"></highlight><highlight class="preprocessor">#import<sp/>&quot;RMUploadKit/RMUploadAvailability.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="18"><highlight class="normal"></highlight></codeline>
+<codeline lineno="23"><highlight class="comment">//***************************************************************************</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="24"><highlight class="normal"></highlight></codeline>
+<codeline lineno="25" refid="_r_m_upload_u_r_l_connection_8h_19729d1cfc04cbf0bd97158d6b612e5c2" refkind="member"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/><ref refid="_r_m_upload_u_r_l_connection_8h_1fa6b635dacd7a5df623256c763afab5e" kindref="member">void</ref><sp/>(^RMUploadURLConnectionCompletionBlock)(NSData<sp/>*responseData,<sp/>NSError<sp/>*<ref refid="_r_m_upload_u_r_l_connection_8h_19729d1cfc04cbf0bd97158d6b612e5c2" kindref="member">responseError</ref>);</highlight></codeline>
+<codeline lineno="26"><highlight class="normal"></highlight></codeline>
+<codeline lineno="27"><highlight class="normal"></highlight><highlight class="comment">//***************************************************************************</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="28"><highlight class="normal"></highlight></codeline>
+<codeline lineno="29"><highlight class="normal"></highlight><highlight class="keyword">@protocol<sp/></highlight><highlight class="normal">RMUploadURLConnectionDelegate;</highlight></codeline>
+<codeline lineno="30"><highlight class="normal"></highlight></codeline>
+<codeline lineno="37" refid="interface_r_m_upload_u_r_l_connection" refkind="compound"><highlight class="keyword">@interface<sp/></highlight><highlight class="normal"><ref refid="interface_r_m_upload_u_r_l_connection" kindref="compound" tooltip="A replacement for NSURLConnection, wrapping it with a different API.">RMUploadURLConnection</ref><sp/>:<sp/>NSObject</highlight></codeline>
+<codeline lineno="38"><highlight class="normal"></highlight></codeline>
+<codeline lineno="43"><highlight class="normal">+<sp/>(<ref refid="interface_r_m_upload_u_r_l_connection" kindref="compound" tooltip="A replacement for NSURLConnection, wrapping it with a different API.">RMUploadURLConnection</ref><sp/>*)connectionWithRequest:(NSURLRequest<sp/>*)request<sp/>delegate:(</highlight><highlight class="keywordtype">id</highlight><highlight class="normal"><sp/>&lt;RMUploadURLConnectionDelegate&gt;)delegate;</highlight></codeline>
+<codeline lineno="44"><highlight class="normal"></highlight></codeline>
+<codeline lineno="49"><highlight class="normal">+<sp/>(<ref refid="interface_r_m_upload_u_r_l_connection" kindref="compound" tooltip="A replacement for NSURLConnection, wrapping it with a different API.">RMUploadURLConnection</ref><sp/>*)connectionWithRequest:(NSURLRequest<sp/>*)request<sp/>completionBlock:(RMUploadURLConnectionCompletionBlock)completionBlock;</highlight></codeline>
+<codeline lineno="50"><highlight class="normal"></highlight></codeline>
+<codeline lineno="55" refid="interface_r_m_upload_u_r_l_connection_16a30b21015bdbcb4e24e1ef9057a5674" refkind="member"><highlight class="normal">@property<sp/>(assign)<sp/>id<sp/><ref refid="interface_r_m_upload_u_r_l_connection_16a30b21015bdbcb4e24e1ef9057a5674" kindref="member" tooltip="The connection&amp;#39;s delegate.">delegate</ref>;</highlight></codeline>
+<codeline lineno="56"><highlight class="normal"></highlight></codeline>
+<codeline lineno="64" refid="interface_r_m_upload_u_r_l_connection_1451c57277725c6b455e1c454b1892e10" refkind="member"><highlight class="normal">@property<sp/>(copy)<sp/>RMUploadURLConnectionCompletionBlock<sp/><ref refid="interface_r_m_upload_u_r_l_connection_1451c57277725c6b455e1c454b1892e10" kindref="member" tooltip="A block called when the connection completes, either successfully or unsuccessfully...">completionBlock</ref>;</highlight></codeline>
+<codeline lineno="65"><highlight class="normal"></highlight></codeline>
+<codeline lineno="70" refid="interface_r_m_upload_u_r_l_connection_143d7318ce1827b70964f16b329849fdb" refkind="member"><highlight class="normal">@property<sp/>(readonly)<sp/>BOOL<sp/><ref refid="interface_r_m_upload_u_r_l_connection_143d7318ce1827b70964f16b329849fdb" kindref="member" tooltip="Set to YES when the connection has finished or has received an error.">completed</ref>;</highlight></codeline>
+<codeline lineno="71"><highlight class="normal"></highlight></codeline>
+<codeline lineno="76" refid="interface_r_m_upload_u_r_l_connection_1444f10586e5313597abdb952eca71624" refkind="member"><highlight class="normal">@property<sp/>(retain)<sp/></highlight><highlight class="keywordtype">id</highlight><highlight class="normal"><sp/><ref refid="interface_r_m_upload_u_r_l_connection_1444f10586e5313597abdb952eca71624" kindref="member" tooltip="Convenience property to associate any userInfo, handy for delegate callbacks.">userInfo</ref>;</highlight></codeline>
+<codeline lineno="77"><highlight class="normal"></highlight></codeline>
+<codeline lineno="85"><highlight class="normal">-<sp/>(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">)sendURLRequest:(NSURLRequest<sp/>*)request;</highlight></codeline>
+<codeline lineno="86"><highlight class="normal"></highlight></codeline>
+<codeline lineno="95"><highlight class="normal">-<sp/>(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">)<ref refid="interface_r_m_upload_u_r_l_connection_1251014af81e1e787d6774e80a7fd4516" kindref="member" tooltip="Cancels the connection.">cancel</ref>;</highlight></codeline>
+<codeline lineno="96"><highlight class="normal"></highlight></codeline>
+<codeline lineno="97"><highlight class="normal">@end</highlight></codeline>
+<codeline lineno="98"><highlight class="normal"></highlight></codeline>
+<codeline lineno="103" refid="protocol_r_m_upload_u_r_l_connection_delegate-p" refkind="compound"><highlight class="normal">@protocol<sp/>RMUploadURLConnectionDelegate<sp/>&lt;NSObject&gt;</highlight></codeline>
+<codeline lineno="104"><highlight class="normal"></highlight></codeline>
+<codeline lineno="105"><highlight class="normal"><sp/>@optional</highlight></codeline>
+<codeline lineno="106"><highlight class="normal"></highlight></codeline>
+<codeline lineno="117"><highlight class="normal">-<sp/>(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">)connection:(<ref refid="interface_r_m_upload_u_r_l_connection" kindref="compound" tooltip="A replacement for NSURLConnection, wrapping it with a different API.">RMUploadURLConnection</ref><sp/>*)connection<sp/>downloadProgressed:(</highlight><highlight class="keywordtype">float</highlight><highlight class="normal">)currentProgress;</highlight></codeline>
+<codeline lineno="118"><highlight class="normal"></highlight></codeline>
+<codeline lineno="129"><highlight class="normal">-<sp/>(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">)connection:(<ref refid="interface_r_m_upload_u_r_l_connection" kindref="compound" tooltip="A replacement for NSURLConnection, wrapping it with a different API.">RMUploadURLConnection</ref><sp/>*)connection<sp/>uploadProgressed:(</highlight><highlight class="keywordtype">float</highlight><highlight class="normal">)currentProgress;</highlight></codeline>
+<codeline lineno="130"><highlight class="normal"></highlight></codeline>
+<codeline lineno="131"><highlight class="normal"><sp/>@required</highlight></codeline>
+<codeline lineno="132"><highlight class="normal"></highlight></codeline>
+<codeline lineno="143"><highlight class="normal">-<sp/>(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">)connection:(<ref refid="interface_r_m_upload_u_r_l_connection" kindref="compound" tooltip="A replacement for NSURLConnection, wrapping it with a different API.">RMUploadURLConnection</ref><sp/>*)connection<sp/>didFailWithError:(NSError<sp/>*)error;</highlight></codeline>
+<codeline lineno="144"><highlight class="normal"></highlight></codeline>
+<codeline lineno="155"><highlight class="normal">-<sp/>(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">)connection:(<ref refid="interface_r_m_upload_u_r_l_connection" kindref="compound" tooltip="A replacement for NSURLConnection, wrapping it with a different API.">RMUploadURLConnection</ref><sp/>*)connection<sp/>didCompleteWithData:(NSData<sp/>*)data;</highlight></codeline>
+<codeline lineno="156"><highlight class="normal"></highlight></codeline>
+<codeline lineno="157"><highlight class="normal"><sp/>@optional</highlight></codeline>
+<codeline lineno="158"><highlight class="normal"></highlight></codeline>
+<codeline lineno="163"><highlight class="normal">-<sp/>(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">)connection:(<ref refid="interface_r_m_upload_u_r_l_connection" kindref="compound" tooltip="A replacement for NSURLConnection, wrapping it with a different API.">RMUploadURLConnection</ref><sp/>*)connection<sp/>didReceiveAuthenticationChallenge:(NSURLAuthenticationChallenge<sp/>*)challenge;</highlight></codeline>
+<codeline lineno="164"><highlight class="normal"></highlight></codeline>
+<codeline lineno="169"><highlight class="normal">-<sp/>(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">)connection:(<ref refid="interface_r_m_upload_u_r_l_connection" kindref="compound" tooltip="A replacement for NSURLConnection, wrapping it with a different API.">RMUploadURLConnection</ref><sp/>*)connection<sp/>didCancelAuthenticationChallenge:(NSURLAuthenticationChallenge<sp/>*)challenge;</highlight></codeline>
+<codeline lineno="170"><highlight class="normal"></highlight></codeline>
+<codeline lineno="171"><highlight class="normal">@end</highlight></codeline>
+<codeline lineno="172"><highlight class="normal"></highlight></codeline>
+<codeline lineno="173"><highlight class="normal"></highlight></codeline>
+<codeline lineno="178" refid="interface_r_m_upload_u_r_l_connection_07_r_m_upload_deprecated_08" refkind="compound"><highlight class="normal">@interface<sp/><ref refid="interface_r_m_upload_u_r_l_connection" kindref="compound" tooltip="A replacement for NSURLConnection, wrapping it with a different API.">RMUploadURLConnection</ref><sp/>(RMUploadDeprecated)</highlight></codeline>
+<codeline lineno="179"><highlight class="normal"></highlight></codeline>
+<codeline lineno="184"><highlight class="normal">-<sp/>(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">)sendGetRequestWithParameters:(NSDictionary<sp/>*)params<sp/>toURL:(NSURL<sp/>*)url<sp/><ref refid="_r_m_upload_availability_8h_16a1c6e282e372fbe9d3172507ff7e34c" kindref="member">RMUPLOADKIT_DEPRECATED_ATTRIBUTE</ref>;</highlight></codeline>
+<codeline lineno="185"><highlight class="normal"></highlight></codeline>
+<codeline lineno="190"><highlight class="normal">-<sp/>(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">)sendFilePostRequestWithParameters:(NSArray<sp/>*)params<sp/>toURL:(NSURL<sp/>*)url<sp/>RMUPLOADKIT_DEPRECATED_ATTRIBUTE;</highlight></codeline>
+<codeline lineno="191"><highlight class="normal"></highlight></codeline>
+<codeline lineno="196"><highlight class="normal">-<sp/>(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">)sendPostRequestWithParameters:(NSDictionary<sp/>*)params<sp/>toURL:(NSURL<sp/>*)url<sp/>RMUPLOADKIT_DEPRECATED_ATTRIBUTE;</highlight></codeline>
+<codeline lineno="197"><highlight class="normal"></highlight></codeline>
+<codeline lineno="198"><highlight class="normal">@end</highlight></codeline>
+    </programlisting>
+    <location file="/Users/keith/Projects/Source/RMUpload/documentation/RMUploadKit.sdk/Library/Frameworks/RMUploadKit.framework/Versions/A/Headers/RMUploadURLConnection.h"/>
+  </compounddef>
+</doxygen>

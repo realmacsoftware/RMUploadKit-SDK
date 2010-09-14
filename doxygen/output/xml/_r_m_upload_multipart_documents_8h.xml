@@ -1,0 +1,90 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.5.9">
+  <compounddef id="_r_m_upload_multipart_documents_8h" kind="file">
+    <compoundname>RMUploadMultipartDocuments.h</compoundname>
+    <includes local="no">Foundation/Foundation.h</includes>
+    <includes local="yes">RMUploadKit/RMUploadAvailability.h</includes>
+    <incdepgraph>
+      <node id="39">
+        <label>Foundation/Foundation.h</label>
+      </node>
+      <node id="40">
+        <label>RMUploadKit/RMUploadAvailability.h</label>
+      </node>
+      <node id="38">
+        <label>/Users/keith/Projects/Source/RMUpload/documentation/RMUploadKit.sdk/Library/Frameworks/RMUploadKit.framework/Versions/A/Headers/RMUploadMultipartDocuments.h</label>
+        <link refid="RMUploadMultipartDocuments.h"/>
+        <childnode refid="39" relation="include">
+        </childnode>
+        <childnode refid="40" relation="include">
+        </childnode>
+      </node>
+    </incdepgraph>
+    <innerclass refid="interface_r_m_upload_multipart_document" prot="public">RMUploadMultipartDocument</innerclass>
+    <innerclass refid="interface_r_m_upload_multipart_form_document" prot="public">RMUploadMultipartFormDocument</innerclass>
+    <innerclass refid="interface_r_m_upload_multipart_related_document" prot="public">RMUploadMultipartRelatedDocument</innerclass>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="comment">//</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight><highlight class="comment">//<sp/><sp/>DSMultipartFormDocument.h</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight><highlight class="comment">//<sp/><sp/>Courier</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight><highlight class="comment">//</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight><highlight class="comment">//<sp/><sp/>Created<sp/>by<sp/>Keith<sp/>Duncan<sp/>on<sp/>29/04/2010.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="6"><highlight class="normal"></highlight><highlight class="comment">//<sp/><sp/>Copyright<sp/>2010<sp/>Realmac<sp/>Software.<sp/>All<sp/>rights<sp/>reserved.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="7"><highlight class="normal"></highlight><highlight class="comment">//</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="8"><highlight class="normal"></highlight></codeline>
+<codeline lineno="9"><highlight class="normal"></highlight><highlight class="preprocessor">#import<sp/>&lt;Foundation/Foundation.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="10"><highlight class="normal"></highlight></codeline>
+<codeline lineno="11"><highlight class="normal"></highlight><highlight class="preprocessor">#import<sp/>&quot;RMUploadKit/RMUploadAvailability.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="12"><highlight class="normal"></highlight></codeline>
+<codeline lineno="13"><highlight class="normal"></highlight><highlight class="preprocessor">#if<sp/>RMUPLOADKIT_FRAMEWORK_VERSION_MAX_ALLOWED<sp/>&gt;=<sp/>RMUPLOADKIT_FRAMEWORK_VERSION_3</highlight></codeline>
+<codeline lineno="14"><highlight class="preprocessor"></highlight></codeline>
+<codeline lineno="18" refid="interface_r_m_upload_multipart_document" refkind="compound"><highlight class="keyword">@interface<sp/></highlight><highlight class="normal"><ref refid="interface_r_m_upload_multipart_document" kindref="compound" tooltip="Base class for multipart documents.">RMUploadMultipartDocument</ref><sp/>:<sp/>NSObject</highlight></codeline>
+<codeline lineno="19"><highlight class="normal"></highlight></codeline>
+<codeline lineno="20"><highlight class="normal">@end</highlight></codeline>
+<codeline lineno="21"><highlight class="normal">#endif<sp/></highlight><highlight class="comment">//<sp/>RMUPLOADKIT_FRAMEWORK_VERSION_MAX_ALLOWED<sp/>&gt;=<sp/>RMUPLOADKIT_FRAMEWORK_VERSION_3</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="22"><highlight class="normal"></highlight></codeline>
+<codeline lineno="30" refid="interface_r_m_upload_multipart_form_document" refkind="compound"><highlight class="normal">@interface<sp/><ref refid="interface_r_m_upload_multipart_form_document" kindref="compound" tooltip="This format is described in RFC 2388 http://tools.ietf.org/html/rfc2388.">RMUploadMultipartFormDocument</ref><sp/>:<sp/></highlight></codeline>
+<codeline lineno="31"><highlight class="normal">#if<sp/><ref refid="_r_m_upload_availability_8h_11ba1ac22b3486bfd2b1b5c2a1974721e" kindref="member">RMUPLOADKIT_FRAMEWORK_VERSION_MAX_ALLOWED</ref><sp/>&gt;=<sp/><ref refid="_r_m_upload_availability_8h_1bdb6a1606fc6f10c32a5022795665120" kindref="member">RMUPLOADKIT_FRAMEWORK_VERSION_3</ref></highlight></codeline>
+<codeline lineno="32"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="interface_r_m_upload_multipart_document" kindref="compound" tooltip="Base class for multipart documents.">RMUploadMultipartDocument</ref></highlight></codeline>
+<codeline lineno="33"><highlight class="normal">#else</highlight></codeline>
+<codeline lineno="34"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>NSObject</highlight></codeline>
+<codeline lineno="35"><highlight class="normal">#endif</highlight></codeline>
+<codeline lineno="36"><highlight class="normal"></highlight></codeline>
+<codeline lineno="41"><highlight class="normal">-<sp/>(NSString<sp/>*)valueForField:(NSString<sp/>*)fieldname;</highlight></codeline>
+<codeline lineno="42"><highlight class="normal"></highlight></codeline>
+<codeline lineno="56"><highlight class="normal">-<sp/>(<ref refid="_r_m_upload_u_r_l_connection_8h_1fa6b635dacd7a5df623256c763afab5e" kindref="member">void</ref>)setValue:(NSString<sp/>*)value<sp/>forField:(NSString<sp/>*)fieldname;</highlight></codeline>
+<codeline lineno="57"><highlight class="normal"></highlight></codeline>
+<codeline lineno="62"><highlight class="normal">-<sp/>(NSSet<sp/>*)fileLocationsForField:(NSString<sp/>*)fieldname;</highlight></codeline>
+<codeline lineno="63"><highlight class="normal"></highlight></codeline>
+<codeline lineno="78"><highlight class="normal">-<sp/>(<ref refid="_r_m_upload_u_r_l_connection_8h_1fa6b635dacd7a5df623256c763afab5e" kindref="member">void</ref>)addFileByReferencingURL:(NSURL<sp/>*)location<sp/>withFilename:(NSString<sp/>*)filename<sp/>toField:(NSString<sp/>*)fieldname;</highlight></codeline>
+<codeline lineno="79"><highlight class="normal"></highlight></codeline>
+<codeline lineno="91"><highlight class="normal">-<sp/>(BOOL)getFormData:(NSData<sp/>**)dataRef<sp/>contentType:(NSString<sp/>**)contentTypeRef;</highlight></codeline>
+<codeline lineno="92"><highlight class="normal"></highlight></codeline>
+<codeline lineno="93"><highlight class="normal"></highlight><highlight class="keyword">@end</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="94"><highlight class="normal"></highlight></codeline>
+<codeline lineno="95"><highlight class="normal"></highlight><highlight class="preprocessor">#if<sp/>RMUPLOADKIT_FRAMEWORK_VERSION_MAX_ALLOWED<sp/>&gt;=<sp/>RMUPLOADKIT_FRAMEWORK_VERSION_3</highlight></codeline>
+<codeline lineno="96"><highlight class="preprocessor"></highlight></codeline>
+<codeline lineno="104" refid="interface_r_m_upload_multipart_related_document" refkind="compound"><highlight class="keyword">@interface<sp/></highlight><highlight class="normal"><ref refid="interface_r_m_upload_multipart_related_document" kindref="compound" tooltip="This format is described in RFC 2387 http://tools.ietf.org/html/rfc2387. Though it...">RMUploadMultipartRelatedDocument</ref><sp/>:<sp/><ref refid="interface_r_m_upload_multipart_document" kindref="compound" tooltip="Base class for multipart documents.">RMUploadMultipartDocument</ref></highlight></codeline>
+<codeline lineno="105"><highlight class="normal"></highlight></codeline>
+<codeline lineno="110"><highlight class="normal">-<sp/>(id)<ref refid="interface_r_m_upload_multipart_related_document_18fc1f24110492b11af94b53399bac768" kindref="member" tooltip="Designated Initialiser.">init</ref>;</highlight></codeline>
+<codeline lineno="111"><highlight class="normal"></highlight></codeline>
+<codeline lineno="116"><highlight class="normal">-<sp/>(id)initWithStartContentIdentifier:(NSString<sp/>*)startContentIdentifier;</highlight></codeline>
+<codeline lineno="117"><highlight class="normal"></highlight></codeline>
+<codeline lineno="129"><highlight class="normal">-<sp/>(<ref refid="_r_m_upload_u_r_l_connection_8h_1fa6b635dacd7a5df623256c763afab5e" kindref="member">void</ref>)addPartWithData:(NSData<sp/>*)data<sp/>withContentType:(NSString<sp/>*)contentType<sp/>forContentIdentifier:(NSString<sp/>*)contentIdentifier;</highlight></codeline>
+<codeline lineno="130"><highlight class="normal"></highlight></codeline>
+<codeline lineno="139"><highlight class="normal">-<sp/>(<ref refid="_r_m_upload_u_r_l_connection_8h_1fa6b635dacd7a5df623256c763afab5e" kindref="member">void</ref>)addPartByReferencingContentsOfURL:(NSURL<sp/>*)location<sp/>forContentIdentifier:(NSString<sp/>*)contentIdentifier;</highlight></codeline>
+<codeline lineno="140"><highlight class="normal"></highlight></codeline>
+<codeline lineno="145"><highlight class="normal">-<sp/>(<ref refid="_r_m_upload_u_r_l_connection_8h_1fa6b635dacd7a5df623256c763afab5e" kindref="member">void</ref>)removePartForContentIdentifier:(NSString<sp/>*)contentIdentifier;</highlight></codeline>
+<codeline lineno="146"><highlight class="normal"></highlight></codeline>
+<codeline lineno="154"><highlight class="normal">-<sp/>(BOOL)getData:(NSData<sp/>**)dataRef<sp/>contentType:(NSString<sp/>**)contentTypeRef;</highlight></codeline>
+<codeline lineno="155"><highlight class="normal"></highlight></codeline>
+<codeline lineno="156"><highlight class="normal"></highlight><highlight class="keyword">@end</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="157"><highlight class="normal"></highlight><highlight class="preprocessor">#endif<sp/>//<sp/>RMUPLOADKIT_FRAMEWORK_VERSION_MAX_ALLOWED<sp/>&gt;=<sp/>RMUPLOADKIT_FRAMEWORK_VERSION_3</highlight></codeline>
+    </programlisting>
+    <location file="/Users/keith/Projects/Source/RMUpload/documentation/RMUploadKit.sdk/Library/Frameworks/RMUploadKit.framework/Versions/A/Headers/RMUploadMultipartDocuments.h"/>
+  </compounddef>
+</doxygen>

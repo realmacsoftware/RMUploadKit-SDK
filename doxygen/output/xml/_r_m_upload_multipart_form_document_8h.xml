@@ -1,0 +1,49 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.5.9">
+  <compounddef id="_r_m_upload_multipart_form_document_8h" kind="file">
+    <compoundname>RMUploadMultipartFormDocument.h</compoundname>
+    <includes local="no">Foundation/Foundation.h</includes>
+    <incdepgraph>
+      <node id="42">
+        <label>/Users/keith/Projects/Source/RMUpload/documentation/RMUploadKit.sdk/Library/Frameworks/RMUploadKit.framework/Versions/A/Headers/RMUploadMultipartFormDocument.h</label>
+        <link refid="RMUploadMultipartFormDocument.h"/>
+        <childnode refid="43" relation="include">
+        </childnode>
+      </node>
+      <node id="43">
+        <label>Foundation/Foundation.h</label>
+      </node>
+    </incdepgraph>
+    <innerclass refid="interface_r_m_upload_multipart_form_document" prot="public">RMUploadMultipartFormDocument</innerclass>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="comment">//</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight><highlight class="comment">//<sp/><sp/>DSMultipartFormDocument.h</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight><highlight class="comment">//<sp/><sp/>Courier</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight><highlight class="comment">//</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight><highlight class="comment">//<sp/><sp/>Created<sp/>by<sp/>Keith<sp/>Duncan<sp/>on<sp/>29/04/2010.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="6"><highlight class="normal"></highlight><highlight class="comment">//<sp/><sp/>Copyright<sp/>2010<sp/>Realmac<sp/>Software.<sp/>All<sp/>rights<sp/>reserved.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="7"><highlight class="normal"></highlight><highlight class="comment">//</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="8"><highlight class="normal"></highlight></codeline>
+<codeline lineno="9"><highlight class="normal"></highlight><highlight class="preprocessor">#import<sp/>&lt;Foundation/Foundation.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="10"><highlight class="normal"></highlight></codeline>
+<codeline lineno="18"><highlight class="keyword">@interface<sp/></highlight><highlight class="normal"><ref refid="interface_r_m_upload_multipart_form_document" kindref="compound" tooltip="This format is described in RFC 2388 http://tools.ietf.org/html/rfc2388.">RMUploadMultipartFormDocument</ref><sp/>:<sp/>NSObject</highlight></codeline>
+<codeline lineno="19"><highlight class="normal"></highlight></codeline>
+<codeline lineno="24"><highlight class="normal">-<sp/>(NSString<sp/>*)valueForField:(NSString<sp/>*)fieldname;</highlight></codeline>
+<codeline lineno="25"><highlight class="normal"></highlight></codeline>
+<codeline lineno="39"><highlight class="normal">-<sp/>(<ref refid="_r_m_upload_u_r_l_connection_8h_1fa6b635dacd7a5df623256c763afab5e" kindref="member">void</ref>)setValue:(NSString<sp/>*)value<sp/>forField:(NSString<sp/>*)fieldname;</highlight></codeline>
+<codeline lineno="40"><highlight class="normal"></highlight></codeline>
+<codeline lineno="45"><highlight class="normal">-<sp/>(NSSet<sp/>*)fileLocationsForField:(NSString<sp/>*)fieldname;</highlight></codeline>
+<codeline lineno="46"><highlight class="normal"></highlight></codeline>
+<codeline lineno="61"><highlight class="normal">-<sp/>(<ref refid="_r_m_upload_u_r_l_connection_8h_1fa6b635dacd7a5df623256c763afab5e" kindref="member">void</ref>)addFileByReferencingURL:(NSURL<sp/>*)location<sp/>withFilename:(NSString<sp/>*)filename<sp/>toField:(NSString<sp/>*)fieldname;</highlight></codeline>
+<codeline lineno="62"><highlight class="normal"></highlight></codeline>
+<codeline lineno="70"><highlight class="normal">-<sp/>(<ref refid="_r_m_upload_u_r_l_connection_8h_1fa6b635dacd7a5df623256c763afab5e" kindref="member">void</ref>)getFormData:(NSData<sp/>**)dataRef<sp/>contentType:(NSString<sp/>**)contentTypeRef;</highlight></codeline>
+<codeline lineno="71"><highlight class="normal"></highlight></codeline>
+<codeline lineno="72"><highlight class="normal"></highlight><highlight class="keyword">@end</highlight><highlight class="normal"></highlight></codeline>
+    </programlisting>
+    <location file="/Users/keith/Projects/Source/RMUpload/documentation/RMUploadKit.sdk/Library/Frameworks/RMUploadKit.framework/Versions/A/Headers/RMUploadMultipartFormDocument.h"/>
+  </compounddef>
+</doxygen>

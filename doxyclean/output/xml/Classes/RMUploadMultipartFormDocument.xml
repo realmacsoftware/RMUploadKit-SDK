@@ -1,0 +1,197 @@
+<?xml version="1.0" encoding="UTF-8"?><object kind="class">
+  <name>RMUploadMultipartFormDocument</name>
+  <file>RMUploadMultipartDocuments.h</file>
+  <superclass>
+    <name><ref id="../Classes/RMUploadMultipartDocument">RMUploadMultipartDocument</ref></name>
+    <superclass/>
+    <conformsTo/>
+  </superclass>
+  <conformsTo/>
+  <description>
+    <brief>
+<para>This format is described in RFC 2388 http://tools.ietf.org/html/rfc2388. </para>    </brief>
+    <details>
+<para>This format is described in RFC 2388 http://tools.ietf.org/html/rfc2388.</para><para>The order you add values in is unpreserved.</para><para>The order you add values in is unpreserved. </para>    </details>
+  </description>
+  <sections>
+    <section>
+      <name>Other</name>
+      <member kind="instance-method">
+        <name>valueForField:</name>
+        <type><ref id="http://developer.apple.com/mac/library/documentation/Cocoa/Reference/Foundation/Classes/NSString_Class/index">NSString</ref> *</type>
+        <prototype>- (NSString *)valueForField:(<ref id="http://developer.apple.com/mac/library/documentation/Cocoa/Reference/Foundation/Classes/NSString_Class/index">NSString</ref> *)<parameter>fieldname</parameter> </prototype>
+        <file><ref id="../Classes/RMUploadMultipartDocument">RMUploadMultipartDocument</ref>s.h</file>
+        <description>
+          <brief>
+<para>Returns the value associated with a given fieldname. </para>        </brief>
+          <details>
+        </details>
+        </description>
+      </member>
+      <member kind="instance-method">
+        <name>setValue:forField:</name>
+        <type>void</type>
+        <prototype>- (void)setValue:(<ref id="http://developer.apple.com/mac/library/documentation/Cocoa/Reference/Foundation/Classes/NSString_Class/index">NSString</ref> *)<parameter>value</parameter> forField:(<ref id="http://developer.apple.com/mac/library/documentation/Cocoa/Reference/Foundation/Classes/NSString_Class/index">NSString</ref> *)<parameter>fieldname</parameter> </prototype>
+        <file><ref id="../Classes/RMUploadMultipartDocument">RMUploadMultipartDocument</ref>s.h</file>
+        <description>
+          <brief>
+<para>The fieldname should be unique per document, setting a value for an existing fieldname will overwrite the previous value. </para>        </brief>
+          <details>
+<para>This will clear any files added to the same fieldname.</para><para>
+</para>        </details>
+        </description>
+        <parameters><param><name>
+value
+</name><description>
+<para>Can be nil, will remove existing value.</para></description></param>
+<param><name>
+fieldname
+</name><description>
+<para>Cannot be nil. </para></description></param>
+</parameters>
+      </member>
+      <member kind="instance-method">
+        <name>fileLocationsForField:</name>
+        <type><ref id="http://developer.apple.com/mac/library/documentation/Cocoa/Reference/Foundation/Classes/NSSet_Class/index">NSSet</ref> *</type>
+        <prototype>- (NSSet *)fileLocationsForField:(<ref id="http://developer.apple.com/mac/library/documentation/Cocoa/Reference/Foundation/Classes/NSString_Class/index">NSString</ref> *)<parameter>fieldname</parameter> </prototype>
+        <file><ref id="../Classes/RMUploadMultipartDocument">RMUploadMultipartDocument</ref>s.h</file>
+        <description>
+          <brief>
+<para>Unordered collection of previously added URLs using <code>-addFileByReferencingURL:withFilename:toField:</code>. </para>        </brief>
+          <details>
+        </details>
+        </description>
+      </member>
+      <member kind="instance-method">
+        <name>addFileByReferencingURL:withFilename:toField:</name>
+        <type>void</type>
+        <prototype>- (void)addFileByReferencingURL:(<ref id="http://developer.apple.com/mac/library/documentation/Cocoa/Reference/Foundation/Classes/NSURL_Class/index">NSURL</ref> *)<parameter>location</parameter> withFilename:(<ref id="http://developer.apple.com/mac/library/documentation/Cocoa/Reference/Foundation/Classes/NSString_Class/index">NSString</ref> *)<parameter>filename</parameter> toField:(<ref id="http://developer.apple.com/mac/library/documentation/Cocoa/Reference/Foundation/Classes/NSString_Class/index">NSString</ref> *)<parameter>fieldname</parameter> </prototype>
+        <file><ref id="../Classes/RMUploadMultipartDocument">RMUploadMultipartDocument</ref>s.h</file>
+        <description>
+          <brief>
+<para>Form documents support multiple files per-fieldname. </para>        </brief>
+          <details>
+<para>Multiple files per fieldname are supported. This will clear any string values set for the same fieldname.</para><para>
+</para>        </details>
+        </description>
+        <parameters><param><name>
+filename
+</name><description>
+<para>This is optional, excluding it will use the last path component.</para></description></param>
+<param><name>
+To
+</name><description>
+<para>leave the 'name' value blank in the generated document, pass <code>+[<ref id="http://developer.apple.com/mac/library/documentation/Cocoa/Reference/Foundation/Classes/NSNull_Class/index">NSNull</ref> null]</code> for the fieldname. </para></description></param>
+</parameters>
+      </member>
+      <member kind="instance-method">
+        <name>getFormData:contentType:</name>
+        <type>BOOL</type>
+        <prototype>- (BOOL)getFormData:(<ref id="http://developer.apple.com/mac/library/documentation/Cocoa/Reference/Foundation/Classes/NSData_Class/index">NSData</ref> **)<parameter>dataRef</parameter> contentType:(<ref id="http://developer.apple.com/mac/library/documentation/Cocoa/Reference/Foundation/Classes/NSString_Class/index">NSString</ref> **)<parameter>contentTypeRef</parameter> </prototype>
+        <file><ref id="../Classes/RMUploadMultipartDocument">RMUploadMultipartDocument</ref>s.h</file>
+        <description>
+          <brief>
+<para>Serialise the field values into a data object. </para>        </brief>
+          <details>
+<para>
+
+</para>        </details>
+        </description>
+        <parameters><param><name>
+contentTypeRef
+</name><description>
+<para>This is the MIME type of the output. It contains the generated multipart boundary.</para></description></param>
+</parameters>
+        <return>
+          <para/>
+        </return>
+      </member>
+      <member kind="instance-method">
+        <name>valueForField:</name>
+        <type><ref id="http://developer.apple.com/mac/library/documentation/Cocoa/Reference/Foundation/Classes/NSString_Class/index">NSString</ref> *</type>
+        <prototype>- (NSString *)valueForField:(<ref id="http://developer.apple.com/mac/library/documentation/Cocoa/Reference/Foundation/Classes/NSString_Class/index">NSString</ref> *)<parameter>fieldname</parameter> </prototype>
+        <file><ref id="../Classes/RMUploadMultipartFormDocument">RMUploadMultipartFormDocument</ref>.h</file>
+        <description>
+          <brief>
+<para>Returns the value associated with a given fieldname. </para>        </brief>
+          <details>
+        </details>
+        </description>
+      </member>
+      <member kind="instance-method">
+        <name>setValue:forField:</name>
+        <type>void</type>
+        <prototype>- (void)setValue:(<ref id="http://developer.apple.com/mac/library/documentation/Cocoa/Reference/Foundation/Classes/NSString_Class/index">NSString</ref> *)<parameter>value</parameter> forField:(<ref id="http://developer.apple.com/mac/library/documentation/Cocoa/Reference/Foundation/Classes/NSString_Class/index">NSString</ref> *)<parameter>fieldname</parameter> </prototype>
+        <file><ref id="../Classes/RMUploadMultipartFormDocument">RMUploadMultipartFormDocument</ref>.h</file>
+        <description>
+          <brief>
+<para>The fieldname should be unique per document, setting a value for an existing fieldname will overwrite the previous value. </para>        </brief>
+          <details>
+<para>This will clear any files added to the same fieldname.</para><para>
+</para>        </details>
+        </description>
+        <parameters><param><name>
+value
+</name><description>
+<para>Can be nil, will remove existing value.</para></description></param>
+<param><name>
+fieldname
+</name><description>
+<para>Cannot be nil. </para></description></param>
+</parameters>
+      </member>
+      <member kind="instance-method">
+        <name>fileLocationsForField:</name>
+        <type><ref id="http://developer.apple.com/mac/library/documentation/Cocoa/Reference/Foundation/Classes/NSSet_Class/index">NSSet</ref> *</type>
+        <prototype>- (NSSet *)fileLocationsForField:(<ref id="http://developer.apple.com/mac/library/documentation/Cocoa/Reference/Foundation/Classes/NSString_Class/index">NSString</ref> *)<parameter>fieldname</parameter> </prototype>
+        <file><ref id="../Classes/RMUploadMultipartFormDocument">RMUploadMultipartFormDocument</ref>.h</file>
+        <description>
+          <brief>
+<para>Unordered collection of previously added URLs using <code>-addFileByReferencingURL:withFilename:toField:</code>. </para>        </brief>
+          <details>
+        </details>
+        </description>
+      </member>
+      <member kind="instance-method">
+        <name>addFileByReferencingURL:withFilename:toField:</name>
+        <type>void</type>
+        <prototype>- (void)addFileByReferencingURL:(<ref id="http://developer.apple.com/mac/library/documentation/Cocoa/Reference/Foundation/Classes/NSURL_Class/index">NSURL</ref> *)<parameter>location</parameter> withFilename:(<ref id="http://developer.apple.com/mac/library/documentation/Cocoa/Reference/Foundation/Classes/NSString_Class/index">NSString</ref> *)<parameter>filename</parameter> toField:(<ref id="http://developer.apple.com/mac/library/documentation/Cocoa/Reference/Foundation/Classes/NSString_Class/index">NSString</ref> *)<parameter>fieldname</parameter> </prototype>
+        <file><ref id="../Classes/RMUploadMultipartFormDocument">RMUploadMultipartFormDocument</ref>.h</file>
+        <description>
+          <brief>
+<para>Form documents support multiple files per-fieldname. </para>        </brief>
+          <details>
+<para>Multiple files per fieldname are supported. This will clear any string values set for the same fieldname.</para><para>
+</para>        </details>
+        </description>
+        <parameters><param><name>
+filename
+</name><description>
+<para>This is optional, excluding it will use the last path component.</para></description></param>
+<param><name>
+To
+</name><description>
+<para>leave the 'name' value blank in the generated document, pass <code>+[<ref id="http://developer.apple.com/mac/library/documentation/Cocoa/Reference/Foundation/Classes/NSNull_Class/index">NSNull</ref> null]</code> for the fieldname. </para></description></param>
+</parameters>
+      </member>
+      <member kind="instance-method">
+        <name>getFormData:contentType:</name>
+        <type>void</type>
+        <prototype>- (void)getFormData:(<ref id="http://developer.apple.com/mac/library/documentation/Cocoa/Reference/Foundation/Classes/NSData_Class/index">NSData</ref> **)<parameter>dataRef</parameter> contentType:(<ref id="http://developer.apple.com/mac/library/documentation/Cocoa/Reference/Foundation/Classes/NSString_Class/index">NSString</ref> **)<parameter>contentTypeRef</parameter> </prototype>
+        <file><ref id="../Classes/RMUploadMultipartFormDocument">RMUploadMultipartFormDocument</ref>.h</file>
+        <description>
+          <brief>
+<para>Serialise the field values into a data object. </para>        </brief>
+          <details>
+<para>
+</para>        </details>
+        </description>
+        <parameters><param><name>
+contentTypeRef
+</name><description>
+<para>This is the MIME type of the output. Contains the generated multipart boundary. </para></description></param>
+</parameters>
+      </member>
+    </section>
+  </sections>
+</object>

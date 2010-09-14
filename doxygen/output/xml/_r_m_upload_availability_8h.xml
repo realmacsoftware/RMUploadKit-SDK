@@ -1,0 +1,158 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.5.9">
+  <compounddef id="_r_m_upload_availability_8h" kind="file">
+    <compoundname>RMUploadAvailability.h</compoundname>
+    <includes local="no">Cocoa/Cocoa.h</includes>
+    <incdepgraph>
+      <node id="7">
+        <label>Cocoa/Cocoa.h</label>
+      </node>
+      <node id="6">
+        <label>/Users/keith/Projects/Source/RMUpload/documentation/RMUploadKit.sdk/Library/Frameworks/RMUploadKit.framework/Versions/A/Headers/RMUploadAvailability.h</label>
+        <link refid="RMUploadAvailability.h"/>
+        <childnode refid="7" relation="include">
+        </childnode>
+      </node>
+    </incdepgraph>
+      <sectiondef kind="define">
+      <memberdef kind="define" id="_r_m_upload_availability_8h_16a1c6e282e372fbe9d3172507ff7e34c" prot="public" static="no">
+        <name>RMUPLOADKIT_DEPRECATED_ATTRIBUTE</name>
+        <initializer>__attribute__((deprecated))</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/keith/Projects/Source/RMUpload/documentation/RMUploadKit.sdk/Library/Frameworks/RMUploadKit.framework/Versions/A/Headers/RMUploadAvailability.h" line="11" bodyfile="/Users/keith/Projects/Source/RMUpload/documentation/RMUploadKit.sdk/Library/Frameworks/RMUploadKit.framework/Versions/A/Headers/RMUploadAvailability.h" bodystart="11" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="_r_m_upload_availability_8h_11f9abab0173c9135cc1240d3a5ea1570" prot="public" static="no">
+        <name>RMUPLOADKIT_UNAVAILABLE_ATTRIBUTE</name>
+        <initializer>__attribute__((unavailable))</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/keith/Projects/Source/RMUpload/documentation/RMUploadKit.sdk/Library/Frameworks/RMUploadKit.framework/Versions/A/Headers/RMUploadAvailability.h" line="12" bodyfile="/Users/keith/Projects/Source/RMUpload/documentation/RMUploadKit.sdk/Library/Frameworks/RMUploadKit.framework/Versions/A/Headers/RMUploadAvailability.h" bodystart="12" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="_r_m_upload_availability_8h_1b75c3f483cef6ad944611d087e0c3597" prot="public" static="no">
+        <name>RMUPLOADKIT_WEAK_IMPORT_ATTRIBUTE</name>
+        <initializer>__attribute__((weak_import))</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/keith/Projects/Source/RMUpload/documentation/RMUploadKit.sdk/Library/Frameworks/RMUploadKit.framework/Versions/A/Headers/RMUploadAvailability.h" line="13" bodyfile="/Users/keith/Projects/Source/RMUpload/documentation/RMUploadKit.sdk/Library/Frameworks/RMUploadKit.framework/Versions/A/Headers/RMUploadAvailability.h" bodystart="13" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="_r_m_upload_availability_8h_1ea5d12a8298162b057431e1c717377f1" prot="public" static="no">
+        <name>RMUPLOADKIT_FRAMEWORK_VERSION_1</name>
+        <initializer>0100</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/keith/Projects/Source/RMUpload/documentation/RMUploadKit.sdk/Library/Frameworks/RMUploadKit.framework/Versions/A/Headers/RMUploadAvailability.h" line="15" bodyfile="/Users/keith/Projects/Source/RMUpload/documentation/RMUploadKit.sdk/Library/Frameworks/RMUploadKit.framework/Versions/A/Headers/RMUploadAvailability.h" bodystart="15" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="_r_m_upload_availability_8h_1b8d06af0a80b9b5af13f24654feddf6c" prot="public" static="no">
+        <name>RMUPLOADKIT_FRAMEWORK_VERSION_2</name>
+        <initializer>0200</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/keith/Projects/Source/RMUpload/documentation/RMUploadKit.sdk/Library/Frameworks/RMUploadKit.framework/Versions/A/Headers/RMUploadAvailability.h" line="16" bodyfile="/Users/keith/Projects/Source/RMUpload/documentation/RMUploadKit.sdk/Library/Frameworks/RMUploadKit.framework/Versions/A/Headers/RMUploadAvailability.h" bodystart="16" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="_r_m_upload_availability_8h_1bdb6a1606fc6f10c32a5022795665120" prot="public" static="no">
+        <name>RMUPLOADKIT_FRAMEWORK_VERSION_3</name>
+        <initializer>0300</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/keith/Projects/Source/RMUpload/documentation/RMUploadKit.sdk/Library/Frameworks/RMUploadKit.framework/Versions/A/Headers/RMUploadAvailability.h" line="17" bodyfile="/Users/keith/Projects/Source/RMUpload/documentation/RMUploadKit.sdk/Library/Frameworks/RMUploadKit.framework/Versions/A/Headers/RMUploadAvailability.h" bodystart="17" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="_r_m_upload_availability_8h_14e026af30889a34c327683466bbc3fc1" prot="public" static="no">
+        <name>RMUPLOADKIT_FRAMEWORK_VERSION_MIN_REQUIRED</name>
+        <initializer>RMUPLOADKIT_FRAMEWORK_VERSION_3</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/keith/Projects/Source/RMUpload/documentation/RMUploadKit.sdk/Library/Frameworks/RMUploadKit.framework/Versions/A/Headers/RMUploadAvailability.h" line="20" bodyfile="/Users/keith/Projects/Source/RMUpload/documentation/RMUploadKit.sdk/Library/Frameworks/RMUploadKit.framework/Versions/A/Headers/RMUploadAvailability.h" bodystart="20" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="_r_m_upload_availability_8h_11ba1ac22b3486bfd2b1b5c2a1974721e" prot="public" static="no">
+        <name>RMUPLOADKIT_FRAMEWORK_VERSION_MAX_ALLOWED</name>
+        <initializer>RMUPLOADKIT_FRAMEWORK_VERSION_3</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/keith/Projects/Source/RMUpload/documentation/RMUploadKit.sdk/Library/Frameworks/RMUploadKit.framework/Versions/A/Headers/RMUploadAvailability.h" line="24" bodyfile="/Users/keith/Projects/Source/RMUpload/documentation/RMUploadKit.sdk/Library/Frameworks/RMUploadKit.framework/Versions/A/Headers/RMUploadAvailability.h" bodystart="24" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="_r_m_upload_availability_8h_1e31a551c01ff670f8f43cd784cad54cf" prot="public" static="no">
+        <name>AVAILABLE_RMUPLOADKIT_VERSION_3_AND_LATER</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/keith/Projects/Source/RMUpload/documentation/RMUploadKit.sdk/Library/Frameworks/RMUploadKit.framework/Versions/A/Headers/RMUploadAvailability.h" line="32" bodyfile="/Users/keith/Projects/Source/RMUpload/documentation/RMUploadKit.sdk/Library/Frameworks/RMUploadKit.framework/Versions/A/Headers/RMUploadAvailability.h" bodystart="32" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="comment">//</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight><highlight class="comment">//<sp/><sp/>RMUploadAvailability.h</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight><highlight class="comment">//<sp/><sp/>RMUploadKit</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight><highlight class="comment">//</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight><highlight class="comment">//<sp/><sp/>Created<sp/>by<sp/>Keith<sp/>Duncan<sp/>on<sp/>08/09/2010.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="6"><highlight class="normal"></highlight><highlight class="comment">//<sp/><sp/>Copyright<sp/>2010<sp/>Realmac<sp/>Software.<sp/>All<sp/>rights<sp/>reserved.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="7"><highlight class="normal"></highlight><highlight class="comment">//</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="8"><highlight class="normal"></highlight></codeline>
+<codeline lineno="9"><highlight class="normal"></highlight><highlight class="preprocessor">#import<sp/>&lt;Cocoa/Cocoa.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="10"><highlight class="normal"></highlight></codeline>
+<codeline lineno="11" refid="_r_m_upload_availability_8h_16a1c6e282e372fbe9d3172507ff7e34c" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>RMUPLOADKIT_DEPRECATED_ATTRIBUTE<sp/>__attribute__((deprecated))</highlight></codeline>
+<codeline lineno="12" refid="_r_m_upload_availability_8h_11f9abab0173c9135cc1240d3a5ea1570" refkind="member"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>RMUPLOADKIT_UNAVAILABLE_ATTRIBUTE<sp/>__attribute__((unavailable))</highlight></codeline>
+<codeline lineno="13" refid="_r_m_upload_availability_8h_1b75c3f483cef6ad944611d087e0c3597" refkind="member"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>RMUPLOADKIT_WEAK_IMPORT_ATTRIBUTE<sp/>__attribute__((weak_import))</highlight></codeline>
+<codeline lineno="14"><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="15" refid="_r_m_upload_availability_8h_1ea5d12a8298162b057431e1c717377f1" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>RMUPLOADKIT_FRAMEWORK_VERSION_1<sp/>0100</highlight></codeline>
+<codeline lineno="16" refid="_r_m_upload_availability_8h_1b8d06af0a80b9b5af13f24654feddf6c" refkind="member"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>RMUPLOADKIT_FRAMEWORK_VERSION_2<sp/>0200</highlight></codeline>
+<codeline lineno="17" refid="_r_m_upload_availability_8h_1bdb6a1606fc6f10c32a5022795665120" refkind="member"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>RMUPLOADKIT_FRAMEWORK_VERSION_3<sp/>0300</highlight></codeline>
+<codeline lineno="18"><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="19"><highlight class="normal"></highlight><highlight class="preprocessor">#ifndef<sp/>RMUPLOADKIT_FRAMEWORK_VERSION_MIN_REQUIRED</highlight></codeline>
+<codeline lineno="20" refid="_r_m_upload_availability_8h_14e026af30889a34c327683466bbc3fc1" refkind="member"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>RMUPLOADKIT_FRAMEWORK_VERSION_MIN_REQUIRED<sp/>RMUPLOADKIT_FRAMEWORK_VERSION_3</highlight></codeline>
+<codeline lineno="21"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#endif</highlight></codeline>
+<codeline lineno="22"><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="23"><highlight class="normal"></highlight><highlight class="preprocessor">#ifndef<sp/>RMUPLOADKIT_FRAMEWORK_VERSION_MAX_ALLOWED</highlight></codeline>
+<codeline lineno="24" refid="_r_m_upload_availability_8h_11ba1ac22b3486bfd2b1b5c2a1974721e" refkind="member"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>RMUPLOADKIT_FRAMEWORK_VERSION_MAX_ALLOWED<sp/>RMUPLOADKIT_FRAMEWORK_VERSION_3</highlight></codeline>
+<codeline lineno="25"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#endif</highlight></codeline>
+<codeline lineno="26"><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="27"><highlight class="normal"></highlight><highlight class="preprocessor">#if<sp/>RMUPLOADKIT_FRAMEWORK_VERSION_MAX_ALLOWED<sp/>&lt;<sp/>RMUPLOADKIT_FRAMEWORK_VERSION_3</highlight></codeline>
+<codeline lineno="28"><highlight class="preprocessor"></highlight><highlight class="preprocessor"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>#define<sp/>AVAILABLE_RMUPLOADKIT_VERSION_3_AND_LATER<sp/><sp/><sp/><sp/><sp/>UNAVAILABLE_ATTRIBUTE</highlight></codeline>
+<codeline lineno="29"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#elif<sp/>RMUPLOADKIT_VERSION_MIN_REQUIRED<sp/>&lt;<sp/>RMUPLOADKIT_VERSION_3</highlight></codeline>
+<codeline lineno="30"><highlight class="preprocessor"></highlight><highlight class="preprocessor"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>#define<sp/>AVAILABLE_RMUPLOADKIT_VERSION_3_AND_LATER<sp/><sp/><sp/><sp/><sp/>WEAK_IMPORT_ATTRIBUTE</highlight></codeline>
+<codeline lineno="31"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#else</highlight></codeline>
+<codeline lineno="32" refid="_r_m_upload_availability_8h_1e31a551c01ff670f8f43cd784cad54cf" refkind="member"><highlight class="preprocessor"></highlight><highlight class="preprocessor"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>#define<sp/>AVAILABLE_RMUPLOADKIT_VERSION_3_AND_LATER</highlight></codeline>
+<codeline lineno="33"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#endif</highlight></codeline>
+    </programlisting>
+    <location file="/Users/keith/Projects/Source/RMUpload/documentation/RMUploadKit.sdk/Library/Frameworks/RMUploadKit.framework/Versions/A/Headers/RMUploadAvailability.h"/>
+  </compounddef>
+</doxygen>

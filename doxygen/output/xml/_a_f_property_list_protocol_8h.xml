@@ -1,0 +1,114 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.5.9">
+  <compounddef id="_a_f_property_list_protocol_8h" kind="file">
+    <compoundname>AFPropertyListProtocol.h</compoundname>
+    <includes local="no">Foundation/Foundation.h</includes>
+    <incdepgraph>
+      <node id="1">
+        <label>Foundation/Foundation.h</label>
+      </node>
+      <node id="0">
+        <label>/Users/keith/Projects/Source/RMUpload/documentation/RMUploadKit.sdk/Library/Frameworks/RMUploadKit.framework/Versions/A/Headers/AFPropertyListProtocol.h</label>
+        <link refid="AFPropertyListProtocol.h"/>
+        <childnode refid="1" relation="include">
+        </childnode>
+      </node>
+    </incdepgraph>
+    <innerclass refid="protocol_a_f_property_list-p" prot="public">AFPropertyList-p</innerclass>
+    <innerclass refid="interface_n_s_array_07_a_f_property_list_08" prot="public">NSArray(AFPropertyList)</innerclass>
+    <innerclass refid="interface_n_s_dictionary_07_a_f_property_list_08" prot="public">NSDictionary(AFPropertyList)</innerclass>
+    <innerclass refid="interface_n_s_u_r_l_07_a_f_property_list_08" prot="public">NSURL(AFPropertyList)</innerclass>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="_a_f_property_list_protocol_8h_174efaf473378661877a4deb21e6634e8" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>BOOL</type>
+        <definition>BOOL AFIsPlistObject</definition>
+        <argsstring>(id object)</argsstring>
+        <name>AFIsPlistObject</name>
+        <param>
+          <type>id</type>
+          <declname>object</declname>
+        </param>
+        <briefdescription>
+<para>Checks if an object can be serialised into a plist, returning NO where attempting to serlialise will fail and raise exception. </para>        </briefdescription>
+        <detaileddescription>
+<para>Collections are checked recursively. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/keith/Projects/Source/RMUpload/documentation/RMUploadKit.sdk/Library/Frameworks/RMUploadKit.framework/Versions/A/Headers/AFPropertyListProtocol.h" line="22"/>
+      </memberdef>
+      <memberdef kind="function" id="_a_f_property_list_protocol_8h_1ec3331b2057533f3509127ed7ad7d54b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>CFPropertyListRef</type>
+        <definition>CFPropertyListRef AFPropertyListRepresentationArchive</definition>
+        <argsstring>(id&lt; AFPropertyList &gt; object)</argsstring>
+        <name>AFPropertyListRepresentationArchive</name>
+        <param>
+          <type>id&lt; <ref refid="protocol_a_f_property_list-p" kindref="compound">AFPropertyList</ref> &gt;</type>
+          <declname>object</declname>
+        </param>
+        <briefdescription>
+<para>Returns a property list object which combines the <computeroutput>-propertyListRepresentation</computeroutput> of <computeroutput>object</computeroutput> and the data required to reinstantiate it. The archive can be reinstantiated using <computeroutput>AFPropertyListRepresenationUnarchive</computeroutput>. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/keith/Projects/Source/RMUpload/documentation/RMUploadKit.sdk/Library/Frameworks/RMUploadKit.framework/Versions/A/Headers/AFPropertyListProtocol.h" line="62"/>
+      </memberdef>
+      <memberdef kind="function" id="_a_f_property_list_protocol_8h_16ffa4003b57ec0276d1bea3be76925e3" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>id&lt; <ref refid="protocol_a_f_property_list-p" kindref="compound">AFPropertyList</ref> &gt;</type>
+        <definition>id&lt;AFPropertyList&gt; AFPropertyListRepresentationUnarchive</definition>
+        <argsstring>(CFPropertyListRef propertyListArchive)</argsstring>
+        <name>AFPropertyListRepresentationUnarchive</name>
+        <param>
+          <type>CFPropertyListRef</type>
+          <declname>propertyListArchive</declname>
+        </param>
+        <briefdescription>
+<para>This function unarchives a property list archive, returned from <computeroutput><ref refid="_a_f_property_list_protocol_8h_1ec3331b2057533f3509127ed7ad7d54b" kindref="member">AFPropertyListRepresentationArchive()</ref></computeroutput>, back into a live object. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/keith/Projects/Source/RMUpload/documentation/RMUploadKit.sdk/Library/Frameworks/RMUploadKit.framework/Versions/A/Headers/AFPropertyListProtocol.h" line="68"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="comment">//</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight><highlight class="comment">//<sp/><sp/>AFPropertyListProtocol.h</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight><highlight class="comment">//<sp/><sp/>AmberFoundation</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight><highlight class="comment">//</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight><highlight class="comment">//<sp/><sp/>Created<sp/>by<sp/>Keith<sp/>Duncan<sp/>on<sp/>11/03/2007.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="6"><highlight class="normal"></highlight><highlight class="comment">//<sp/><sp/>Copyright<sp/>2007<sp/>thirty-three.<sp/>All<sp/>rights<sp/>reserved.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="7"><highlight class="normal"></highlight><highlight class="comment">//</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="8"><highlight class="normal"></highlight></codeline>
+<codeline lineno="9"><highlight class="normal"></highlight><highlight class="preprocessor">#import<sp/>&lt;Foundation/Foundation.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="10"><highlight class="normal"></highlight></codeline>
+<codeline lineno="22"><highlight class="keyword">extern</highlight><highlight class="normal"><sp/>BOOL<sp/><ref refid="_a_f_property_list_protocol_8h_174efaf473378661877a4deb21e6634e8" kindref="member" tooltip="Checks if an object can be serialised into a plist, returning NO where attempting...">AFIsPlistObject</ref>(</highlight><highlight class="keywordtype">id</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">object</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="23"><highlight class="normal"></highlight></codeline>
+<codeline lineno="28" refid="protocol_a_f_property_list-p" refkind="compound"><highlight class="keyword">@protocol<sp/></highlight><highlight class="normal">AFPropertyList<sp/>&lt;NSObject&gt;</highlight></codeline>
+<codeline lineno="29"><highlight class="normal">-<sp/>(id)initWithPropertyListRepresentation:(</highlight><highlight class="keywordtype">id</highlight><highlight class="normal">)propertyListRepresentation;</highlight></codeline>
+<codeline lineno="30"><highlight class="normal">-<sp/>(id)propertyListRepresentation;</highlight></codeline>
+<codeline lineno="31"><highlight class="normal"></highlight><highlight class="keyword">@end</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="32"><highlight class="normal"></highlight></codeline>
+<codeline lineno="37" refid="interface_n_s_array_07_a_f_property_list_08" refkind="compound"><highlight class="keyword">@interface<sp/></highlight><highlight class="normal">NSArray<sp/>(AFPropertyList)<sp/>&lt;AFPropertyList&gt;</highlight></codeline>
+<codeline lineno="38"><highlight class="normal"></highlight></codeline>
+<codeline lineno="39"><highlight class="normal"></highlight><highlight class="keyword">@end</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="40"><highlight class="normal"></highlight></codeline>
+<codeline lineno="45" refid="interface_n_s_dictionary_07_a_f_property_list_08" refkind="compound"><highlight class="keyword">@interface<sp/></highlight><highlight class="normal">NSDictionary<sp/>(AFPropertyList)<sp/>&lt;AFPropertyList&gt;</highlight></codeline>
+<codeline lineno="46"><highlight class="normal"></highlight></codeline>
+<codeline lineno="47"><highlight class="normal"></highlight><highlight class="keyword">@end</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="48"><highlight class="normal"></highlight></codeline>
+<codeline lineno="53" refid="interface_n_s_u_r_l_07_a_f_property_list_08" refkind="compound"><highlight class="keyword">@interface<sp/></highlight><highlight class="normal">NSURL<sp/>(AFPropertyList)<sp/>&lt;AFPropertyList&gt;</highlight></codeline>
+<codeline lineno="54"><highlight class="normal"></highlight></codeline>
+<codeline lineno="55"><highlight class="normal"></highlight><highlight class="keyword">@end</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="56"><highlight class="normal"></highlight></codeline>
+<codeline lineno="62"><highlight class="keyword">extern</highlight><highlight class="normal"><sp/>CFPropertyListRef<sp/><ref refid="_a_f_property_list_protocol_8h_1ec3331b2057533f3509127ed7ad7d54b" kindref="member" tooltip="Returns a property list object which combines the -propertyListRepresentation of...">AFPropertyListRepresentationArchive</ref>(id<sp/>&lt;AFPropertyList&gt;<sp/></highlight><highlight class="keywordtype">object</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="63"><highlight class="normal"></highlight></codeline>
+<codeline lineno="68"><highlight class="keyword">extern</highlight><highlight class="normal"><sp/>id<sp/>&lt;AFPropertyList&gt;<sp/><ref refid="_a_f_property_list_protocol_8h_16ffa4003b57ec0276d1bea3be76925e3" kindref="member" tooltip="This function unarchives a property list archive, returned from AFPropertyListRepresentationArchive(...">AFPropertyListRepresentationUnarchive</ref>(CFPropertyListRef<sp/>propertyListArchive);</highlight></codeline>
+    </programlisting>
+    <location file="/Users/keith/Projects/Source/RMUpload/documentation/RMUploadKit.sdk/Library/Frameworks/RMUploadKit.framework/Versions/A/Headers/AFPropertyListProtocol.h"/>
+  </compounddef>
+</doxygen>

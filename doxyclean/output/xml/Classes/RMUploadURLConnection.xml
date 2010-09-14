@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="UTF-8"?><object kind="class">
+  <name>RMUploadURLConnection</name>
+  <file>RMUploadURLConnection.h</file>
+  <description>
+    <brief>
+<para>A replacement for <code><ref id="http://developer.apple.com/mac/library/documentation/Cocoa/Reference/Foundation/Classes/NSURLConnection_Class/index">NSURLConnection</ref></code>, wrapping it with a different API. </para>    </brief>
+    <details>
+<para>It uses a similar delegate system as <ref id="http://developer.apple.com/mac/library/documentation/Cocoa/Reference/Foundation/Classes/NSURLConnection_Class/index">NSURLConnection</ref> but provides different information as you go. </para>    </details>
+  </description>
+  <sections>
+    <section>
+      <name>Other</name>
+      <member kind="property">
+        <name>delegate</name>
+        <type>id</type>
+        <prototype>@property id delegate</prototype>
+        <file><ref id="../Classes/RMUploadURLConnection">RMUploadURLConnection</ref>.h</file>
+        <description>
+          <brief>
+<para>The connection's delegate. </para>        </brief>
+          <details>
+        </details>
+        </description>
+      </member>
+      <member kind="property">
+        <name>completionBlock</name>
+        <type><ref id="../Classes/RMUploadURLConnection">RMUploadURLConnection</ref>CompletionBlock</type>
+        <prototype>@property <ref id="../Classes/RMUploadURLConnection">RMUploadURLConnection</ref>CompletionBlock completionBlock</prototype>
+        <file><ref id="../Classes/RMUploadURLConnection">RMUploadURLConnection</ref>.h</file>
+        <description>
+          <brief>
+<para>A block called when the connection completes, either successfully or unsuccessfully. </para>        </brief>
+          <details>
+<para>Both this block and the delegate method <code>-connection:didFailWithError:</code> or <code>-connection:didCompleteWithData:</code> are invoked on connection completion. </para>        </details>
+        </description>
+      </member>
+      <member kind="property">
+        <name>completed</name>
+        <type>BOOL</type>
+        <prototype>@property BOOL completed</prototype>
+        <file><ref id="../Classes/RMUploadURLConnection">RMUploadURLConnection</ref>.h</file>
+        <description>
+          <brief>
+<para>Set to YES when the connection has finished or has received an error. </para>        </brief>
+          <details>
+        </details>
+        </description>
+      </member>
+      <member kind="property">
+        <name>userInfo</name>
+        <type>id</type>
+        <prototype>@property id userInfo</prototype>
+        <file><ref id="../Classes/RMUploadURLConnection">RMUploadURLConnection</ref>.h</file>
+        <description>
+          <brief>
+<para>Convenience property to associate any userInfo, handy for delegate callbacks. </para>        </brief>
+          <details>
+        </details>
+        </description>
+      </member>
+    </section>
+    <section>
+      <name>Other</name>
+      <member kind="class-method">
+        <name>connectionWithRequest:delegate:</name>
+        <type><ref id="../Classes/RMUploadURLConnection">RMUploadURLConnection</ref> *</type>
+        <prototype>+ (RMUploadURLConnection *)connectionWithRequest:(<ref id="http://developer.apple.com/mac/library/documentation/Cocoa/Reference/Foundation/Classes/NSURLRequest_Class/index">NSURLRequest</ref> *)<parameter>request</parameter> delegate:(id&lt;<ref id="../Protocols/RMUploadURLConnectionDelegate">RMUploadURLConnectionDelegate</ref>&gt;)<parameter>delegate</parameter> </prototype>
+        <file><ref id="../Classes/RMUploadURLConnection">RMUploadURLConnection</ref>.h</file>
+        <description>
+          <brief>
+<para>Convenience constructor. </para>        </brief>
+          <details>
+        </details>
+        </description>
+      </member>
+      <member kind="class-method">
+        <name>connectionWithRequest:completionBlock:</name>
+        <type><ref id="../Classes/RMUploadURLConnection">RMUploadURLConnection</ref> *</type>
+        <prototype>+ (RMUploadURLConnection *)connectionWithRequest:(<ref id="http://developer.apple.com/mac/library/documentation/Cocoa/Reference/Foundation/Classes/NSURLRequest_Class/index">NSURLRequest</ref> *)<parameter>request</parameter> completionBlock:(<ref id="../Classes/RMUploadURLConnection">RMUploadURLConnection</ref>CompletionBlock)<parameter>completionBlock</parameter> </prototype>
+        <file><ref id="../Classes/RMUploadURLConnection">RMUploadURLConnection</ref>.h</file>
+        <description>
+          <brief>
+<para>Convenience constructor. </para>        </brief>
+          <details>
+        </details>
+        </description>
+      </member>
+    </section>
+    <section>
+      <name>Other</name>
+      <member kind="instance-method">
+        <name>sendURLRequest:</name>
+        <type>void</type>
+        <prototype>- (void)sendURLRequest:(<ref id="http://developer.apple.com/mac/library/documentation/Cocoa/Reference/Foundation/Classes/NSURLRequest_Class/index">NSURLRequest</ref> *)<parameter>request</parameter> </prototype>
+        <file><ref id="../Classes/RMUploadURLConnection">RMUploadURLConnection</ref>.h</file>
+        <description>
+          <brief>
+<para>Sends the provided request, the delegate will begin to receive notifications. </para>        </brief>
+          <details>
+<para>
+</para>        </details>
+        </description>
+        <parameters><param><name>
+request
+</name><description>
+<para>An <code><ref id="http://developer.apple.com/mac/library/documentation/Cocoa/Reference/Foundation/Classes/NSURLRequest_Class/index">NSURLRequest</ref></code> that you wish to send. </para></description></param>
+</parameters>
+      </member>
+      <member kind="instance-method">
+        <name>cancel</name>
+        <type>void</type>
+        <prototype>- (void)cancel</prototype>
+        <file><ref id="../Classes/RMUploadURLConnection">RMUploadURLConnection</ref>.h</file>
+        <description>
+          <brief>
+<para>Cancels the connection. </para>        </brief>
+          <details>
+<para>The <code>delegate</code> will not receive any further callbacks. The <code>completionBlock</code> will not be invoked. </para>        </details>
+        </description>
+      </member>
+    </section>
+  </sections>
+</object>

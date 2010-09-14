@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="UTF-8"?><object kind="protocol">
+  <name>RMUploadURLConnectionDelegate</name>
+  <file>RMUploadURLConnection.h</file>
+  <description>
+    <brief>
+<para>The delegate for <code><ref id="../Classes/RMUploadURLConnection">RMUploadURLConnection</ref></code>. </para>    </brief>
+    <details>
+    </details>
+  </description>
+  <sections>
+    <section>
+      <name>Other</name>
+      <member kind="instance-method" optional="no">
+        <name>connection:downloadProgressed:</name>
+        <type>void</type>
+        <prototype>- (void)connection:(<ref id="../Classes/RMUploadURLConnection">RMUploadURLConnection</ref> *)<parameter>connection</parameter> downloadProgressed:(float)<parameter>currentProgress</parameter> </prototype>
+        <file><ref id="../Classes/RMUploadURLConnection">RMUploadURLConnection</ref>.h</file>
+        <description>
+          <brief>
+<para>Called periodically as a download progresses. </para>        </brief>
+          <details>
+<para>
+</para>        </details>
+        </description>
+        <parameters><param><name>
+connection
+</name><description>
+<para>The <code><ref id="../Classes/RMUploadURLConnection">RMUploadURLConnection</ref></code> sending the message.</para></description></param>
+<param><name>
+currentProgress
+</name><description>
+<para>The current progress, between 0.0 and 1.0. </para></description></param>
+</parameters>
+      </member>
+      <member kind="instance-method" optional="no">
+        <name>connection:uploadProgressed:</name>
+        <type>void</type>
+        <prototype>- (void)connection:(<ref id="../Classes/RMUploadURLConnection">RMUploadURLConnection</ref> *)<parameter>connection</parameter> uploadProgressed:(float)<parameter>currentProgress</parameter> </prototype>
+        <file><ref id="../Classes/RMUploadURLConnection">RMUploadURLConnection</ref>.h</file>
+        <description>
+          <brief>
+<para>Called periodically as an upload progresses. </para>        </brief>
+          <details>
+<para>
+</para>        </details>
+        </description>
+        <parameters><param><name>
+connection
+</name><description>
+<para>The <code><ref id="../Classes/RMUploadURLConnection">RMUploadURLConnection</ref></code> sending the message.</para></description></param>
+<param><name>
+currentProgress
+</name><description>
+<para>The current progress, between 0.0 and 1.0. </para></description></param>
+</parameters>
+      </member>
+      <member kind="instance-method" optional="no">
+        <name>connection:didFailWithError:</name>
+        <type>void</type>
+        <prototype>- (void)connection:(<ref id="../Classes/RMUploadURLConnection">RMUploadURLConnection</ref> *)<parameter>connection</parameter> didFailWithError:(<ref id="http://developer.apple.com/mac/library/documentation/Cocoa/Reference/Foundation/Classes/NSError_Class/index">NSError</ref> *)<parameter>error</parameter> </prototype>
+        <file><ref id="../Classes/RMUploadURLConnection">RMUploadURLConnection</ref>.h</file>
+        <description>
+          <brief>
+<para>Sent if the connection fails, providing an <ref id="http://developer.apple.com/mac/library/documentation/Cocoa/Reference/Foundation/Classes/NSError_Class/index">NSError</ref> with the cause. </para>        </brief>
+          <details>
+<para>
+</para>        </details>
+        </description>
+        <parameters><param><name>
+connection
+</name><description>
+<para>The <code><ref id="../Classes/RMUploadURLConnection">RMUploadURLConnection</ref></code> sending the message.</para></description></param>
+<param><name>
+error
+</name><description>
+<para>An <code><ref id="http://developer.apple.com/mac/library/documentation/Cocoa/Reference/Foundation/Classes/NSError_Class/index">NSError</ref></code> object representing the error that caused the connection to fail. </para></description></param>
+</parameters>
+      </member>
+      <member kind="instance-method" optional="no">
+        <name>connection:didCompleteWithData:</name>
+        <type>void</type>
+        <prototype>- (void)connection:(<ref id="../Classes/RMUploadURLConnection">RMUploadURLConnection</ref> *)<parameter>connection</parameter> didCompleteWithData:(<ref id="http://developer.apple.com/mac/library/documentation/Cocoa/Reference/Foundation/Classes/NSData_Class/index">NSData</ref> *)<parameter>data</parameter> </prototype>
+        <file><ref id="../Classes/RMUploadURLConnection">RMUploadURLConnection</ref>.h</file>
+        <description>
+          <brief>
+<para>Sent once the connection completes successfully. </para>        </brief>
+          <details>
+<para>
+</para>        </details>
+        </description>
+        <parameters><param><name>
+connection
+</name><description>
+<para>The <code><ref id="../Classes/RMUploadURLConnection">RMUploadURLConnection</ref></code> sending the message.</para></description></param>
+<param><name>
+data
+</name><description>
+<para>The response <code><ref id="http://developer.apple.com/mac/library/documentation/Cocoa/Reference/Foundation/Classes/NSData_Class/index">NSData</ref></code> returned by the server. </para></description></param>
+</parameters>
+      </member>
+      <member kind="instance-method" optional="no">
+        <name>connection:didReceiveAuthenticationChallenge:</name>
+        <type>void</type>
+        <prototype>- (void)connection:(<ref id="../Classes/RMUploadURLConnection">RMUploadURLConnection</ref> *)<parameter>connection</parameter> didReceiveAuthenticationChallenge:(<ref id="http://developer.apple.com/mac/library/documentation/Cocoa/Reference/Foundation/Classes/NSURLAuthenticationChallenge_Class/index">NSURLAuthenticationChallenge</ref> *)<parameter>challenge</parameter> </prototype>
+        <file><ref id="../Classes/RMUploadURLConnection">RMUploadURLConnection</ref>.h</file>
+        <description>
+          <brief>
+<para>Behaves identically to the <code><ref id="http://developer.apple.com/mac/library/documentation/Cocoa/Reference/Foundation/Classes/NSURLConnection_Class/index">NSURLConnection</ref></code> delegate equivalent. </para>        </brief>
+          <details>
+        </details>
+        </description>
+      </member>
+      <member kind="instance-method" optional="no">
+        <name>connection:didCancelAuthenticationChallenge:</name>
+        <type>void</type>
+        <prototype>- (void)connection:(<ref id="../Classes/RMUploadURLConnection">RMUploadURLConnection</ref> *)<parameter>connection</parameter> didCancelAuthenticationChallenge:(<ref id="http://developer.apple.com/mac/library/documentation/Cocoa/Reference/Foundation/Classes/NSURLAuthenticationChallenge_Class/index">NSURLAuthenticationChallenge</ref> *)<parameter>challenge</parameter> </prototype>
+        <file><ref id="../Classes/RMUploadURLConnection">RMUploadURLConnection</ref>.h</file>
+        <description>
+          <brief>
+<para>Behaves identically to the <code><ref id="http://developer.apple.com/mac/library/documentation/Cocoa/Reference/Foundation/Classes/NSURLConnection_Class/index">NSURLConnection</ref></code> delegate equivalent. </para>        </brief>
+          <details>
+        </details>
+        </description>
+      </member>
+    </section>
+  </sections>
+</object>

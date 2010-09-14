@@ -1,0 +1,131 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.5.9">
+  <compounddef id="interface_r_m_upload_task" kind="class" prot="public">
+    <compoundname>RMUploadTask</compoundname>
+    <includes refid="_r_m_upload_task_8h" local="no">RMUploadTask.h</includes>
+      <sectiondef kind="property">
+      <memberdef kind="property" id="interface_r_m_upload_task_1695821df9851265fb9dbf10ca9fba964" prot="public" static="no" readable="yes" writable="no" gettable="no" settable="no">
+        <type><ref refid="interface_r_m_upload_preset" kindref="compound">RMUploadPreset</ref> *</type>
+        <definition>RMUploadPreset* RMUploadTask::destination</definition>
+        <argsstring></argsstring>
+        <name>destination</name>
+        <read></read>
+        <briefdescription>
+<para>The <computeroutput>destination</computeroutput> passed to the initialiser. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/keith/Projects/Source/RMUpload/documentation/RMUploadKit.sdk/Library/Frameworks/RMUploadKit.framework/Versions/A/Headers/RMUploadTask.h" line="167" bodyfile="/Users/keith/Projects/Source/RMUpload/documentation/RMUploadKit.sdk/Library/Frameworks/RMUploadKit.framework/Versions/A/Headers/RMUploadTask.h" bodystart="167" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="property" id="interface_r_m_upload_task_1531e838c2b03947a54cff27e41348322" prot="public" static="no" readable="yes" writable="no" gettable="no" settable="no">
+        <type>id</type>
+        <definition>id RMUploadTask::uploadInfo</definition>
+        <argsstring></argsstring>
+        <name>uploadInfo</name>
+        <read></read>
+        <briefdescription>
+<para>The <computeroutput>uploadInfo</computeroutput> passed to the initialiser. Values should be obtained using <computeroutput>-[NSObject valueForKey:]</computeroutput>. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/keith/Projects/Source/RMUpload/documentation/RMUploadKit.sdk/Library/Frameworks/RMUploadKit.framework/Versions/A/Headers/RMUploadTask.h" line="174" bodyfile="/Users/keith/Projects/Source/RMUpload/documentation/RMUploadKit.sdk/Library/Frameworks/RMUploadKit.framework/Versions/A/Headers/RMUploadTask.h" bodystart="174" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="property" id="interface_r_m_upload_task_10f34b8332b7814e5c2c5fe3a7b9eb2b6" prot="public" static="no" readable="yes" writable="no" gettable="no" settable="no">
+        <type>BOOL</type>
+        <definition>BOOL RMUploadTask::cancelled</definition>
+        <argsstring></argsstring>
+        <name>cancelled</name>
+        <read>isCancelled</read>
+        <briefdescription>
+<para>Set when the <computeroutput>-cancel</computeroutput> message is received. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/keith/Projects/Source/RMUpload/documentation/RMUploadKit.sdk/Library/Frameworks/RMUploadKit.framework/Versions/A/Headers/RMUploadTask.h" line="201" bodyfile="/Users/keith/Projects/Source/RMUpload/documentation/RMUploadKit.sdk/Library/Frameworks/RMUploadKit.framework/Versions/A/Headers/RMUploadTask.h" bodystart="201" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="interface_r_m_upload_task_10a7625e72f7d4bf6091e5b13c0c1a7df" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>id</type>
+        <definition>id RMUploadTask::initWithPreset:uploadInfo:</definition>
+        <argsstring>(RMUploadPreset *destination,[uploadInfo] id uploadInfo)</argsstring>
+        <name>initWithPreset:uploadInfo:</name>
+        <param>
+          <type><ref refid="interface_r_m_upload_preset" kindref="compound">RMUploadPreset</ref> *</type>
+          <declname>destination</declname>
+        </param>
+        <param>
+          <attributes>[uploadInfo]</attributes>
+          <type>id</type>
+          <declname>uploadInfo</declname>
+        </param>
+        <briefdescription>
+<para>Designated Initialiser. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>destination</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The <computeroutput><ref refid="interface_r_m_upload_preset" kindref="compound">RMUploadPreset</ref></computeroutput> which should be used for configuration and <computeroutput><ref refid="interface_r_m_upload_credentials" kindref="compound">RMUploadCredentials</ref></computeroutput> should they be needed.</para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>uploadInfo</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The data and metadata to upload. It is the plugin&apos;s responsibiltiy to check for nil values and what keys the object contains. It contains any keys set in your metadata view and any of the following default keys:</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<itemizedlist>
+<listitem><para><computeroutput>RMUploadFileURLKey</computeroutput> : The location of the file to be uploaded on disk. (<computeroutput>NSURL</computeroutput>)</para></listitem><listitem><para><computeroutput>RMUploadTitleKey</computeroutput> : The title of the file to be uploaded. (<computeroutput>NSString</computeroutput>)</para></listitem><listitem><para><computeroutput>RMUploadOriginalDateKey</computeroutput> : This is the date when the image was taken/snapped/modified. For example, in Flickr&apos;s &quot;date taken&quot; field you would pass this value. (<computeroutput>NSDate</computeroutput>)</para></listitem><listitem><para><computeroutput>RMUploadOriginalURLKey</computeroutput> : If the file is a websnap, this will be passed as the URL of where the websnap was taken. (<computeroutput>NSURL</computeroutput>)</para></listitem><listitem><para><computeroutput>RMUploadDescriptionKey</computeroutput> : Any additional comments provided by the user. Such as the &quot;description&quot; field in LittleSnapper. (<computeroutput>NSString</computeroutput>)</para></listitem><listitem><para><computeroutput>RMUploadTagsKey</computeroutput> : Tags associated with the file. (<computeroutput>NSArray</computeroutput> of <computeroutput>NSString</computeroutput> objects.) </para></listitem></itemizedlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/keith/Projects/Source/RMUpload/documentation/RMUploadKit.sdk/Library/Frameworks/RMUploadKit.framework/Versions/A/Headers/RMUploadTask.h" line="161"/>
+      </memberdef>
+      <memberdef kind="function" id="interface_r_m_upload_task_1b1dd00e0d49bcb3768052f62d9a2193c" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>void RMUploadTask::upload</definition>
+        <argsstring>()</argsstring>
+        <name>upload</name>
+        <briefdescription>
+<para>The central method to the class. </para>        </briefdescription>
+        <detaileddescription>
+<para>Ensure, that you are posting the correct notifications.</para><para>A thread local run loop will be available when this method is called, you <bold>should</bold> use <computeroutput>+[NSRunLoop currentRunLoop]</computeroutput> and are highly discouraged from scheduling on the main run loop or creating your own background thread. Avoid libraries that create background threads or perform synchronous networking. You <bold>must not</bold> recursively service the run loop. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/keith/Projects/Source/RMUpload/documentation/RMUploadKit.sdk/Library/Frameworks/RMUploadKit.framework/Versions/A/Headers/RMUploadTask.h" line="186"/>
+      </memberdef>
+      <memberdef kind="function" id="interface_r_m_upload_task_1928a45ed4c774269b21890509cea0d4c" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>void RMUploadTask::cancel</definition>
+        <argsstring>()</argsstring>
+        <name>cancel</name>
+        <briefdescription>
+<para>This should immediately cease any uploading that the task is performing. You are <emphasis>strongly</emphasis> encouraged to override this method and teardown your connections. </para>        </briefdescription>
+        <detaileddescription>
+<para>If overridden, ensure you call <computeroutput>super</computeroutput>, and then post the <computeroutput>RMUploadTaskDidCompleteNotificationName</computeroutput> notification once you have completed your teardown. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/keith/Projects/Source/RMUpload/documentation/RMUploadKit.sdk/Library/Frameworks/RMUploadKit.framework/Versions/A/Headers/RMUploadTask.h" line="195"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>An upload task encapsulates an upload transaction with the target destination. This includes not only the upload of the file itself, but also any additional transactions with the destination to set any relevant metadata. </para>    </briefdescription>
+    <detaileddescription>
+<para>All upload tasks must implement the <computeroutput>upload</computeroutput> method. It is called by the when it is this task&apos;s turn to upload.</para><para>The object is expected to notify the framework with <computeroutput>RMUploadTaskDidReceiveProgressNotificationName</computeroutput>, <computeroutput>RMUploadTaskFinishedUploadingNotificationName</computeroutput> and <computeroutput>RMUploadTaskDidCompleteNotificationName</computeroutput> notifications. </para>    </detaileddescription>
+    <location file="/Users/keith/Projects/Source/RMUpload/documentation/RMUploadKit.sdk/Library/Frameworks/RMUploadKit.framework/Versions/A/Headers/RMUploadTask.h" line="143" bodyfile="/Users/keith/Projects/Source/RMUpload/documentation/RMUploadKit.sdk/Library/Frameworks/RMUploadKit.framework/Versions/A/Headers/RMUploadTask.h" bodystart="142" bodyend="-1"/>
+    <listofallmembers>
+      <member refid="interface_r_m_upload_task_1928a45ed4c774269b21890509cea0d4c" prot="public" virt="virtual"><scope>RMUploadTask</scope><name>cancel</name></member>
+      <member refid="interface_r_m_upload_task_10f34b8332b7814e5c2c5fe3a7b9eb2b6" prot="public" virt="non-virtual"><scope>RMUploadTask</scope><name>cancelled</name></member>
+      <member refid="interface_r_m_upload_task_1695821df9851265fb9dbf10ca9fba964" prot="public" virt="non-virtual"><scope>RMUploadTask</scope><name>destination</name></member>
+      <member refid="interface_r_m_upload_task_10a7625e72f7d4bf6091e5b13c0c1a7df" prot="public" virt="virtual"><scope>RMUploadTask</scope><name>initWithPreset:uploadInfo:</name></member>
+      <member refid="interface_r_m_upload_task_1b1dd00e0d49bcb3768052f62d9a2193c" prot="public" virt="virtual"><scope>RMUploadTask</scope><name>upload</name></member>
+      <member refid="interface_r_m_upload_task_1531e838c2b03947a54cff27e41348322" prot="public" virt="non-virtual"><scope>RMUploadTask</scope><name>uploadInfo</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

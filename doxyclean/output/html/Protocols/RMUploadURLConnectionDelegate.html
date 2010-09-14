@@ -1,0 +1,160 @@
+<!DOCTYPE html><html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta charset="UTF-8">
+<title>RMUploadURLConnectionDelegate Protocol Reference</title>
+<meta id="Generator" name="Generator" content="Doxyclean">
+<meta id="GeneratorVersion" name="GeneratorVersion" content="2.2">
+<link rel="stylesheet" type="text/css" href="../css/common.css">
+<link rel="stylesheet" type="text/css" media="screen" href="../css/screen.css">
+<link rel="stylesheet" type="text/css" media="print" href="../css/print.css">
+<script type="text/javascript">
+				function toggleTOC() {
+					var toc = document.getElementById('tableOfContents');
+					var tocButton = document.getElementById('toc_button');
+					var contents = document.getElementById('contents');
+					if (toc.style.display == 'block') {
+						toc.style.display = 'none';
+						contents.className = '';
+						tocButton.className = '';
+					} else {
+						toc.style.display = 'block';
+						contents.className = 'tableOfContentsOpen';
+						tocButton.className = 'open';
+					}
+				}
+				
+				function toggleTOCItem() {
+					var listItem = event.srcElement;
+					var sublist = listItem.getElementsByTagName('ul')[0];
+					if (sublist.style.display == 'block') {
+						sublist.style.display = 'none';
+						listItem.className = 'expandable';
+					} else {
+						sublist.style.display = 'block';
+						listItem.className = 'expandable expanded';
+					}
+				}
+				
+				function jumpTo() {
+					selectedItem = event.srcElement.options[event.srcElement.selectedIndex].value;
+					window.location = "#" + selectedItem;
+				}
+			</script>
+</head>
+<body>
+<header id="projectHeader"><h1><a href="../index.html">RMUploadKit SDK Reference Library</a></h1></header><header id="fileHeader"><h1><a href="#classTitle">RMUploadURLConnectionDelegate Protocol Reference</a></h1></header><nav id="buttons"><ul>
+<li id="toc_button"><button id="table_of_contents" onclick="toggleTOC()">Table of Contents</button></li>
+<li id="jumpto_button"><select id="jumpto" onchange="jumpTo()"><option value="classTitle">Jump To...</option>
+<option value="overview">Overview</option>
+<option value="tasks">Tasks</option>
+<option value="instanceMethods">Instance Methods</option>
+<option value="connection:downloadProgressed:">    - connection:downloadProgressed:</option>
+<option value="connection:uploadProgressed:">    - connection:uploadProgressed:</option>
+<option value="connection:didFailWithError:">    - connection:didFailWithError:</option>
+<option value="connection:didCompleteWithData:">    - connection:didCompleteWithData:</option>
+<option value="connection:didReceiveAuthenticationChallenge:">    - connection:didReceiveAuthenticationChallenge:</option>
+<option value="connection:didCancelAuthenticationChallenge:">    - connection:didCancelAuthenticationChallenge:</option></select></li>
+</ul></nav><nav id="tableOfContents" style="display: none;"><ul>
+<li><a href="#overview">Overview</a></li>
+<li class="expandable" id="tocTasks" onclick="toggleTOCItem()">
+<a href="#tasks">Tasks</a><ul style="display: none;"><li><a href="#Other">Other</a></li></ul>
+</li>
+<li class="expandable" id="tocInstanceMethods" onclick="toggleTOCItem()">
+<a href="#instanceMethods">Instance Methods</a><ul style="display: none;">
+<li><a href="#connection:downloadProgressed:">connection:downloadProgressed:</a></li>
+<li><a href="#connection:uploadProgressed:">connection:uploadProgressed:</a></li>
+<li><a href="#connection:didFailWithError:">connection:didFailWithError:</a></li>
+<li><a href="#connection:didCompleteWithData:">connection:didCompleteWithData:</a></li>
+<li><a href="#connection:didReceiveAuthenticationChallenge:">connection:didReceiveAuthenticationChallenge:</a></li>
+<li><a href="#connection:didCancelAuthenticationChallenge:">connection:didCancelAuthenticationChallenge:</a></li>
+</ul>
+</li>
+</ul></nav><div id="contents">
+<h1 id="classTitle">RMUploadURLConnectionDelegate Protocol Reference</h1>
+<table id="metadata"><tr class="alt">
+<th>Declared in</th>
+<td>RMUploadURLConnection.h</td>
+</tr></table>
+<h2 id="overview">Overview</h2>
+<p>The delegate for <code><code><a href="../Classes/RMUploadURLConnection.html">RMUploadURLConnection</a></code></code>. </p>
+<h2 id="tasks">Tasks</h2>
+<ul id="tasksList"><li id="Other">
+<h3>Other</h3>
+<ul class="methods">
+<li>
+<span class="tooltipRegion"><code><a href="#connection:downloadProgressed:">- connection:downloadProgressed:</a></code> <span class="specialType">required</span></span><span class="tooltip">Called periodically as a download progresses. </span>
+</li>
+<li>
+<span class="tooltipRegion"><code><a href="#connection:uploadProgressed:">- connection:uploadProgressed:</a></code> <span class="specialType">required</span></span><span class="tooltip">Called periodically as an upload progresses. </span>
+</li>
+<li>
+<span class="tooltipRegion"><code><a href="#connection:didFailWithError:">- connection:didFailWithError:</a></code> <span class="specialType">required</span></span><span class="tooltip">Sent if the connection fails, providing an NSError with the cause. </span>
+</li>
+<li>
+<span class="tooltipRegion"><code><a href="#connection:didCompleteWithData:">- connection:didCompleteWithData:</a></code> <span class="specialType">required</span></span><span class="tooltip">Sent once the connection completes successfully. </span>
+</li>
+<li>
+<span class="tooltipRegion"><code><a href="#connection:didReceiveAuthenticationChallenge:">- connection:didReceiveAuthenticationChallenge:</a></code> <span class="specialType">required</span></span><span class="tooltip">Behaves identically to the NSURLConnection delegate equivalent. </span>
+</li>
+<li>
+<span class="tooltipRegion"><code><a href="#connection:didCancelAuthenticationChallenge:">- connection:didCancelAuthenticationChallenge:</a></code> <span class="specialType">required</span></span><span class="tooltip">Behaves identically to the NSURLConnection delegate equivalent. </span>
+</li>
+</ul>
+</li></ul>
+<section id="instanceMethods"><h2>Instance Methods</h2>
+<section class="definition" id="connection:downloadProgressed:"><h3>connection:downloadProgressed:</h3>
+<p>Called periodically as a download progresses. </p>
+<code class="methodDeclaration">- (void)connection:(<a href="../Classes/RMUploadURLConnection.html">RMUploadURLConnection</a> *)<span class="parameter">connection</span> downloadProgressed:(float)<span class="parameter">currentProgress</span> </code><h5>Parameters</h5>
+<dl class="parameterList">
+<dt>connection</dt>
+<dd><p>The <code><code><a href="../Classes/RMUploadURLConnection.html">RMUploadURLConnection</a></code></code> sending the message.</p></dd>
+<dt>currentProgress</dt>
+<dd><p>The current progress, between 0.0 and 1.0. </p></dd>
+</dl>
+<h5>Declared In</h5>
+<code><code><a href="../Classes/RMUploadURLConnection.html">RMUploadURLConnection</a></code>.h</code></section><section class="definition" id="connection:uploadProgressed:"><h3>connection:uploadProgressed:</h3>
+<p>Called periodically as an upload progresses. </p>
+<code class="methodDeclaration">- (void)connection:(<a href="../Classes/RMUploadURLConnection.html">RMUploadURLConnection</a> *)<span class="parameter">connection</span> uploadProgressed:(float)<span class="parameter">currentProgress</span> </code><h5>Parameters</h5>
+<dl class="parameterList">
+<dt>connection</dt>
+<dd><p>The <code><code><a href="../Classes/RMUploadURLConnection.html">RMUploadURLConnection</a></code></code> sending the message.</p></dd>
+<dt>currentProgress</dt>
+<dd><p>The current progress, between 0.0 and 1.0. </p></dd>
+</dl>
+<h5>Declared In</h5>
+<code><code><a href="../Classes/RMUploadURLConnection.html">RMUploadURLConnection</a></code>.h</code></section><section class="definition" id="connection:didFailWithError:"><h3>connection:didFailWithError:</h3>
+<p>Sent if the connection fails, providing an <code><a href="http://developer.apple.com/mac/library/documentation/Cocoa/Reference/Foundation/Classes/NSError_Class/index.html">NSError</a></code> with the cause. </p>
+<code class="methodDeclaration">- (void)connection:(<a href="../Classes/RMUploadURLConnection.html">RMUploadURLConnection</a> *)<span class="parameter">connection</span> didFailWithError:(<a href="http://developer.apple.com/mac/library/documentation/Cocoa/Reference/Foundation/Classes/NSError_Class/index.html">NSError</a> *)<span class="parameter">error</span> </code><h5>Parameters</h5>
+<dl class="parameterList">
+<dt>connection</dt>
+<dd><p>The <code><code><a href="../Classes/RMUploadURLConnection.html">RMUploadURLConnection</a></code></code> sending the message.</p></dd>
+<dt>error</dt>
+<dd><p>An <code><code><a href="http://developer.apple.com/mac/library/documentation/Cocoa/Reference/Foundation/Classes/NSError_Class/index.html">NSError</a></code></code> object representing the error that caused the connection to fail. </p></dd>
+</dl>
+<h5>Declared In</h5>
+<code><code><a href="../Classes/RMUploadURLConnection.html">RMUploadURLConnection</a></code>.h</code></section><section class="definition" id="connection:didCompleteWithData:"><h3>connection:didCompleteWithData:</h3>
+<p>Sent once the connection completes successfully. </p>
+<code class="methodDeclaration">- (void)connection:(<a href="../Classes/RMUploadURLConnection.html">RMUploadURLConnection</a> *)<span class="parameter">connection</span> didCompleteWithData:(<a href="http://developer.apple.com/mac/library/documentation/Cocoa/Reference/Foundation/Classes/NSData_Class/index.html">NSData</a> *)<span class="parameter">data</span> </code><h5>Parameters</h5>
+<dl class="parameterList">
+<dt>connection</dt>
+<dd><p>The <code><code><a href="../Classes/RMUploadURLConnection.html">RMUploadURLConnection</a></code></code> sending the message.</p></dd>
+<dt>data</dt>
+<dd><p>The response <code><code><a href="http://developer.apple.com/mac/library/documentation/Cocoa/Reference/Foundation/Classes/NSData_Class/index.html">NSData</a></code></code> returned by the server. </p></dd>
+</dl>
+<h5>Declared In</h5>
+<code><code><a href="../Classes/RMUploadURLConnection.html">RMUploadURLConnection</a></code>.h</code></section><section class="definition" id="connection:didReceiveAuthenticationChallenge:"><h3>connection:didReceiveAuthenticationChallenge:</h3>
+<p>Behaves identically to the <code><code><a href="http://developer.apple.com/mac/library/documentation/Cocoa/Reference/Foundation/Classes/NSURLConnection_Class/index.html">NSURLConnection</a></code></code> delegate equivalent. </p>
+<code class="methodDeclaration">- (void)connection:(<a href="../Classes/RMUploadURLConnection.html">RMUploadURLConnection</a> *)<span class="parameter">connection</span> didReceiveAuthenticationChallenge:(<a href="http://developer.apple.com/mac/library/documentation/Cocoa/Reference/Foundation/Classes/NSURLAuthenticationChallenge_Class/index.html">NSURLAuthenticationChallenge</a> *)<span class="parameter">challenge</span> </code><h5>Declared In</h5>
+<code><code><a href="../Classes/RMUploadURLConnection.html">RMUploadURLConnection</a></code>.h</code></section><section class="definition" id="connection:didCancelAuthenticationChallenge:"><h3>connection:didCancelAuthenticationChallenge:</h3>
+<p>Behaves identically to the <code><code><a href="http://developer.apple.com/mac/library/documentation/Cocoa/Reference/Foundation/Classes/NSURLConnection_Class/index.html">NSURLConnection</a></code></code> delegate equivalent. </p>
+<code class="methodDeclaration">- (void)connection:(<a href="../Classes/RMUploadURLConnection.html">RMUploadURLConnection</a> *)<span class="parameter">connection</span> didCancelAuthenticationChallenge:(<a href="http://developer.apple.com/mac/library/documentation/Cocoa/Reference/Foundation/Classes/NSURLAuthenticationChallenge_Class/index.html">NSURLAuthenticationChallenge</a> *)<span class="parameter">challenge</span> </code><h5>Declared In</h5>
+<code><code><a href="../Classes/RMUploadURLConnection.html">RMUploadURLConnection</a></code>.h</code></section></section><hr>
+<p id="lastUpdated">Last updated: 2010-9-9</p>
+</div>
+<footer id="breadcrumbs"><ul>
+<li><a href="../index.html">RMUploadKit SDK</a></li>
+<li><a href="#classTitle">RMUploadURLConnectionDelegate Protocol Reference</a></li>
+</ul></footer>
+</body>
+</html>

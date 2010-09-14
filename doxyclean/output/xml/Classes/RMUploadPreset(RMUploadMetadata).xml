@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?><object kind="class">
+  <name>RMUploadPreset(RMUploadMetadata)</name>
+  <file>RMUploadPreset.h</file>
+  <description>
+    <brief>
+<para>These methods are used for preset setup and presentation. </para>    </brief>
+    <details>
+    </details>
+  </description>
+  <sections>
+    <section>
+      <name>Other</name>
+      <member kind="class-method">
+        <name>credentialsClass</name>
+        <type>Class</type>
+        <prototype>+ (Class)credentialsClass</prototype>
+        <file><ref id="../Classes/RMUploadPreset">RMUploadPreset</ref>.h</file>
+        <description>
+          <brief>
+<para>Used to determine if your preset requires credentials, and which credentials it can share with other preconfigured presets. </para>        </brief>
+          <details>
+<para>The default implementation returns Nil, return an <ref id="../Classes/RMUploadCredentials">RMUploadCredentials</ref> class if you support credentials. </para>        </details>
+        </description>
+      </member>
+      <member kind="class-method">
+        <name>uploadTaskClass</name>
+        <type>Class</type>
+        <prototype>+ (Class)uploadTaskClass</prototype>
+        <file><ref id="../Classes/RMUploadPreset">RMUploadPreset</ref>.h</file>
+        <description>
+          <brief>
+<para>The <code><ref id="../Classes/RMUploadTask">RMUploadTask</ref></code> class for this preset. </para>        </brief>
+          <details>
+<para>This method is required, if not implemented the framework throws an exception.</para><para>
+</para>        </details>
+        </description>
+        <return>
+          <para>An <code><ref id="../Classes/RMUploadTask">RMUploadTask</ref></code> subclass. </para>
+        </return>
+      </member>
+      <member kind="class-method">
+        <name>localisedName</name>
+        <type><ref id="http://developer.apple.com/mac/library/documentation/Cocoa/Reference/Foundation/Classes/NSString_Class/index">NSString</ref> *</type>
+        <prototype>+ (<ref id="http://developer.apple.com/mac/library/documentation/Cocoa/Reference/Foundation/Classes/NSString_Class/index">NSString</ref> *)localisedName</prototype>
+        <file><ref id="../Classes/RMUploadPreset">RMUploadPreset</ref>.h</file>
+        <description>
+          <brief>
+<para>The name for the preset type, preferably localised. </para>        </brief>
+          <details>
+        </details>
+        </description>
+      </member>
+      <member kind="class-method">
+        <name>icon</name>
+        <type><ref id="http://developer.apple.com/mac/library/documentation/Cocoa/Reference/ApplicationKit/Classes/NSImage_Class/index">NSImage</ref> *</type>
+        <prototype>+ (<ref id="http://developer.apple.com/mac/library/documentation/Cocoa/Reference/ApplicationKit/Classes/NSImage_Class/index">NSImage</ref> *)icon</prototype>
+        <file><ref id="../Classes/RMUploadPreset">RMUploadPreset</ref>.h</file>
+        <description>
+          <brief>
+<para>The icon for the destination type. This image should be square and at least 100px in dimension. Any decoration added is application specific. </para>        </brief>
+          <details>
+        </details>
+        </description>
+      </member>
+      <member kind="class-method">
+        <name>serviceURL</name>
+        <type><ref id="http://developer.apple.com/mac/library/documentation/Cocoa/Reference/Foundation/Classes/NSURL_Class/index">NSURL</ref> *</type>
+        <prototype>+ (<ref id="http://developer.apple.com/mac/library/documentation/Cocoa/Reference/Foundation/Classes/NSURL_Class/index">NSURL</ref> *)serviceURL</prototype>
+        <file><ref id="../Classes/RMUploadPreset">RMUploadPreset</ref>.h</file>
+        <description>
+          <brief>
+<para>This method constructs the <code><ref id="http://developer.apple.com/mac/library/documentation/Cocoa/Reference/Foundation/Classes/NSURL_Class/index">NSURL</ref></code> from your Info.plist. </para>        </brief>
+          <details>
+<para>If sent to a preset whose bundle <code><ref id="../Classes/RMUploadPlugin">RMUploadPlugin</ref>ServiceHostKey</code> is nil, it will throw an exception.</para><para>This will only be useful for your own web services where you can use the Info.plist preprocessor to switch between development and deployment servers. </para>        </details>
+        </description>
+      </member>
+    </section>
+  </sections>
+</object>

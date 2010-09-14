@@ -1,0 +1,5 @@
+build
+Project Templates/RMUploadKit Plugin/___PROJECTNAME___.xcodeproj/*.mode1v3
+Project Templates/RMUploadKit Plugin/___PROJECTNAME___.xcodeproj/*.pbxuser
+Example Plugins/Ember Uploader/Ember.xcodeproj/*.mode1v3
+Example Plugins/Ember Uploader/Ember.xcodeproj/*.pbxuser

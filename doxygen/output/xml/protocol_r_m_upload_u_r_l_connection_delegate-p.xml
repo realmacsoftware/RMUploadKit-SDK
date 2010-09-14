@@ -1,0 +1,214 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.5.9">
+  <compounddef id="protocol_r_m_upload_u_r_l_connection_delegate-p" kind="protocol" prot="public">
+    <compoundname>RMUploadURLConnectionDelegate-p</compoundname>
+    <includes refid="_r_m_upload_u_r_l_connection_8h" local="no">RMUploadURLConnection.h</includes>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="protocol_r_m_upload_u_r_l_connection_delegate-p_113dec0ea87e78b8ae339f03b0495fce9" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>void RMUploadURLConnectionDelegate-p::connection:downloadProgressed:</definition>
+        <argsstring>(RMUploadURLConnection *connection,[downloadProgressed] float currentProgress)</argsstring>
+        <name>connection:downloadProgressed:</name>
+        <param>
+          <type><ref refid="interface_r_m_upload_u_r_l_connection" kindref="compound">RMUploadURLConnection</ref> *</type>
+          <declname>connection</declname>
+        </param>
+        <param>
+          <attributes>[downloadProgressed]</attributes>
+          <type>float</type>
+          <declname>currentProgress</declname>
+        </param>
+        <briefdescription>
+<para>Called periodically as a download progresses. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>connection</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The <computeroutput><ref refid="interface_r_m_upload_u_r_l_connection" kindref="compound">RMUploadURLConnection</ref></computeroutput> sending the message.</para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>currentProgress</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The current progress, between 0.0 and 1.0. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/keith/Projects/Source/RMUpload/documentation/RMUploadKit.sdk/Library/Frameworks/RMUploadKit.framework/Versions/A/Headers/RMUploadURLConnection.h" line="117"/>
+      </memberdef>
+      <memberdef kind="function" id="protocol_r_m_upload_u_r_l_connection_delegate-p_11c0c9a542dd270cb0c3fc8b5811227cc" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>void RMUploadURLConnectionDelegate-p::connection:uploadProgressed:</definition>
+        <argsstring>(RMUploadURLConnection *connection,[uploadProgressed] float currentProgress)</argsstring>
+        <name>connection:uploadProgressed:</name>
+        <param>
+          <type><ref refid="interface_r_m_upload_u_r_l_connection" kindref="compound">RMUploadURLConnection</ref> *</type>
+          <declname>connection</declname>
+        </param>
+        <param>
+          <attributes>[uploadProgressed]</attributes>
+          <type>float</type>
+          <declname>currentProgress</declname>
+        </param>
+        <briefdescription>
+<para>Called periodically as an upload progresses. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>connection</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The <computeroutput><ref refid="interface_r_m_upload_u_r_l_connection" kindref="compound">RMUploadURLConnection</ref></computeroutput> sending the message.</para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>currentProgress</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The current progress, between 0.0 and 1.0. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/keith/Projects/Source/RMUpload/documentation/RMUploadKit.sdk/Library/Frameworks/RMUploadKit.framework/Versions/A/Headers/RMUploadURLConnection.h" line="129"/>
+      </memberdef>
+      <memberdef kind="function" id="protocol_r_m_upload_u_r_l_connection_delegate-p_1bdd2069a9623b4bcb1c3a6937a7f3295" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>void RMUploadURLConnectionDelegate-p::connection:didFailWithError:</definition>
+        <argsstring>(RMUploadURLConnection *connection,[didFailWithError] NSError *error)</argsstring>
+        <name>connection:didFailWithError:</name>
+        <param>
+          <type><ref refid="interface_r_m_upload_u_r_l_connection" kindref="compound">RMUploadURLConnection</ref> *</type>
+          <declname>connection</declname>
+        </param>
+        <param>
+          <attributes>[didFailWithError]</attributes>
+          <type>NSError *</type>
+          <declname>error</declname>
+        </param>
+        <briefdescription>
+<para>Sent if the connection fails, providing an NSError with the cause. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>connection</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The <computeroutput><ref refid="interface_r_m_upload_u_r_l_connection" kindref="compound">RMUploadURLConnection</ref></computeroutput> sending the message.</para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>error</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>An <computeroutput>NSError</computeroutput> object representing the error that caused the connection to fail. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/keith/Projects/Source/RMUpload/documentation/RMUploadKit.sdk/Library/Frameworks/RMUploadKit.framework/Versions/A/Headers/RMUploadURLConnection.h" line="143"/>
+      </memberdef>
+      <memberdef kind="function" id="protocol_r_m_upload_u_r_l_connection_delegate-p_17fdcd1c7461a19b2c64934a741a29c0b" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>void RMUploadURLConnectionDelegate-p::connection:didCompleteWithData:</definition>
+        <argsstring>(RMUploadURLConnection *connection,[didCompleteWithData] NSData *data)</argsstring>
+        <name>connection:didCompleteWithData:</name>
+        <param>
+          <type><ref refid="interface_r_m_upload_u_r_l_connection" kindref="compound">RMUploadURLConnection</ref> *</type>
+          <declname>connection</declname>
+        </param>
+        <param>
+          <attributes>[didCompleteWithData]</attributes>
+          <type>NSData *</type>
+          <declname>data</declname>
+        </param>
+        <briefdescription>
+<para>Sent once the connection completes successfully. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>connection</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The <computeroutput><ref refid="interface_r_m_upload_u_r_l_connection" kindref="compound">RMUploadURLConnection</ref></computeroutput> sending the message.</para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>data</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The response <computeroutput>NSData</computeroutput> returned by the server. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/keith/Projects/Source/RMUpload/documentation/RMUploadKit.sdk/Library/Frameworks/RMUploadKit.framework/Versions/A/Headers/RMUploadURLConnection.h" line="155"/>
+      </memberdef>
+      <memberdef kind="function" id="protocol_r_m_upload_u_r_l_connection_delegate-p_18ef568305731a0843d656c2ddd46bd40" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>void RMUploadURLConnectionDelegate-p::connection:didReceiveAuthenticationChallenge:</definition>
+        <argsstring>(RMUploadURLConnection *connection,[didReceiveAuthenticationChallenge] NSURLAuthenticationChallenge *challenge)</argsstring>
+        <name>connection:didReceiveAuthenticationChallenge:</name>
+        <param>
+          <type><ref refid="interface_r_m_upload_u_r_l_connection" kindref="compound">RMUploadURLConnection</ref> *</type>
+          <declname>connection</declname>
+        </param>
+        <param>
+          <attributes>[didReceiveAuthenticationChallenge]</attributes>
+          <type>NSURLAuthenticationChallenge *</type>
+          <declname>challenge</declname>
+        </param>
+        <briefdescription>
+<para>Behaves identically to the <computeroutput>NSURLConnection</computeroutput> delegate equivalent. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/keith/Projects/Source/RMUpload/documentation/RMUploadKit.sdk/Library/Frameworks/RMUploadKit.framework/Versions/A/Headers/RMUploadURLConnection.h" line="163"/>
+      </memberdef>
+      <memberdef kind="function" id="protocol_r_m_upload_u_r_l_connection_delegate-p_193d49c5129aba2b2bd5f19aa4335cdc7" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>void RMUploadURLConnectionDelegate-p::connection:didCancelAuthenticationChallenge:</definition>
+        <argsstring>(RMUploadURLConnection *connection,[didCancelAuthenticationChallenge] NSURLAuthenticationChallenge *challenge)</argsstring>
+        <name>connection:didCancelAuthenticationChallenge:</name>
+        <param>
+          <type><ref refid="interface_r_m_upload_u_r_l_connection" kindref="compound">RMUploadURLConnection</ref> *</type>
+          <declname>connection</declname>
+        </param>
+        <param>
+          <attributes>[didCancelAuthenticationChallenge]</attributes>
+          <type>NSURLAuthenticationChallenge *</type>
+          <declname>challenge</declname>
+        </param>
+        <briefdescription>
+<para>Behaves identically to the <computeroutput>NSURLConnection</computeroutput> delegate equivalent. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/keith/Projects/Source/RMUpload/documentation/RMUploadKit.sdk/Library/Frameworks/RMUploadKit.framework/Versions/A/Headers/RMUploadURLConnection.h" line="169"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>The delegate for <computeroutput><ref refid="interface_r_m_upload_u_r_l_connection" kindref="compound">RMUploadURLConnection</ref></computeroutput>. </para>    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/Users/keith/Projects/Source/RMUpload/documentation/RMUploadKit.sdk/Library/Frameworks/RMUploadKit.framework/Versions/A/Headers/RMUploadURLConnection.h" line="103" bodyfile="/Users/keith/Projects/Source/RMUpload/documentation/RMUploadKit.sdk/Library/Frameworks/RMUploadKit.framework/Versions/A/Headers/RMUploadURLConnection.h" bodystart="103" bodyend="-1"/>
+    <listofallmembers>
+      <member refid="protocol_r_m_upload_u_r_l_connection_delegate-p_193d49c5129aba2b2bd5f19aa4335cdc7" prot="public" virt="virtual"><scope>RMUploadURLConnectionDelegate-p</scope><name>connection:didCancelAuthenticationChallenge:</name></member>
+      <member refid="protocol_r_m_upload_u_r_l_connection_delegate-p_17fdcd1c7461a19b2c64934a741a29c0b" prot="public" virt="virtual"><scope>RMUploadURLConnectionDelegate-p</scope><name>connection:didCompleteWithData:</name></member>
+      <member refid="protocol_r_m_upload_u_r_l_connection_delegate-p_1bdd2069a9623b4bcb1c3a6937a7f3295" prot="public" virt="virtual"><scope>RMUploadURLConnectionDelegate-p</scope><name>connection:didFailWithError:</name></member>
+      <member refid="protocol_r_m_upload_u_r_l_connection_delegate-p_18ef568305731a0843d656c2ddd46bd40" prot="public" virt="virtual"><scope>RMUploadURLConnectionDelegate-p</scope><name>connection:didReceiveAuthenticationChallenge:</name></member>
+      <member refid="protocol_r_m_upload_u_r_l_connection_delegate-p_113dec0ea87e78b8ae339f03b0495fce9" prot="public" virt="virtual"><scope>RMUploadURLConnectionDelegate-p</scope><name>connection:downloadProgressed:</name></member>
+      <member refid="protocol_r_m_upload_u_r_l_connection_delegate-p_11c0c9a542dd270cb0c3fc8b5811227cc" prot="public" virt="virtual"><scope>RMUploadURLConnectionDelegate-p</scope><name>connection:uploadProgressed:</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

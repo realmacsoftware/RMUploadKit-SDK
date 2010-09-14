@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?><object kind="class">
+  <name>RMUploadMetadataConfigurationViewController</name>
+  <file>RMUploadMetadataConfigurationViewController.h</file>
+  <description>
+    <brief>
+<para>This view controller is presented beside application metadata views. </para>    </brief>
+    <details>
+<para>You view must be 310pt wide, there is no height restriction (within reason). </para>    </details>
+  </description>
+  <sections/>
+</object>
