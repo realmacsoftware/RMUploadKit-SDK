@@ -6,11 +6,11 @@ It is super easy to get up and running:
 
 * Download one of the distributions from the downloads section 
 * Install the SDK using the installer
-* Create a new project in Xcode using the RMUploadKit Plugin project template
+* Create a new project in Xcode using the `RMUploadKit Plugin` project template
 
 ##Notes
 
-* If you decide you don't want to use our project template (we recommend you do) you will need to set the <code>Additional SDKs</code> build flag to <code>$HOME/Library/Application Support/Developer/Shared/Xcode/SDKs/RMUploadKit.sdk</code>
+* If you decide you don't want to use our project template (we recommend you do) you will need to set the `Additional SDKs` build flag to `$HOME/Library/Application Support/Developer/Shared/Xcode/SDKs/RMUploadKit.sdk`
 
 ##TODO
 
