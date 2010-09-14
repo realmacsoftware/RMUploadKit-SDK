@@ -14,7 +14,8 @@ It is super easy to get up and running:
 
 ##TODO
 
-* Move the guide from the .pages format into something nice like Markdown.
+* Move the guide from the .pages format into something nice like Markdown
+* Write an uninstall script and document its behaviour
 
 ##Acknowledgements
 
