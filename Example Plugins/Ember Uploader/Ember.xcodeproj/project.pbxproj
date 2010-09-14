@@ -325,7 +325,7 @@
 		1DEB913B08733D840010E9CD /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ADDITIONAL_SDKS = "\"$HOME/Library/Application Support/Developer/Shared/Xcode/SDKs/RMUploadKit.sdk";
+				ADDITIONAL_SDKS = "$HOME/Library/Application Support/Developer/Shared/Xcode/SDKs/RMUploadKit.sdk";
 				COPY_PHASE_STRIP = NO;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_ENABLE_FIX_AND_CONTINUE = YES;
