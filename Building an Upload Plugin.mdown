@@ -352,7 +352,7 @@ As we have kept a reference to the connection as a property it is easy to cancel
 
 ##Adding the User Interface
 
-##The Plugin
+###The Plugin
 
 The framework requests user interface components, in the form of `NSViewController` objects through the the `RMUploadPlugin` subclass instance and there are three possible opportunities for plugins to inject their own views into an application using the framework.
 
