@@ -26,5 +26,7 @@
 	<array>
 		<string>___PROJECTNAME___Preset</string>
 	</array>
+	<key>RMUploadPluginBundleMinimumFrameworkBundleVersion</key>
+	<string>1</string>
 </dict>
 </plist>

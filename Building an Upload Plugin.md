@@ -36,7 +36,11 @@ Your plugin bundle must have the file extension ‘uploader’.
 
 Your plugin bundle identifier (the value for `CFBundleIdentifier` in the Info.plist) must be unique, and must not be prefixed ‘com.realmacsoftware’; that prefix is reserved.
 
-Your bundle’s Info.plist file must also have a ‘RMUploadPluginBundleMinimumFrameworkBundleVersion’ key, the value for this key must be `<string>1</string>` or the plugin will not be loaded. 
+Your bundle’s Info.plist file must also have a ‘RMUploadPluginBundleMinimumFrameworkBundleVersion’ key, the value for this key must be `<string>1</string>` or the plugin will not be loaded.
+
+###Bundle Install Location
+
+Double clicking a plugin bundle will launch Courier and install the plugin for your users. Should you need to install an uploader manually, copy it to `~/Library/Application Support/Courier/Plugins`.
 
 ###Getting Started
 
@@ -176,6 +180,26 @@ The key can either be set manually or by overriding `keyPathsForValuesAffectingV
 
 So any time a change is made to the privacy, collection or category the framework will observe it and the preset is saved to disk.
 
+
+To tell the framework what file types you support you must override `-acceptedTypes` and append to the set of accepted UTIs:
+
+	- (NSSet *)acceptedTypes
+	{
+		NSMutableSet *acceptedTypes = [[super acceptedTypes] mutableCopy];
+		[acceptedTypes addObject:(id)kUTTypeJPEG];
+		[acceptedTypes addObject:(id)kUTTypeGIF];
+		[acceptedTypes addObject:(id)kUTTypePNG];
+		return acceptedTypes;
+	}
+
+You can see that Ember supports JPEG, GIF and PNG. Use the constants in `<LaunchServices/UTType.h>` for common types, or any of your own custom UTIs.
+
+
+Finally, a preset must declare the top-most URL of the service it uploads to. This can different per-preset by overriding `-serviceURL`, or the same across all instances of your preset by overriding `+serviceURL`.
+
+`RMUploadPreset` has a default implementation of `+serviceURL` which constructs the result from your `Info.plist`. If you use the default implementation you must include values in your Info.plist for the `RMUploadPluginServiceHost` and `RMUploadPluginServiceUseSSL` keys.
+
+
 ##Using Credentials
 
 As we have chosen to keep login details separate to the preset we will need a credentials object and, just like presets, these are really just model objects (containers of data). 
@@ -273,10 +297,8 @@ In simple terms, all we are doing is setting up an instance of `RMUploadURLConne
 	- (void)connection:(RMUploadURLConnection *)connection uploadProgressed:(float)currentProgress
 	{
 		NSDictionary *progressDict = [NSDictionary dictionaryWithObjectsAndKeys:
-						    [NSNumber numberWithFloat:currentProgress],
-						    RMUploadTaskProgressCurrentKey,
-						    [NSNumber numberWithFloat:1.0],
-						    RMUploadTaskProgressTotalKey,
+						    [NSNumber numberWithFloat:currentProgress], RMUploadTaskProgressCurrentKey,
+						    [NSNumber numberWithFloat:1.0], RMUploadTaskProgressTotalKey,
 						    nil];
 		[[NSNotificationCenter defaultCenter] postNotificationName:RMUploadTaskDidReceiveProgressNotificationName object:self userInfo:progressDict];
 	}
@@ -285,9 +307,11 @@ When our upload progresses we pass along a notification along with its relevant 
 
 	- (void)connection:(RMUploadURLConnection *)connection didFailWithError:(NSError *)error
 	{
-		NSDictionary *userInfo = [NSDictionary dictionaryWithObject:error forKey:RMUploadTaskErrorKey];
+		NSDictionary *userInfo = [NSDictionary dictionaryWithObjectsForKeys:
+								  error, RMUploadTaskErrorKey
+								  nil];
 		[[NSNotificationCenter defaultCenter] postNotificationName:RMUploadTaskDidFinishTransactionNotificationName object:self userInfo:userInfo];
-
+		
 		[self _postCompletionNotification];
 	}
 
@@ -299,40 +323,40 @@ The completion method is similar:
 	{
 		NSError *documentError = nil;
 		NSXMLDocument *document = [[NSXMLDocument alloc] initWithData:data options:0 error:&documentError];
-	
+		
 		if (document == nil) {
 			NSDictionary *errorInfo = [NSDictionary dictionaryWithObjectsAndKeys:
 									   RMLocalizedStringInSelfBundle(@"The server returned an invalid response."), NSLocalizedDescriptionKey,
-									  nil];
+									   nil];
 			NSError *error = [NSError errorWithDomain:RMEmberBundleIdentifier code:0 userInfo:errorInfo];
 		
 			NSDictionary *notificationInfo = [NSDictionary dictionaryWithObjectsAndKeys:
-								    error, RMUploadTaskErrorKey,
-								    nil];
+								    		  error, RMUploadTaskErrorKey,
+								    		  nil];
 			[[NSNotification defaultCenter] postNotificationName:RMUploadTaskDidFinishTransactionNotificationName object:self userInfo:notificationInfo];
-
+			
 			[self _postCompletionNotification];
 			return;
 		}
-	
+		
 		// Parse XML for errors…
-	
+		
 		NSError *locationXPathError = nil;			
 		NSString *imageLocation = [document stringValueForXPath:@"/response/item/permalink" error:&locationXPathError];
 		
 		NSMutableDictionary *userInfo = [NSMutableDictionary dictionary];
 		[userInfo setObject:document forKey:RMEmberXMLDocumentKey];
-									  
+		
 		if (imageLocation != nil) {
 			[userInfo setObject:[NSURL URLWithString:imageLocation] forKey:RMUploadTaskResourceLocationKey];
 		}
 		
 		if (self.destination.targetCollection != nil)
 			[self addToCollectionFromDocument:document];
-	
+		
 		if (self.destination.targetCategory != nil)
-			[self submitImageToCategoryFromDocument:document];	
-	
+			[self submitImageToCategoryFromDocument:document];
+		
 		// Completed notification is only sent when all metadata is also set.
 	}
 
