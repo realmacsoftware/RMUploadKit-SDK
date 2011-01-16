@@ -4,8 +4,8 @@ This SDK is designed to easily allow developers to create plugins to expand Cour
 
 It is super easy to get up and running:
 
-* Download one of the distributions from the downloads section 
-* Install the SDK using the installer
+* Download one the prebuilt SDK from [https://github.com/downloads/realmacsoftware/RMUploadKit-SDK/RMUploadKit%20SDK.zip](https://github.com/downloads/realmacsoftware/RMUploadKit-SDK/RMUploadKit%20SDK.zip)
+* Install the SDK using the included installer
 * Create a new project in Xcode using the `RMUploadKit Plugin` project template
 
 ##Documentation
