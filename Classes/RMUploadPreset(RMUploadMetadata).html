@@ -1,0 +1,134 @@
+<!DOCTYPE html><html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta charset="UTF-8">
+<title>RMUploadPreset(RMUploadMetadata) Class Reference</title>
+<meta id="Generator" name="Generator" content="Doxyclean">
+<meta id="GeneratorVersion" name="GeneratorVersion" content="2.2">
+<link rel="stylesheet" type="text/css" href="../css/common.css">
+<link rel="stylesheet" type="text/css" media="screen" href="../css/screen.css">
+<link rel="stylesheet" type="text/css" media="print" href="../css/print.css">
+<script type="text/javascript">
+				function toggleTOC() {
+					var toc = document.getElementById('tableOfContents');
+					var tocButton = document.getElementById('toc_button');
+					var contents = document.getElementById('contents');
+					if (toc.style.display == 'block') {
+						toc.style.display = 'none';
+						contents.className = '';
+						tocButton.className = '';
+					} else {
+						toc.style.display = 'block';
+						contents.className = 'tableOfContentsOpen';
+						tocButton.className = 'open';
+					}
+				}
+				
+				function toggleTOCItem() {
+					var listItem = event.srcElement;
+					var sublist = listItem.getElementsByTagName('ul')[0];
+					if (sublist.style.display == 'block') {
+						sublist.style.display = 'none';
+						listItem.className = 'expandable';
+					} else {
+						sublist.style.display = 'block';
+						listItem.className = 'expandable expanded';
+					}
+				}
+				
+				function jumpTo() {
+					selectedItem = event.srcElement.options[event.srcElement.selectedIndex].value;
+					window.location = "#" + selectedItem;
+				}
+			</script>
+</head>
+<body>
+<header id="projectHeader"><h1><a href="../index.html">RMUploadKit SDK Reference Library</a></h1></header><header id="fileHeader"><h1><a href="#classTitle">RMUploadPreset(RMUploadMetadata) Class Reference</a></h1></header><nav id="buttons"><ul>
+<li id="toc_button"><button id="table_of_contents" onclick="toggleTOC()">Table of Contents</button></li>
+<li id="jumpto_button"><select id="jumpto" onchange="jumpTo()"><option value="classTitle">Jump To...</option>
+<option value="overview">Overview</option>
+<option value="tasks">Tasks</option>
+<option value="classMethods">Class Methods</option>
+<option value="credentialsClass">    + credentialsClass</option>
+<option value="uploadTaskClass">    + uploadTaskClass</option>
+<option value="localisedName">    + localisedName</option>
+<option value="icon">    + icon</option>
+<option value="serviceURL">    + serviceURL</option></select></li>
+</ul></nav><nav id="tableOfContents" style="display: none;"><ul>
+<li><a href="#overview">Overview</a></li>
+<li class="expandable" id="tocTasks" onclick="toggleTOCItem()">
+<a href="#tasks">Tasks</a><ul style="display: none;"><li><a href="#Other">Other</a></li></ul>
+</li>
+<li class="expandable" id="tocClassMethods" onclick="toggleTOCItem()">
+<a href="#classMethods">Class Methods</a><ul style="display: none;">
+<li><a href="#credentialsClass">credentialsClass</a></li>
+<li><a href="#uploadTaskClass">uploadTaskClass</a></li>
+<li><a href="#localisedName">localisedName</a></li>
+<li><a href="#icon">icon</a></li>
+<li><a href="#serviceURL">serviceURL</a></li>
+</ul>
+</li>
+</ul></nav><div id="contents">
+<h1 id="classTitle">RMUploadPreset(RMUploadMetadata) Class Reference</h1>
+<table id="metadata"><tr class="alt">
+<th>Declared in</th>
+<td>RMUploadPreset.h</td>
+</tr></table>
+<h2 id="overview">Overview</h2>
+<p>These methods are used for preset setup and presentation. </p>
+<h2 id="tasks">Tasks</h2>
+<ul id="tasksList"><li id="Other">
+<h3>Other</h3>
+<ul class="methods">
+<li>
+<span class="tooltipRegion"><code><a href="#credentialsClass">+ credentialsClass</a></code></span><span class="tooltip">Used to determine if your preset requires credentials, and which credentials it can share with other preconfigured presets. </span>
+</li>
+<li>
+<span class="tooltipRegion"><code><a href="#uploadTaskClass">+ uploadTaskClass</a></code></span><span class="tooltip">The RMUploadTask class for this preset. </span>
+</li>
+<li>
+<span class="tooltipRegion"><code><a href="#localisedName">+ localisedName</a></code></span><span class="tooltip">The name for the preset type, preferably localised. </span>
+</li>
+<li>
+<span class="tooltipRegion"><code><a href="#icon">+ icon</a></code></span><span class="tooltip">The icon for the destination type. This image should be square and at least 100px in dimension. Any decoration added is application specific. </span>
+</li>
+<li>
+<span class="tooltipRegion"><code><a href="#serviceURL">+ serviceURL</a></code></span><span class="tooltip">This method constructs the NSURL from your Info.plist. </span>
+</li>
+</ul>
+</li></ul>
+<section id="classMethods"><h2>Class Methods</h2>
+<section class="definition" id="credentialsClass"><h3>credentialsClass</h3>
+<p>Used to determine if your preset requires credentials, and which credentials it can share with other preconfigured presets. </p>
+<code class="methodDeclaration">+ (Class)credentialsClass</code><h5>Discussion</h5>
+<p>The default implementation returns Nil, return an <code><a href="../Classes/RMUploadCredentials.html">RMUploadCredentials</a></code> class if you support credentials. </p>
+<h5>Declared In</h5>
+<code><code><a href="../Classes/RMUploadPreset.html">RMUploadPreset</a></code>.h</code></section><section class="definition" id="uploadTaskClass"><h3>uploadTaskClass</h3>
+<p>The <code><code><a href="../Classes/RMUploadTask.html">RMUploadTask</a></code></code> class for this preset. </p>
+<code class="methodDeclaration">+ (Class)uploadTaskClass</code><h5>Return Value</h5>
+<p>An <code><code><a href="../Classes/RMUploadTask.html">RMUploadTask</a></code></code> subclass. </p>
+<h5>Discussion</h5>
+<p>This method is required, if not implemented the framework throws an exception.</p>
+<p></p>
+<h5>Declared In</h5>
+<code><code><a href="../Classes/RMUploadPreset.html">RMUploadPreset</a></code>.h</code></section><section class="definition" id="localisedName"><h3>localisedName</h3>
+<p>The name for the preset type, preferably localised. </p>
+<code class="methodDeclaration">+ (<a href="http://developer.apple.com/mac/library/documentation/Cocoa/Reference/Foundation/Classes/NSString_Class/index.html">NSString</a> *)localisedName</code><h5>Declared In</h5>
+<code><code><a href="../Classes/RMUploadPreset.html">RMUploadPreset</a></code>.h</code></section><section class="definition" id="icon"><h3>icon</h3>
+<p>The icon for the destination type. This image should be square and at least 100px in dimension. Any decoration added is application specific. </p>
+<code class="methodDeclaration">+ (<a href="http://developer.apple.com/mac/library/documentation/Cocoa/Reference/ApplicationKit/Classes/NSImage_Class/index.html">NSImage</a> *)icon</code><h5>Declared In</h5>
+<code><code><a href="../Classes/RMUploadPreset.html">RMUploadPreset</a></code>.h</code></section><section class="definition" id="serviceURL"><h3>serviceURL</h3>
+<p>This method constructs the <code><code><a href="http://developer.apple.com/mac/library/documentation/Cocoa/Reference/Foundation/Classes/NSURL_Class/index.html">NSURL</a></code></code> from your Info.plist. </p>
+<code class="methodDeclaration">+ (<a href="http://developer.apple.com/mac/library/documentation/Cocoa/Reference/Foundation/Classes/NSURL_Class/index.html">NSURL</a> *)serviceURL</code><h5>Discussion</h5>
+<p>If sent to a preset whose bundle <code><code><a href="../Classes/RMUploadPlugin.html">RMUploadPlugin</a></code>ServiceHostKey</code> is nil, it will throw an exception.</p>
+<p>This will only be useful for your own web services where you can use the Info.plist preprocessor to switch between development and deployment servers. </p>
+<h5>Declared In</h5>
+<code><code><a href="../Classes/RMUploadPreset.html">RMUploadPreset</a></code>.h</code></section></section><hr>
+<p id="lastUpdated">Last updated: 2010-9-9</p>
+</div>
+<footer id="breadcrumbs"><ul>
+<li><a href="../index.html">RMUploadKit SDK</a></li>
+<li><a href="#classTitle">RMUploadPreset(RMUploadMetadata) Class Reference</a></li>
+</ul></footer>
+</body>
+</html>

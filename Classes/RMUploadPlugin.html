@@ -1,0 +1,187 @@
+<!DOCTYPE html><html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta charset="UTF-8">
+<title>RMUploadPlugin Class Reference</title>
+<meta id="Generator" name="Generator" content="Doxyclean">
+<meta id="GeneratorVersion" name="GeneratorVersion" content="2.2">
+<link rel="stylesheet" type="text/css" href="../css/common.css">
+<link rel="stylesheet" type="text/css" media="screen" href="../css/screen.css">
+<link rel="stylesheet" type="text/css" media="print" href="../css/print.css">
+<script type="text/javascript">
+				function toggleTOC() {
+					var toc = document.getElementById('tableOfContents');
+					var tocButton = document.getElementById('toc_button');
+					var contents = document.getElementById('contents');
+					if (toc.style.display == 'block') {
+						toc.style.display = 'none';
+						contents.className = '';
+						tocButton.className = '';
+					} else {
+						toc.style.display = 'block';
+						contents.className = 'tableOfContentsOpen';
+						tocButton.className = 'open';
+					}
+				}
+				
+				function toggleTOCItem() {
+					var listItem = event.srcElement;
+					var sublist = listItem.getElementsByTagName('ul')[0];
+					if (sublist.style.display == 'block') {
+						sublist.style.display = 'none';
+						listItem.className = 'expandable';
+					} else {
+						sublist.style.display = 'block';
+						listItem.className = 'expandable expanded';
+					}
+				}
+				
+				function jumpTo() {
+					selectedItem = event.srcElement.options[event.srcElement.selectedIndex].value;
+					window.location = "#" + selectedItem;
+				}
+			</script>
+</head>
+<body>
+<header id="projectHeader"><h1><a href="../index.html">RMUploadKit SDK Reference Library</a></h1></header><header id="fileHeader"><h1><a href="#classTitle">RMUploadPlugin Class Reference</a></h1></header><nav id="buttons"><ul>
+<li id="toc_button"><button id="table_of_contents" onclick="toggleTOC()">Table of Contents</button></li>
+<li id="jumpto_button"><select id="jumpto" onchange="jumpTo()"><option value="classTitle">Jump To...</option>
+<option value="overview">Overview</option>
+<option value="tasks">Tasks</option>
+<option value="properties">Properties</option>
+<option value="bundle">    bundle</option>
+<option value="credentials">    credentials</option>
+<option value="presets">    presets</option>
+<option value="instanceMethods">Instance Methods</option>
+<option value="initWithBundle:">    - initWithBundle:</option>
+<option value="credentialsConfigurationViewControllerForCredentials:">    - credentialsConfigurationViewControllerForCredentials:</option>
+<option value="presetConfigurationViewControllerForPreset:">    - presetConfigurationViewControllerForPreset:</option>
+<option value="additionalMetadataViewControllerForPresetClass:">    - additionalMetadataViewControllerForPresetClass:</option></select></li>
+</ul></nav><nav id="tableOfContents" style="display: none;"><ul>
+<li><a href="#overview">Overview</a></li>
+<li class="expandable" id="tocTasks" onclick="toggleTOCItem()">
+<a href="#tasks">Tasks</a><ul style="display: none;">
+<li><a href="#Other">Other</a></li>
+<li><a href="#Other">Other</a></li>
+</ul>
+</li>
+<li class="expandable" id="tocProperties" onclick="toggleTOCItem()">
+<a href="#properties">Properties</a><ul style="display: none;">
+<li><a href="#bundle">bundle</a></li>
+<li><a href="#credentials">credentials</a></li>
+<li><a href="#presets">presets</a></li>
+</ul>
+</li>
+<li class="expandable" id="tocInstanceMethods" onclick="toggleTOCItem()">
+<a href="#instanceMethods">Instance Methods</a><ul style="display: none;">
+<li><a href="#initWithBundle:">initWithBundle:</a></li>
+<li><a href="#credentialsConfigurationViewControllerForCredentials:">credentialsConfigurationViewControllerForCredentials:</a></li>
+<li><a href="#presetConfigurationViewControllerForPreset:">presetConfigurationViewControllerForPreset:</a></li>
+<li><a href="#additionalMetadataViewControllerForPresetClass:">additionalMetadataViewControllerForPresetClass:</a></li>
+</ul>
+</li>
+</ul></nav><div id="contents">
+<h1 id="classTitle">RMUploadPlugin Class Reference</h1>
+<table id="metadata"><tr class="alt">
+<th>Declared in</th>
+<td>RMUploadPlugin.h</td>
+</tr></table>
+<h2 id="overview">Overview</h2>
+<p>You uploader bundle principal class. </p>
+<p>This class is the go-between for your presets, credentials and configuration view controllers respectively.</p>
+<p>The methods which return an <code><a href="http://developer.apple.com/mac/library/documentation/Cocoa/Reference/ApplicationKit/Classes/NSViewController_Class/index.html">NSViewController</a></code> have assertions performed on the return value, if any of these assertions fail, unless otherwise documented, an exception will be thrown:<ul><li><p>the view controller's view must not have a superview.</p></li></ul></p>
+<p>When returning a view controller, make no assumptions about how the view will be used. It may be in a sheet in one version, and a view hierarchy the next. You must not call any methods to deal with closing windows etc. always post the relevant notifications.</p>
+<br/>
+<p>A plugin is structured like this:</p>
+<p><code><pre>
+<a href="../Classes/RMUploadPlugin.html">RMUploadPlugin</a> &lt;-&gt;&gt; <a href="../Classes/RMUploadPreset.html">RMUploadPreset</a>
+(<a href="../Classes/RMUploadPlugin.html">RMUploadPlugin</a> &lt;-&gt;&gt; <a href="../Classes/RMUploadCredentials.html">RMUploadCredentials</a>)
+(<a href="../Classes/RMUploadPreset.html">RMUploadPreset</a> &lt;&lt;-&gt; <a href="../Classes/RMUploadCredentials.html">RMUploadCredentials</a>)
+</pre></code></p>
+<p>A plugin owns many presets, and optionally, many credentials.</p>
+<p>A preset optionally, has credentials.</p>
+<h2 id="tasks">Tasks</h2>
+<ul id="tasksList">
+<li id="Other">
+<h3>Other</h3>
+<ul class="methods">
+<li>
+<span class="tooltipRegion"><code><a href="#bundle">bundle</a></code> <span class="specialType">property</span></span><span class="tooltip">The bundle the plugin was initialised with. </span>
+</li>
+<li>
+<span class="tooltipRegion"><code><a href="#credentials">credentials</a></code> <span class="specialType">property</span></span><span class="tooltip">RMUploadCredentials objects. </span>
+</li>
+<li>
+<span class="tooltipRegion"><code><a href="#presets">presets</a></code> <span class="specialType">property</span></span><span class="tooltip">RMUploadPreset objects. </span>
+</li>
+</ul>
+</li>
+<li id="Other">
+<h3>Other</h3>
+<ul class="methods">
+<li>
+<span class="tooltipRegion"><code><a href="#initWithBundle:">- initWithBundle:</a></code></span><span class="tooltip">Designated initialiser. </span>
+</li>
+<li>
+<span class="tooltipRegion"><code><a href="#credentialsConfigurationViewControllerForCredentials:">- credentialsConfigurationViewControllerForCredentials:</a></code></span><span class="tooltip">This method is required if your preset returns a class from +[RMUploadPreset credentialsClass]. </span>
+</li>
+<li>
+<span class="tooltipRegion"><code><a href="#presetConfigurationViewControllerForPreset:">- presetConfigurationViewControllerForPreset:</a></code></span><span class="tooltip">This method is required. Unless, your preset has configured an RMUploadCredentials object, and you have no preset configuration options, in which case this method is optional. </span>
+</li>
+<li>
+<span class="tooltipRegion"><code><a href="#additionalMetadataViewControllerForPresetClass:">- additionalMetadataViewControllerForPresetClass:</a></code></span><span class="tooltip">This method is optional. </span>
+</li>
+</ul>
+</li>
+</ul>
+<section id="properties"><h2>Properties</h2>
+<section class="definition" id="bundle"><h3>bundle</h3>
+<p>The bundle the plugin was initialised with. </p>
+<code class="methodDeclaration">@property <a href="http://developer.apple.com/mac/library/documentation/Cocoa/Reference/Foundation/Classes/NSBundle_Class/index.html">NSBundle</a> *bundle</code><h5>Discussion</h5>
+<p>If your plugin requires access to any resources, this method is a helper to get access to the <code><code><a href="http://developer.apple.com/mac/library/documentation/Cocoa/Reference/Foundation/Classes/NSBundle_Class/index.html">NSBundle</a></code></code> instance for your plugin. </p>
+<h5>Declared In</h5>
+<code><code>RMUploadPlugin</code>.h</code></section><section class="definition" id="credentials"><h3>credentials</h3>
+<p><code><code><a href="../Classes/RMUploadCredentials.html">RMUploadCredentials</a></code></code> objects. </p>
+<code class="methodDeclaration">@property <a href="http://developer.apple.com/mac/library/documentation/Cocoa/Reference/Foundation/Classes/NSSet_Class/index.html">NSSet</a> *credentials</code><h5>Declared In</h5>
+<code><code>RMUploadPlugin</code>.h</code></section><section class="definition" id="presets"><h3>presets</h3>
+<p><code><code><a href="../Classes/RMUploadPreset.html">RMUploadPreset</a></code></code> objects. </p>
+<code class="methodDeclaration">@property <a href="http://developer.apple.com/mac/library/documentation/Cocoa/Reference/Foundation/Classes/NSSet_Class/index.html">NSSet</a> *presets</code><h5>Declared In</h5>
+<code><code>RMUploadPlugin</code>.h</code></section></section><section id="instanceMethods"><h2>Instance Methods</h2>
+<section class="definition" id="initWithBundle:"><h3>initWithBundle:</h3>
+<p>Designated initialiser. </p>
+<code class="methodDeclaration">- (id)initWithBundle:(<a href="http://developer.apple.com/mac/library/documentation/Cocoa/Reference/Foundation/Classes/NSBundle_Class/index.html">NSBundle</a> *)<span class="parameter">bundle</span> </code><h5>Parameters</h5>
+<dl class="parameterList">
+<dt>bundle</dt>
+<dd><p>The instance of <code><a href="http://developer.apple.com/mac/library/documentation/Cocoa/Reference/Foundation/Classes/NSBundle_Class/index.html">NSBundle</a></code> representing the plugin wrapper. </p></dd>
+</dl>
+<h5>Discussion</h5>
+<p>Plugins may be initialised concurrently, no guarantees are made about their initialisation environment.</p>
+<p></p>
+<h5>Declared In</h5>
+<code><code>RMUploadPlugin</code>.h</code></section><section class="definition" id="credentialsConfigurationViewControllerForCredentials:"><h3>credentialsConfigurationViewControllerForCredentials:</h3>
+<p>This method is required if your preset returns a class from <code>+[<code><a href="../Classes/RMUploadPreset.html">RMUploadPreset</a></code> credentialsClass]</code>. </p>
+<code class="methodDeclaration">- (RMUploadPresetConfigurationViewController *)credentialsConfigurationViewControllerForCredentials:(<a href="../Classes/RMUploadCredentials.html">RMUploadCredentials</a> *)<span class="parameter">credentials</span> </code><h5>Discussion</h5>
+<p>Used to return an <code><code><a href="http://developer.apple.com/mac/library/documentation/Cocoa/Reference/ApplicationKit/Classes/NSViewController_Class/index.html">NSViewController</a></code></code> whose view allows the user to configure the credentials, such as the username/password and or a token.</p>
+<p>You must not configure the <code>plugin&lt;-&gt;&gt;credentials</code> relationship in this method, this will be done for you if required.</p>
+<p>The <code><code><a href="../Classes/RMUploadCredentials.html">RMUploadCredentials</a></code></code> object to configure is set as the <code>representedObject</code> property. </p>
+<h5>Declared In</h5>
+<code><code>RMUploadPlugin</code>.h</code></section><section class="definition" id="presetConfigurationViewControllerForPreset:"><h3>presetConfigurationViewControllerForPreset:</h3>
+<p>This method is required. Unless, your preset has configured an <code><code><a href="../Classes/RMUploadCredentials.html">RMUploadCredentials</a></code></code> object, and you have no preset configuration options, in which case this method is optional. </p>
+<code class="methodDeclaration">- (RMUploadPresetConfigurationViewController *)presetConfigurationViewControllerForPreset:(<a href="../Classes/RMUploadPreset.html">RMUploadPreset</a> *)<span class="parameter">preset</span> </code><h5>Discussion</h5>
+<p>The <code><code><a href="../Classes/RMUploadPreset.html">RMUploadPreset</a></code></code> object to configure is set as the <code>representedObject</code> property. </p>
+<h5>Declared In</h5>
+<code><code>RMUploadPlugin</code>.h</code></section><section class="definition" id="additionalMetadataViewControllerForPresetClass:"><h3>additionalMetadataViewControllerForPresetClass:</h3>
+<p>This method is optional. </p>
+<code class="methodDeclaration">- (<a href="../Classes/RMUploadMetadataConfigurationViewController.html">RMUploadMetadataConfigurationViewController</a> *)additionalMetadataViewControllerForPresetClass:(Class)<span class="parameter">presetClass</span> </code><h5>Discussion</h5>
+<p>If your plugin supports additional file metadata, this view will be placed in your plugin's section of the metadata view. The <code>representedObject</code> will be a KVC container, the contents of which will be passed in the <code>uploadInfo</code> to upload tasks. There is no guarantee that the object you 'configure', and the object passed to your <code><code><a href="../Classes/RMUploadTask.html">RMUploadTask</a></code></code> will be the same, just that they will have the same values you set.</p>
+<p>If you do add keys to this container they must be namespaced to your plugin. </p>
+<h5>Declared In</h5>
+<code><code>RMUploadPlugin</code>.h</code></section></section><hr>
+<p id="lastUpdated">Last updated: 2010-9-9</p>
+</div>
+<footer id="breadcrumbs"><ul>
+<li><a href="../index.html">RMUploadKit SDK</a></li>
+<li><a href="#classTitle">RMUploadPlugin Class Reference</a></li>
+</ul></footer>
+</body>
+</html>

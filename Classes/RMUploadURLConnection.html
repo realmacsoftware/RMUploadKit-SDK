@@ -1,0 +1,186 @@
+<!DOCTYPE html><html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta charset="UTF-8">
+<title>RMUploadURLConnection Class Reference</title>
+<meta id="Generator" name="Generator" content="Doxyclean">
+<meta id="GeneratorVersion" name="GeneratorVersion" content="2.2">
+<link rel="stylesheet" type="text/css" href="../css/common.css">
+<link rel="stylesheet" type="text/css" media="screen" href="../css/screen.css">
+<link rel="stylesheet" type="text/css" media="print" href="../css/print.css">
+<script type="text/javascript">
+				function toggleTOC() {
+					var toc = document.getElementById('tableOfContents');
+					var tocButton = document.getElementById('toc_button');
+					var contents = document.getElementById('contents');
+					if (toc.style.display == 'block') {
+						toc.style.display = 'none';
+						contents.className = '';
+						tocButton.className = '';
+					} else {
+						toc.style.display = 'block';
+						contents.className = 'tableOfContentsOpen';
+						tocButton.className = 'open';
+					}
+				}
+				
+				function toggleTOCItem() {
+					var listItem = event.srcElement;
+					var sublist = listItem.getElementsByTagName('ul')[0];
+					if (sublist.style.display == 'block') {
+						sublist.style.display = 'none';
+						listItem.className = 'expandable';
+					} else {
+						sublist.style.display = 'block';
+						listItem.className = 'expandable expanded';
+					}
+				}
+				
+				function jumpTo() {
+					selectedItem = event.srcElement.options[event.srcElement.selectedIndex].value;
+					window.location = "#" + selectedItem;
+				}
+			</script>
+</head>
+<body>
+<header id="projectHeader"><h1><a href="../index.html">RMUploadKit SDK Reference Library</a></h1></header><header id="fileHeader"><h1><a href="#classTitle">RMUploadURLConnection Class Reference</a></h1></header><nav id="buttons"><ul>
+<li id="toc_button"><button id="table_of_contents" onclick="toggleTOC()">Table of Contents</button></li>
+<li id="jumpto_button"><select id="jumpto" onchange="jumpTo()"><option value="classTitle">Jump To...</option>
+<option value="overview">Overview</option>
+<option value="tasks">Tasks</option>
+<option value="properties">Properties</option>
+<option value="delegate">    delegate</option>
+<option value="completionBlock">    completionBlock</option>
+<option value="completed">    completed</option>
+<option value="userInfo">    userInfo</option>
+<option value="classMethods">Class Methods</option>
+<option value="connectionWithRequest:delegate:">    + connectionWithRequest:delegate:</option>
+<option value="connectionWithRequest:completionBlock:">    + connectionWithRequest:completionBlock:</option>
+<option value="instanceMethods">Instance Methods</option>
+<option value="sendURLRequest:">    - sendURLRequest:</option>
+<option value="cancel">    - cancel</option></select></li>
+</ul></nav><nav id="tableOfContents" style="display: none;"><ul>
+<li><a href="#overview">Overview</a></li>
+<li class="expandable" id="tocTasks" onclick="toggleTOCItem()">
+<a href="#tasks">Tasks</a><ul style="display: none;">
+<li><a href="#Other">Other</a></li>
+<li><a href="#Other">Other</a></li>
+<li><a href="#Other">Other</a></li>
+</ul>
+</li>
+<li class="expandable" id="tocProperties" onclick="toggleTOCItem()">
+<a href="#properties">Properties</a><ul style="display: none;">
+<li><a href="#delegate">delegate</a></li>
+<li><a href="#completionBlock">completionBlock</a></li>
+<li><a href="#completed">completed</a></li>
+<li><a href="#userInfo">userInfo</a></li>
+</ul>
+</li>
+<li class="expandable" id="tocClassMethods" onclick="toggleTOCItem()">
+<a href="#classMethods">Class Methods</a><ul style="display: none;">
+<li><a href="#connectionWithRequest:delegate:">connectionWithRequest:delegate:</a></li>
+<li><a href="#connectionWithRequest:completionBlock:">connectionWithRequest:completionBlock:</a></li>
+</ul>
+</li>
+<li class="expandable" id="tocInstanceMethods" onclick="toggleTOCItem()">
+<a href="#instanceMethods">Instance Methods</a><ul style="display: none;">
+<li><a href="#sendURLRequest:">sendURLRequest:</a></li>
+<li><a href="#cancel">cancel</a></li>
+</ul>
+</li>
+</ul></nav><div id="contents">
+<h1 id="classTitle">RMUploadURLConnection Class Reference</h1>
+<table id="metadata"><tr class="alt">
+<th>Declared in</th>
+<td>RMUploadURLConnection.h</td>
+</tr></table>
+<h2 id="overview">Overview</h2>
+<p>A replacement for <code><code><a href="http://developer.apple.com/mac/library/documentation/Cocoa/Reference/Foundation/Classes/NSURLConnection_Class/index.html">NSURLConnection</a></code></code>, wrapping it with a different API. </p>
+<p>It uses a similar delegate system as <code><a href="http://developer.apple.com/mac/library/documentation/Cocoa/Reference/Foundation/Classes/NSURLConnection_Class/index.html">NSURLConnection</a></code> but provides different information as you go. </p>
+<h2 id="tasks">Tasks</h2>
+<ul id="tasksList">
+<li id="Other">
+<h3>Other</h3>
+<ul class="methods">
+<li>
+<span class="tooltipRegion"><code><a href="#delegate">delegate</a></code> <span class="specialType">property</span></span><span class="tooltip">The connection's delegate. </span>
+</li>
+<li>
+<span class="tooltipRegion"><code><a href="#completionBlock">completionBlock</a></code> <span class="specialType">property</span></span><span class="tooltip">A block called when the connection completes, either successfully or unsuccessfully. </span>
+</li>
+<li>
+<span class="tooltipRegion"><code><a href="#completed">completed</a></code> <span class="specialType">property</span></span><span class="tooltip">Set to YES when the connection has finished or has received an error. </span>
+</li>
+<li>
+<span class="tooltipRegion"><code><a href="#userInfo">userInfo</a></code> <span class="specialType">property</span></span><span class="tooltip">Convenience property to associate any userInfo, handy for delegate callbacks. </span>
+</li>
+</ul>
+</li>
+<li id="Other">
+<h3>Other</h3>
+<ul class="methods">
+<li>
+<span class="tooltipRegion"><code><a href="#connectionWithRequest:delegate:">+ connectionWithRequest:delegate:</a></code></span><span class="tooltip">Convenience constructor. </span>
+</li>
+<li>
+<span class="tooltipRegion"><code><a href="#connectionWithRequest:completionBlock:">+ connectionWithRequest:completionBlock:</a></code></span><span class="tooltip">Convenience constructor. </span>
+</li>
+</ul>
+</li>
+<li id="Other">
+<h3>Other</h3>
+<ul class="methods">
+<li>
+<span class="tooltipRegion"><code><a href="#sendURLRequest:">- sendURLRequest:</a></code></span><span class="tooltip">Sends the provided request, the delegate will begin to receive notifications. </span>
+</li>
+<li>
+<span class="tooltipRegion"><code><a href="#cancel">- cancel</a></code></span><span class="tooltip">Cancels the connection. </span>
+</li>
+</ul>
+</li>
+</ul>
+<section id="properties"><h2>Properties</h2>
+<section class="definition" id="delegate"><h3>delegate</h3>
+<p>The connection's delegate. </p>
+<code class="methodDeclaration">@property id delegate</code><h5>Declared In</h5>
+<code><code>RMUploadURLConnection</code>.h</code></section><section class="definition" id="completionBlock"><h3>completionBlock</h3>
+<p>A block called when the connection completes, either successfully or unsuccessfully. </p>
+<code class="methodDeclaration">@property RMUploadURLConnectionCompletionBlock completionBlock</code><h5>Discussion</h5>
+<p>Both this block and the delegate method <code>-connection:didFailWithError:</code> or <code>-connection:didCompleteWithData:</code> are invoked on connection completion. </p>
+<h5>Declared In</h5>
+<code><code>RMUploadURLConnection</code>.h</code></section><section class="definition" id="completed"><h3>completed</h3>
+<p>Set to YES when the connection has finished or has received an error. </p>
+<code class="methodDeclaration">@property BOOL completed</code><h5>Declared In</h5>
+<code><code>RMUploadURLConnection</code>.h</code></section><section class="definition" id="userInfo"><h3>userInfo</h3>
+<p>Convenience property to associate any userInfo, handy for delegate callbacks. </p>
+<code class="methodDeclaration">@property id userInfo</code><h5>Declared In</h5>
+<code><code>RMUploadURLConnection</code>.h</code></section></section><section id="classMethods"><h2>Class Methods</h2>
+<section class="definition" id="connectionWithRequest:delegate:"><h3>connectionWithRequest:delegate:</h3>
+<p>Convenience constructor. </p>
+<code class="methodDeclaration">+ (RMUploadURLConnection *)connectionWithRequest:(<a href="http://developer.apple.com/mac/library/documentation/Cocoa/Reference/Foundation/Classes/NSURLRequest_Class/index.html">NSURLRequest</a> *)<span class="parameter">request</span> delegate:(id&lt;<a href="../Protocols/RMUploadURLConnectionDelegate.html">RMUploadURLConnectionDelegate</a>&gt;)<span class="parameter">delegate</span> </code><h5>Declared In</h5>
+<code><code>RMUploadURLConnection</code>.h</code></section><section class="definition" id="connectionWithRequest:completionBlock:"><h3>connectionWithRequest:completionBlock:</h3>
+<p>Convenience constructor. </p>
+<code class="methodDeclaration">+ (RMUploadURLConnection *)connectionWithRequest:(<a href="http://developer.apple.com/mac/library/documentation/Cocoa/Reference/Foundation/Classes/NSURLRequest_Class/index.html">NSURLRequest</a> *)<span class="parameter">request</span> completionBlock:(RMUploadURLConnectionCompletionBlock)<span class="parameter">completionBlock</span> </code><h5>Declared In</h5>
+<code><code>RMUploadURLConnection</code>.h</code></section></section><section id="instanceMethods"><h2>Instance Methods</h2>
+<section class="definition" id="sendURLRequest:"><h3>sendURLRequest:</h3>
+<p>Sends the provided request, the delegate will begin to receive notifications. </p>
+<code class="methodDeclaration">- (void)sendURLRequest:(<a href="http://developer.apple.com/mac/library/documentation/Cocoa/Reference/Foundation/Classes/NSURLRequest_Class/index.html">NSURLRequest</a> *)<span class="parameter">request</span> </code><h5>Parameters</h5>
+<dl class="parameterList">
+<dt>request</dt>
+<dd><p>An <code><code><a href="http://developer.apple.com/mac/library/documentation/Cocoa/Reference/Foundation/Classes/NSURLRequest_Class/index.html">NSURLRequest</a></code></code> that you wish to send. </p></dd>
+</dl>
+<h5>Declared In</h5>
+<code><code>RMUploadURLConnection</code>.h</code></section><section class="definition" id="cancel"><h3>cancel</h3>
+<p>Cancels the connection. </p>
+<code class="methodDeclaration">- (void)cancel</code><h5>Discussion</h5>
+<p>The <code>delegate</code> will not receive any further callbacks. The <code>completionBlock</code> will not be invoked. </p>
+<h5>Declared In</h5>
+<code><code>RMUploadURLConnection</code>.h</code></section></section><hr>
+<p id="lastUpdated">Last updated: 2010-9-9</p>
+</div>
+<footer id="breadcrumbs"><ul>
+<li><a href="../index.html">RMUploadKit SDK</a></li>
+<li><a href="#classTitle">RMUploadURLConnection Class Reference</a></li>
+</ul></footer>
+</body>
+</html>
